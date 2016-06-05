@@ -1,0 +1,261 @@
+<!DOCTYPE html><html><head><meta charset="utf8"/><title>fintrospect</title><link rel="icon" type="image/png" href="images/eye-32px.png"/><link rel="stylesheet" href="css/global.css"/><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro"/><script src="js/jquery/jquery.min.js"></script><script src="js/bootstrap/bootstrap.js"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-69281315-3', 'auto');
+ga('send', 'pageview');</script></head><body><header><nav role="navigation" class="navbar navbar-default navbar-fixed-top"><div class="container-fluid"><div class="navbar-header"><button data-toggle="collapse" data-target="#navbar-top-collapse-1" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="http://fintrospect.io" target="_parent" class="navbar-brand">fintrospect</a></div><div id="navbar-top-collapse-1" class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right"><li><a href="https://bintray.com/daviddenton/maven/fintrospect/_latestVersion" target="_top"><img src="https://api.bintray.com/packages/daviddenton/maven/fintrospect/images/download.svg"/></a></li><li><a href="https://travis-ci.org/daviddenton/fintrospect" target="_top"><img src="https://travis-ci.org/daviddenton/fintrospect.svg?branch=master"/></a></li><li><a href="https://coveralls.io/github/daviddenton/fintrospect?branch=master" target="_top"><img src="https://coveralls.io/repos/daviddenton/fintrospect/badge.svg?branch=master"/></a></li><li><a href="https://gitter.im/daviddenton/fintrospect" target="_top"><img src="https://badges.gitter.im/daviddenton/fintrospect.svg"/></a></li><li><a href="https://twitter.com/fintrospectdev" target="_top"><img src="images/twitter.png" class="twitter"/></a></li><li><a href="http://github.com/daviddenton/fintrospect" target="_top"><img src="images/GitHub-Mark-32px.png"/></a></li></ul></div></div></nav></header><main><div class="container"><div class="row"><div class="col-sm-3"><div class="logo"><img src="images/eye.png" class="logo"/></div><ul class="nav nav-pills nav-stacked nav-docs"><li><h1>guide</h1></li><li><a href="http://fintrospect.io" target="_parent">overview</a></li><li><a href="http://fintrospect.io/installation" target="_parent">installation</a></li><li><a href="http://fintrospect.io/request-parameters-and-bodies" target="_parent">request parameters & bodies</a></li><li><a href="http://fintrospect.io/defining-routes" target="_parent">defining routes</a></li><li><a href="http://fintrospect.io/server-routes" target="_parent">server routes</a></li><li><a href="http://fintrospect.io/client-routes" target="_parent">client routes</a></li><li><a href="http://fintrospect.io/building-http-responses" target="_parent">building http responses</a></li><li><a href="http://fintrospect.io/cross-field-validation" target="_parent">cross-field validation</a></li><li><a href="http://fintrospect.io/templating-and-static-content" target="_parent">templating & static content</a></li><li><a href="http://fintrospect.io/testing" target="_parent">testing</a></li><li><a href="http://fintrospect.io/examples" target="_parent">examples</a></li><li><h1>misc</h1></li><li><a href="http://fintrospect.io/api" target="_parent">api docs</a></li><li class="active"><a href="http://fintrospect.io/changelog" target="_parent">changelog & migration</a></li><li><a href="http://fintrospect.io/contributing" target="_parent">contributing</a></li></ul></div><div class="col-sm-9"><article class="article-docs"><h1>changelog & migration guide<h1 class="githubonly">Roadmap/Release Notes/Migration Guide</h1>
+
+<p>The main API is stable, but expect some amount of breaking changes around major releases as new features are added. All breaking changes are documented with a migration step where possible.</p>
+<h2>Backlog/upcoming</h2><ul>
+<li>Add strict <code>Content-Type</code> header checking for <code>RouteSpec</code>s based on <code>consuming()</code> and <code>withBody()</code> settings. Option for non-strictness.</li>
+<li>Add strict <code>Accept</code> header checking for <code>RouteSpec</code>s based on <code>producing()</code> settings. Option for non-strictness.</li>
+<li>Option to dynamically reload View templates.</li>
+<li>Drop support for Scala 2.10 (when finagle.http does).</li>
+</ul>
+<h2>12.20.0</h2><ul>
+<li>Convienience methods added to Extraction.</li>
+</ul>
+<h2>12.19.0</h2><ul>
+<li>Tidied up Extractables to finalise (again).</li>
+</ul>
+<h2>12.18.2</h2><ul>
+<li>Bugfix: Extractables short-circuiting incorrectly when last parameter is optional (issue #19).</li>
+</ul>
+<h2>12.18.1</h2><ul>
+<li>Bugfix: Extractables must return an Option to not shortcircuit in valid situations (issue #18).</li>
+</ul>
+<h2>12.18.0</h2><ul>
+<li>Facility to override body and parameter validation in <code>RouteSpec</code> - pass in a different <code>RequestValidation</code> instance</li>
+<li>Finalised extraction logic, including embedding of <code>Extractable</code>s</li>
+</ul>
+<h2>12.17.0</h2><ul>
+<li>More experimental extraction logic, including rename of <code>Validatable</code> -&gt; <code>Extractable</code></li>
+</ul>
+<h2>12.16.0</h2><ul>
+<li>Added utility filters</li>
+<li>More work on composites and extraction</li>
+</ul>
+<h2>12.15.0</h2><ul>
+<li>(Small) breaking change: Added reasons to invalid parameter validation. This means that the <code>badRequest()</code> method of <code>ModuleRenderer</code> implementations need to 
+change to also take the <code>Seq(InvalidParameter)</code> instead of just <code>Seq[Parameter]</code>. Easily fix by inserting the first line of <code>val params = invalidParams.map(_.parameter)</code> 
+into your <code>badRequest()</code> if you want to ignore the reason.</li>
+<li>Massive tidy-up of Extraction logic + introduction of experimental support for cross-parameter validation via for comprehensions</li>
+</ul>
+<h2>v12.14.1</h2><ul>
+<li>Bugfix: Empty forms can be retrieved from a request, even when they have required fields (issue #15).</li>
+<li>Bugfix: Cache filters should only apply to successful responses (issue #16).</li>
+</ul>
+<h2>v12.14.0</h2><ul>
+<li>Slight refactor of <code>Auto***</code> filters to make usage simpler. May involve a rearrangement of implicit parameters (previously 
+included the <code>Status</code>) depending on the use-case, but in majority of cases should not be breaking.</li>
+<li>Extended auto-marshalling support for XML responses to <code>Elem</code>. See <code>XML.Filters.Auto***</code>.</li>
+<li>Filter to allow multiple multiple body types to be accepted on a single route.</li>
+</ul>
+<h2>v12.13.0</h2><ul>
+<li>Added auto-marshalling support for JSON libraries which support it (<code>Circe, Argonaut, Json4S, Play</code>. 
+See <code>Circe.Filters.Auto***</code> filter constructors to wrap your existing domain services, or see <code>Circe</code> example for exact usage.</li>
+</ul>
+<h2>v12.12.0</h2><ul>
+<li>Upgrade Finagle dependency to <code>6.35.0</code>. Note that this is (apparently) the last Scala <code>2.10.X</code> supporting Finagle release.</li>
+</ul>
+<h2>v12.11.0</h2><ul>
+<li>Added <code>HeapDump</code> utility service to programatically generate a hprof file.</li>
+<li>Similar to <code>Query</code>, added support for multiple header parameters with same name. See <code>*()</code> on <code>Header.required|optional</code>.</li>
+<li>Support for serving strict content-type negotiation and multiple content types to be served from a single route. See example <code>strictcontenttypes</code>.</li>
+<li>Added a number of useful general-case filters. See <code>Filters</code>.</li>
+<li>Added a number of useful cache-control filters. See <code>Caching</code>.</li>
+<li>Upgrade of <code>Circe</code> version to <code>0.4.1</code></li>
+<li>Upgrade of <code>Scala</code> version to <code>2.11.8</code></li>
+</ul>
+<h2>v12.10.0</h2><ul>
+<li>Renamed and moved implicit method conversions for response building for clarity from <code>X.toFuture</code> to <code>X.implicits.XXXToFuture</code>. Possible small break if you&#39;ve imported the implicits exactly instead of with a wildcard.</li>
+</ul>
+<h2>v12.8.0</h2><ul>
+<li>Added convenience methods for creating <code>ResponseSpec</code> object for auto-encoding JSON libraries.</li>
+</ul>
+<h2>v12.7.0</h2><ul>
+<li>Added generification of ModuleSpec in the <code>Request</code> type as well as the <code>Response</code> type. This means that we can plug in other Finagle frameworks which vary in their Request type, such as Finagle-OAuth2. Likelihood of breaks is small, so 
+just a minor version bump. In all cases, just replace <code>ModuleSpec[X]</code> and <code>ServerRoute[X]</code> with <code>ModuleSpec[Request, X]</code> and <code>ServerRoute[Request, X]</code> .</li>
+<li>Upgrade Finagle dependency to <code>6.34.0</code></li>
+<li>Added examples for templating and OAuth2 integration</li>
+</ul>
+<h2>v12.6.0</h2><ul>
+<li>Bolstered infra utilities to be friendlier for testing applications outside of a container</li>
+</ul>
+<h2>v12.5.0</h2><ul>
+<li>Added UUID parameter type</li>
+</ul>
+<h2>v12.4.0</h2><ul>
+<li>For performance, all JSON responses are now rendered in compact format by default when using a JSON library and the native node type (as opposed to string). This shouldn&#39;t really break anything in your code unless you&#39;re relying on comparisons 
+with hardcoded JSON strings - :) </li>
+</ul>
+<h2>v12.3.0</h2><ul>
+<li>Added symbol support to <code>JsonFormat</code> object generation - see <code>objSym()</code></li>
+<li>Upgrade of <code>Circe</code> to <code>0.3.0</code> - note the rename of the <code>circe-parse</code> package dependency to <code>circe-parser</code></li>
+</ul>
+<h2>v12.2.1</h2><ul>
+<li>Bugfix: Static resources not found when Static module is at the root context (issue #14).</li>
+<li>Upgrade finagle dependency to <code>6.33.0</code></li>
+</ul>
+<h2>v12.2.0</h2><ul>
+<li>Significant performance improvement by route matching on <code>ModuleSpec</code> context first and then on the whole path. This means that <code>ModuleSpec</code> contexts now 
+CANNOT be shared at all, due to the routing matching just the Module context to select the Module and then then the rest of the path within that Module. For static resources, 
+<code>StaticModule</code> instances that share their context with another (e.g. for dynamic web resources at the root context), need to come before any partner <code>ModuleSpec</code>
+when creating the final service. Also, any overlapping ModuleSpecs will need to be combined into one.</li>
+</ul>
+<h2>v12.1.0</h2><ul>
+<li>New documentation and project site</li>
+</ul>
+<h2>v12.0.2</h2><ul>
+<li>Breaking change: Moved non-JSON ResponseBuilder classes to be consistent with other codecs. E.g. <code>io.fintrospect.formats.xml.XmlResponseBuilder</code> moves to <code>io.fintrospect.formats.Xml.ResponseBuilder</code>.</li>
+<li>(Unlikely) Breaking change: Rename of <code>ResponseBuilderMethods</code> trait to <code>AbstractResponseBuilder</code>.</li>
+<li>(Unlikely) Breaking change: Rename of <code>SprayJson</code> to <code>Spray</code> (for consistency).</li>
+<li>Deprecation of <code>FintrospectModule</code> to be replaced with <code>ModuleSpec</code> and <code>Module</code> for consistency.</li>
+<li>Added support Circe JSON library out of the box. See <code>Circe</code> to get the Format util and ResponseBuilder for this format.</li>
+<li>Added templating support for Mustache and Handlebars - similar to the JSON libraries, these require extra dependencies to be added to build.sbt.</li>
+<li>Added StaticModule for serving static resources from the classpath.</li>
+<li>Added SiteMapModuleRenderer for XML descriptions of web modules.</li>
+<li>Added parenthesis for <code>ResponseBuilder</code> <code>build()</code> method for consistency.</li>
+</ul>
+<h2>v11.5.0</h2><ul>
+<li>Upgrade to Finagle <code>6.31.0</code>.</li>
+<li>Added ability to bind Scala <code>Option</code> to optional parameter values instead of just concrete values.</li>
+<li>Added <code>Security</code> to module endpoints, specifically <code>ApiKey</code> which adds a security filter to all requests. Documentation generation is included, but unfortunately the current Swagger UI does not support this properly due to a bug.
+As a workaround until Swagger UI is fixed (if you need it), simply add the required ApiKey &quot;parameter&quot; to every endpoint, which will allow the best of both worlds (although you will not need to check for the presence of the API-Key in your 
+routes since this will already be handled by Fintrospect.</li>
+<li>Added support GSON JSON library out of the box. See <code>Gson</code> to get the Format util and ResponseBuilder for this format.</li>
+<li>New example <code>full</code> and documentation rewrite to show off advanced feature usage of the library.</li>
+</ul>
+<h2>v11.4.0</h2><ul>
+<li>Added convenience methods to remove boilerplate for auto marshall/demarshall JSON when creating body and parameters specs.</li>
+</ul>
+<h2>v11.3.0</h2><ul>
+<li>Added convenience implicit conversions from <code>Status</code> to <code>ResponseBuilder</code> to <code>Response</code>. This tidies up the code nicely since you can use the Status as follows: <code>Status.Ok(&quot;content&quot;)</code></li>
+</ul>
+<h2>v11.2.1</h2><ul>
+<li>Bugfix: ArrayIndexOutOfBoundsException when handling an empty form (issue #12).</li>
+</ul>
+<h2>v11.2.0</h2><ul>
+<li>Added using Buf&#39;s and ChannelBuffers to create HTTP responses.</li>
+<li>Removed deprecated methods from <code>ResponseBuilderMethods</code>.</li>
+</ul>
+<h2>v11.1.1</h2><ul>
+<li>Added convenience mechanism to create custom parameters.</li>
+</ul>
+<h2>v11.0.1</h2><ul>
+<li>Bugfix for ordering of the routes when matching a path (issue #11).</li>
+</ul>
+<h2>v11.0.0</h2><ul>
+<li>Upgrade to Finagle <code>6.30.0</code>, which has resulted in... &lt; drumroll &gt;</li>
+<li>Breaking change: Musical chairs from the Finagle team with the <code>finagle-httpx</code> package, which is now renamed to <code>finagle-http</code>. Just globally replace <code>httpx</code> with <code>http</code> and all should be good.</li>
+<li>Removed <code>CorsFilter</code>. You can now use the <code>Cors.HttpFilter</code> supplied by finagle-http instead.</li>
+</ul>
+<h2>v10.4.1</h2><ul>
+<li>Added 6 and 7 arity path lengths.</li>
+</ul>
+<h2>v10.2.0</h2><ul>
+<li>Added support Play JSON library out of the box. See <code>Play</code> to get the Format util and ResponseBuilder for this format.</li>
+</ul>
+<h2>v10.1.1</h2><ul>
+<li>Tiny break: Moved <code>ApiInfo</code> class to <code>io.fintrospect.renderers.swagger2dot0</code> package as was messing up the place.</li>
+<li>Inlined JsonResponseBuilder - this shouldn&#39;t be breaking anything - identically implement <code>JsonLibrary</code> instead for custom JSON formats.</li>
+<li>Added support Argonaut JSON library out of the box. See <code>Argonaut</code> to get the Format util and ResponseBuilder for this format.</li>
+<li>Added XHtml support (based on native XML).</li>
+</ul>
+<h2>v10.0.1</h2><ul>
+<li>Bugfix for Json4S builder method.</li>
+</ul>
+<h2>v10.0.0</h2><ul>
+<li>Upgrade from finagle-http v6.27.0 to finagle-httpx v6.29.0, as the former is EOL. This will result in a significant amount 
+of breaking changes due to Finagle using their own httpx classes instead of Netty equivalents:<ul>
+<li>References to <code>HttpRequest/Response</code> Netty classes are now <code>Request/Response</code> instead</li>
+<li>References to <code>HttpResponseStatus</code> changed to <code>Status</code></li>
+<li>References to <code>HttpMethod.GET/POST/...</code> changd to <code>Method.Get/Post/...</code></li>
+<li>References to <code>Http.XXX()</code> will now use <code>Httpx.XXX()</code> instead</li>
+</ul>
+</li>
+<li>Other than the above, no actual changes to the Fintrospect API or how it works have been made.</li>
+<li>Added <code>OK</code> and <code>HttpResponse</code> alias methods to the <code>ResponseBuilder</code> to avoid name clashes with new HttpX methods. Deprecated <code>Ok()</code> and <code>Response()</code> methods for clarity.</li>
+</ul>
+<h2>v9.1.0</h2><ul>
+<li>Changed format of &quot;X-Fintrospect-Route-Name&quot; header to use : instead of . in to describe the route URL - as URLs often have . in (for file extensions).</li>
+</ul>
+<h2>v9.0.1</h2><ul>
+<li>Added support for other Scala JSON libraries - Json4S (Native and Jackson) and SprayJson out of the box. See <code>Json4s</code> to get the Format utils and ResponseBuilder for these formats.</li>
+<li>Breaking change: Response builders are now moved into the <code>io.fintrospect.formats.&lt;format&gt; packages</code>.</li>
+<li>Breaking change: rename of to <code>ArgoUtil</code> and <code>ArgoJsonResponseBuilder</code> which are now <code>Argo.JsonFormat</code> and <code>Argo.ResponseBuilder</code> respectively. This structure is now is unified with the other JSON formats.</li>
+</ul>
+<h2>v9.0.0</h2><ul>
+<li>Please ignore this release and go straight to v9.0.1</li>
+</ul>
+<h2>v8.3.1</h2><ul>
+<li>Bugfix for Body models not being outputted in Swagger 2 JSON schema.</li>
+</ul>
+<h2>v8.3.0</h2><ul>
+<li>Added optional description field to <code>RouteSpec</code>. This appears as the &quot;implementation notes&quot; section in Swagger docs.</li>
+</ul>
+<h2>v8.2.0</h2><ul>
+<li>Upgraded version of Finagle that we build against to v6.27.0.</li>
+<li>Bugfix for Path parameter values not being encoded correctly in clients.</li>
+</ul>
+<h2>v8.1.0</h2><ul>
+<li>Added native XML support as a body and a parameter type.</li>
+</ul>
+<h2>v8.0.1</h2><ul>
+<li>Bugfix for cannot bind custom body to a request.</li>
+</ul>
+<h2>v8.0.X</h2><ul>
+<li>Unification of Server and Client route description APIs. Breaking API changes (renames only):<ul>
+<li><code>DescribedRoute</code> is now <code>RouteSpec</code></li>
+<li><code>ClientRoute</code> is now <code>RouteSpec</code> (different package), and <code>bindTo()</code> is now <code>bindToClient()</code></li>
+<li><code>Route</code> is now <code>ServerRoute</code></li>
+<li><code>Client</code> is now <code>RouteClient</code></li>
+<li><code>ResponseWithExample</code> is now <code>ResponseSpec</code></li>
+<li>Methods on <code>Request/Response</code> have dropped the get prefix. Get <code>getUri -&gt; uri</code></li>
+</ul>
+</li>
+</ul>
+<h2>v7.6.X</h2><ul>
+<li>Support for multi-parameters in forms and queries to provide type-safe retrieval. Eg. <code>Query.required.*.int(&quot;name&quot;)</code></li>
+<li>Removal of some generics around Parameters. Should be non-breaking change.</li>
+</ul>
+<h2>v7.2.0</h2><ul>
+<li>Upgraded version of Finagle that we build against to v6.26.0</li>
+</ul>
+<h2>v7.0.2</h2><ul>
+<li>Unfortunately contains a bug in the new Client code. Please ignore this release and upgrade to latest.</li>
+</ul>
+<h2>v6.1.X -&gt; v7.X.X</h2><ul>
+<li>Custom parameter support now more modular. Breaking change of <code>custom(XXX)</code> -&gt; <code>apply(XXX)</code> in Parameters classes, which requires using ParameterSpec instead of arg list.</li>
+<li>Improved support for Forms and custom Body types (other than JSON). Dropped support for Forms parameters as request params and reimplemented as a particular Body type, with automatic setting of Content-Type
+headers. Clients will need to migrate to the new Form format (see examples).</li>
+<li>Body parameters are now parsed for validity in the same way as other required parameters.</li>
+<li>EXPERIMENTAL! Ability to define clients using the same style API as the Services. Supports Path/Query/Headers, but not Bodies or Forms as yet.</li>
+</ul>
+<h2>v5.X.X -&gt; v6.X.X</h2><ul>
+<li>We&#39;ve got a domain! So... repackage from <code>io.github.daviddenton.fintrospect</code> to  <code>io.fintrospect</code>. A global search and replace on your codebase will do it.</li>
+<li>Added support for custom parameter types. See the <a target="_top" href="https://github.com/daviddenton/fintrospect/tree/master/src/test/scala/examples">example code]</a>).</li>
+</ul>
+<h2>v4.X.X -&gt; v5.X.X</h2><ul>
+<li>Upgrade to require Java 8 time API for time parameter support.</li>
+<li>Removal of Joda-time dependencies since you can now just use <code>java.time</code> instead.</li>
+<li>Collapsed <code>DescriptionRenderer</code> into <code>ModuleRenderer</code>, so just one trait to implement to provide custom format support.</li>
+<li>Ability to override the default location of the description route.</li>
+</ul>
+<h2>v3.X.X -&gt; v4.X.X</h2><ul>
+<li>Addition of custom response rendering formats. See the <a target="_top" href="https://github.com/daviddenton/fintrospect/tree/master/src/test/scala/examples">example code]</a>.
+Modules now require a fully configured <code>ModuleRenderer</code> upon instantiation, which provides not just the rendering of the Documentation (ie. the old <code>Renderer</code> which is now <code>DescriptionRenderer</code>), but also the format of error messages. Some repackaging of the pluggable renderers has occurred.</li>
+<li><code>ResponseBuilder</code> is now generic superclass of pluggable formats. Json support has moved to <code>JsonResponseBuilder</code>, so changes to your code will be required to support this.</li>
+<li>Renamed Identification Header to <code>X-Fintrospect-Route-Name</code></li>
+<li>Added ability to apply filters to all custom routes in a module (apart from the description route, which is NOT affected)</li>
+</ul>
+<h2>v2.X.X -&gt; v3.X.X</h2><p>Migrated away from the in-built Twitter HTTP Request package (<code>com.twitter.finagle.http</code>) and onto the Netty <code>org.jboss.netty.handler.codec.http.Request</code>. This is to provide compatibility with the changes to the Finagle APIs in regards
+to creating both servers and clients. It also has the advantage of unifying the client/server interface (previously it
+was different between the two). The only things that should have to change in your code are:</p>
+<ul>
+<li>How servers are created - the new method is simpler (see the <a target="_top" href="https://github.com/daviddenton/fintrospect/tree/master/src/test/scala/examples">example code]</a>.</li>
+<li>The signature of routes is now <code>Service[Request,Response]</code>. Since the Twitter Request/Response classes
+extends these interfaces, usages of the ResponseBuilder remain the same.</li>
+<li>Form-based parameters are now defined with the <code>Form</code> object, and not the <code>Query</code> object (which now just retrieves Query String parameters from the URL).</li>
+</ul>
+</h1></article></div></div></div></main><footer><span class="left">project maintained by <a target="_top" href="https://github.com/daviddenton">daviddenton</a></span><span class="right"> site powered by <a target="_top" href="https://github.com/jvandemo/hb-bootstrap">hb-bootstrap</a> for <a target="_top" href="http://harpjs.com">Harp</a> by <a target="_top" href="http://www.jvandemo.com">Jurgen Van de Moere</a></span><script>$(function () { $('[data-toggle="tooltip"]').tooltip() })</script></footer></body></html>

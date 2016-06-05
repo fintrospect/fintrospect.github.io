@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><meta charset="utf8"/><title>fintrospect</title><link rel="icon" type="image/png" href="images/eye-32px.png"/><link rel="stylesheet" href="css/global.css"/><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro"/><script src="js/jquery/jquery.min.js"></script><script src="js/bootstrap/bootstrap.js"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-69281315-3', 'auto');
+ga('send', 'pageview');</script></head><body><header><nav role="navigation" class="navbar navbar-default navbar-fixed-top"><div class="container-fluid"><div class="navbar-header"><button data-toggle="collapse" data-target="#navbar-top-collapse-1" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="http://fintrospect.io" target="_parent" class="navbar-brand">fintrospect</a></div><div id="navbar-top-collapse-1" class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right"><li><a href="https://bintray.com/daviddenton/maven/fintrospect/_latestVersion" target="_top"><img src="https://api.bintray.com/packages/daviddenton/maven/fintrospect/images/download.svg"/></a></li><li><a href="https://travis-ci.org/daviddenton/fintrospect" target="_top"><img src="https://travis-ci.org/daviddenton/fintrospect.svg?branch=master"/></a></li><li><a href="https://coveralls.io/github/daviddenton/fintrospect?branch=master" target="_top"><img src="https://coveralls.io/repos/daviddenton/fintrospect/badge.svg?branch=master"/></a></li><li><a href="https://gitter.im/daviddenton/fintrospect" target="_top"><img src="https://badges.gitter.im/daviddenton/fintrospect.svg"/></a></li><li><a href="https://twitter.com/fintrospectdev" target="_top"><img src="images/twitter.png" class="twitter"/></a></li><li><a href="http://github.com/daviddenton/fintrospect" target="_top"><img src="images/GitHub-Mark-32px.png"/></a></li></ul></div></div></nav></header><main><div class="container"><div class="row"><div class="col-sm-3"><div class="logo"><img src="images/eye.png" class="logo"/></div><ul class="nav nav-pills nav-stacked nav-docs"><li><h1>guide</h1></li><li><a href="http://fintrospect.io" target="_parent">overview</a></li><li><a href="http://fintrospect.io/installation" target="_parent">installation</a></li><li><a href="http://fintrospect.io/request-parameters-and-bodies" target="_parent">request parameters & bodies</a></li><li><a href="http://fintrospect.io/defining-routes" target="_parent">defining routes</a></li><li><a href="http://fintrospect.io/server-routes" target="_parent">server routes</a></li><li><a href="http://fintrospect.io/client-routes" target="_parent">client routes</a></li><li><a href="http://fintrospect.io/building-http-responses" target="_parent">building http responses</a></li><li class="active"><a href="http://fintrospect.io/cross-field-validation" target="_parent">cross-field validation</a></li><li><a href="http://fintrospect.io/templating-and-static-content" target="_parent">templating & static content</a></li><li><a href="http://fintrospect.io/testing" target="_parent">testing</a></li><li><a href="http://fintrospect.io/examples" target="_parent">examples</a></li><li><h1>misc</h1></li><li><a href="http://fintrospect.io/api" target="_parent">api docs</a></li><li><a href="http://fintrospect.io/changelog" target="_parent">changelog & migration</a></li><li><a href="http://fintrospect.io/contributing" target="_parent">contributing</a></li></ul></div><div class="col-sm-9"><article class="article-docs"><h1>cross-field validation</h1><p>Further to the process of retrieving them from the request, there exists the problem of validating that the passed parameters 
+are actually logically valid when passed together. For example, a date range is only valid when the start date is before the end date. </p>
+<p>For this purpose, you can use an <code>Extractable</code> - a trait which provides a single method <code>&lt;--?()</code> to return one of 3 
+states: <code>Extracted(value)</code>, <code>NotProvided</code> (for optional values which are not supplied), and <code>ExtractionFailed(parameter)</code> for missing or 
+invalid values. These constructs can be used inside a for comprehension to provide cross-field validation, and eventual creation of a target 
+object. Below is a service that implements this logic - note the use of a predicate and a failure reason which provides the logic for the check:</p>
+<pre><code>case class DateRange(startDate: LocalDate, endDate: Option[LocalDate])
+
+val range: Extractable[Request, DateRange] = Extractable.mk {
+  (request: Request) =&gt;
+      for {
+        startDate &lt;- Query.required.localDate(&quot;start&quot;) &lt;--? request
+        endDate &lt;- Query.optional.localDate(&quot;end&quot;) &lt;--?(request, &quot;end date invalid&quot;, _.isAfter(startDate.get))
+      } yield DateRange(startDate.get, endDate)
+}
+
+val route = RouteSpec().at(Get) bindTo Service.mk {
+  req: Request =&gt;
+      range &lt;--? req match {
+        case Extracted(dates) =&gt; Ok(dates.startDate + &quot; -&gt;&quot; + dates.endDate)
+        case ExtractionFailed(sp) =&gt; BadRequest(sp.mkString(&quot;, &quot;))
+        case NotProvided =&gt; BadRequest()
+      }
+}
+</code></pre><p>(Although we are calling <code>get()</code> on the Options in the above <code>yield</code> - normally a VBT (Very Bad Thing), in this case we are safe 
+to do so since any missing or invalid mandatory parameters short-circuit the comprehension.)</p>
+<p><code>Extractable</code> is modular, so instances can be embedded inside each other in for comprehensions to build object graphs from the 
+incoming request.</p>
+<p>The above example can be further simplified by use of the built-in <code>Filters.Request.ExtractableRequest</code> filter to transform the input:</p>
+<pre><code>  Filters.Request.ExtractableRequest(range).andThen(Service.mk[DateRange, Response] {
+    dateRange =&gt; ...
+  })
+</code></pre><p><a class="next" href="http://fintrospect.io/templating-and-static-content" target="_top"><button type="button" class="btn btn-sm btn-default">next: templating and static content</button></a></p></article></div></div></div></main><footer><span class="left">project maintained by <a target="_top" href="https://github.com/daviddenton">daviddenton</a></span><span class="right"> site powered by <a target="_top" href="https://github.com/jvandemo/hb-bootstrap">hb-bootstrap</a> for <a target="_top" href="http://harpjs.com">Harp</a> by <a target="_top" href="http://www.jvandemo.com">Jurgen Van de Moere</a></span><script>$(function () { $('[data-toggle="tooltip"]').tooltip() })</script></footer></body></html>
