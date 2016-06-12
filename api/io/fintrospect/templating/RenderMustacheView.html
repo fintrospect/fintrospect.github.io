@@ -167,7 +167,7 @@ to be applied to all routes in that module.</p></div><div class="toggleContainer
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="com.twitter.finagle.Filter#agnosticAndThen" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="agnosticAndThen(next:&lt;?&gt;):com.twitter.finagle.Filter[ReqIn,RepOut,ReqOut,RepIn]"></a>
+      <a id="agnosticAndThen(next:com.twitter.finagle.Filter.TypeAgnostic):com.twitter.finagle.Filter[ReqIn,RepOut,ReqOut,RepIn]"></a>
       <a id="agnosticAndThen(TypeAgnostic):Filter[Request,Response,Request,View]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -252,7 +252,7 @@ to be applied to all routes in that module.</p></div><div class="toggleContainer
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Filter</dd></dl></div>
     </li><li name="com.twitter.finagle.Filter#andThenIf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="andThenIf[Req2&lt;:&lt;?&gt;,Rep2&lt;:&lt;?&gt;](condAndFilter:&lt;?&gt;):com.twitter.finagle.Filter[ReqIn,RepOut,Req2,Rep2]"></a>
+      <a id="andThenIf[Req2&gt;:ReqOut,Rep2&lt;:RepIn](condAndFilter:(Boolean,com.twitter.finagle.Filter[ReqOut,RepIn,Req2,Rep2])):com.twitter.finagle.Filter[ReqIn,RepOut,Req2,Rep2]"></a>
       <a id="andThenIf[Req2&gt;:Request,Rep2&lt;:View]((Boolean,Filter[Request,View,Req2,Rep2])):Filter[Request,Response,Req2,Rep2]"></a>
       <h4 class="signature">
       <span class="modifier_kind">

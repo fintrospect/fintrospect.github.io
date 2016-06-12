@@ -47,13 +47,13 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">RequestValidation</span><span class="result"> extends (<a href="RouteSpec.html" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a>) ⇒ <a href="parameters/Extractable.html" class="extype" name="io.fintrospect.parameters.Extractable">Extractable</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="scala.Nothing">Nothing</span>]</span>
+        <span class="name">RequestValidation</span><span class="result"> extends (<a href="RouteSpec.html" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a>) ⇒ <a href="parameters/Extractor.html" class="extype" name="io.fintrospect.parameters.Extractor">Extractor</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent">(<a href="RouteSpec.html" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a>) ⇒ <a href="parameters/Extractable.html" class="extype" name="io.fintrospect.parameters.Extractable">Extractable</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="scala.Nothing">Nothing</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent">(<a href="RouteSpec.html" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a>) ⇒ <a href="parameters/Extractor.html" class="extype" name="io.fintrospect.parameters.Extractor">Extractor</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="scala.Nothing">Nothing</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -96,14 +96,14 @@
               <h3>Abstract Value Members</h3>
               <ol><li name="scala.Function1#apply" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="apply(v1:T1):R"></a>
-      <a id="apply(RouteSpec):Extractable[Request,Nothing]"></a>
+      <a id="apply(RouteSpec):Extractor[Request,Nothing]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="v1">v1: <a href="RouteSpec.html" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a></span>)</span><span class="result">: <a href="parameters/Extractable.html" class="extype" name="io.fintrospect.parameters.Extractable">Extractable</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="scala.Nothing">Nothing</span>]</span>
+        <span class="name">apply</span><span class="params">(<span name="v1">v1: <a href="RouteSpec.html" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a></span>)</span><span class="result">: <a href="parameters/Extractor.html" class="extype" name="io.fintrospect.parameters.Extractor">Extractor</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#io.fintrospect.RouteSpec$$RequestValidation@apply(v1:T1):R" title="Permalink" target="_top">
@@ -169,14 +169,14 @@
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Function1#andThen" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="andThen[A](g:R=&gt;A):T1=&gt;A"></a>
-      <a id="andThen[A]((Extractable[Request,Nothing])⇒A):(RouteSpec)⇒A"></a>
+      <a id="andThen[A]((Extractor[Request,Nothing])⇒A):(RouteSpec)⇒A"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">andThen</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="g">g: (<a href="parameters/Extractable.html" class="extype" name="io.fintrospect.parameters.Extractable">Extractable</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="scala.Nothing">Nothing</span>]) ⇒ <span class="extype" name="scala.Function1.andThen.A">A</span></span>)</span><span class="result">: (<a href="RouteSpec.html" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a>) ⇒ <span class="extype" name="scala.Function1.andThen.A">A</span></span>
+        <span class="name">andThen</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="g">g: (<a href="parameters/Extractor.html" class="extype" name="io.fintrospect.parameters.Extractor">Extractor</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="scala.Nothing">Nothing</span>]) ⇒ <span class="extype" name="scala.Function1.andThen.A">A</span></span>)</span><span class="result">: (<a href="RouteSpec.html" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a>) ⇒ <span class="extype" name="scala.Function1.andThen.A">A</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#io.fintrospect.RouteSpec$$RequestValidation@andThen[A](g:R=&gt;A):T1=&gt;A" title="Permalink" target="_top">
@@ -229,14 +229,14 @@
         </dd></dl></div>
     </li><li name="scala.Function1#compose" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="compose[A](g:A=&gt;T1):A=&gt;R"></a>
-      <a id="compose[A]((A)⇒RouteSpec):(A)⇒Extractable[Request,Nothing]"></a>
+      <a id="compose[A]((A)⇒RouteSpec):(A)⇒Extractor[Request,Nothing]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">compose</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="g">g: (<span class="extype" name="scala.Function1.compose.A">A</span>) ⇒ <a href="RouteSpec.html" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a></span>)</span><span class="result">: (<span class="extype" name="scala.Function1.compose.A">A</span>) ⇒ <a href="parameters/Extractable.html" class="extype" name="io.fintrospect.parameters.Extractable">Extractable</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="scala.Nothing">Nothing</span>]</span>
+        <span class="name">compose</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="g">g: (<span class="extype" name="scala.Function1.compose.A">A</span>) ⇒ <a href="RouteSpec.html" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a></span>)</span><span class="result">: (<span class="extype" name="scala.Function1.compose.A">A</span>) ⇒ <a href="parameters/Extractor.html" class="extype" name="io.fintrospect.parameters.Extractor">Extractor</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#io.fintrospect.RouteSpec$$RequestValidation@compose[A](g:A=&gt;T1):A=&gt;R" title="Permalink" target="_top">
@@ -519,7 +519,7 @@
 
         <div id="inheritedMembers">
         <div class="parent" name="scala.Function1">
-              <h3>Inherited from (<a href="RouteSpec.html" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a>) ⇒ <a href="parameters/Extractable.html" class="extype" name="io.fintrospect.parameters.Extractable">Extractable</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="scala.Nothing">Nothing</span>]</h3>
+              <h3>Inherited from (<a href="RouteSpec.html" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a>) ⇒ <a href="parameters/Extractor.html" class="extype" name="io.fintrospect.parameters.Extractor">Extractor</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="scala.Nothing">Nothing</span>]</h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">

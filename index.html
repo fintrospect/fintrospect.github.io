@@ -1,55 +1,223 @@
-<!DOCTYPE html><html><head><meta charset="utf8"/><title>fintrospect</title><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta name="description" content="Fintrospect is a library that adds an intelligent HTTP routing layer to the Finagle RPC framework from Twitter"/><meta name="keywords" content="fintrospect finagle http server scala fast"/><link rel="icon" type="image/png" href="images/eye-32px.png"/><link rel="stylesheet" href="css/global.css"/><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro"/><script src="js/jquery/jquery.min.js"></script><script src="js/bootstrap/bootstrap.js"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-69281315-3', 'auto');
-ga('send', 'pageview');</script></head><body><header><nav role="navigation" class="navbar navbar-default navbar-fixed-top"><div class="container-fluid"><div class="navbar-header"><button data-toggle="collapse" data-target="#navbar-top-collapse-1" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="http://fintrospect.io" class="navbar-brand">fintrospect</a></div><div id="navbar-top-collapse-1" class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right"><li><a href="https://bintray.com/daviddenton/maven/fintrospect/_latestVersion" target="_top"><img src="https://api.bintray.com/packages/daviddenton/maven/fintrospect/images/download.svg"/></a></li><li><a href="https://travis-ci.org/daviddenton/fintrospect" target="_top"><img src="https://travis-ci.org/daviddenton/fintrospect.svg?branch=master"/></a></li><li><a href="https://coveralls.io/github/daviddenton/fintrospect?branch=master" target="_top"><img src="https://coveralls.io/repos/daviddenton/fintrospect/badge.svg?branch=master"/></a></li><li><a href="https://gitter.im/daviddenton/fintrospect" target="_top"><img src="https://badges.gitter.im/daviddenton/fintrospect.svg"/></a></li><li><a href="https://twitter.com/fintrospectdev" target="_top"><img src="images/twitter.png" class="twitter"/></a></li><li><a href="http://github.com/daviddenton/fintrospect" target="_top"><img src="images/GitHub-Mark-32px.png"/></a></li></ul></div></div></nav></header><main><div class="container"><div class="row"><div class="col-sm-3"><div class="logo"><img src="images/eye.png" class="logo"/></div><ul class="nav nav-pills nav-stacked nav-docs"><li><h1>guide</h1></li><li class="active"><a href="http://fintrospect.io">overview</a></li><li><a href="http://fintrospect.io/installation">installation</a></li><li><a href="http://fintrospect.io/request-parameters-and-bodies">request parameters & bodies</a></li><li><a href="http://fintrospect.io/defining-routes">defining routes</a></li><li><a href="http://fintrospect.io/server-routes">server routes</a></li><li><a href="http://fintrospect.io/client-routes">client routes</a></li><li><a href="http://fintrospect.io/building-http-responses">building http responses</a></li><li><a href="http://fintrospect.io/cross-field-validation">cross-field validation</a></li><li><a href="http://fintrospect.io/templating-and-static-content">templating & static content</a></li><li><a href="http://fintrospect.io/testing">testing</a></li><li><a href="http://fintrospect.io/examples">examples</a></li><li><h1>misc</h1></li><li><a href="http://fintrospect.io/api">api docs</a></li><li><a href="http://fintrospect.io/changelog">changelog & migration</a></li><li><a href="http://fintrospect.io/contributing">contributing</a></li></ul></div><div class="col-sm-9"><article class="article-docs"><h1>overview</h1><p>Fintrospect is a library that adds an intelligent HTTP routing layer to the 
-<a href="http://twitter.github.io/finagle/" target="_top">Finagle</a> RPC framework from Twitter. It provides a simple way to 
-implement contracts for both server and client-side HTTP services which are:</p>
-<ul>
-<li><code>Type-safe</code> : auto-marshalls all request parameters/bodies into the correct types (including primitives + JSON/XML etc...)</li>
-<li><code>Auto-validating</code> : the presence of required and optional request parameters and bodies are checked before entering service-layer code</li>
-<li><code>Auto-documenting</code> : runtime generation of endpoint documentation such as <a href="http://swagger.io/" target="_top">Swagger</a> JSON or web sitemap XML. 
-Generates <a href="http://json-schema.org/" target="_top">JSON Schema</a> for example object formats to be included in these API docs.</li>
-<li><code>Uniform</code> : reuse the same contract to define both incoming or outgoing Finagle HTTP services. This also allows extremely low effort fake servers to be created</li>
-</ul>
-<p>Additionally, Fintrospect provides a number of mechanisms to leverage these routes:</p>
-<ul>
-<li>Easily build type-safe HTTP responses with a set of custom builders for a wide variety of message formats:<ul>
-<li>JSON: <a href="http://argo.sourceforge.net/" target="_top">Argo</a>, <a href="http://argonaut.io/" target="_top">Argonaut</a>, <a href="https://github.com/travisbrown/circe" target="_top">Circe</a>, <a href="https://github.com/google/gson" target="_top">GSON</a>, <a href="http://json4s.org/" target="_top">Json4S</a>, <a href="https://github.com/google/gson" target="_top">Play JSON</a>, <a href="https://github.com/google/gson" target="_top">Spray JSON</a></li>
-<li>Native implementations of XML, Plain Text, HTML, XHTML</li>
-</ul>
-</li>
-<li>Serve static files from the classpath</li>
-<li>Template <code>View</code> support for building responses with <a href="http://mustache.github.io/" target="_top">Mustache</a> or <a href="http://handlebarsjs.com" target="_top">Handlebars</a></li>
-<li>Anonymising headers for dynamic-path based endpoints, removing all dynamic path elements. This allows, for example, calls to particular endpoints to be grouped for metric purposes. e.g. 
-<code>/search/author/rowling</code> becomes <code>/search/author/{name}</code></li>
-<li>Interacts seamlessly with other Finagle based libraries, such as <a href="https://github.com/finagle/finagle-oauth2" target="_top">Finagle OAuth2</a> </li>
-<li>Utilities to help you unit-test endpoint services and write HTTP contract tests for remote dependencies </li>
-</ul>
-<h3>broad concepts</h3><p>The main concepts in play:</p>
-<ul>
-<li><code>RouteSpec</code>: defines the self-describing contract of an HTTP endpoint</li>
-<li><code>ServerRoute</code>: the binding of a <code>RouteSpec</code> to a Finagle <code>Service</code>  implementing some business-logic, to create an inbound HTTP endpoint</li>
-<li><code>RouteClient</code>: the binding of a <code>RouteSpec</code> to a Finagle <code>Service</code> representing an HTTP client, to create a simple function for making outbound HTTP calls</li>
-<li><code>ParameterSpec</code>: defines the acceptable format for a request parameter (Path/Query/Header/Form-field). Provides the auto-marshalling mechanic for serializing and deserializing objects to and from HTTP messages</li>
-<li><code>BodySpec</code>: similar to <code>ParameterSpec</code>, but applied to the body of an HTTP message</li>
-<li><code>ModuleSpec</code>: defines a set of <code>ServerRoute</code> instances which are grouped under a particular request path. These modules can be combined and then converted to a Finagle <code>Service</code> and attached to a Finagle HTTP server. Each module 
-provides an endpoint under which it&#39;s own runtime-generated documentation can be served (eg. in <a href="http://swagger.io/" target="_top">Swagger</a> format)</li>
-<li><code>ResponseSpec</code>: defines the characteristics of a possible response generated by a <code>ServerRoute</code> </li>
-</ul>
-<h3>regarding finagle</h3><p>Since Fintrospect is build on top of Finagle, it&#39;s worth acquainting yourself with it&#39;s concepts, which can be found <a href="http://twitter.github.io/finagle/guide" target="_top">here</a>. </p>
-<h4>&tldr; finagle primer</h4><ol>
-<li>Finagle provides protocol-agnostic RPC and is based on Netty</li>
-<li>It is mainly asynchronous and makes heavy usage of Twitter&#39;s version of Scala Futures</li>
-<li>It defines uniform <code>Service</code> and <code>Filter</code> interfaces for both client and server APIs that are effectively a single method...<pre><code class="language-scala">Service:  def apply(request : Request) : Future[Response]
-Filter:   def apply(request : RequestIn, service : Service[RequestOut, ResponseIn]) : Future[ResponseOut]
-</code></pre>
-</li>
-<li><code>Filters</code> can be chained together and then applied to a <code>Service</code>, which results in another <code>Service</code>. This is useful to 
-apply layers of functionality such as caching headers, retry behaviour, and timeouts.</li>
-</ol>
-<h3>a note on style</h3><ul>
-<li>The code in this guide has omitted imports that would have made the it read more concisely. The sacrifices we make in the name of learning... :)</li>
-</ul>
-<p><a class="next" href="http://fintrospect.io/installation" target="_top"><button type="button" class="btn btn-sm btn-default">next: installation</button></a></p></article></div></div></div></main><footer><span class="left">project maintained by <a href="https://github.com/daviddenton">daviddenton</a></span><span class="right"> site powered by <a href="https://github.com/jvandemo/hb-bootstrap">hb-bootstrap</a> for <a href="http://harpjs.com">Harp</a> by <a href="http://www.jvandemo.com">Jurgen Van de Moere</a></span><script>$(function () { $('[data-toggle="tooltip"]').tooltip() })</script></footer></body></html>
+<!DOCTYPE HTML>
+<!--
+	Prologue 1.0 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Prologue by HTML5 UP</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header" class="skel-panels-fixed">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Jane Doe</h1>
+							<span class="byline">Hyperspace Engineer</span>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-panels-ignoreHref"><span class="icon icon-home">Intro</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-panels-ignoreHref"><span class="icon icon-th">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-panels-ignoreHref"><span class="icon icon-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-panels-ignoreHref"><span class="icon icon-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+						
+				</div>
+				
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon icon-twitter"><span>Twitter</span></a></li>
+							<li><a href="#" class="icon icon-facebook"><span>Facebook</span></a></li>
+							<li><a href="#" class="icon icon-github"><span>Github</span></a></li>
+							<li><a href="#" class="icon icon-dribbble"><span>Dribbble</span></a></li>
+							<li><a href="#" class="icon icon-envelope"><span>Email</span></a></li>
+						</ul>
+				
+				</div>
+			
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+			
+				<!-- Intro -->
+				<section id="top" class="one">
+	<div class="container">
+
+		<a href="http://ineedchemicalx.deviantart.com/art/Moonscape-381829905" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+
+		<header>
+			<h2 class="alt">This is <strong>Prologue</strong>. A <a href="http://html5up.net/license">free</a>, fully responsive<br />
+			site template by <a href="http://html5up.net">HTML5 UP</a>.</h2>
+		</header>
+		
+		<p>Ligula scelerisque justo sem accumsan diam quis. Vitae natoque dictum 
+		etiam semper magnis enim feugiat convallis convallis egestas rhoncus ridiculus 
+		in quis risus curabitur tempor. Orci penatibus quisque laoreet condimentum 
+		sollicitudin accumsan elementum.</p>
+
+		<footer>
+			<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+		</footer>
+
+	</div>
+</section>
+					
+				<!-- Portfolio -->
+				<section id="portfolio" class="two">
+	<div class="container">
+
+		<header>
+			<h2>Portfolio</h2>
+		</header>
+		
+		<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+		egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
+		Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis 
+		fusce hendrerit lacus ridiculus.</p>
+	
+		<div class="row">
+			<div class="4u">
+				<article class="item">
+					<a href="http://ineedchemicalx.deviantart.com/art/A-million-suns-384369739" class="image full"><img src="images/pic02.jpg" alt="" /></a>
+					<header>
+						<h3>Ipsum Feugiat</h3>
+					</header>
+				</article>
+				<article class="item">
+					<a href="http://ineedchemicalx.deviantart.com/art/Mind-is-a-clear-stage-375431607" class="image full"><img src="images/pic03.jpg" alt="" /></a>
+					<header>
+						<h3>Rhoncus Semper</h3>
+					</header>
+				</article>
+			</div>
+			<div class="4u">
+				<article class="item">
+					<a href="http://ineedchemicalx.deviantart.com/art/You-really-got-me-345249340" class="image full"><img src="images/pic04.jpg" alt="" /></a>
+					<header>
+						<h3>Magna Nullam</h3>
+					</header>
+				</article>
+				<article class="item">
+					<a href="http://ineedchemicalx.deviantart.com/art/Ad-infinitum-354203162" class="image full"><img src="images/pic05.jpg" alt="" /></a>
+					<header>
+						<h3>Natoque Vitae</h3>
+					</header>
+				</article>
+			</div>
+			<div class="4u">
+				<article class="item">
+					<a href="http://ineedchemicalx.deviantart.com/art/Elysium-355393900" class="image full"><img src="images/pic06.jpg" alt="" /></a>
+					<header>
+						<h3>Dolor Penatibus</h3>
+					</header>
+				</article>
+				<article class="item">
+					<a href="http://ineedchemicalx.deviantart.com/art/Emperor-of-the-Stars-370265193" class="image full"><img src="images/pic07.jpg" alt="" /></a>
+					<header>
+						<h3>Orci Convallis</h3>
+					</header>
+				</article>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+				<!-- About Me -->
+				<section id="about" class="three">
+	<div class="container">
+
+		<header>
+			<h2>About Me</h2>
+		</header>
+
+		<a href="http://ineedchemicalx.deviantart.com/art/Pasadena-357650036" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+		
+		<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus 
+		ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae 
+		laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem 
+		parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper 
+		dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec 
+		ornare iaculis.</p>
+
+	</div>
+</section>
+			
+				<!-- Contact -->
+				<section id="contact" class="four">
+	<div class="container">
+
+		<header>
+			<h2>Contact</h2>
+		</header>
+
+		<p>Elementum sem parturient nulla quam placerat viverra 
+		mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia 
+		donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc 
+		orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+		
+		<form method="post" action="#">
+			<div class="row half">
+				<div class="6u"><input type="text" class="text" name="name" placeholder="Name" /></div>
+				<div class="6u"><input type="text" class="text" name="email" placeholder="Email" /></div>
+			</div>
+			<div class="row half">
+				<div class="12u">
+					<textarea name="message" placeholder="Message"></textarea>
+				</div>
+			</div>
+			<div class="row">
+				<div class="12u">
+					<a href="#" class="button submit">Send Message</a>
+				</div>
+			</div>
+		</form>
+
+	</div>
+</section>
+
+			</div>
+
+		<!-- Footer -->
+		<div id="footer">
+	<!-- Copyright -->
+	<div class="copyright">
+		<p>&copy; 2013 Jane Doe. All rights reserved.</p>
+		<ul class="menu">
+			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			<li>Images: <a href="http://ineedchemicalx.deviantart.com">Felicia Simion</a></li>
+			<li>Modified to work with the <a href="https://www.harp.io">Harp Platform</a></li>
+		</ul>
+	</div>
+</div>
+	</body>
+</html>
