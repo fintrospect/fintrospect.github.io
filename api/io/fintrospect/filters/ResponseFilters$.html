@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>Response - io.fintrospect.util.Caching.Response</title>
-          <meta name="description" content="Response - io.fintrospect.util.Caching.Response" />
-          <meta name="keywords" content="Response io.fintrospect.util.Caching.Response" />
+          <title>ResponseFilters - io.fintrospect.filters.ResponseFilters</title>
+          <meta name="description" content="ResponseFilters - io.fintrospect.filters.ResponseFilters" />
+          <meta name="keywords" content="ResponseFilters io.fintrospect.filters.ResponseFilters" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -16,7 +16,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
-            var hash = 'io.fintrospect.util.Caching$$Response$';
+            var hash = 'io.fintrospect.filters.ResponseFilters$';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -29,11 +29,11 @@
         <body class="value">
       <div id="definition">
         <img alt="Object" src="../../../lib/object_big.png" />
-        <p id="owner"><a href="../../package.html" class="extype" name="io">io</a>.<a href="../package.html" class="extype" name="io.fintrospect">fintrospect</a>.<a href="package.html" class="extype" name="io.fintrospect.util">util</a>.<a href="Caching$.html" class="extype" name="io.fintrospect.util.Caching">Caching</a></p>
-        <h1>Response</h1><h3><span class="morelinks"><div>Related Doc:
-            <a href="Caching$.html" class="extype" name="io.fintrospect.util.Caching">package Caching</a>
+        <p id="owner"><a href="../../package.html" class="extype" name="io">io</a>.<a href="../package.html" class="extype" name="io.fintrospect">fintrospect</a>.<a href="package.html" class="extype" name="io.fintrospect.filters">filters</a></p>
+        <h1>ResponseFilters</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="io.fintrospect.filters">package filters</a>
           </div></span></h3><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -45,7 +45,7 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">Response</span>
+        <span class="name">ResponseFilters</span>
       </span>
       </h4>
       
@@ -70,7 +70,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="io.fintrospect.util.Caching.Response"><span>Response</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="io.fintrospect.filters.ResponseFilters"><span>ResponseFilters</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -107,7 +107,7 @@
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -124,7 +124,7 @@
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@##():Int" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@##():Int" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -141,88 +141,133 @@
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@==(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@==(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="io.fintrospect.util.Caching.Response#AddETag" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="AddETag[T](predicate:com.twitter.finagle.http.Response=&gt;Boolean):com.twitter.finagle.Filter[T,com.twitter.finagle.http.Response,T,com.twitter.finagle.http.Response]"></a>
-      <a id="AddETag[T]((Response)⇒Boolean):Filter[T,Response,T,Response]"></a>
+    </li><li name="io.fintrospect.filters.ResponseFilters#AddDate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AddDate[T](clock:java.time.Clock):com.twitter.finagle.Filter[T,com.twitter.finagle.http.Response,T,com.twitter.finagle.http.Response]"></a>
+      <a id="AddDate[T](Clock):Filter[T,Response,T,Response]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">AddETag</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="predicate">predicate: (<span class="extype" name="com.twitter.finagle.http.Response">Response</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">_.statusCode &lt; 400</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="io.fintrospect.util.Caching.Response.AddETag.T">T</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="io.fintrospect.util.Caching.Response.AddETag.T">T</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+        <span class="name">AddDate</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="clock">clock: <span class="extype" name="java.time.Clock">Clock</span> = <span class="symbol">Clock.systemUTC()</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="io.fintrospect.filters.ResponseFilters.AddDate.T">T</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="io.fintrospect.filters.ResponseFilters.AddDate.T">T</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@AddETag[T](predicate:com.twitter.finagle.http.Response=&gt;Boolean):com.twitter.finagle.Filter[T,com.twitter.finagle.http.Response,T,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@AddDate[T](clock:java.time.Clock):com.twitter.finagle.Filter[T,com.twitter.finagle.http.Response,T,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Hash algo stolen from http://stackoverflow.com/questions/26423662/scalatra-response-hmac-calulation
-By default, only applies when the status code of the response is &lt; 400.</p><div class="fullcomment"><div class="comment cmt"><p>Hash algo stolen from http://stackoverflow.com/questions/26423662/scalatra-response-hmac-calulation
-By default, only applies when the status code of the response is &lt; 400. This is overridable.
-</p></div></div>
-    </li><li name="io.fintrospect.util.Caching.Response#FallbackCacheControl" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="FallbackCacheControl(clock:java.time.Clock,defaultCacheTimings:io.fintrospect.util.Caching.DefaultCacheTimings,predicate:com.twitter.finagle.http.Response=&gt;Boolean):com.twitter.finagle.SimpleFilter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
-      <a id="FallbackCacheControl(Clock,DefaultCacheTimings,(Response)⇒Boolean):SimpleFilter[Request,Response]"></a>
+      <p class="shortcomment cmt">Add Date header to the Response in RFC1123 format.</p>
+    </li><li name="io.fintrospect.filters.ResponseFilters#CatchAll" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CatchAll(responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[_]):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="CatchAll(AbstractResponseBuilder[_]):Filter[Request,Response,Request,Response]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">FallbackCacheControl</span><span class="params">(<span name="clock">clock: <span class="extype" name="java.time.Clock">Clock</span></span>, <span name="defaultCacheTimings">defaultCacheTimings: <a href="Caching$$DefaultCacheTimings.html" class="extype" name="io.fintrospect.util.Caching.DefaultCacheTimings">DefaultCacheTimings</a></span>, <span name="predicate">predicate: (<span class="extype" name="com.twitter.finagle.http.Response">Response</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">_.statusCode &lt; 400</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.SimpleFilter">SimpleFilter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+        <span class="name">CatchAll</span><span class="params">(<span name="responseBuilder">responseBuilder: <a href="../formats/AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a>[_] = <span class="symbol"><span class="name"><a href="../../package.html">Argo.ResponseBuilder</a></span></span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@FallbackCacheControl(clock:java.time.Clock,defaultCacheTimings:io.fintrospect.util.Caching.DefaultCacheTimings,predicate:com.twitter.finagle.http.Response=&gt;Boolean):com.twitter.finagle.SimpleFilter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@CatchAll(responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[_]):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Applies the passed cache timings (Cache-Control, Expires, Vary) to responses, but only if they are not there already.</p><div class="fullcomment"><div class="comment cmt"><p>Applies the passed cache timings (Cache-Control, Expires, Vary) to responses, but only if they are not there already.
-Use this for adding default cache settings.
-By default, only applies when the status code of the response is &lt; 400. This is overridable.
-</p></div></div>
-    </li><li name="io.fintrospect.util.Caching.Response#MaxAge" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="MaxAge(clock:java.time.Clock,maxAge:java.time.Duration,predicate:com.twitter.finagle.http.Response=&gt;Boolean):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
-      <a id="MaxAge(Clock,Duration,(Response)⇒Boolean):Filter[Request,Response,Request,Response]"></a>
+      <p class="shortcomment cmt">Last-gasp Filter which converts uncaught exceptions and converts them into INTERNAL_SERVER_ERRORs
+</p>
+    </li><li name="io.fintrospect.filters.ResponseFilters#ExtractingResponse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ExtractingResponse[O](extractable:io.fintrospect.parameters.Extractor[com.twitter.finagle.http.Response,O]):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,io.fintrospect.parameters.Extraction[O],com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="ExtractingResponse[O](Extractor[Response,O]):Filter[Request,Extraction[O],Request,Response]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">MaxAge</span><span class="params">(<span name="clock">clock: <span class="extype" name="java.time.Clock">Clock</span></span>, <span name="maxAge">maxAge: <span class="extype" name="java.time.Duration">Duration</span></span>, <span name="predicate">predicate: (<span class="extype" name="com.twitter.finagle.http.Response">Response</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">_.statusCode &lt; 400</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+        <span class="name">ExtractingResponse</span><span class="tparams">[<span name="O">O</span>]</span><span class="params">(<span name="extractable">extractable: <a href="../parameters/Extractor.html" class="extype" name="io.fintrospect.parameters.Extractor">Extractor</a>[<span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="io.fintrospect.filters.ResponseFilters.ExtractingResponse.O">O</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <a href="../parameters/Extraction.html" class="extype" name="io.fintrospect.parameters.Extraction">Extraction</a>[<span class="extype" name="io.fintrospect.filters.ResponseFilters.ExtractingResponse.O">O</span>], <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@MaxAge(clock:java.time.Clock,maxAge:java.time.Duration,predicate:com.twitter.finagle.http.Response=&gt;Boolean):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@ExtractingResponse[O](extractable:io.fintrospect.parameters.Extractor[com.twitter.finagle.http.Response,O]):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,io.fintrospect.parameters.Extraction[O],com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">By default, only applies when the status code of the response is &lt; 400.</p><div class="fullcomment"><div class="comment cmt"><p>By default, only applies when the status code of the response is &lt; 400. This is overridable.
-</p></div></div>
-    </li><li name="io.fintrospect.util.Caching.Response#NoCache" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="NoCache(predicate:com.twitter.finagle.http.Response=&gt;Boolean):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
-      <a id="NoCache((Response)⇒Boolean):Filter[Request,Response,Request,Response]"></a>
+      <p class="shortcomment cmt">Extracts the output objects and feeds them into the underlying service.</p>
+    </li><li name="io.fintrospect.filters.ResponseFilters#ExtractingResponse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ExtractingResponse[O](fn:com.twitter.finagle.http.Response=&gt;io.fintrospect.parameters.Extraction[O]):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,io.fintrospect.parameters.Extraction[O],com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="ExtractingResponse[O]((Response)⇒Extraction[O]):Filter[Request,Extraction[O],Request,Response]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">NoCache</span><span class="params">(<span name="predicate">predicate: (<span class="extype" name="com.twitter.finagle.http.Response">Response</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">_.statusCode &lt; 400</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+        <span class="name">ExtractingResponse</span><span class="tparams">[<span name="O">O</span>]</span><span class="params">(<span name="fn">fn: (<span class="extype" name="com.twitter.finagle.http.Response">Response</span>) ⇒ <a href="../parameters/Extraction.html" class="extype" name="io.fintrospect.parameters.Extraction">Extraction</a>[<span class="extype" name="io.fintrospect.filters.ResponseFilters.ExtractingResponse.O">O</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <a href="../parameters/Extraction.html" class="extype" name="io.fintrospect.parameters.Extraction">Extraction</a>[<span class="extype" name="io.fintrospect.filters.ResponseFilters.ExtractingResponse.O">O</span>], <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@NoCache(predicate:com.twitter.finagle.http.Response=&gt;Boolean):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@ExtractingResponse[O](fn:com.twitter.finagle.http.Response=&gt;io.fintrospect.parameters.Extraction[O]):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,io.fintrospect.parameters.Extraction[O],com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">By default, only applies when the status code of the response is &lt; 400.</p><div class="fullcomment"><div class="comment cmt"><p>By default, only applies when the status code of the response is &lt; 400. This is overridable and useful -
-For example you could combine this with a MaxAge for everything &gt;= 400
+      <p class="shortcomment cmt">Extracts an object form the Response output object and feeds them into the underlying service.</p>
+    </li><li name="io.fintrospect.filters.ResponseFilters#ReportingRouteLatency" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ReportingRouteLatency(clock:java.time.Clock)(recordFn:(String,java.time.Duration)=&gt;Unit):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="ReportingRouteLatency(Clock)((String,Duration)⇒Unit):Filter[Request,Response,Request,Response]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ReportingRouteLatency</span><span class="params">(<span name="clock">clock: <span class="extype" name="java.time.Clock">Clock</span></span>)</span><span class="params">(<span name="recordFn">recordFn: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="java.time.Duration">Duration</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@ReportingRouteLatency(clock:java.time.Clock)(recordFn:(String,java.time.Duration)=&gt;Unit):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Report the latency on a particular route to a callback function, passing the &quot;X-Fintrospect-Route-Name&quot; header and response status bucket (e.g.</p><div class="fullcomment"><div class="comment cmt"><p>Report the latency on a particular route to a callback function, passing the &quot;X-Fintrospect-Route-Name&quot; header and response status bucket (e.g. 2xx)
+for identification. This is useful for logging metrics.
 </p></div></div>
+    </li><li name="io.fintrospect.filters.ResponseFilters#Tap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Tap(rFn:com.twitter.finagle.http.Response=&gt;Unit):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="Tap((Response)⇒Unit):Filter[Request,Response,Request,Response]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Tap</span><span class="params">(<span name="rFn">rFn: (<span class="extype" name="com.twitter.finagle.http.Response">Response</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@Tap(rFn:com.twitter.finagle.http.Response=&gt;Unit):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Intercept a successful response before it is returned.</p>
+    </li><li name="io.fintrospect.filters.ResponseFilters#TapFailure" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TapFailure(t:Throwable=&gt;Unit):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="TapFailure((Throwable)⇒Unit):Filter[Request,Response,Request,Response]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TapFailure</span><span class="params">(<span name="t">t: (<span class="extype" name="scala.Throwable">Throwable</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@TapFailure(t:Throwable=&gt;Unit):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Intercept a failed response before it is returned.</p>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -235,7 +280,7 @@ For example you could combine this with a MaxAge for everything &gt;= 400
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -252,7 +297,7 @@ For example you could combine this with a MaxAge for everything &gt;= 400
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@clone():Object" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@clone():Object" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -275,7 +320,7 @@ For example you could combine this with a MaxAge for everything &gt;= 400
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -292,7 +337,7 @@ For example you could combine this with a MaxAge for everything &gt;= 400
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -309,7 +354,7 @@ For example you could combine this with a MaxAge for everything &gt;= 400
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@finalize():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@finalize():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -332,7 +377,7 @@ For example you could combine this with a MaxAge for everything &gt;= 400
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@getClass():Class[_]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@getClass():Class[_]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -349,7 +394,7 @@ For example you could combine this with a MaxAge for everything &gt;= 400
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@hashCode():Int" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@hashCode():Int" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -366,7 +411,7 @@ For example you could combine this with a MaxAge for everything &gt;= 400
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -383,7 +428,7 @@ For example you could combine this with a MaxAge for everything &gt;= 400
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -400,7 +445,7 @@ For example you could combine this with a MaxAge for everything &gt;= 400
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@notify():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@notify():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -417,7 +462,7 @@ For example you could combine this with a MaxAge for everything &gt;= 400
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@notifyAll():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@notifyAll():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -434,7 +479,7 @@ For example you could combine this with a MaxAge for everything &gt;= 400
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -451,7 +496,7 @@ For example you could combine this with a MaxAge for everything &gt;= 400
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@toString():String" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@toString():String" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -468,7 +513,7 @@ For example you could combine this with a MaxAge for everything &gt;= 400
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@wait():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@wait():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -491,7 +536,7 @@ For example you could combine this with a MaxAge for everything &gt;= 400
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -514,7 +559,7 @@ For example you could combine this with a MaxAge for everything &gt;= 400
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.Caching$$Response$@wait(x$1:Long):Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.ResponseFilters$@wait(x$1:Long):Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

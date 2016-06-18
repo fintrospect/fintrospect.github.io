@@ -12,8 +12,10 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <li>Option to dynamically reload View templates.</li>
 <li>Drop support for Scala 2.10 (when finagle.http does).</li>
 </ul>
-<h2>12.21.0 (uncut)</h2><ul>
+<h2>12.21.0</h2><ul>
 <li>Added <code>Validator</code> to provide error collection.</li>
+<li>Ability to map <code>ParameterSpec</code>s. This comes in useful when declaring ParameterSpecs of <code>AnyVal</code> wrapper classes. </li>
+<li>(Small) Break: repackage of filter classes <code>io.fintrospect.util</code> -&gt; <code>io.fintrospect.filters</code>. Renames are: <code>Filters.Request</code> -&gt; <code>RequestFilters</code>, <code>Filters.Response</code> -&gt; <code>ResponseFilters</code></li>
 <li>(Small) Break: <code>Extractable</code> renamed to <code>Extractor</code></li>
 </ul>
 <h2>12.20.1</h2><ul>

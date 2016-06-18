@@ -47,7 +47,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">ParameterSpec</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="paramType">paramType: <a href="ParamType.html" class="extype" name="io.fintrospect.parameters.ParamType">ParamType</a></span>, <span name="deserialize">deserialize: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span></span>, <span name="serialize">serialize: (<span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">(s:T) =&gt; s.toString</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">ParameterSpec</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="paramType">paramType: <a href="ParamType.html" class="extype" name="io.fintrospect.parameters.ParamType">ParamType</a></span>, <span name="deserialize">deserialize: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span></span>, <span name="serialize">serialize: (<span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">(s: T) =&gt; s.toString</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -100,7 +100,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">ParameterSpec</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="paramType">paramType: <a href="ParamType.html" class="extype" name="io.fintrospect.parameters.ParamType">ParamType</a></span>, <span name="deserialize">deserialize: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span></span>, <span name="serialize">serialize: (<span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">(s:T) =&gt; s.toString</span></span>)</span>
+        <span class="name">ParameterSpec</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="paramType">paramType: <a href="ParamType.html" class="extype" name="io.fintrospect.parameters.ParamType">ParamType</a></span>, <span name="deserialize">deserialize: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span></span>, <span name="serialize">serialize: (<span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">(s: T) =&gt; s.toString</span></span>)</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.parameters.ParameterSpec@&lt;init&gt;(name:String,description:Option[String],paramType:io.fintrospect.parameters.ParamType,deserialize:String=&gt;T,serialize:T=&gt;String):io.fintrospect.parameters.ParameterSpec[T]" title="Permalink" target="_top">
@@ -318,6 +318,42 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="io.fintrospect.parameters.ParameterSpec#map" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="map[O](in:T=&gt;O):io.fintrospect.parameters.ParameterSpec[O]"></a>
+      <a id="map[O]((T)⇒O):ParameterSpec[O]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">map</span><span class="tparams">[<span name="O">O</span>]</span><span class="params">(<span name="in">in: (<span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.ParameterSpec.map.O">O</span></span>)</span><span class="result">: <a href="" class="extype" name="io.fintrospect.parameters.ParameterSpec">ParameterSpec</a>[<span class="extype" name="io.fintrospect.parameters.ParameterSpec.map.O">O</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.ParameterSpec@map[O](in:T=&gt;O):io.fintrospect.parameters.ParameterSpec[O]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Traditional map operation.</p><div class="fullcomment"><div class="comment cmt"><p>Traditional map operation. Duh.
+</p></div></div>
+    </li><li name="io.fintrospect.parameters.ParameterSpec#map" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="map[O](in:T=&gt;O,out:O=&gt;T):io.fintrospect.parameters.ParameterSpec[O]"></a>
+      <a id="map[O]((T)⇒O,(O)⇒T):ParameterSpec[O]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">map</span><span class="tparams">[<span name="O">O</span>]</span><span class="params">(<span name="in">in: (<span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.ParameterSpec.map.O">O</span></span>, <span name="out">out: (<span class="extype" name="io.fintrospect.parameters.ParameterSpec.map.O">O</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span></span>)</span><span class="result">: <a href="" class="extype" name="io.fintrospect.parameters.ParameterSpec">ParameterSpec</a>[<span class="extype" name="io.fintrospect.parameters.ParameterSpec.map.O">O</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.ParameterSpec@map[O](in:T=&gt;O,out:O=&gt;T):io.fintrospect.parameters.ParameterSpec[O]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Combined map and reverse-map operation
+</p>
     </li><li name="io.fintrospect.parameters.ParameterSpec#name" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="name:String"></a>
       <a id="name:String"></a>

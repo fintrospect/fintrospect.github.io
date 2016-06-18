@@ -31,8 +31,8 @@ val route = RouteSpec().at(Get) bindTo Service.mk {
 to do so since any missing or invalid mandatory parameters short-circuit the comprehension.)</p>
 <p><code>Extractable</code> is modular, so instances can be embedded inside each other in for comprehensions to build object graphs from the 
 incoming request.</p>
-<p>The above example can be further simplified by use of the built-in <code>Filters.Request.ExtractableRequest</code> filter to transform the input:</p>
-<pre><code>  Filters.Request.ExtractableRequest(range).andThen(Service.mk[DateRange, Response] {
+<p>The above example can be further simplified by use of the built-in <code>RequestFilters.ExtractableRequest</code> filter to transform the input:</p>
+<pre><code>  RequestFilters.ExtractableRequest(range).andThen(Service.mk[DateRange, Response] {
     dateRange =&gt; ...
   })
 </code></pre><p><a class="next" href="http://fintrospect.io/templating-and-static-content" target="_top"><button type="button" class="btn btn-sm btn-default">next: templating and static content</button></a></p></article></div></div></div></main><footer><span class="left">project maintained by <a href="https://github.com/daviddenton">daviddenton</a></span><span class="right"> site powered by <a href="https://github.com/jvandemo/hb-bootstrap">hb-bootstrap</a> for <a href="http://harpjs.com">Harp</a> by <a href="http://www.jvandemo.com">Jurgen Van de Moere</a></span><script>$(function () { $('[data-toggle="tooltip"]').tooltip() })</script></footer></body></html>
