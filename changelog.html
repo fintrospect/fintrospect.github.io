@@ -9,7 +9,10 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <h2>Backlog/upcoming</h2><ul>
 <li>Add strict <code>Content-Type</code> header checking for <code>RouteSpec</code>s based on <code>consuming()</code> and <code>withBody()</code> settings. Option for non-strictness.</li>
 <li>Add strict <code>Accept</code> header checking for <code>RouteSpec</code>s based on <code>producing()</code> settings. Option for non-strictness.</li>
-<li>Option to dynamically reload View templates.</li>
+</ul>
+<h2>13.2.0</h2><ul>
+<li>Dynamic reloading of templates. See implementations of <code>Templates</code> (Mustache and Handlebars), or <code>templating</code> example.</li>
+<li>Breaking; Combined <code>RenderMustacheView</code> and <code>RenderHandlebarsView</code> into <code>RenderView</code>.</li>
 </ul>
 <h2>13.1.0</h2><ul>
 <li>Upgrade of some library dependency versions (<code>scala-xml</code> and <code>scala-parser-combinators</code>)</li>

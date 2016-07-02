@@ -11,11 +11,19 @@ templating <code>Filter</code> as a Module-level filter:</p>
 
 def showMessage() = Service.mk[Request, View] { _ =&gt; Future.value(ViewMessage(&quot;some value to be displayed&quot;)) }
 
+val loader = if(devMode) MustacheTemplateLoaders.HotReload(&quot;src/main/resources&quot;) else MustacheTemplateLoaders.CachingClasspath(&quot;.&quot;)
+
 val webModule = ModuleSpec[Request, View](Root / &quot;web&quot;,
     new SiteMapModuleRenderer(new URL(&quot;http://root.com&quot;)),
-    new RenderMustacheView(Html.ResponseBuilder))
+    new RenderMustacheView(Html.ResponseBuilder, loader))
     .withRoute(RouteSpec().at(Get) / &quot;message&quot; bindTo showMessage)
-</code></pre><p>Similarly to how the <code>ResponseBuilder</code> works, no 3rd-party dependencies are bundled with Fintrospect - simply import the extra SBT dependencies 
+</code></pre><p>Available implementations of the <code>TemplateLoader</code> are (see the relevant implementation of <code>TemplateLoaders</code>):</p>
+<ul>
+<li>cached from the classpath</li>
+<li>cached from the filesystem</li>
+<li>hot-reloading from the filesystem</li>
+</ul>
+<p>Similarly to how the <code>ResponseBuilder</code> works, no 3rd-party dependencies are bundled with Fintrospect - simply import the extra SBT dependencies 
 as required:</p>
 <table class="code table table-bordered">
 <tr>
@@ -27,13 +35,13 @@ as required:</p>
 <tr>
   <td><a href="http://handlebarsjs.com">Handlebars</a></td>
   <td>.hbs</td>
-  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-handlebars&quot; % &quot;13.1.0&quot;</td>
+  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-handlebars&quot; % &quot;13.2.0&quot;</td>
   <td><a data-toggle="tooltip" href="#" title="io.fintrospect.templating.RenderHandlebarsView">RenderHandlebarsView</a></td>
 </tr>
 <tr>
   <td><a href="http://mustache.github.io/">Mustache</a> (v2.11 only)</td>
   <td>.mustache</td>
-  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-mustache&quot; % &quot;13.1.0&quot;</td>
+  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-mustache&quot; % &quot;13.2.0&quot;</td>
   <td><a data-toggle="tooltip" href="#" title="io.fintrospect.templating.RenderMustacheView">RenderMustacheView</a></td>
 </tr>
 </table>
