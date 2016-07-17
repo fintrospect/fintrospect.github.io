@@ -10,7 +10,20 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <li>Add strict <code>Content-Type</code> header checking for <code>RouteSpec</code>s based on <code>consuming()</code> and <code>withBody()</code> settings. Option for non-strictness.</li>
 <li>Add strict <code>Accept</code> header checking for <code>RouteSpec</code>s based on <code>producing()</code> settings. Option for non-strictness.</li>
 </ul>
-<h2>13.2.0</h2><ul>
+<h2>13.4.0</h2><ul>
+<li>Upgrade to Finagle <code>6.36.0</code></li>
+<li>Fixed site API docs</li>
+<li>Added <code>Body.webform()</code>, which allows errors to be collected for feedback to the user. See <code>formvalidation</code> example</li>
+<li>Breaking: Removed <code>NotProvided</code> extraction option. Extraction now exposes an <code>Option</code> instead</li>
+<li>Breaking: Renamed <code>InvalidParameter</code> to <code>ExtractionError</code></li>
+<li>Breaking: Repackage of some classes from <code>io.fintrospect.parameters</code> to <code>io.fintrospect</code> and <code>io.fintrospect.util</code></li>
+</ul>
+<h2>13.3.0</h2><ul>
+<li>Option for empty <code>string</code> validation to be rejected as <code>InvalidParameter</code> in <code>QueryParameters</code> et al.</li>
+<li>Breaking: removed unused <code>HttpRequestResponseUtil:contentFrom()</code> method. Simply use <code>request.contentString</code> instead</li>
+<li><code>ResponseFilter.ReportingRouteLatency()</code> now blocks for reporting latency, as using onSuccess was not accurately reporting.</li>
+</ul>
+<h2>13.2.1</h2><ul>
 <li>Dynamic reloading of templates. See implementations of <code>Templates</code> (Mustache and Handlebars), or <code>templating</code> example.</li>
 <li>Breaking; Combined <code>RenderMustacheView</code> and <code>RenderHandlebarsView</code> into <code>RenderView</code>.</li>
 </ul>
