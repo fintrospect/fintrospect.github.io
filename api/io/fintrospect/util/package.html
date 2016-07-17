@@ -1,0 +1,493 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>util - io.fintrospect.util</title>
+          <meta name="description" content="util - io.fintrospect.util" />
+          <meta name="keywords" content="util io.fintrospect.util" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'io.fintrospect.util.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="io">io</a>.<a href="../package.html" class="extype" name="io.fintrospect">fintrospect</a></p>
+        <h1>util</h1><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">util</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="io.fintrospect.util.Builder" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Builder[T]extendsAnyRef"></a>
+      <a id="Builder[T]:Builder[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Builder.html"><span class="name">Builder</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@Builder[T]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.util.ExtractableParameter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ExtractableParameter[-From,+T]extendsAnyRef"></a>
+      <a id="ExtractableParameter[-From,+T]:ExtractableParameter[From,T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ExtractableParameter.html"><span class="name">ExtractableParameter</span></a><span class="tparams">[<span name="From">-From</span>, <span name="T">+T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@ExtractableParameter[-From,+T]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Mechanism to extract (or fail to extract) a parameter from a particular 'From' context, adding
+</p>
+    </li><li name="io.fintrospect.util.Extracted" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Extracted[T]extendsExtraction[T]withProductwithSerializable"></a>
+      <a id="Extracted[T]:Extracted[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Extracted.html"><span class="name">Extracted</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="value">value: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="io.fintrospect.util.Extracted.T">T</span>]</span>)</span><span class="result"> extends <a href="Extraction.html" class="extype" name="io.fintrospect.util.Extraction">Extraction</a>[<span class="extype" name="io.fintrospect.util.Extracted.T">T</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@Extracted[T]extendsExtraction[T]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents a object which was provided and extracted successfully
+</p>
+    </li><li name="io.fintrospect.util.Extraction" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Extraction[+T]extendsAnyRef"></a>
+      <a id="Extraction[+T]:Extraction[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Extraction.html"><span class="name">Extraction</span></a><span class="tparams">[<span name="T">+T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@Extraction[+T]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Result of an attempt to extract an object from a target
+</p>
+    </li><li name="io.fintrospect.util.ExtractionError" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ExtractionErrorextendsAnyRef"></a>
+      <a id="ExtractionError:ExtractionError"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ExtractionError.html"><span class="name">ExtractionError</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@ExtractionErrorextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.util.ExtractionFailed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ExtractionFailedextendsExtraction[Nothing]withProductwithSerializable"></a>
+      <a id="ExtractionFailed:ExtractionFailed"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ExtractionFailed.html"><span class="name">ExtractionFailed</span></a><span class="params">(<span name="invalid">invalid: <span class="extype" name="scala.Seq">Seq</span>[<a href="ExtractionError.html" class="extype" name="io.fintrospect.util.ExtractionError">ExtractionError</a>]</span>)</span><span class="result"> extends <a href="Extraction.html" class="extype" name="io.fintrospect.util.Extraction">Extraction</a>[<span class="extype" name="scala.Nothing">Nothing</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@ExtractionFailedextendsExtraction[Nothing]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents a object which could not be extracted due to it being invalid or missing when required
+</p>
+    </li><li name="io.fintrospect.util.Extractor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Extractor[-From,+T]extendsAnyRef"></a>
+      <a id="Extractor[-From,+T]:Extractor[From,T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Extractor.html"><span class="name">Extractor</span></a><span class="tparams">[<span name="From">-From</span>, <span name="T">+T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@Extractor[-From,+T]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Mechanism to extract (or fail to extract) an entity value from a particular 'From' context
+</p>
+    </li><li name="io.fintrospect.util.HeapDump" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="HeapDumpextendsService[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="HeapDump:HeapDump"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="HeapDump.html"><span class="name">HeapDump</span></a><span class="result"> extends <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@HeapDumpextendsService[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Service to create and download a heap-dump of the current process.</p><div class="fullcomment"><div class="comment cmt"><p>Service to create and download a heap-dump of the current process. Will only work with Oracle JDK
+installations. Since this is obviously an expensive operation (it creates a temp file on disc which is deleted
+when the request completes) don't bind this service to a publicly available endpoint.
+</p></div></div>
+    </li><li name="io.fintrospect.util.Validated" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Validated[T]extendsValidation[T]withProductwithSerializable"></a>
+      <a id="Validated[T]:Validated[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Validated.html"><span class="name">Validated</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="value">value: <span class="extype" name="io.fintrospect.util.Validated.T">T</span></span>)</span><span class="result"> extends <a href="Validation.html" class="extype" name="io.fintrospect.util.Validation">Validation</a>[<span class="extype" name="io.fintrospect.util.Validated.T">T</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@Validated[T]extendsValidation[T]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.util.Validation" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Validation[+T]extendsAnyRef"></a>
+      <a id="Validation[+T]:Validation[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Validation.html"><span class="name">Validation</span></a><span class="tparams">[<span name="T">+T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@Validation[+T]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Specialised ADT fot validation of parameters from a request
+</p>
+    </li><li name="io.fintrospect.util.ValidationFailed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ValidationFailedextendsValidation[Nothing]withProductwithSerializable"></a>
+      <a id="ValidationFailed:ValidationFailed"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ValidationFailed.html"><span class="name">ValidationFailed</span></a><span class="params">(<span name="errors">errors: <span class="extype" name="scala.Seq">Seq</span>[<a href="ExtractionError.html" class="extype" name="io.fintrospect.util.ExtractionError">ExtractionError</a>]</span>)</span><span class="result"> extends <a href="Validation.html" class="extype" name="io.fintrospect.util.Validation">Validation</a>[<span class="extype" name="scala.Nothing">Nothing</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@ValidationFailedextendsValidation[Nothing]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.util.Validator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Validator[In&lt;:Product]extendsAnyRef"></a>
+      <a id="Validator[In&lt;:Product]:Validator[In]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Validator.html"><span class="name">Validator</span></a><span class="tparams">[<span name="In">In &lt;: <span class="extype" name="scala.Product">Product</span></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@Validator[In&lt;:Product]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="io.fintrospect.util.Extraction" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Extraction"></a>
+      <a id="Extraction:Extraction"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Extraction$.html"><span class="name">Extraction</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@Extraction" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.util.ExtractionError" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ExtractionError"></a>
+      <a id="ExtractionError:ExtractionError"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ExtractionError$.html"><span class="name">ExtractionError</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@ExtractionError" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.util.ExtractionFailed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ExtractionFailed"></a>
+      <a id="ExtractionFailed:ExtractionFailed"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ExtractionFailed$.html"><span class="name">ExtractionFailed</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@ExtractionFailed" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.util.Extractor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Extractor"></a>
+      <a id="Extractor:Extractor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Extractor$.html"><span class="name">Extractor</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@Extractor" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.util.HttpRequestResponseUtil" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HttpRequestResponseUtil"></a>
+      <a id="HttpRequestResponseUtil:HttpRequestResponseUtil"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="HttpRequestResponseUtil$.html"><span class="name">HttpRequestResponseUtil</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@HttpRequestResponseUtil" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.util.MultiBodyType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MultiBodyType"></a>
+      <a id="MultiBodyType:MultiBodyType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MultiBodyType$.html"><span class="name">MultiBodyType</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@MultiBodyType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Service which allow multiple body types to be supported on a single route, based on the request Content-Type header
+</p>
+    </li><li name="io.fintrospect.util.PathSegmentEncoderDecoder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PathSegmentEncoderDecoder"></a>
+      <a id="PathSegmentEncoderDecoder:PathSegmentEncoderDecoder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PathSegmentEncoderDecoder$.html"><span class="name">PathSegmentEncoderDecoder</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@PathSegmentEncoderDecoder" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.util.StrictContentTypeNegotiation" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="StrictContentTypeNegotiation"></a>
+      <a id="StrictContentTypeNegotiation:StrictContentTypeNegotiation"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="StrictContentTypeNegotiation$.html"><span class="name">StrictContentTypeNegotiation</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@StrictContentTypeNegotiation" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Service which allows strict content type negotiation (for multiple types) to be supported on a single route.</p><div class="fullcomment"><div class="comment cmt"><p>Service which allows strict content type negotiation (for multiple types) to be supported on a single route. Note that due to Content-Type
+negotiation being quite complicated, this service does NOT support full functionality, such as q values or levels.</p><p>The implementation is:
+Check the Accept header and tries to get an exact match on any &quot;&lt;level1&gt;/&lt;level2&gt;&quot; value that it finds. If no match
+can be found, return an HTTP 406 (Not Acceptable) status. Wildcards or missing Accept headers will choose the first
+supplied service in the list.
+</p></div></div>
+    </li><li name="io.fintrospect.util.ValidationFailed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ValidationFailed"></a>
+      <a id="ValidationFailed:ValidationFailed"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ValidationFailed$.html"><span class="name">ValidationFailed</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@ValidationFailed" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.util.Validator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Validator"></a>
+      <a id="Validator:Validator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Validator$.html"><span class="name">Validator</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.package@Validator" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

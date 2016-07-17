@@ -50,7 +50,7 @@
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>This example shows how to apply cross-field validation rules for the request using a for comprehensions
-and the &quot;Extraction&quot; construct. The comprehension returns  an Extracted, NotProvided, or ExractionFailed instance.
+and the &quot;Extraction&quot; construct. The comprehension returns an Extracted, or ExtractionFailed instance.
 Note that the Extractables can be nested in other Extractables, which allows for re-use and compartmentalisation of
 validation logic.</p><p>In this example, we implement a checker for school class sizes.. the rule being that the number of pupils in a class
 must be greater than their teacher's years of experience.
@@ -171,7 +171,7 @@ must be greater than their teacher's years of experience.
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="examples.validation.CrossFieldValidation#acceptableClassSize" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="acceptableClassSize:io.fintrospect.parameters.Extractor[com.twitter.finagle.http.Request,examples.validation.SchoolClass]"></a>
+      <a id="acceptableClassSize:io.fintrospect.util.Extractor[com.twitter.finagle.http.Request,examples.validation.SchoolClass]"></a>
       <a id="acceptableClassSize:Extractor[Request,SchoolClass]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -179,10 +179,10 @@ must be greater than their teacher's years of experience.
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">acceptableClassSize</span><span class="result">: <span class="extype" name="io.fintrospect.parameters.Extractor">Extractor</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <a href="SchoolClass.html" class="extype" name="examples.validation.SchoolClass">SchoolClass</a>]</span>
+        <span class="name">acceptableClassSize</span><span class="result">: <a href="../../io/fintrospect/util/Extractor.html" class="extype" name="io.fintrospect.util.Extractor">Extractor</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <a href="SchoolClass.html" class="extype" name="examples.validation.SchoolClass">SchoolClass</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#examples.validation.CrossFieldValidation$@acceptableClassSize:io.fintrospect.parameters.Extractor[com.twitter.finagle.http.Request,examples.validation.SchoolClass]" title="Permalink" target="_top">
+      <a href="../../index.html#examples.validation.CrossFieldValidation$@acceptableClassSize:io.fintrospect.util.Extractor[com.twitter.finagle.http.Request,examples.validation.SchoolClass]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -239,7 +239,7 @@ must be greater than their teacher's years of experience.
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">checkClassSize</span><span class="result">: <span class="extype" name="io.fintrospect.ServerRoute">ServerRoute</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+        <span class="name">checkClassSize</span><span class="result">: <a href="../../io/fintrospect/ServerRoute.html" class="extype" name="io.fintrospect.ServerRoute">ServerRoute</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#examples.validation.CrossFieldValidation$@checkClassSize:io.fintrospect.ServerRoute[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
@@ -473,7 +473,7 @@ must be greater than their teacher's years of experience.
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="examples.validation.CrossFieldValidation#person" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="person:io.fintrospect.parameters.Extractor[com.twitter.finagle.http.Request,examples.validation.Person]"></a>
+      <a id="person:io.fintrospect.util.Extractor[com.twitter.finagle.http.Request,examples.validation.Person]"></a>
       <a id="person:Extractor[Request,Person]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -481,10 +481,10 @@ must be greater than their teacher's years of experience.
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">person</span><span class="result">: <span class="extype" name="io.fintrospect.parameters.Extractor">Extractor</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <a href="Person.html" class="extype" name="examples.validation.Person">Person</a>]</span>
+        <span class="name">person</span><span class="result">: <a href="../../io/fintrospect/util/Extractor.html" class="extype" name="io.fintrospect.util.Extractor">Extractor</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <a href="Person.html" class="extype" name="examples.validation.Person">Person</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#examples.validation.CrossFieldValidation$@person:io.fintrospect.parameters.Extractor[com.twitter.finagle.http.Request,examples.validation.Person]" title="Permalink" target="_top">
+      <a href="../../index.html#examples.validation.CrossFieldValidation$@person:io.fintrospect.util.Extractor[com.twitter.finagle.http.Request,examples.validation.Person]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
