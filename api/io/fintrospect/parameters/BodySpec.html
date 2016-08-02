@@ -47,11 +47,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">BodySpec</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="contentType">contentType: <a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a></span>, <span name="deserialize">deserialize: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span></span>, <span name="serialize">serialize: (<span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">BodySpec</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="contentType">contentType: <a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a></span>, <span name="deserialize">deserialize: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span></span>, <span name="serialize">serialize: (<span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">(s: T) =&gt; s.toString</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Spec required to marshall a body of a custom type</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the parameter</p></dd><dt class="param">description</dt><dd class="cmt"><p>Description to be used in the documentation</p></dd><dt class="param">contentType</dt><dd class="cmt"><p>The HTTP content type header value</p></dd><dt class="param">deserialize</dt><dd class="cmt"><p>function to take the input string from the request and attempt to construct a deserialized instance. Exceptions are
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Spec required to marshall a body of a custom type
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the parameter</p></dd><dt class="param">description</dt><dd class="cmt"><p>Description to be used in the documentation</p></dd><dt class="param">contentType</dt><dd class="cmt"><p>The HTTP content type header value</p></dd><dt class="param">deserialize</dt><dd class="cmt"><p>function to take the input string from the request and attempt to construct a deserialized instance. Exceptions are
                    automatically caught and translated into the appropriate result, so just concentrate on the Happy-path case</p></dd><dt class="param">serialize</dt><dd class="cmt"><p>function to take the input type and serialize it to a string to be represented in the request</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
@@ -100,7 +101,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">BodySpec</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="contentType">contentType: <a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a></span>, <span name="deserialize">deserialize: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span></span>, <span name="serialize">serialize: (<span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span>
+        <span class="name">BodySpec</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="contentType">contentType: <a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a></span>, <span name="deserialize">deserialize: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span></span>, <span name="serialize">serialize: (<span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">(s: T) =&gt; s.toString</span></span>)</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.parameters.BodySpec@&lt;init&gt;(description:Option[String],contentType:io.fintrospect.ContentType,deserialize:String=&gt;T,serialize:T=&gt;String):io.fintrospect.parameters.BodySpec[T]" title="Permalink" target="_top">
@@ -335,6 +336,42 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="io.fintrospect.parameters.BodySpec#map" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="map[O](in:T=&gt;O):io.fintrospect.parameters.BodySpec[O]"></a>
+      <a id="map[O]((T)⇒O):BodySpec[O]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">map</span><span class="tparams">[<span name="O">O</span>]</span><span class="params">(<span name="in">in: (<span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.BodySpec.map.O">O</span></span>)</span><span class="result">: <a href="" class="extype" name="io.fintrospect.parameters.BodySpec">BodySpec</a>[<span class="extype" name="io.fintrospect.parameters.BodySpec.map.O">O</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.BodySpec@map[O](in:T=&gt;O):io.fintrospect.parameters.BodySpec[O]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Traditional map operation.</p><div class="fullcomment"><div class="comment cmt"><p>Traditional map operation. Duh.
+</p></div></div>
+    </li><li name="io.fintrospect.parameters.BodySpec#map" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="map[O](in:T=&gt;O,out:O=&gt;T):io.fintrospect.parameters.BodySpec[O]"></a>
+      <a id="map[O]((T)⇒O,(O)⇒T):BodySpec[O]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">map</span><span class="tparams">[<span name="O">O</span>]</span><span class="params">(<span name="in">in: (<span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.BodySpec.map.O">O</span></span>, <span name="out">out: (<span class="extype" name="io.fintrospect.parameters.BodySpec.map.O">O</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span></span>)</span><span class="result">: <a href="" class="extype" name="io.fintrospect.parameters.BodySpec">BodySpec</a>[<span class="extype" name="io.fintrospect.parameters.BodySpec.map.O">O</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.BodySpec@map[O](in:T=&gt;O,out:O=&gt;T):io.fintrospect.parameters.BodySpec[O]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Combined map and reverse-map operation
+</p>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>

@@ -36,22 +36,26 @@ val iAmMarried = isMarried &lt;-- myForm
 in the form above. These Spec objects define:</p>
 <ul>
 <li>name and description of the entity type being handled</li>
-<li>the higher level <code>ParamType</code> of the on-the-wire representation. For custom formats, this is <code>StringParamType</code>, although <code>ObjectParamType</code>
+<li>for Parameters: the higher level <code>ParamType</code> of the on-the-wire representation. For custom formats, this is <code>StringParamType</code>, although <code>ObjectParamType</code>
 should be used for JSON appearing in an request body</li>
+<li>for Bodies: the higher level <code>ContentType</code>  of the on-the-wire representation. </li>
 <li>functions representing the serialization and deserialization from the String format that comes in on the request. Note that we are only concerned 
 with the happy case on-the-wire values. These throw exceptions if unsuccessful - these are caught by the request validation mechanism and turned into 
 a rejected <code>BadRequest</code> (400) response which is returned to the caller.</li>
 </ul>
 <p>An example for a simple domain case class Birthday:</p>
-<pre><code>case class Birthday(value: LocalDate) {
-   override def toString = value.toString
-}
+<pre><code>case class Birthday(value: LocalDate)
 
 object Birthday {
     def from(s: String) = Birthday(LocalDate.parse(s))
 }
 
+// 
 val birthdayAsAQueryParam = Query.required(ParameterSpec[Birthday](&quot;DOB&quot;, None, StringParamType, Birthday.from, _.toString))
+
+/* Or, more simply, we can use map() on an existing ParameterSpec - this will handle the */
+
+val birthdayAsAQueryParam = Query.required(ParameterSpec.localDate(&quot;DOB&quot;).map(Birthday(_), (b:Birthday) =&gt; b.value))
 
 val birthdayAsABody = Body(BodySpec[Birthday](Option(&quot;DOB&quot;), ContentTypes.TEXT_PLAIN, Birthday.from, _.toString))
 </code></pre><h4>usage of JSON libraries</h4><p>Fintrospect comes with binding support for several JSON libraries, each represented by static instances of <code>JsonFormat</code> on a class named 

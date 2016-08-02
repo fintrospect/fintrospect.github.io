@@ -209,18 +209,18 @@ will auto-reject requests with a BadRequest.
               
         </dd></dl></div>
     </li><li name="io.fintrospect.parameters.StrictFormCodec#decode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="decode(fields:Seq[io.fintrospect.parameters.FormField[_]withio.fintrospect.parameters.Retrieval[io.fintrospect.parameters.Form,_]withio.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_]],s:String):io.fintrospect.parameters.Form"></a>
-      <a id="decode(Seq[FormField[_]withRetrieval[Form,_]withExtractor[Form,_]],String):Form"></a>
+      <a id="decode(fields:Seq[io.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_]],s:String):io.fintrospect.parameters.Form"></a>
+      <a id="decode(Seq[Extractor[Form,_]],String):Form"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decode</span><span class="params">(<span name="fields">fields: <span class="extype" name="scala.Seq">Seq</span>[<a href="FormField.html" class="extype" name="io.fintrospect.parameters.FormField">FormField</a>[_] with <a href="Retrieval.html" class="extype" name="io.fintrospect.parameters.Retrieval">Retrieval</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>, _] with <a href="../util/Extractor.html" class="extype" name="io.fintrospect.util.Extractor">Extractor</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>, _]]</span>, <span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a></span>
+        <span class="name">decode</span><span class="params">(<span name="fields">fields: <span class="extype" name="scala.Seq">Seq</span>[<a href="../util/Extractor.html" class="extype" name="io.fintrospect.util.Extractor">Extractor</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>, _]]</span>, <span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.StrictFormCodec@decode(fields:Seq[io.fintrospect.parameters.FormField[_]withio.fintrospect.parameters.Retrieval[io.fintrospect.parameters.Form,_]withio.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_]],s:String):io.fintrospect.parameters.Form" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.StrictFormCodec@decode(fields:Seq[io.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_]],s:String):io.fintrospect.parameters.Form" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -294,18 +294,18 @@ will auto-reject requests with a BadRequest.
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="io.fintrospect.parameters.StrictFormCodec#extract" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="extract(fields:Seq[io.fintrospect.parameters.FormField[_]withio.fintrospect.parameters.Retrieval[io.fintrospect.parameters.Form,_]withio.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_]],form:io.fintrospect.parameters.Form):io.fintrospect.util.Extraction[io.fintrospect.parameters.Form]"></a>
-      <a id="extract(Seq[FormField[_]withRetrieval[Form,_]withExtractor[Form,_]],Form):Extraction[Form]"></a>
+      <a id="extract(fields:Seq[io.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_]],form:io.fintrospect.parameters.Form):io.fintrospect.util.Extraction[io.fintrospect.parameters.Form]"></a>
+      <a id="extract(Seq[Extractor[Form,_]],Form):Extraction[Form]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">extract</span><span class="params">(<span name="fields">fields: <span class="extype" name="scala.Seq">Seq</span>[<a href="FormField.html" class="extype" name="io.fintrospect.parameters.FormField">FormField</a>[_] with <a href="Retrieval.html" class="extype" name="io.fintrospect.parameters.Retrieval">Retrieval</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>, _] with <a href="../util/Extractor.html" class="extype" name="io.fintrospect.util.Extractor">Extractor</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>, _]]</span>, <span name="form">form: <a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a></span>)</span><span class="result">: <a href="../util/Extraction.html" class="extype" name="io.fintrospect.util.Extraction">Extraction</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>]</span>
+        <span class="name">extract</span><span class="params">(<span name="fields">fields: <span class="extype" name="scala.Seq">Seq</span>[<a href="../util/Extractor.html" class="extype" name="io.fintrospect.util.Extractor">Extractor</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>, _]]</span>, <span name="form">form: <a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a></span>)</span><span class="result">: <a href="../util/Extraction.html" class="extype" name="io.fintrospect.util.Extraction">Extraction</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.StrictFormCodec@extract(fields:Seq[io.fintrospect.parameters.FormField[_]withio.fintrospect.parameters.Retrieval[io.fintrospect.parameters.Form,_]withio.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_]],form:io.fintrospect.parameters.Form):io.fintrospect.util.Extraction[io.fintrospect.parameters.Form]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.StrictFormCodec@extract(fields:Seq[io.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_]],form:io.fintrospect.parameters.Form):io.fintrospect.util.Extraction[io.fintrospect.parameters.Form]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

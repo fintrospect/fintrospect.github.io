@@ -181,19 +181,36 @@
     </span>
       <p class="shortcomment cmt">Add Host header to the Request.</p><div class="fullcomment"><div class="comment cmt"><p>Add Host header to the Request. This is mandatory in HTTP 1.1
 </p></div></div>
-    </li><li name="io.fintrospect.filters.RequestFilters#BasicAuthorization" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="BasicAuthorization[T](credentials:io.fintrospect.configuration.Credentials):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,T,com.twitter.finagle.http.Request,T]"></a>
-      <a id="BasicAuthorization[T](Credentials):Filter[Request,T,Request,T]"></a>
+    </li><li name="io.fintrospect.filters.RequestFilters#AddUserAgent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AddUserAgent[T](user:String):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,T,com.twitter.finagle.http.Request,T]"></a>
+      <a id="AddUserAgent[T](String):Filter[Request,T,Request,T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">BasicAuthorization</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="credentials">credentials: <a href="../configuration/Credentials.html" class="extype" name="io.fintrospect.configuration.Credentials">Credentials</a></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.filters.RequestFilters.BasicAuthorization.T">T</span>, <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.filters.RequestFilters.BasicAuthorization.T">T</span>]</span>
+        <span class="name">AddUserAgent</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="user">user: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.filters.RequestFilters.AddUserAgent.T">T</span>, <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.filters.RequestFilters.AddUserAgent.T">T</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.filters.RequestFilters$@BasicAuthorization[T](credentials:io.fintrospect.configuration.Credentials):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,T,com.twitter.finagle.http.Request,T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.filters.RequestFilters$@AddUserAgent[T](user:String):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,T,com.twitter.finagle.http.Request,T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Add User-Agent header to the Request.</p>
+    </li><li name="io.fintrospect.filters.RequestFilters#BasicAuthorization" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BasicAuthorization(credentials:io.fintrospect.configuration.Credentials):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="BasicAuthorization(Credentials):Filter[Request,Response,Request,Response]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">BasicAuthorization</span><span class="params">(<span name="credentials">credentials: <a href="../configuration/Credentials.html" class="extype" name="io.fintrospect.configuration.Credentials">Credentials</a></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.filters.RequestFilters$@BasicAuthorization(credentials:io.fintrospect.configuration.Credentials):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

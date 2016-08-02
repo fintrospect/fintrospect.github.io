@@ -67,18 +67,18 @@
         <div id="types" class="types members">
               <h3>Type Members</h3>
               <ol><li name="io.fintrospect.parameters.Bindable" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="Bindable[T,B&lt;:io.fintrospect.parameters.Binding]extendsAnyRef"></a>
-      <a id="Bindable[T,B&lt;:Binding]:Bindable[T,B]"></a>
+      <a id="Bindable[-T,+B&lt;:io.fintrospect.parameters.Binding]extendsAnyRef"></a>
+      <a id="Bindable[-T,+B&lt;:Binding]:Bindable[T,B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Bindable.html"><span class="name">Bindable</span></a><span class="tparams">[<span name="T">T</span>, <span name="B">B &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Bindable.html"><span class="name">Bindable</span></a><span class="tparams">[<span name="T">-T</span>, <span name="B">+B &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@Bindable[T,B&lt;:io.fintrospect.parameters.Binding]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@Bindable[-T,+B&lt;:io.fintrospect.parameters.Binding]extendsAnyRef" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -103,7 +103,7 @@
       <p class="shortcomment cmt">Represents the binding of a parameter to it's value in a particular context
 </p>
     </li><li name="io.fintrospect.parameters.Body" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="Body[T]extendsIterable[io.fintrospect.parameters.BodyParameter]withExtractor[com.twitter.finagle.http.Message,T]"></a>
+      <a id="Body[T]extendsIterable[io.fintrospect.parameters.BodyParameter]withMandatory[com.twitter.finagle.http.Message,T]withRebindable[com.twitter.finagle.http.Message,T,io.fintrospect.parameters.RequestBinding]"></a>
       <a id="Body[T]:Body[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -111,10 +111,10 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="Body.html"><span class="name">Body</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.Iterable">Iterable</span>[<a href="BodyParameter.html" class="extype" name="io.fintrospect.parameters.BodyParameter">BodyParameter</a>] with <a href="../util/Extractor.html" class="extype" name="io.fintrospect.util.Extractor">Extractor</a>[<span class="extype" name="com.twitter.finagle.http.Message">Message</span>, <span class="extype" name="io.fintrospect.parameters.Body.T">T</span>]</span>
+        <a href="Body.html"><span class="name">Body</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.Iterable">Iterable</span>[<a href="BodyParameter.html" class="extype" name="io.fintrospect.parameters.BodyParameter">BodyParameter</a>] with <a href="Mandatory.html" class="extype" name="io.fintrospect.parameters.Mandatory">Mandatory</a>[<span class="extype" name="com.twitter.finagle.http.Message">Message</span>, <span class="extype" name="io.fintrospect.parameters.Body.T">T</span>] with <a href="Rebindable.html" class="extype" name="io.fintrospect.parameters.Rebindable">Rebindable</a>[<span class="extype" name="com.twitter.finagle.http.Message">Message</span>, <span class="extype" name="io.fintrospect.parameters.Body.T">T</span>, <a href="RequestBinding.html" class="extype" name="io.fintrospect.parameters.RequestBinding">RequestBinding</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@Body[T]extendsIterable[io.fintrospect.parameters.BodyParameter]withExtractor[com.twitter.finagle.http.Message,T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@Body[T]extendsIterable[io.fintrospect.parameters.BodyParameter]withMandatory[com.twitter.finagle.http.Message,T]withRebindable[com.twitter.finagle.http.Message,T,io.fintrospect.parameters.RequestBinding]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -145,14 +145,16 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="BodySpec.html"><span class="name">BodySpec</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="contentType">contentType: <a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a></span>, <span name="deserialize">deserialize: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span></span>, <span name="serialize">serialize: (<span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="BodySpec.html"><span class="name">BodySpec</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="contentType">contentType: <a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a></span>, <span name="deserialize">deserialize: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span></span>, <span name="serialize">serialize: (<span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">(s: T) =&gt; s.toString</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.parameters.package@BodySpec[T]extendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Spec required to marshall a body of a custom type</p><div class="fullcomment"><div class="comment cmt"><p>Spec required to marshall a body of a custom type</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the parameter</p></dd><dt class="param">description</dt><dd class="cmt"><p>Description to be used in the documentation</p></dd><dt class="param">contentType</dt><dd class="cmt"><p>The HTTP content type header value</p></dd><dt class="param">deserialize</dt><dd class="cmt"><p>function to take the input string from the request and attempt to construct a deserialized instance. Exceptions are
+      <p class="shortcomment cmt">Spec required to marshall a body of a custom type
+</p><div class="fullcomment"><div class="comment cmt"><p>Spec required to marshall a body of a custom type
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the parameter</p></dd><dt class="param">description</dt><dd class="cmt"><p>Description to be used in the documentation</p></dd><dt class="param">contentType</dt><dd class="cmt"><p>The HTTP content type header value</p></dd><dt class="param">deserialize</dt><dd class="cmt"><p>function to take the input string from the request and attempt to construct a deserialized instance. Exceptions are
                    automatically caught and translated into the appropriate result, so just concentrate on the Happy-path case</p></dd><dt class="param">serialize</dt><dd class="cmt"><p>function to take the input type and serialize it to a string to be represented in the request</p></dd></dl></div>
     </li><li name="io.fintrospect.parameters.Form" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="FormextendsIterable[(String,Set[String])]withProductwithSerializable"></a>
@@ -173,7 +175,7 @@
       <p class="shortcomment cmt">The body entity of a encoded HTML form.</p><div class="fullcomment"><div class="comment cmt"><p>The body entity of a encoded HTML form. Basically a wrapper for Form construction and field extraction.
 </p></div></div>
     </li><li name="io.fintrospect.parameters.FormBody" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="FormBodyextendsBody[io.fintrospect.parameters.Form]withBindable[io.fintrospect.parameters.Form,io.fintrospect.parameters.Binding]withMandatory[com.twitter.finagle.http.Message,io.fintrospect.parameters.Form]withMandatoryRebind[com.twitter.finagle.http.Message,io.fintrospect.parameters.Form,io.fintrospect.parameters.Binding]"></a>
+      <a id="FormBodyextendsBody[io.fintrospect.parameters.Form]"></a>
       <a id="FormBody:FormBody"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -181,10 +183,10 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="FormBody.html"><span class="name">FormBody</span></a><span class="result"> extends <a href="Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>] with <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>, <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a>] with <a href="Mandatory.html" class="extype" name="io.fintrospect.parameters.Mandatory">Mandatory</a>[<span class="extype" name="com.twitter.finagle.http.Message">Message</span>, <a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>] with <a href="MandatoryRebind.html" class="extype" name="io.fintrospect.parameters.MandatoryRebind">MandatoryRebind</a>[<span class="extype" name="com.twitter.finagle.http.Message">Message</span>, <a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>, <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a>]</span>
+        <a href="FormBody.html"><span class="name">FormBody</span></a><span class="result"> extends <a href="Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@FormBodyextendsBody[io.fintrospect.parameters.Form]withBindable[io.fintrospect.parameters.Form,io.fintrospect.parameters.Binding]withMandatory[com.twitter.finagle.http.Message,io.fintrospect.parameters.Form]withMandatoryRebind[com.twitter.finagle.http.Message,io.fintrospect.parameters.Form,io.fintrospect.parameters.Binding]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@FormBodyextendsBody[io.fintrospect.parameters.Form]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -207,7 +209,7 @@
     </span>
       <p class="shortcomment cmt">Represents different strategies for decoding and encoding HTML forms.</p>
     </li><li name="io.fintrospect.parameters.FormField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="FormField[T]extendsBodyParameterwithBindable[T,io.fintrospect.parameters.FormFieldBinding]"></a>
+      <a id="FormField[T]extendsBodyParameter"></a>
       <a id="FormField[T]:FormField[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -215,10 +217,10 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="FormField.html"><span class="name">FormField</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="BodyParameter.html" class="extype" name="io.fintrospect.parameters.BodyParameter">BodyParameter</a> with <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="io.fintrospect.parameters.FormField.T">T</span>, <a href="FormFieldBinding.html" class="extype" name="io.fintrospect.parameters.FormFieldBinding">FormFieldBinding</a>]</span>
+        <a href="FormField.html"><span class="name">FormField</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="BodyParameter.html" class="extype" name="io.fintrospect.parameters.BodyParameter">BodyParameter</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@FormField[T]extendsBodyParameterwithBindable[T,io.fintrospect.parameters.FormFieldBinding]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@FormField[T]extendsBodyParameter" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -241,7 +243,7 @@
     </span>
       
     </li><li name="io.fintrospect.parameters.HeaderParameter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="HeaderParameter[T]extendsParameterwithBindable[T,io.fintrospect.parameters.RequestBinding]"></a>
+      <a id="HeaderParameter[T]extendsParameterwithRebindable[com.twitter.finagle.http.Message,T,io.fintrospect.parameters.RequestBinding]"></a>
       <a id="HeaderParameter[T]:HeaderParameter[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -249,10 +251,10 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="HeaderParameter.html"><span class="name">HeaderParameter</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a> with <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="io.fintrospect.parameters.HeaderParameter.T">T</span>, <a href="RequestBinding.html" class="extype" name="io.fintrospect.parameters.RequestBinding">RequestBinding</a>]</span>
+        <a href="HeaderParameter.html"><span class="name">HeaderParameter</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a> with <a href="Rebindable.html" class="extype" name="io.fintrospect.parameters.Rebindable">Rebindable</a>[<span class="extype" name="com.twitter.finagle.http.Message">Message</span>, <span class="extype" name="io.fintrospect.parameters.HeaderParameter.T">T</span>, <a href="RequestBinding.html" class="extype" name="io.fintrospect.parameters.RequestBinding">RequestBinding</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@HeaderParameter[T]extendsParameterwithBindable[T,io.fintrospect.parameters.RequestBinding]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@HeaderParameter[T]extendsParameterwithRebindable[com.twitter.finagle.http.Message,T,io.fintrospect.parameters.RequestBinding]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -274,19 +276,19 @@
       </a>
     </span>
       
-    </li><li name="io.fintrospect.parameters.MandatoryRebind" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="MandatoryRebind[From,T,B&lt;:io.fintrospect.parameters.Binding]extendsRebindable[From,T,B]"></a>
-      <a id="MandatoryRebind[From,T,B&lt;:Binding]:MandatoryRebind[From,T,B]"></a>
+    </li><li name="io.fintrospect.parameters.MandatoryParameter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MandatoryParameter[From,T,Bnd&lt;:io.fintrospect.parameters.Binding]extendsMandatory[From,T]withExtractableParameter[From,T]withRebindable[From,T,Bnd]"></a>
+      <a id="MandatoryParameter[From,T,Bnd&lt;:Binding]:MandatoryParameter[From,T,Bnd]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="MandatoryRebind.html"><span class="name">MandatoryRebind</span></a><span class="tparams">[<span name="From">From</span>, <span name="T">T</span>, <span name="B">B &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> extends <a href="Rebindable.html" class="extype" name="io.fintrospect.parameters.Rebindable">Rebindable</a>[<span class="extype" name="io.fintrospect.parameters.MandatoryRebind.From">From</span>, <span class="extype" name="io.fintrospect.parameters.MandatoryRebind.T">T</span>, <span class="extype" name="io.fintrospect.parameters.MandatoryRebind.B">B</span>]</span>
+        <a href="MandatoryParameter.html"><span class="name">MandatoryParameter</span></a><span class="tparams">[<span name="From">From</span>, <span name="T">T</span>, <span name="Bnd">Bnd &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> extends <a href="Mandatory.html" class="extype" name="io.fintrospect.parameters.Mandatory">Mandatory</a>[<span class="extype" name="io.fintrospect.parameters.MandatoryParameter.From">From</span>, <span class="extype" name="io.fintrospect.parameters.MandatoryParameter.T">T</span>] with <a href="../util/ExtractableParameter.html" class="extype" name="io.fintrospect.util.ExtractableParameter">ExtractableParameter</a>[<span class="extype" name="io.fintrospect.parameters.MandatoryParameter.From">From</span>, <span class="extype" name="io.fintrospect.parameters.MandatoryParameter.T">T</span>] with <a href="Rebindable.html" class="extype" name="io.fintrospect.parameters.Rebindable">Rebindable</a>[<span class="extype" name="io.fintrospect.parameters.MandatoryParameter.From">From</span>, <span class="extype" name="io.fintrospect.parameters.MandatoryParameter.T">T</span>, <span class="extype" name="io.fintrospect.parameters.MandatoryParameter.Bnd">Bnd</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@MandatoryRebind[From,T,B&lt;:io.fintrospect.parameters.Binding]extendsRebindable[From,T,B]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@MandatoryParameter[From,T,Bnd&lt;:io.fintrospect.parameters.Binding]extendsMandatory[From,T]withExtractableParameter[From,T]withRebindable[From,T,Bnd]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -326,7 +328,7 @@
     </span>
       
     </li><li name="io.fintrospect.parameters.MultiParameter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="MultiParameter[T,From,B&lt;:io.fintrospect.parameters.Binding]extendsAnyRef"></a>
+      <a id="MultiParameter[T,From,B&lt;:io.fintrospect.parameters.Binding]extendsParameterwithBindable[Seq[T],B]"></a>
       <a id="MultiParameter[T,From,B&lt;:Binding]:MultiParameter[T,From,B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -334,10 +336,10 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="MultiParameter.html"><span class="name">MultiParameter</span></a><span class="tparams">[<span name="T">T</span>, <span name="From">From</span>, <span name="B">B &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="MultiParameter.html"><span class="name">MultiParameter</span></a><span class="tparams">[<span name="T">T</span>, <span name="From">From</span>, <span name="B">B &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> extends <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a> with <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.fintrospect.parameters.MultiParameter.T">T</span>], <span class="extype" name="io.fintrospect.parameters.MultiParameter.B">B</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@MultiParameter[T,From,B&lt;:io.fintrospect.parameters.Binding]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@MultiParameter[T,From,B&lt;:io.fintrospect.parameters.Binding]extendsParameterwithBindable[Seq[T],B]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -394,37 +396,19 @@
       </a>
     </span>
       
-    </li><li name="io.fintrospect.parameters.OptionalBindable" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="OptionalBindable[T,B&lt;:io.fintrospect.parameters.Binding]extendsBindable[T,B]"></a>
-      <a id="OptionalBindable[T,B&lt;:Binding]:OptionalBindable[T,B]"></a>
+    </li><li name="io.fintrospect.parameters.OptionalParameter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="OptionalParameter[From,T,Bnd&lt;:io.fintrospect.parameters.Binding]extendsOptional[From,T]withExtractableParameter[From,T]withRebindable[From,T,Bnd]"></a>
+      <a id="OptionalParameter[From,T,Bnd&lt;:Binding]:OptionalParameter[From,T,Bnd]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="OptionalBindable.html"><span class="name">OptionalBindable</span></a><span class="tparams">[<span name="T">T</span>, <span name="B">B &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> extends <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="io.fintrospect.parameters.OptionalBindable.T">T</span>, <span class="extype" name="io.fintrospect.parameters.OptionalBindable.B">B</span>]</span>
+        <a href="OptionalParameter.html"><span class="name">OptionalParameter</span></a><span class="tparams">[<span name="From">From</span>, <span name="T">T</span>, <span name="Bnd">Bnd &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> extends <a href="Optional.html" class="extype" name="io.fintrospect.parameters.Optional">Optional</a>[<span class="extype" name="io.fintrospect.parameters.OptionalParameter.From">From</span>, <span class="extype" name="io.fintrospect.parameters.OptionalParameter.T">T</span>] with <a href="../util/ExtractableParameter.html" class="extype" name="io.fintrospect.util.ExtractableParameter">ExtractableParameter</a>[<span class="extype" name="io.fintrospect.parameters.OptionalParameter.From">From</span>, <span class="extype" name="io.fintrospect.parameters.OptionalParameter.T">T</span>] with <a href="Rebindable.html" class="extype" name="io.fintrospect.parameters.Rebindable">Rebindable</a>[<span class="extype" name="io.fintrospect.parameters.OptionalParameter.From">From</span>, <span class="extype" name="io.fintrospect.parameters.OptionalParameter.T">T</span>, <span class="extype" name="io.fintrospect.parameters.OptionalParameter.Bnd">Bnd</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@OptionalBindable[T,B&lt;:io.fintrospect.parameters.Binding]extendsBindable[T,B]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">For optional Parameters, adds the ability to bind an Optional value as well as a concrete value
-</p>
-    </li><li name="io.fintrospect.parameters.OptionalRebind" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="OptionalRebind[From,T,B&lt;:io.fintrospect.parameters.Binding]extendsRebindable[From,T,B]"></a>
-      <a id="OptionalRebind[From,T,B&lt;:Binding]:OptionalRebind[From,T,B]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="OptionalRebind.html"><span class="name">OptionalRebind</span></a><span class="tparams">[<span name="From">From</span>, <span name="T">T</span>, <span name="B">B &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> extends <a href="Rebindable.html" class="extype" name="io.fintrospect.parameters.Rebindable">Rebindable</a>[<span class="extype" name="io.fintrospect.parameters.OptionalRebind.From">From</span>, <span class="extype" name="io.fintrospect.parameters.OptionalRebind.T">T</span>, <span class="extype" name="io.fintrospect.parameters.OptionalRebind.B">B</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@OptionalRebind[From,T,B&lt;:io.fintrospect.parameters.Binding]extendsRebindable[From,T,B]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@OptionalParameter[From,T,Bnd&lt;:io.fintrospect.parameters.Binding]extendsOptional[From,T]withExtractableParameter[From,T]withRebindable[From,T,Bnd]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -606,7 +590,7 @@ represent the various places in which values are encoded (eg. header/form/query/
     </span>
       
     </li><li name="io.fintrospect.parameters.QueryParameter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="QueryParameter[T]extendsParameterwithBindable[T,io.fintrospect.parameters.QueryBinding]"></a>
+      <a id="QueryParameter[T]extendsParameterwithRebindable[com.twitter.finagle.http.Request,T,io.fintrospect.parameters.QueryBinding]"></a>
       <a id="QueryParameter[T]:QueryParameter[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -614,27 +598,27 @@ represent the various places in which values are encoded (eg. header/form/query/
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="QueryParameter.html"><span class="name">QueryParameter</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a> with <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="io.fintrospect.parameters.QueryParameter.T">T</span>, <a href="QueryBinding.html" class="extype" name="io.fintrospect.parameters.QueryBinding">QueryBinding</a>]</span>
+        <a href="QueryParameter.html"><span class="name">QueryParameter</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a> with <a href="Rebindable.html" class="extype" name="io.fintrospect.parameters.Rebindable">Rebindable</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.parameters.QueryParameter.T">T</span>, <a href="QueryBinding.html" class="extype" name="io.fintrospect.parameters.QueryBinding">QueryBinding</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@QueryParameter[T]extendsParameterwithBindable[T,io.fintrospect.parameters.QueryBinding]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@QueryParameter[T]extendsParameterwithRebindable[com.twitter.finagle.http.Request,T,io.fintrospect.parameters.QueryBinding]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="io.fintrospect.parameters.Rebindable" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="Rebindable[From,T,B&lt;:io.fintrospect.parameters.Binding]extendsAnyRef"></a>
-      <a id="Rebindable[From,T,B&lt;:Binding]:Rebindable[From,T,B]"></a>
+      <a id="Rebindable[-From,T,+B&lt;:io.fintrospect.parameters.Binding]extendsBindable[T,B]"></a>
+      <a id="Rebindable[-From,T,+B&lt;:Binding]:Rebindable[From,T,B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Rebindable.html"><span class="name">Rebindable</span></a><span class="tparams">[<span name="From">From</span>, <span name="T">T</span>, <span name="B">B &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Rebindable.html"><span class="name">Rebindable</span></a><span class="tparams">[<span name="From">-From</span>, <span name="T">T</span>, <span name="B">+B &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> extends <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="io.fintrospect.parameters.Rebindable.T">T</span>, <span class="extype" name="io.fintrospect.parameters.Rebindable.B">B</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@Rebindable[From,T,B&lt;:io.fintrospect.parameters.Binding]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@Rebindable[-From,T,+B&lt;:io.fintrospect.parameters.Binding]extendsBindable[T,B]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -676,42 +660,8 @@ requests together.
     </span>
       <p class="shortcomment cmt">Represents the ability to retrieve a value from an enclosing object (request/form etc..)
 </p>
-    </li><li name="io.fintrospect.parameters.SingleFormField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="SingleFormField[T]extendsSingleParameter[T,io.fintrospect.parameters.Form,io.fintrospect.parameters.FormFieldBinding]withFormField[T]"></a>
-      <a id="SingleFormField[T]:SingleFormField[T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="SingleFormField.html"><span class="name">SingleFormField</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="SingleParameter.html" class="extype" name="io.fintrospect.parameters.SingleParameter">SingleParameter</a>[<span class="extype" name="io.fintrospect.parameters.SingleFormField.T">T</span>, <a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>, <a href="FormFieldBinding.html" class="extype" name="io.fintrospect.parameters.FormFieldBinding">FormFieldBinding</a>] with <a href="FormField.html" class="extype" name="io.fintrospect.parameters.FormField">FormField</a>[<span class="extype" name="io.fintrospect.parameters.SingleFormField.T">T</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@SingleFormField[T]extendsSingleParameter[T,io.fintrospect.parameters.Form,io.fintrospect.parameters.FormFieldBinding]withFormField[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="io.fintrospect.parameters.SingleHeaderParameter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="SingleHeaderParameter[T]extendsSingleParameter[T,com.twitter.finagle.http.Message,io.fintrospect.parameters.RequestBinding]withHeaderParameter[T]"></a>
-      <a id="SingleHeaderParameter[T]:SingleHeaderParameter[T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="SingleHeaderParameter.html"><span class="name">SingleHeaderParameter</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="SingleParameter.html" class="extype" name="io.fintrospect.parameters.SingleParameter">SingleParameter</a>[<span class="extype" name="io.fintrospect.parameters.SingleHeaderParameter.T">T</span>, <span class="extype" name="com.twitter.finagle.http.Message">Message</span>, <a href="RequestBinding.html" class="extype" name="io.fintrospect.parameters.RequestBinding">RequestBinding</a>] with <a href="HeaderParameter.html" class="extype" name="io.fintrospect.parameters.HeaderParameter">HeaderParameter</a>[<span class="extype" name="io.fintrospect.parameters.SingleHeaderParameter.T">T</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@SingleHeaderParameter[T]extendsSingleParameter[T,com.twitter.finagle.http.Message,io.fintrospect.parameters.RequestBinding]withHeaderParameter[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="io.fintrospect.parameters.SingleParameter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="SingleParameter[T,From,B&lt;:io.fintrospect.parameters.Binding]extendsAnyRef"></a>
+      <a id="SingleParameter[T,From,B&lt;:io.fintrospect.parameters.Binding]extendsParameterwithBindable[T,B]"></a>
       <a id="SingleParameter[T,From,B&lt;:Binding]:SingleParameter[T,From,B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -719,27 +669,10 @@ requests together.
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="SingleParameter.html"><span class="name">SingleParameter</span></a><span class="tparams">[<span name="T">T</span>, <span name="From">From</span>, <span name="B">B &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="SingleParameter.html"><span class="name">SingleParameter</span></a><span class="tparams">[<span name="T">T</span>, <span name="From">From</span>, <span name="B">B &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> extends <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a> with <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="io.fintrospect.parameters.SingleParameter.T">T</span>, <span class="extype" name="io.fintrospect.parameters.SingleParameter.B">B</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@SingleParameter[T,From,B&lt;:io.fintrospect.parameters.Binding]extendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="io.fintrospect.parameters.SingleQueryParameter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="SingleQueryParameter[T]extendsSingleParameter[T,com.twitter.finagle.http.Request,io.fintrospect.parameters.QueryBinding]withQueryParameter[T]"></a>
-      <a id="SingleQueryParameter[T]:SingleQueryParameter[T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="SingleQueryParameter.html"><span class="name">SingleQueryParameter</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="SingleParameter.html" class="extype" name="io.fintrospect.parameters.SingleParameter">SingleParameter</a>[<span class="extype" name="io.fintrospect.parameters.SingleQueryParameter.T">T</span>, <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <a href="QueryBinding.html" class="extype" name="io.fintrospect.parameters.QueryBinding">QueryBinding</a>] with <a href="QueryParameter.html" class="extype" name="io.fintrospect.parameters.QueryParameter">QueryParameter</a>[<span class="extype" name="io.fintrospect.parameters.SingleQueryParameter.T">T</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@SingleQueryParameter[T]extendsSingleParameter[T,com.twitter.finagle.http.Request,io.fintrospect.parameters.QueryBinding]withQueryParameter[T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@SingleParameter[T,From,B&lt;:io.fintrospect.parameters.Binding]extendsParameterwithBindable[T,B]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -782,7 +715,7 @@ will auto-reject requests with a BadRequest.
     </span>
       
     </li><li name="io.fintrospect.parameters.UniBody" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="UniBody[T]extendsBody[T]withBindable[T,io.fintrospect.parameters.RequestBinding]withMandatory[com.twitter.finagle.http.Message,T]withMandatoryRebind[com.twitter.finagle.http.Message,T,io.fintrospect.parameters.RequestBinding]"></a>
+      <a id="UniBody[T]extendsBody[T]"></a>
       <a id="UniBody[T]:UniBody[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -790,10 +723,10 @@ will auto-reject requests with a BadRequest.
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="UniBody.html"><span class="name">UniBody</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<span class="extype" name="io.fintrospect.parameters.UniBody.T">T</span>] with <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="io.fintrospect.parameters.UniBody.T">T</span>, <a href="RequestBinding.html" class="extype" name="io.fintrospect.parameters.RequestBinding">RequestBinding</a>] with <a href="Mandatory.html" class="extype" name="io.fintrospect.parameters.Mandatory">Mandatory</a>[<span class="extype" name="com.twitter.finagle.http.Message">Message</span>, <span class="extype" name="io.fintrospect.parameters.UniBody.T">T</span>] with <a href="MandatoryRebind.html" class="extype" name="io.fintrospect.parameters.MandatoryRebind">MandatoryRebind</a>[<span class="extype" name="com.twitter.finagle.http.Message">Message</span>, <span class="extype" name="io.fintrospect.parameters.UniBody.T">T</span>, <a href="RequestBinding.html" class="extype" name="io.fintrospect.parameters.RequestBinding">RequestBinding</a>]</span>
+        <a href="UniBody.html"><span class="name">UniBody</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<span class="extype" name="io.fintrospect.parameters.UniBody.T">T</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@UniBody[T]extendsBody[T]withBindable[T,io.fintrospect.parameters.RequestBinding]withMandatory[com.twitter.finagle.http.Message,T]withMandatoryRebind[com.twitter.finagle.http.Message,T,io.fintrospect.parameters.RequestBinding]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@UniBody[T]extendsBody[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -945,6 +878,23 @@ As such, extracting an invalid webform from a request will not fail unless the b
     </span>
       <p class="shortcomment cmt">Parameters which are bound to request/response headers
 </p>
+    </li><li name="io.fintrospect.parameters.HeaderExtractAndRebind" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HeaderExtractAndRebind"></a>
+      <a id="HeaderExtractAndRebind:HeaderExtractAndRebind"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="HeaderExtractAndRebind$.html"><span class="name">HeaderExtractAndRebind</span></a><span class="result"> extends <a href="ParameterExtractAndBind.html" class="extype" name="io.fintrospect.parameters.ParameterExtractAndBind">ParameterExtractAndBind</a>[<span class="extype" name="com.twitter.finagle.http.Message">Message</span>, <a href="RequestBinding.html" class="extype" name="io.fintrospect.parameters.RequestBinding">RequestBinding</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@HeaderExtractAndRebind" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.fintrospect.parameters.IntegerParamType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="IntegerParamType"></a>
       <a id="IntegerParamType:IntegerParamType"></a>
@@ -1067,6 +1017,23 @@ As such, extracting an invalid webform from a request will not fail unless the b
     </span>
       <p class="shortcomment cmt">Parameters which are bound to the query part of a URL
 </p>
+    </li><li name="io.fintrospect.parameters.QueryExtractAndRebind" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="QueryExtractAndRebind"></a>
+      <a id="QueryExtractAndRebind:QueryExtractAndRebind"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="QueryExtractAndRebind$.html"><span class="name">QueryExtractAndRebind</span></a><span class="result"> extends <a href="ParameterExtractAndBind.html" class="extype" name="io.fintrospect.parameters.ParameterExtractAndBind">ParameterExtractAndBind</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <a href="QueryBinding.html" class="extype" name="io.fintrospect.parameters.QueryBinding">QueryBinding</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@QueryExtractAndRebind" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.fintrospect.parameters.StringParamType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="StringParamType"></a>
       <a id="StringParamType:StringParamType"></a>
@@ -1097,23 +1064,6 @@ As such, extracting an invalid webform from a request will not fail unless the b
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.parameters.package@StringValidation" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="io.fintrospect.parameters.types" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="types"></a>
-      <a id="types:types"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="types$.html"><span class="name">types</span></a>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@types" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

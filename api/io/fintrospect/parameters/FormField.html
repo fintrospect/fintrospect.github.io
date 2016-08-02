@@ -47,16 +47,16 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">FormField</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="BodyParameter.html" class="extype" name="io.fintrospect.parameters.BodyParameter">BodyParameter</a> with <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="io.fintrospect.parameters.FormField.T">T</span>, <a href="FormFieldBinding.html" class="extype" name="io.fintrospect.parameters.FormFieldBinding">FormFieldBinding</a>]</span>
+        <span class="name">FormField</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="BodyParameter.html" class="extype" name="io.fintrospect.parameters.BodyParameter">BodyParameter</a></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="io.fintrospect.parameters.FormField.T">T</span>, <a href="FormFieldBinding.html" class="extype" name="io.fintrospect.parameters.FormFieldBinding">FormFieldBinding</a>], <a href="BodyParameter.html" class="extype" name="io.fintrospect.parameters.BodyParameter">BodyParameter</a>, <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="BodyParameter.html" class="extype" name="io.fintrospect.parameters.BodyParameter">BodyParameter</a>, <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="MultiFormField.html" class="extype" name="io.fintrospect.parameters.MultiFormField">MultiFormField</a>, <a href="SingleFormField.html" class="extype" name="io.fintrospect.parameters.SingleFormField">SingleFormField</a></div>
+            <div class="subClasses hiddenContent"><a href="MultiFormField.html" class="extype" name="io.fintrospect.parameters.MultiFormField">MultiFormField</a></div>
           </div></div>
         
 
@@ -74,7 +74,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="io.fintrospect.parameters.FormField"><span>FormField</span></li><li class="in" name="io.fintrospect.parameters.Bindable"><span>Bindable</span></li><li class="in" name="io.fintrospect.parameters.BodyParameter"><span>BodyParameter</span></li><li class="in" name="io.fintrospect.parameters.Parameter"><span>Parameter</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="io.fintrospect.parameters.FormField"><span>FormField</span></li><li class="in" name="io.fintrospect.parameters.BodyParameter"><span>BodyParameter</span></li><li class="in" name="io.fintrospect.parameters.Parameter"><span>Parameter</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -97,24 +97,7 @@
 
         <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="io.fintrospect.parameters.Bindable#--&gt;" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="--&gt;(value:T):Iterable[B]"></a>
-      <a id="--&gt;(T):Iterable[FormFieldBinding]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $minus$minus$greater" class="name">--&gt;</span><span class="params">(<span name="value">value: <span class="extype" name="io.fintrospect.parameters.FormField.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="FormFieldBinding.html" class="extype" name="io.fintrospect.parameters.FormFieldBinding">FormFieldBinding</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.FormField@--&gt;(value:T):Iterable[B]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Bind the value to this parameter</p><div class="fullcomment"><div class="comment cmt"><p>Bind the value to this parameter</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the binding</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a></dd></dl></div>
-    </li><li name="io.fintrospect.parameters.Parameter#description" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+              <ol><li name="io.fintrospect.parameters.Parameter#description" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="description:Option[String]"></a>
       <a id="description:Option[String]"></a>
       <h4 class="signature">
@@ -471,25 +454,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="io.fintrospect.parameters.Bindable#of" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="of(value:T):Iterable[B]"></a>
-      <a id="of(T):Iterable[FormFieldBinding]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">of</span><span class="params">(<span name="value">value: <span class="extype" name="io.fintrospect.parameters.FormField.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="FormFieldBinding.html" class="extype" name="io.fintrospect.parameters.FormFieldBinding">FormFieldBinding</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.FormField@of(value:T):Iterable[B]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Bind the value to this parameter
-User-friendly synonym for --&gt;(), which is why the method is final.</p><div class="fullcomment"><div class="comment cmt"><p>Bind the value to this parameter
-User-friendly synonym for --&gt;(), which is why the method is final.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the binding</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -619,9 +583,7 @@ User-friendly synonym for --&gt;(), which is why the method is final.</p></div><
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="io.fintrospect.parameters.Bindable">
-              <h3>Inherited from <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="io.fintrospect.parameters.FormField.T">T</span>, <a href="FormFieldBinding.html" class="extype" name="io.fintrospect.parameters.FormFieldBinding">FormFieldBinding</a>]</h3>
-            </div><div class="parent" name="io.fintrospect.parameters.BodyParameter">
+        <div class="parent" name="io.fintrospect.parameters.BodyParameter">
               <h3>Inherited from <a href="BodyParameter.html" class="extype" name="io.fintrospect.parameters.BodyParameter">BodyParameter</a></h3>
             </div><div class="parent" name="io.fintrospect.parameters.Parameter">
               <h3>Inherited from <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a></h3>

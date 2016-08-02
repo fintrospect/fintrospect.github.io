@@ -45,13 +45,13 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">MultiParameter</span><span class="tparams">[<span name="T">T</span>, <span name="From">From</span>, <span name="B">B &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">MultiParameter</span><span class="tparams">[<span name="T">T</span>, <span name="From">From</span>, <span name="B">B &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> extends <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a> with <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.fintrospect.parameters.MultiParameter.T">T</span>], <span class="extype" name="io.fintrospect.parameters.MultiParameter.B">B</span>]</span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="io.fintrospect.parameters.MultiParameter">MultiParameter</a>[<span class="extype" name="io.fintrospect.parameters.MultiParameter.T">T</span>, <span class="extype" name="io.fintrospect.parameters.MultiParameter.From">From</span>, <span class="extype" name="io.fintrospect.parameters.MultiParameter.B">B</span>] with <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a> with <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.fintrospect.parameters.MultiParameter.T">T</span>], <span class="extype" name="io.fintrospect.parameters.MultiParameter.B">B</span>]</dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.fintrospect.parameters.MultiParameter.T">T</span>], <span class="extype" name="io.fintrospect.parameters.MultiParameter.B">B</span>], <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
             <div class="subClasses hiddenContent"><a href="MultiFormField.html" class="extype" name="io.fintrospect.parameters.MultiFormField">MultiFormField</a>, <a href="MultiHeaderParameter.html" class="extype" name="io.fintrospect.parameters.MultiHeaderParameter">MultiHeaderParameter</a>, <a href="MultiQueryParameter.html" class="extype" name="io.fintrospect.parameters.MultiQueryParameter">MultiQueryParameter</a></div>
@@ -72,7 +72,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="io.fintrospect.parameters.MultiParameter"><span>MultiParameter</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="io.fintrospect.parameters.MultiParameter"><span>MultiParameter</span></li><li class="in" name="io.fintrospect.parameters.Bindable"><span>Bindable</span></li><li class="in" name="io.fintrospect.parameters.Parameter"><span>Parameter</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -113,10 +113,47 @@
 
         
 
-        
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="io.fintrospect.parameters.Parameter#required" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="required:Boolean"></a>
+      <a id="required:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">required</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.MultiParameter@required:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a></dd></dl></div>
+    </li><li name="io.fintrospect.parameters.Parameter#where" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="where:String"></a>
+      <a id="where:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">where</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.MultiParameter@where:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a></dd></dl></div>
+    </li></ol>
+            </div>
 
         <div id="values" class="values members">
-              <h3>Value Members</h3>
+              <h3>Concrete Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
@@ -151,23 +188,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="io.fintrospect.parameters.MultiParameter#--&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="--&gt;(value:Seq[T]):Seq[B]"></a>
-      <a id="--&gt;(Seq[T]):Seq[B]"></a>
+    </li><li name="io.fintrospect.parameters.MultiParameter#--&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="--&gt;(value:Seq[T]):Iterable[B]"></a>
+      <a id="--&gt;(Seq[T]):Iterable[B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $minus$minus$greater" class="name">--&gt;</span><span class="params">(<span name="value">value: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.fintrospect.parameters.MultiParameter.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="io.fintrospect.parameters.MultiParameter.B">B</span>]</span>
+        <span title="gt4s: $minus$minus$greater" class="name">--&gt;</span><span class="params">(<span name="value">value: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.fintrospect.parameters.MultiParameter.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="io.fintrospect.parameters.MultiParameter.B">B</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.MultiParameter@--&gt;(value:Seq[T]):Seq[B]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.MultiParameter@--&gt;(value:Seq[T]):Iterable[B]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Bind the value to this parameter</p><div class="fullcomment"><div class="comment cmt"><p>Bind the value to this parameter</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the binding</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.parameters.MultiParameter">MultiParameter</a> → <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a></dd></dl></div>
     </li><li name="io.fintrospect.parameters.MultiParameter#&lt;--?" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="&lt;--?(from:From):io.fintrospect.util.Extraction[Seq[T]]"></a>
       <a id="&lt;--?(From):Extraction[Seq[T]]"></a>
@@ -242,7 +279,7 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="io.fintrospect.parameters.MultiParameter#description" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="io.fintrospect.parameters.MultiParameter#description" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="description:Option[String]"></a>
       <a id="description:Option[String]"></a>
       <h4 class="signature">
@@ -258,7 +295,7 @@
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.parameters.MultiParameter">MultiParameter</a> → <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -293,6 +330,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="io.fintrospect.parameters.Parameter#extractFrom" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="extractFrom[T](deserialize:Seq[String]=&gt;scala.util.Try[T],fromInput:Option[Seq[String]]):io.fintrospect.util.Extraction[T]"></a>
+      <a id="extractFrom[T]((Seq[String])⇒Try[T],Option[Seq[String]]):Extraction[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">extractFrom</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="deserialize">deserialize: (<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]) ⇒ <span class="extype" name="scala.util.Try">Try</span>[<span class="extype" name="io.fintrospect.parameters.Parameter.extractFrom.T">T</span>]</span>, <span name="fromInput">fromInput: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>)</span><span class="result">: <a href="../util/Extraction.html" class="extype" name="io.fintrospect.util.Extraction">Extraction</a>[<span class="extype" name="io.fintrospect.parameters.Parameter.extractFrom.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.MultiParameter@extractFrom[T](deserialize:Seq[String]=&gt;scala.util.Try[T],fromInput:Option[Seq[String]]):io.fintrospect.util.Extraction[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a></dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -367,7 +421,7 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="io.fintrospect.parameters.MultiParameter#name" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="io.fintrospect.parameters.MultiParameter#name" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="name:String"></a>
       <a id="name:String"></a>
       <h4 class="signature">
@@ -383,7 +437,7 @@
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.parameters.MultiParameter">MultiParameter</a> → <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -435,7 +489,26 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="io.fintrospect.parameters.MultiParameter#paramType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="io.fintrospect.parameters.Bindable#of" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="of(value:T):Iterable[B]"></a>
+      <a id="of(Seq[T]):Iterable[B]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">of</span><span class="params">(<span name="value">value: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.fintrospect.parameters.MultiParameter.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="io.fintrospect.parameters.MultiParameter.B">B</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.MultiParameter@of(value:T):Iterable[B]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Bind the value to this parameter
+User-friendly synonym for --&gt;(), which is why the method is final.</p><div class="fullcomment"><div class="comment cmt"><p>Bind the value to this parameter
+User-friendly synonym for --&gt;(), which is why the method is final.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the binding</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a></dd></dl></div>
+    </li><li name="io.fintrospect.parameters.MultiParameter#paramType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="paramType:io.fintrospect.parameters.ParamType"></a>
       <a id="paramType:ParamType"></a>
       <h4 class="signature">
@@ -451,7 +524,7 @@
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.parameters.MultiParameter">MultiParameter</a> → <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -469,7 +542,7 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="io.fintrospect.parameters.Parameter#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
@@ -478,14 +551,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.parameters.MultiParameter@toString():String" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a> → AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -564,7 +637,11 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="io.fintrospect.parameters.Bindable">
+              <h3>Inherited from <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.fintrospect.parameters.MultiParameter.T">T</span>], <span class="extype" name="io.fintrospect.parameters.MultiParameter.B">B</span>]</h3>
+            </div><div class="parent" name="io.fintrospect.parameters.Parameter">
+              <h3>Inherited from <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

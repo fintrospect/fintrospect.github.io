@@ -1,22 +1,22 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>types - io.fintrospect.parameters.types</title>
-          <meta name="description" content="types - io.fintrospect.parameters.types" />
-          <meta name="keywords" content="types io.fintrospect.parameters.types" />
+          <title>ContractEndpoint - io.fintrospect.ContractEndpoint</title>
+          <meta name="description" content="ContractEndpoint - io.fintrospect.ContractEndpoint" />
+          <meta name="keywords" content="ContractEndpoint io.fintrospect.ContractEndpoint" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
-      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
-      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
-      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
-      <script type="text/javascript" src="../../../lib/template.js"></script>
-      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
       
       <script type="text/javascript">
          if(top === self) {
-            var url = '../../../index.html';
-            var hash = 'io.fintrospect.parameters.types$';
+            var url = '../../index.html';
+            var hash = 'io.fintrospect.ContractEndpoint';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -26,15 +26,15 @@
    	  </script>
     
         </head>
-        <body class="value">
+        <body class="type">
       <div id="definition">
-        <img alt="Object" src="../../../lib/object_big.png" />
-        <p id="owner"><a href="../../package.html" class="extype" name="io">io</a>.<a href="../package.html" class="extype" name="io.fintrospect">fintrospect</a>.<a href="package.html" class="extype" name="io.fintrospect.parameters">parameters</a></p>
-        <h1>types</h1><h3><span class="morelinks"><div>Related Doc:
-            <a href="package.html" class="extype" name="io.fintrospect.parameters">package parameters</a>
+        <img alt="Trait" src="../../lib/trait_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="io">io</a>.<a href="package.html" class="extype" name="io.fintrospect">fintrospect</a></p>
+        <h1>ContractEndpoint</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="io.fintrospect">package fintrospect</a>
           </div></span></h3><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       </div>
@@ -42,17 +42,21 @@
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">object</span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">types</span>
+        <span class="name">ContractEndpoint</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A single Contract endpoint which provides an UnboundRoute to bind something to.
+</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
-        </div></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="../../examples/clients/BrewdogApiContract$$LookupBeers$.html" class="extype" name="examples.clients.BrewdogApiContract.LookupBeers">LookupBeers</a>, <a href="../../examples/clients/BrewdogApiContract$$RandomBeer$.html" class="extype" name="examples.clients.BrewdogApiContract.RandomBeer">RandomBeer</a></div>
+          </div></div>
         
 
       <div id="mbrsel">
@@ -69,7 +73,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="io.fintrospect.parameters.types"><span>types</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="io.fintrospect.ContractEndpoint"><span>ContractEndpoint</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -88,66 +92,32 @@
         <div id="allMembers">
         
 
-        <div id="types" class="types members">
-              <h3>Type Members</h3>
-              <ol><li name="io.fintrospect.parameters.types.ExtParameter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="ExtParameter[From,T,Bnd&lt;:io.fintrospect.parameters.Binding]=io.fintrospect.parameters.Parameterwithio.fintrospect.util.Extractor[From,T]withio.fintrospect.parameters.Bindable[T,Bnd]"></a>
-      <a id="ExtParameter[From,T,Bnd&lt;:Binding]:ExtParameter[From,T,Bnd]"></a>
+        
+
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="io.fintrospect.ContractEndpoint#route" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="route:io.fintrospect.UnboundRoute"></a>
+      <a id="route:UnboundRoute"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
+        <span class="modifier">abstract </span>
+        <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">ExtParameter</span><span class="tparams">[<span name="From">From</span>, <span name="T">T</span>, <span name="Bnd">Bnd &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> = <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a> with <a href="../util/Extractor.html" class="extype" name="io.fintrospect.util.Extractor">Extractor</a>[<span class="extype" name="io.fintrospect.parameters.types.ExtParameter.From">From</span>, <span class="extype" name="io.fintrospect.parameters.types.ExtParameter.T">T</span>] with <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="io.fintrospect.parameters.types.ExtParameter.T">T</span>, <span class="extype" name="io.fintrospect.parameters.types.ExtParameter.Bnd">Bnd</span>]</span>
+        <span class="name">route</span><span class="result">: <a href="UnboundRoute.html" class="extype" name="io.fintrospect.UnboundRoute">UnboundRoute</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@ExtParameter[From,T,Bnd&lt;:io.fintrospect.parameters.Binding]=io.fintrospect.parameters.Parameterwithio.fintrospect.util.Extractor[From,T]withio.fintrospect.parameters.Bindable[T,Bnd]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="io.fintrospect.parameters.types.MandatoryParameter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="MandatoryParameter[From,T,Bnd&lt;:io.fintrospect.parameters.Binding]extendsMandatory[From,T]withExtractableParameter[From,T]withMandatoryRebind[From,T,Bnd]"></a>
-      <a id="MandatoryParameter[From,T,Bnd&lt;:Binding]:MandatoryParameter[From,T,Bnd]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="types$$MandatoryParameter.html"><span class="name">MandatoryParameter</span></a><span class="tparams">[<span name="From">From</span>, <span name="T">T</span>, <span name="Bnd">Bnd &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> extends <a href="Mandatory.html" class="extype" name="io.fintrospect.parameters.Mandatory">Mandatory</a>[<span class="extype" name="io.fintrospect.parameters.types.MandatoryParameter.From">From</span>, <span class="extype" name="io.fintrospect.parameters.types.MandatoryParameter.T">T</span>] with <a href="../util/ExtractableParameter.html" class="extype" name="io.fintrospect.util.ExtractableParameter">ExtractableParameter</a>[<span class="extype" name="io.fintrospect.parameters.types.MandatoryParameter.From">From</span>, <span class="extype" name="io.fintrospect.parameters.types.MandatoryParameter.T">T</span>] with <a href="MandatoryRebind.html" class="extype" name="io.fintrospect.parameters.MandatoryRebind">MandatoryRebind</a>[<span class="extype" name="io.fintrospect.parameters.types.MandatoryParameter.From">From</span>, <span class="extype" name="io.fintrospect.parameters.types.MandatoryParameter.T">T</span>, <span class="extype" name="io.fintrospect.parameters.types.MandatoryParameter.Bnd">Bnd</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@MandatoryParameter[From,T,Bnd&lt;:io.fintrospect.parameters.Binding]extendsMandatory[From,T]withExtractableParameter[From,T]withMandatoryRebind[From,T,Bnd]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="io.fintrospect.parameters.types.OptionalParameter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="OptionalParameter[From,T,Bnd&lt;:io.fintrospect.parameters.Binding]extendsOptional[From,T]withExtractableParameter[From,T]withOptionalRebind[From,T,Bnd]withOptionalBindable[T,Bnd]"></a>
-      <a id="OptionalParameter[From,T,Bnd&lt;:Binding]:OptionalParameter[From,T,Bnd]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="types$$OptionalParameter.html"><span class="name">OptionalParameter</span></a><span class="tparams">[<span name="From">From</span>, <span name="T">T</span>, <span name="Bnd">Bnd &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> extends <a href="Optional.html" class="extype" name="io.fintrospect.parameters.Optional">Optional</a>[<span class="extype" name="io.fintrospect.parameters.types.OptionalParameter.From">From</span>, <span class="extype" name="io.fintrospect.parameters.types.OptionalParameter.T">T</span>] with <a href="../util/ExtractableParameter.html" class="extype" name="io.fintrospect.util.ExtractableParameter">ExtractableParameter</a>[<span class="extype" name="io.fintrospect.parameters.types.OptionalParameter.From">From</span>, <span class="extype" name="io.fintrospect.parameters.types.OptionalParameter.T">T</span>] with <a href="OptionalRebind.html" class="extype" name="io.fintrospect.parameters.OptionalRebind">OptionalRebind</a>[<span class="extype" name="io.fintrospect.parameters.types.OptionalParameter.From">From</span>, <span class="extype" name="io.fintrospect.parameters.types.OptionalParameter.T">T</span>, <span class="extype" name="io.fintrospect.parameters.types.OptionalParameter.Bnd">Bnd</span>] with <a href="OptionalBindable.html" class="extype" name="io.fintrospect.parameters.OptionalBindable">OptionalBindable</a>[<span class="extype" name="io.fintrospect.parameters.types.OptionalParameter.T">T</span>, <span class="extype" name="io.fintrospect.parameters.types.OptionalParameter.Bnd">Bnd</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@OptionalParameter[From,T,Bnd&lt;:io.fintrospect.parameters.Binding]extendsOptional[From,T]withExtractableParameter[From,T]withOptionalRebind[From,T,Bnd]withOptionalBindable[T,Bnd]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@route:io.fintrospect.UnboundRoute" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li></ol>
             </div>
 
-        
-
         <div id="values" class="values members">
-              <h3>Value Members</h3>
+              <h3>Concrete Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
@@ -160,8 +130,8 @@
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -177,8 +147,8 @@
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@##():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@##():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -194,8 +164,8 @@
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@==(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -211,8 +181,8 @@
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
@@ -228,11 +198,11 @@
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@clone():Object" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@clone():Object" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
@@ -251,8 +221,8 @@
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -268,8 +238,8 @@
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -285,11 +255,11 @@
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@finalize():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="symbol">classOf[java.lang.Throwable]</span>
@@ -308,8 +278,8 @@
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@getClass():Class[_]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -325,8 +295,8 @@
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@hashCode():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -342,8 +312,8 @@
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
@@ -359,8 +329,8 @@
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -376,8 +346,8 @@
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@notify():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@notify():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -393,8 +363,8 @@
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@notifyAll():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -410,8 +380,8 @@
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -427,8 +397,8 @@
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@toString():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@toString():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -444,8 +414,8 @@
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@wait():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@wait():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -467,8 +437,8 @@
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -490,8 +460,8 @@
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.types$@wait(x$1:Long):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../index.html#io.fintrospect.ContractEndpoint@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>

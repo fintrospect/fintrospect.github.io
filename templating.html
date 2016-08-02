@@ -15,7 +15,7 @@ val loader = if(devMode) MustacheTemplateLoaders.HotReload(&quot;src/main/resour
 
 val webModule = ModuleSpec[Request, View](Root / &quot;web&quot;,
     new SiteMapModuleRenderer(new URL(&quot;http://root.com&quot;)),
-    new RenderMustacheView(Html.ResponseBuilder, loader))
+    new RenderView(Html.ResponseBuilder, loader))
     .withRoute(RouteSpec().at(Get) / &quot;message&quot; bindTo showMessage)
 </code></pre><p>Available implementations of the <code>TemplateLoader</code> are (see the relevant implementation of <code>TemplateLoaders</code>):</p>
 <ul>
@@ -23,5 +23,5 @@ val webModule = ModuleSpec[Request, View](Root / &quot;web&quot;,
 <li>cached from the filesystem</li>
 <li>hot-reloading from the filesystem</li>
 </ul>
-<p>Similarly to how the <code>ResponseBuilder</code> works, no 3rd-party dependencies are bundled with Fintrospect - simply import the extra SBT dependencies 
+<p>Similarly to how the <code>ResponseBuilder</code> codecs work, no 3rd-party dependencies are bundled with Fintrospect - simply import the extra SBT dependencies 
 as required:</p></article></div></div></div></main><footer><span class="left">project maintained by <a href="https://github.com/daviddenton">daviddenton</a></span><span class="right"> site powered by <a href="https://github.com/jvandemo/hb-bootstrap">hb-bootstrap</a> for <a href="http://harpjs.com">Harp</a> by <a href="http://www.jvandemo.com">Jurgen Van de Moere</a></span><script>$(function () { $('[data-toggle="tooltip"]').tooltip() })</script></footer></body></html>

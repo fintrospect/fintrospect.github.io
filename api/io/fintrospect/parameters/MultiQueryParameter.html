@@ -51,7 +51,7 @@
       
           <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="QueryParameter.html" class="extype" name="io.fintrospect.parameters.QueryParameter">QueryParameter</a>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.fintrospect.parameters.MultiQueryParameter.T">T</span>]], <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.fintrospect.parameters.MultiQueryParameter.T">T</span>], <a href="QueryBinding.html" class="extype" name="io.fintrospect.parameters.QueryBinding">QueryBinding</a>], <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a>, <a href="MultiParameter.html" class="extype" name="io.fintrospect.parameters.MultiParameter">MultiParameter</a>[<span class="extype" name="io.fintrospect.parameters.MultiQueryParameter.T">T</span>, <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <a href="QueryBinding.html" class="extype" name="io.fintrospect.parameters.QueryBinding">QueryBinding</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="QueryParameter.html" class="extype" name="io.fintrospect.parameters.QueryParameter">QueryParameter</a>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.fintrospect.parameters.MultiQueryParameter.T">T</span>]], <a href="Rebindable.html" class="extype" name="io.fintrospect.parameters.Rebindable">Rebindable</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.fintrospect.parameters.MultiQueryParameter.T">T</span>], <a href="QueryBinding.html" class="extype" name="io.fintrospect.parameters.QueryBinding">QueryBinding</a>], <a href="MultiParameter.html" class="extype" name="io.fintrospect.parameters.MultiParameter">MultiParameter</a>[<span class="extype" name="io.fintrospect.parameters.MultiQueryParameter.T">T</span>, <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <a href="QueryBinding.html" class="extype" name="io.fintrospect.parameters.QueryBinding">QueryBinding</a>], <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.fintrospect.parameters.MultiQueryParameter.T">T</span>], <a href="QueryBinding.html" class="extype" name="io.fintrospect.parameters.QueryBinding">QueryBinding</a>], <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -69,7 +69,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="io.fintrospect.parameters.MultiQueryParameter"><span>MultiQueryParameter</span></li><li class="in" name="io.fintrospect.parameters.QueryParameter"><span>QueryParameter</span></li><li class="in" name="io.fintrospect.parameters.Bindable"><span>Bindable</span></li><li class="in" name="io.fintrospect.parameters.Parameter"><span>Parameter</span></li><li class="in" name="io.fintrospect.parameters.MultiParameter"><span>MultiParameter</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="io.fintrospect.parameters.MultiQueryParameter"><span>MultiQueryParameter</span></li><li class="in" name="io.fintrospect.parameters.QueryParameter"><span>QueryParameter</span></li><li class="in" name="io.fintrospect.parameters.Rebindable"><span>Rebindable</span></li><li class="in" name="io.fintrospect.parameters.MultiParameter"><span>MultiParameter</span></li><li class="in" name="io.fintrospect.parameters.Bindable"><span>Bindable</span></li><li class="in" name="io.fintrospect.parameters.Parameter"><span>Parameter</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -112,7 +112,24 @@
 
         <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="io.fintrospect.parameters.Parameter#required" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+              <ol><li name="io.fintrospect.parameters.Rebindable#&lt;-&gt;" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="&lt;-&gt;(from:From):Iterable[B]"></a>
+      <a id="&lt;-&gt;(Request):Iterable[QueryBinding]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $less$minus$greater" class="name">&lt;-&gt;</span><span class="params">(<span name="from">from: <span class="extype" name="com.twitter.finagle.http.Request">Request</span></span>)</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="QueryBinding.html" class="extype" name="io.fintrospect.parameters.QueryBinding">QueryBinding</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.MultiQueryParameter@&lt;-&gt;(from:From):Iterable[B]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Rebindable.html" class="extype" name="io.fintrospect.parameters.Rebindable">Rebindable</a></dd></dl></div>
+    </li><li name="io.fintrospect.parameters.Parameter#required" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="required:Boolean"></a>
       <a id="required:Boolean"></a>
       <h4 class="signature">
@@ -169,22 +186,22 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="io.fintrospect.parameters.MultiParameter#--&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="--&gt;(value:Seq[T]):Seq[B]"></a>
-      <a id="--&gt;(Seq[T]):Seq[QueryBinding]"></a>
+      <a id="--&gt;(value:Seq[T]):Iterable[B]"></a>
+      <a id="--&gt;(Seq[T]):Iterable[QueryBinding]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $minus$minus$greater" class="name">--&gt;</span><span class="params">(<span name="value">value: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.fintrospect.parameters.MultiQueryParameter.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="QueryBinding.html" class="extype" name="io.fintrospect.parameters.QueryBinding">QueryBinding</a>]</span>
+        <span title="gt4s: $minus$minus$greater" class="name">--&gt;</span><span class="params">(<span name="value">value: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.fintrospect.parameters.MultiQueryParameter.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="QueryBinding.html" class="extype" name="io.fintrospect.parameters.QueryBinding">QueryBinding</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.MultiQueryParameter@--&gt;(value:Seq[T]):Seq[B]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.MultiQueryParameter@--&gt;(value:Seq[T]):Iterable[B]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MultiParameter.html" class="extype" name="io.fintrospect.parameters.MultiParameter">MultiParameter</a></dd></dl></div>
+      <p class="shortcomment cmt">Bind the value to this parameter</p><div class="fullcomment"><div class="comment cmt"><p>Bind the value to this parameter</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the binding</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MultiParameter.html" class="extype" name="io.fintrospect.parameters.MultiParameter">MultiParameter</a> → <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a></dd></dl></div>
     </li><li name="io.fintrospect.parameters.MultiParameter#&lt;--?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="&lt;--?(from:From):io.fintrospect.util.Extraction[Seq[T]]"></a>
       <a id="&lt;--?(Request):Extraction[Seq[T]]"></a>
@@ -275,7 +292,7 @@
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MultiParameter.html" class="extype" name="io.fintrospect.parameters.MultiParameter">MultiParameter</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MultiParameter.html" class="extype" name="io.fintrospect.parameters.MultiParameter">MultiParameter</a> → <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -417,7 +434,7 @@
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MultiParameter.html" class="extype" name="io.fintrospect.parameters.MultiParameter">MultiParameter</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MultiParameter.html" class="extype" name="io.fintrospect.parameters.MultiParameter">MultiParameter</a> → <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -504,7 +521,25 @@ User-friendly synonym for --&gt;(), which is why the method is final.</p></div><
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MultiParameter.html" class="extype" name="io.fintrospect.parameters.MultiParameter">MultiParameter</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MultiParameter.html" class="extype" name="io.fintrospect.parameters.MultiParameter">MultiParameter</a> → <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a></dd></dl></div>
+    </li><li name="io.fintrospect.parameters.Rebindable#rebind" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="rebind(from:From):Iterable[B]"></a>
+      <a id="rebind(Request):Iterable[QueryBinding]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rebind</span><span class="params">(<span name="from">from: <span class="extype" name="com.twitter.finagle.http.Request">Request</span></span>)</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="QueryBinding.html" class="extype" name="io.fintrospect.parameters.QueryBinding">QueryBinding</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.MultiQueryParameter@rebind(from:From):Iterable[B]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">User-friendly synonym for &lt;-&gt;(), which is why the method is final.</p><div class="fullcomment"><div class="comment cmt"><p>User-friendly synonym for &lt;-&gt;(), which is why the method is final.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Rebindable.html" class="extype" name="io.fintrospect.parameters.Rebindable">Rebindable</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -636,12 +671,14 @@ User-friendly synonym for --&gt;(), which is why the method is final.</p></div><
         <div id="inheritedMembers">
         <div class="parent" name="io.fintrospect.parameters.QueryParameter">
               <h3>Inherited from <a href="QueryParameter.html" class="extype" name="io.fintrospect.parameters.QueryParameter">QueryParameter</a>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.fintrospect.parameters.MultiQueryParameter.T">T</span>]]</h3>
+            </div><div class="parent" name="io.fintrospect.parameters.Rebindable">
+              <h3>Inherited from <a href="Rebindable.html" class="extype" name="io.fintrospect.parameters.Rebindable">Rebindable</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.fintrospect.parameters.MultiQueryParameter.T">T</span>], <a href="QueryBinding.html" class="extype" name="io.fintrospect.parameters.QueryBinding">QueryBinding</a>]</h3>
+            </div><div class="parent" name="io.fintrospect.parameters.MultiParameter">
+              <h3>Inherited from <a href="MultiParameter.html" class="extype" name="io.fintrospect.parameters.MultiParameter">MultiParameter</a>[<span class="extype" name="io.fintrospect.parameters.MultiQueryParameter.T">T</span>, <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <a href="QueryBinding.html" class="extype" name="io.fintrospect.parameters.QueryBinding">QueryBinding</a>]</h3>
             </div><div class="parent" name="io.fintrospect.parameters.Bindable">
               <h3>Inherited from <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.fintrospect.parameters.MultiQueryParameter.T">T</span>], <a href="QueryBinding.html" class="extype" name="io.fintrospect.parameters.QueryBinding">QueryBinding</a>]</h3>
             </div><div class="parent" name="io.fintrospect.parameters.Parameter">
               <h3>Inherited from <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a></h3>
-            </div><div class="parent" name="io.fintrospect.parameters.MultiParameter">
-              <h3>Inherited from <a href="MultiParameter.html" class="extype" name="io.fintrospect.parameters.MultiParameter">MultiParameter</a>[<span class="extype" name="io.fintrospect.parameters.MultiQueryParameter.T">T</span>, <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <a href="QueryBinding.html" class="extype" name="io.fintrospect.parameters.QueryBinding">QueryBinding</a>]</h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">

@@ -14,8 +14,8 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <h3>pull requests</h3><p>If there are any message format library or templating engine bindings that you&#39;d like to see supported, then please feel free to suggest 
 them or provide a PR. </p>
 <ul>
-<li>JSON formats: simply provide an implementation of <code>JsonLibrary</code> by following the <code>Argo</code> example in the source, and update <code>format-dependencies.md</code></li>
-<li>Templating engines: provide a <code>Render&lt;name&gt;View</code>implementation by following the <code>RenderMustacheView</code> example in the source, and update <code>templating-dependencies.md</code></li>
+<li>JSON formats: create a new module with an implementation of <code>JsonLibrary</code> by following the <code>Spray</code> example in the source, and update <code>format-dependencies.md</code></li>
+<li>Templating engines: create a new module with a <code>Templates</code>implementation by following the <code>MustacheTemplates</code> example in the source, and update <code>templating-dependencies.md</code></li>
 </ul>
 <h4>general guidelines</h4><ul>
 <li>At the moment, PRs should be sent to the master branch - this might change in future so check back everytime!</li>
