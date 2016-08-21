@@ -35,17 +35,20 @@ as required:</p>
 <tr>
   <td><a href="http://handlebarsjs.com">Handlebars</a></td>
   <td>.hbs</td>
-  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-handlebars&quot; % &quot;13.5.2&quot;</td>
+  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-handlebars&quot; % &quot;13.6.0&quot;</td>
   <td><a data-toggle="tooltip" href="#" title="io.fintrospect.templating.MustacheTemplates">MustacheTemplates</a></td>
 </tr>
 <tr>
   <td><a href="http://mustache.github.io/">Mustache</a></td>
   <td>.mustache</td>
-  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-mustache&quot; % &quot;13.5.2&quot;</td>
+  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-mustache&quot; % &quot;13.6.0&quot;</td>
   <td><a data-toggle="tooltip" href="#" title="io.fintrospect.templating.MustacheTemplates">MustacheTemplates</a></td>
 </tr>
 </table>
 
-<h1>static content</h1><p>Static files can easily be served from the classpath by using an instance of <code>StaticModule</code>:</p>
-<pre><code>val publicModule = StaticModule(Root / &quot;public&quot;, &quot;classpathPathOfStaticContent&quot;)
-</code></pre><p><a class="next" href="http://fintrospect.io/testing"><button type="button" class="btn btn-sm btn-default">next: testing</button></a></p></article></div></div></div></main><footer><span class="left">project maintained by <a href="https://github.com/daviddenton">daviddenton</a></span><span class="right"> site powered by <a href="https://github.com/jvandemo/hb-bootstrap">hb-bootstrap</a> for <a href="http://harpjs.com">Harp</a> by <a href="http://www.jvandemo.com">Jurgen Van de Moere</a></span><script>$(function () { $('[data-toggle="tooltip"]').tooltip() })</script></footer></body></html>
+<h1>static content</h1><p>Static files can easily be served from the either the Classpath or a Directory by using an instance of <code>StaticModule</code> with an 
+appropriately injected <code>ResourceLoader</code>:</p>
+<pre><code>val cpModule = StaticModule(Root / &quot;public&quot;, ResourceLoader.Classpath(&quot;package/path&quot;))
+val dirModule = StaticModule(Root / &quot;public&quot;, ResourceLoader.Directory(&quot;file/dir/path&quot;))
+</code></pre><p>Note that due to security concerns, <code>ResourceLoader.Classpath</code> should be configured to use a package which does NOT overlap with class assets.</p>
+<p><a class="next" href="http://fintrospect.io/testing"><button type="button" class="btn btn-sm btn-default">next: testing</button></a></p></article></div></div></div></main><footer><span class="left">project maintained by <a href="https://github.com/daviddenton">daviddenton</a></span><span class="right"> site powered by <a href="https://github.com/jvandemo/hb-bootstrap">hb-bootstrap</a> for <a href="http://harpjs.com">Harp</a> by <a href="http://www.jvandemo.com">Jurgen Van de Moere</a></span><script>$(function () { $('[data-toggle="tooltip"]').tooltip() })</script></footer></body></html>

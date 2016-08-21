@@ -10,6 +10,9 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <li>Add strict <code>Content-Type</code> header checking for <code>RouteSpec</code>s based on <code>consuming()</code> and <code>withBody()</code> settings. Option for non-strictness.</li>
 <li>Add strict <code>Accept</code> header checking for <code>RouteSpec</code>s based on <code>producing()</code> settings. Option for non-strictness.</li>
 </ul>
+<h2>13.6.0</h2><ul>
+<li>(Possible) Breaking: Refactored <code>StaticModule</code> to allow serving of directory-based assets. Introduced <code>Classpath</code> and <code>Directory</code> <code>ResourceLoaders</code> to allow for this change.</li>
+</ul>
 <h2>13.5.2</h2><ul>
 <li>Addition of <code>Contract</code> and <code>ContractProxyModule</code>. This (optional) formalisation of client contracts allows simple
 exposing of a client API contract via Swagger. See <code>ContractProxyExample</code>.</li>

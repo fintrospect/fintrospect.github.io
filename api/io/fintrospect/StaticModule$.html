@@ -147,23 +147,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="io.fintrospect.StaticModule#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(basePath:com.twitter.finagle.http.path.Path,baseDir:String,moduleFilter:com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]):io.fintrospect.StaticModule"></a>
-      <a id="apply(Path,String,Filter[Request,Response,Request,Response]):StaticModule"></a>
+    </li><li name="io.fintrospect.StaticModule#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply(basePath:com.twitter.finagle.http.path.Path,resourceLoader:io.fintrospect.ResourceLoader,moduleFilter:com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]):io.fintrospect.StaticModule"></a>
+      <a id="apply(Path,ResourceLoader,Filter[Request,Response,Request,Response]):StaticModule"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="basePath">basePath: <span class="extype" name="com.twitter.finagle.http.path.Path">Path</span></span>, <span name="baseDir">baseDir: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;/&quot;</span></span>, <span name="moduleFilter">moduleFilter: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>] = <span class="symbol">Filter.identity</span></span>)</span><span class="result">: <a href="StaticModule.html" class="extype" name="io.fintrospect.StaticModule">StaticModule</a></span>
+        <span class="name">apply</span><span class="params">(<span name="basePath">basePath: <span class="extype" name="com.twitter.finagle.http.path.Path">Path</span></span>, <span name="resourceLoader">resourceLoader: <a href="ResourceLoader.html" class="extype" name="io.fintrospect.ResourceLoader">ResourceLoader</a> = <span class="symbol"><span class="name"><a href="ResourceLoader$.html">ResourceLoader.Classpath(&quot;/&quot;)</a></span></span></span>, <span name="moduleFilter">moduleFilter: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>] = <span class="symbol">Filter.identity</span></span>)</span><span class="result">: <a href="StaticModule.html" class="extype" name="io.fintrospect.StaticModule">StaticModule</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#io.fintrospect.StaticModule$@apply(basePath:com.twitter.finagle.http.path.Path,baseDir:String,moduleFilter:com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]):io.fintrospect.StaticModule" title="Permalink" target="_top">
+      <a href="../../index.html#io.fintrospect.StaticModule$@apply(basePath:com.twitter.finagle.http.path.Path,resourceLoader:io.fintrospect.ResourceLoader,moduleFilter:com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]):io.fintrospect.StaticModule" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Module to serve static resources.</p><div class="fullcomment"><div class="comment cmt"><p>Module to serve static resources. This defaults to using a Classpath ResourceLoader (to serve from the root of the classpath)</p></div></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
