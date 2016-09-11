@@ -3,21 +3,21 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 ga('create', 'UA-69281315-3', 'auto');
-ga('send', 'pageview');</script></head><body><header><nav role="navigation" class="navbar navbar-default navbar-fixed-top"><div class="container-fluid"><div class="navbar-header"><button data-toggle="collapse" data-target="#navbar-top-collapse-1" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="http://fintrospect.io" class="navbar-brand">fintrospect</a></div><div id="navbar-top-collapse-1" class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right"><li><a href="https://bintray.com/fintrospect/maven/fintrospect-core/_latestVersion"><img src="https://api.bintray.com/packages/fintrospect/maven/fintrospect-core/images/download.svg"/></a></li><li><a href="https://travis-ci.org/daviddenton/fintrospect"><img src="https://travis-ci.org/daviddenton/fintrospect.svg?branch=master"/></a></li><li><a href="https://coveralls.io/github/daviddenton/fintrospect?branch=master"><img src="https://coveralls.io/repos/daviddenton/fintrospect/badge.svg?branch=master"/></a></li><li><a href="https://gitter.im/daviddenton/fintrospect"><img src="https://badges.gitter.im/daviddenton/fintrospect.svg"/></a></li><li><a href="https://twitter.com/fintrospectdev"><img src="images/twitter.png" class="twitter"/></a></li><li><a href="http://github.com/daviddenton/fintrospect"><img src="images/GitHub-Mark-32px.png"/></a></li></ul></div></div></nav></header><main><div class="container"><div class="row"><div class="col-sm-3"><div class="logo"><img src="images/eye.png" class="logo"/></div><ul class="nav nav-pills nav-stacked nav-docs"><li><h1>guide</h1></li><li><a href="http://fintrospect.io">overview</a></li><li><a href="http://fintrospect.io/installation">installation</a></li><li><a href="http://fintrospect.io/request-parameters-and-bodies">request parameters & bodies</a></li><li><a href="http://fintrospect.io/defining-routes">defining routes</a></li><li><a href="http://fintrospect.io/server-routes">server routes</a></li><li><a href="http://fintrospect.io/client-routes">client routes</a></li><li><a href="http://fintrospect.io/building-http-responses">building http responses</a></li><li><a href="http://fintrospect.io/cross-field-validation">cross-field validation</a></li><li class="active"><a href="http://fintrospect.io/templating-and-static-content">templating & static content</a></li><li><a href="http://fintrospect.io/testing">testing</a></li><li><a href="http://fintrospect.io/examples">examples</a></li><li><h1>misc</h1></li><li><a href="http://fintrospect.io/api">api docs</a></li><li><a href="http://fintrospect.io/changelog">changelog & migration</a></li><li><a href="http://fintrospect.io/contributing">contributing</a></li></ul></div><div class="col-sm-9"><article class="article-docs"><h1>templating</h1><p>Templates are applied by using a custom <code>Filter</code> to convert <code>View</code> instances into standard Http Responses. Simply implement the 
+ga('send', 'pageview');</script></head><body><header><nav role="navigation" class="navbar navbar-default navbar-fixed-top"><div class="container-fluid"><div class="navbar-header"><button data-toggle="collapse" data-target="#navbar-top-collapse-1" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="http://fintrospect.io" class="navbar-brand">fintrospect</a></div><div id="navbar-top-collapse-1" class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right"><li><a href="https://bintray.com/fintrospect/maven/fintrospect-core/_latestVersion"><img src="https://api.bintray.com/packages/fintrospect/maven/fintrospect-core/images/download.svg"/></a></li><li><a href="https://travis-ci.org/daviddenton/fintrospect"><img src="https://travis-ci.org/daviddenton/fintrospect.svg?branch=master"/></a></li><li><a href="https://coveralls.io/github/daviddenton/fintrospect?branch=master"><img src="https://coveralls.io/repos/daviddenton/fintrospect/badge.svg?branch=master"/></a></li><li><a href="https://gitter.im/daviddenton/fintrospect"><img src="https://badges.gitter.im/daviddenton/fintrospect.svg"/></a></li><li><a href="https://twitter.com/fintrospectdev"><img src="images/twitter.png" class="twitter"/></a></li><li><a href="http://github.com/daviddenton/fintrospect"><img src="images/GitHub-Mark-32px.png"/></a></li></ul></div></div></nav></header><main><div class="container"><div class="row"><div class="col-sm-3"><div class="logo"><img src="images/eye.png" class="logo"/></div><ul class="nav nav-pills nav-stacked nav-docs"><li><h1>guide</h1></li><li><a href="http://fintrospect.io">overview</a></li><li><a href="http://fintrospect.io/installation">installation</a></li><li><a href="http://fintrospect.io/request-parameters-and-bodies">request parameters & bodies</a></li><li><a href="http://fintrospect.io/defining-routes">defining routes</a></li><li><a href="http://fintrospect.io/server-routes">server routes</a></li><li><a href="http://fintrospect.io/client-routes">client routes</a></li><li><a href="http://fintrospect.io/building-http-responses">building http responses</a></li><li><a href="http://fintrospect.io/cross-field-validation">cross-field validation</a></li><li class="active"><a href="http://fintrospect.io/templating-and-static-content">templating & static content</a></li><li><a href="http://fintrospect.io/testing">testing</a></li><li><a href="http://fintrospect.io/examples">examples</a></li><li><h1>misc</h1></li><li><a href="http://fintrospect.io/api">api docs</a></li><li><a href="http://fintrospect.io/changelog">changelog & migration</a></li><li><a href="http://fintrospect.io/contributing">contributing</a></li></ul></div><div class="col-sm-9"><article class="article-docs"><h1>templating</h1><p>Templates are applied by using a custom <code>RenderView</code> filter to convert <code>View</code> instances into standard Http Responses. Simply implement the 
 <code>View</code> trait and then put a matching template file onto the classpath, and chain the output of the model-creating <code>Service</code> into 
-the <code>Filter</code>. You can do this for entire modules by making the <code>ModuleSpec</code> itself generified on <code>View</code> and using the 
+the filter. You can do this for entire modules by making the <code>ModuleSpec</code> itself generified on <code>View</code> by using the 
 templating <code>Filter</code> as a Module-level filter:</p>
 <pre><code>case class ViewMessage(value: String) extends View
 
-def showMessage() = Service.mk[Request, View] { _ =&gt; Future.value(ViewMessage(&quot;some value to be displayed&quot;)) }
+val showMessage = Service.mk[Request, View] { _ =&gt; Future.value(ViewMessage(&quot;some value to be displayed&quot;)) }
 
-val loader = if(devMode) MustacheTemplateLoaders.HotReload(&quot;src/main/resources&quot;) else MustacheTemplateLoaders.CachingClasspath(&quot;.&quot;)
+val renderer = if(devMode) MustacheTemplates.HotReload(&quot;src/main/resources&quot;) else MustacheTemplates.CachingClasspath(&quot;.&quot;)
 
-val webModule = ModuleSpec[Request, View](Root / &quot;web&quot;,
+val webModule = ModuleSpec(Root / &quot;web&quot;,
     new SiteMapModuleRenderer(new URL(&quot;http://root.com&quot;)),
-    new RenderView(Html.ResponseBuilder, loader))
+    new RenderView(Html.ResponseBuilder, renderer))
     .withRoute(RouteSpec().at(Get) / &quot;message&quot; bindTo showMessage)
-</code></pre><p>Available implementations of the <code>TemplateLoader</code> are (see the relevant implementation of <code>TemplateLoaders</code>):</p>
+</code></pre><p>Available implementations of the <code>TemplateRenderer</code> are (see the relevant implementation of <code>Templates</code>):</p>
 <ul>
 <li>cached from the classpath</li>
 <li>cached from the filesystem</li>
@@ -35,13 +35,13 @@ as required:</p>
 <tr>
   <td><a href="http://handlebarsjs.com">Handlebars</a></td>
   <td>.hbs</td>
-  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-handlebars&quot; % &quot;13.7.0&quot;</td>
+  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-handlebars&quot; % &quot;13.8.0&quot;</td>
   <td><a data-toggle="tooltip" href="#" title="io.fintrospect.templating.HandlebarsTemplates">HandlebarsTemplates</a></td>
 </tr>
 <tr>
   <td><a href="http://mustache.github.io/">Mustache</a></td>
   <td>.mustache</td>
-  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-mustache&quot; % &quot;13.7.0&quot;</td>
+  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-mustache&quot; % &quot;13.8.0&quot;</td>
   <td><a data-toggle="tooltip" href="#" title="io.fintrospect.templating.MustacheTemplates">MustacheTemplates</a></td>
 </tr>
 </table>

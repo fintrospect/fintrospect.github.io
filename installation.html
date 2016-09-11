@@ -6,7 +6,7 @@ ga('create', 'UA-69281315-3', 'auto');
 ga('send', 'pageview');</script></head><body><header><nav role="navigation" class="navbar navbar-default navbar-fixed-top"><div class="container-fluid"><div class="navbar-header"><button data-toggle="collapse" data-target="#navbar-top-collapse-1" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="http://fintrospect.io" class="navbar-brand">fintrospect</a></div><div id="navbar-top-collapse-1" class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right"><li><a href="https://bintray.com/fintrospect/maven/fintrospect-core/_latestVersion"><img src="https://api.bintray.com/packages/fintrospect/maven/fintrospect-core/images/download.svg"/></a></li><li><a href="https://travis-ci.org/daviddenton/fintrospect"><img src="https://travis-ci.org/daviddenton/fintrospect.svg?branch=master"/></a></li><li><a href="https://coveralls.io/github/daviddenton/fintrospect?branch=master"><img src="https://coveralls.io/repos/daviddenton/fintrospect/badge.svg?branch=master"/></a></li><li><a href="https://gitter.im/daviddenton/fintrospect"><img src="https://badges.gitter.im/daviddenton/fintrospect.svg"/></a></li><li><a href="https://twitter.com/fintrospectdev"><img src="images/twitter.png" class="twitter"/></a></li><li><a href="http://github.com/daviddenton/fintrospect"><img src="images/GitHub-Mark-32px.png"/></a></li></ul></div></div></nav></header><main><div class="container"><div class="row"><div class="col-sm-3"><div class="logo"><img src="images/eye.png" class="logo"/></div><ul class="nav nav-pills nav-stacked nav-docs"><li><h1>guide</h1></li><li><a href="http://fintrospect.io">overview</a></li><li class="active"><a href="http://fintrospect.io/installation">installation</a></li><li><a href="http://fintrospect.io/request-parameters-and-bodies">request parameters & bodies</a></li><li><a href="http://fintrospect.io/defining-routes">defining routes</a></li><li><a href="http://fintrospect.io/server-routes">server routes</a></li><li><a href="http://fintrospect.io/client-routes">client routes</a></li><li><a href="http://fintrospect.io/building-http-responses">building http responses</a></li><li><a href="http://fintrospect.io/cross-field-validation">cross-field validation</a></li><li><a href="http://fintrospect.io/templating-and-static-content">templating & static content</a></li><li><a href="http://fintrospect.io/testing">testing</a></li><li><a href="http://fintrospect.io/examples">examples</a></li><li><h1>misc</h1></li><li><a href="http://fintrospect.io/api">api docs</a></li><li><a href="http://fintrospect.io/changelog">changelog & migration</a></li><li><a href="http://fintrospect.io/contributing">contributing</a></li></ul></div><div class="col-sm-9"><article class="article-docs"><h1>installation</h1><p>Fintrospect is intentionally dependency-lite by design - other than Finagle, the core library itself only has a single non <code>org.scala</code> dependency.</p>
 <p>To activate some optional features, additional dependencies may be required - these are shown in the subsequent sections depending on the use-case.</p>
 <h3>core</h3><p>Add the following lines to <code>build.sbt</code> - the lib is hosted in Maven Central and JCenter:</p>
-<pre><code class="language-scala">libraryDependencies += &quot;io.fintrospect&quot; %% &quot;fintrospect-core&quot; % &quot;13.7.0&quot;
+<pre><code class="language-scala">libraryDependencies += &quot;io.fintrospect&quot; %% &quot;fintrospect-core&quot; % &quot;13.8.0&quot;
 </code></pre>
 <h3>message formats</h3><p>For consuming&nbsp;<a href="request-parameters-and-bodies">request parameters</a><span>&nbsp; in a type-safe way or using the relevant&nbsp;</span><a href="building-http-responses">HTTP response builders</a><span>&nbsp;add the following:</span></p><table class="code table table-bordered">
 <tr>
@@ -24,19 +24,19 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <tr>
     <td><a href="http://argonaut.io/">Argonaut</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-argonaut&quot; % &quot;13.7.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-argonaut&quot; % &quot;13.8.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.json.Argonaut">Argonaut</a></td>
 </tr>
 <tr>
     <td><a href="https://github.com/travisbrown/circe">Circe</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-circe&quot; % &quot;13.7.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-circe&quot; % &quot;13.8.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.json.Circe">Circe</a></td>
 </tr>
 <tr>
     <td><a href="https://github.com/google/gson">GSON</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-gson&quot; % &quot;13.7.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-gson&quot; % &quot;13.8.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.json.Gson">Gson</a></td>
 </tr>
 <tr>
@@ -48,7 +48,7 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <tr>
     <td><a href="http://json4s.org/">Json4S Native</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-json4s&quot; % &quot;13.7.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-json4s&quot; % &quot;13.8.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.json.Json4s.Native">Json4s.Native</a>
     <br>
     <a data-toggle="tooltip" href="#" title="io.fintrospect.formats.json.Json4s.NativeDoubleMode">Json4s.NativeDoubleMode</a></td>
@@ -56,11 +56,17 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <tr>
     <td><a href="http://json4s.org/">Json4S Jackson</a> </td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-json4s&quot; % &quot;13.7.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-json4s&quot; % &quot;13.8.0&quot;</td>
     <td>
     <a data-toggle="tooltip" href="#" title="io.fintrospect.formats.json.Json4s.Jackson">Json4s.Jackson</a>
     <br>
     <a data-toggle="tooltip" href="#" title="io.fintrospect.formats.json.Json4s.JacksonDoubleMode">Json4s.JacksonDoubleMode</a></td>
+</tr>
+<tr>
+    <td><a href="http://msgpack.org">MsgPack</a></td>
+    <td>application/msgpack</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-msgpack&quot; % &quot;13.8.0&quot;</td>
+    <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.MsgPack">MsgPack</a></td>
 </tr>
 <tr>
     <td>Plain Text</td>
@@ -71,13 +77,13 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <tr>
     <td><a href="https://www.playframework.com">Play</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-play&quot; % &quot;13.7.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-play&quot; % &quot;13.8.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.json.Play">Play</a></td>
 </tr>
 <tr>
     <td><a href="https://github.com/spray/spray-json">Spray</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-spray&quot; % &quot;13.7.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-spray&quot; % &quot;13.8.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.json.Spray">Spray</a></td>
 </tr>
 <tr>
@@ -103,13 +109,13 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <tr>
   <td><a href="http://handlebarsjs.com">Handlebars</a></td>
   <td>.hbs</td>
-  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-handlebars&quot; % &quot;13.7.0&quot;</td>
+  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-handlebars&quot; % &quot;13.8.0&quot;</td>
   <td><a data-toggle="tooltip" href="#" title="io.fintrospect.templating.HandlebarsTemplates">HandlebarsTemplates</a></td>
 </tr>
 <tr>
   <td><a href="http://mustache.github.io/">Mustache</a></td>
   <td>.mustache</td>
-  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-mustache&quot; % &quot;13.7.0&quot;</td>
+  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-mustache&quot; % &quot;13.8.0&quot;</td>
   <td><a data-toggle="tooltip" href="#" title="io.fintrospect.templating.MustacheTemplates">MustacheTemplates</a></td>
 </tr>
 </table>

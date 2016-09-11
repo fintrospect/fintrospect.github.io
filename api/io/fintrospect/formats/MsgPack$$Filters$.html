@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>Filters - io.fintrospect.formats.Xml.Filters</title>
-          <meta name="description" content="Filters - io.fintrospect.formats.Xml.Filters" />
-          <meta name="keywords" content="Filters io.fintrospect.formats.Xml.Filters" />
+          <title>Filters - io.fintrospect.formats.MsgPack.Filters</title>
+          <meta name="description" content="Filters - io.fintrospect.formats.MsgPack.Filters" />
+          <meta name="keywords" content="Filters io.fintrospect.formats.MsgPack.Filters" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -16,7 +16,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
-            var hash = 'io.fintrospect.formats.Xml$$Filters$';
+            var hash = 'io.fintrospect.formats.MsgPack$$Filters$';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -29,11 +29,11 @@
         <body class="value">
       <div id="definition">
         <img alt="Object" src="../../../lib/object_big.png" />
-        <p id="owner"><a href="../../package.html" class="extype" name="io">io</a>.<a href="../package.html" class="extype" name="io.fintrospect">fintrospect</a>.<a href="package.html" class="extype" name="io.fintrospect.formats">formats</a>.<a href="Xml$.html" class="extype" name="io.fintrospect.formats.Xml">Xml</a></p>
+        <p id="owner"><a href="../../package.html" class="extype" name="io">io</a>.<a href="../package.html" class="extype" name="io.fintrospect">fintrospect</a>.<a href="package.html" class="extype" name="io.fintrospect.formats">formats</a>.<a href="MsgPack$.html" class="extype" name="io.fintrospect.formats.MsgPack">MsgPack</a></p>
         <h1>Filters</h1><h3><span class="morelinks"><div>Related Doc:
-            <a href="Xml$.html" class="extype" name="io.fintrospect.formats.Xml">package Xml</a>
+            <a href="MsgPack$.html" class="extype" name="io.fintrospect.formats.MsgPack">package MsgPack</a>
           </div></span></h3><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -45,15 +45,15 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">Filters</span><span class="result"> extends <a href="AutoFilters.html" class="extype" name="io.fintrospect.formats.AutoFilters">AutoFilters</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</span>
+        <span class="name">Filters</span><span class="result"> extends <a href="AutoFilters.html" class="extype" name="io.fintrospect.formats.AutoFilters">AutoFilters</a>[<a href="MsgPackMsg.html" class="extype" name="io.fintrospect.formats.MsgPackMsg">MsgPackMsg</a>]</span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Auto-marshalling filters which can be used to create Services which take and return Elem objects
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Auto-marshalling filters which can be used to create Services which take and return MsgPackMsg objects
 instead of HTTP responses
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="AutoFilters.html" class="extype" name="io.fintrospect.formats.AutoFilters">AutoFilters</a>[<span class="extype" name="scala.xml.Elem">Elem</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="AutoFilters.html" class="extype" name="io.fintrospect.formats.AutoFilters">AutoFilters</a>[<a href="MsgPackMsg.html" class="extype" name="io.fintrospect.formats.MsgPackMsg">MsgPackMsg</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -71,7 +71,7 @@ instead of HTTP responses
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="io.fintrospect.formats.Xml.Filters"><span>Filters</span></li><li class="in" name="io.fintrospect.formats.AutoFilters"><span>AutoFilters</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="io.fintrospect.formats.MsgPack.Filters"><span>Filters</span></li><li class="in" name="io.fintrospect.formats.AutoFilters"><span>AutoFilters</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -104,7 +104,7 @@ instead of HTTP responses
         <span class="name">ToBody</span><span class="tparams">[<span name="BODY">BODY</span>]</span><span class="result"> = () ⇒ <a href="../parameters/Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<span class="extype" name="io.fintrospect.formats.AutoFilters.ToBody.BODY">BODY</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@ToBody[BODY]=()=&gt;io.fintrospect.parameters.Body[BODY]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@ToBody[BODY]=()=&gt;io.fintrospect.parameters.Body[BODY]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -121,7 +121,7 @@ instead of HTTP responses
         <span class="name">ToResponse</span><span class="tparams">[<span name="OUT">OUT</span>]</span><span class="result"> = (<span class="extype" name="io.fintrospect.formats.AutoFilters.ToResponse.OUT">OUT</span>) ⇒ <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@ToResponse[OUT]=OUT=&gt;io.fintrospect.formats.ResponseBuilder[_]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@ToResponse[OUT]=OUT=&gt;io.fintrospect.formats.ResponseBuilder[_]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -145,7 +145,7 @@ instead of HTTP responses
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -162,7 +162,7 @@ instead of HTTP responses
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@##():Int" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@##():Int" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -179,7 +179,7 @@ instead of HTTP responses
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@==(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@==(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -196,89 +196,107 @@ instead of HTTP responses
         <span class="name">AutoIn</span><span class="tparams">[<span name="IN">IN</span>, <span name="OUT">OUT</span>]</span><span class="params">(<span name="body">body: <a href="../parameters/Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.IN">IN</span>] with <a href="../parameters/Mandatory.html" class="extype" name="io.fintrospect.parameters.Mandatory">Mandatory</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.IN">IN</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.OUT">OUT</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.IN">IN</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.OUT">OUT</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@AutoIn[IN,OUT](body:io.fintrospect.parameters.Body[IN]withio.fintrospect.parameters.Mandatory[com.twitter.finagle.http.Request,IN]):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,OUT,IN,OUT]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@AutoIn[IN,OUT](body:io.fintrospect.parameters.Body[IN]withio.fintrospect.parameters.Mandatory[com.twitter.finagle.http.Request,IN]):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,OUT,IN,OUT]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AutoFilters.html" class="extype" name="io.fintrospect.formats.AutoFilters">AutoFilters</a></dd></dl></div>
-    </li><li name="io.fintrospect.formats.Xml.Filters#AutoInOptionalOut" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="AutoInOptionalOut(svc:com.twitter.finagle.Service[scala.xml.Elem,Option[scala.xml.Elem]],successStatus:com.twitter.finagle.http.Status):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
-      <a id="AutoInOptionalOut(Service[Elem,Option[Elem]],Status):Service[Request,Response]"></a>
+    </li><li name="io.fintrospect.formats.MsgPack.Filters#AutoInOptionalOut" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AutoInOptionalOut[BODY&lt;:AnyRef,OUT&lt;:AnyRef](svc:com.twitter.finagle.Service[BODY,Option[OUT]],successStatus:com.twitter.finagle.http.Status)(implicitexample:BODY,implicitmf:scala.reflect.Manifest[BODY]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="AutoInOptionalOut[BODY&lt;:AnyRef,OUT&lt;:AnyRef](Service[BODY,Option[OUT]],Status)(BODY,Manifest[BODY]):Service[Request,Response]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">AutoInOptionalOut</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="scala.xml.Elem">Elem</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.xml.Elem">Elem</span>]]</span>, <span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Ok</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+        <span class="name">AutoInOptionalOut</span><span class="tparams">[<span name="BODY">BODY &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>, <span name="OUT">OUT &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="io.fintrospect.formats.MsgPack.Filters.AutoInOptionalOut.BODY">BODY</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="io.fintrospect.formats.MsgPack.Filters.AutoInOptionalOut.OUT">OUT</span>]]</span>, <span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Ok</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="example">example: <span class="extype" name="io.fintrospect.formats.MsgPack.Filters.AutoInOptionalOut.BODY">BODY</span> = <span class="symbol">null</span></span>, <span name="mf">mf: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="io.fintrospect.formats.MsgPack.Filters.AutoInOptionalOut.BODY">BODY</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@AutoInOptionalOut(svc:com.twitter.finagle.Service[scala.xml.Elem,Option[scala.xml.Elem]],successStatus:com.twitter.finagle.http.Status):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@AutoInOptionalOut[BODY&lt;:AnyRef,OUT&lt;:AnyRef](svc:com.twitter.finagle.Service[BODY,Option[OUT]],successStatus:com.twitter.finagle.http.Status)(implicitexample:BODY,implicitmf:scala.reflect.Manifest[BODY]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Wrap the enclosed service with auto-marshalling of input and output Elem instances for HTTP POST scenarios
-which may return an Elem.</p><div class="fullcomment"><div class="comment cmt"><p>Wrap the enclosed service with auto-marshalling of input and output Elem instances for HTTP POST scenarios
-which may return an Elem.
+      <p class="shortcomment cmt">Wrap the enclosed service with auto-marshalling of input and output case class instances for HTTP POST scenarios
+which may return an object.</p><div class="fullcomment"><div class="comment cmt"><p>Wrap the enclosed service with auto-marshalling of input and output case class instances for HTTP POST scenarios
+which may return an object.
 HTTP OK is returned by default in the auto-marshalled response (overridable), otherwise a 404 is returned
 </p></div></div>
-    </li><li name="io.fintrospect.formats.Xml.Filters#AutoInOut" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="AutoInOut(svc:com.twitter.finagle.Service[scala.xml.Elem,scala.xml.Elem],successStatus:com.twitter.finagle.http.Status):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
-      <a id="AutoInOut(Service[Elem,Elem],Status):Service[Request,Response]"></a>
+    </li><li name="io.fintrospect.formats.MsgPack.Filters#AutoInOut" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AutoInOut[BODY&lt;:AnyRef,OUT&lt;:AnyRef](svc:com.twitter.finagle.Service[BODY,OUT],successStatus:com.twitter.finagle.http.Status)(implicitexample:BODY,implicitmf:scala.reflect.Manifest[BODY]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="AutoInOut[BODY&lt;:AnyRef,OUT&lt;:AnyRef](Service[BODY,OUT],Status)(BODY,Manifest[BODY]):Service[Request,Response]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">AutoInOut</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="scala.xml.Elem">Elem</span>, <span class="extype" name="scala.xml.Elem">Elem</span>]</span>, <span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Ok</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+        <span class="name">AutoInOut</span><span class="tparams">[<span name="BODY">BODY &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>, <span name="OUT">OUT &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="io.fintrospect.formats.MsgPack.Filters.AutoInOut.BODY">BODY</span>, <span class="extype" name="io.fintrospect.formats.MsgPack.Filters.AutoInOut.OUT">OUT</span>]</span>, <span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Ok</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="example">example: <span class="extype" name="io.fintrospect.formats.MsgPack.Filters.AutoInOut.BODY">BODY</span> = <span class="symbol">null</span></span>, <span name="mf">mf: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="io.fintrospect.formats.MsgPack.Filters.AutoInOut.BODY">BODY</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@AutoInOut(svc:com.twitter.finagle.Service[scala.xml.Elem,scala.xml.Elem],successStatus:com.twitter.finagle.http.Status):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@AutoInOut[BODY&lt;:AnyRef,OUT&lt;:AnyRef](svc:com.twitter.finagle.Service[BODY,OUT],successStatus:com.twitter.finagle.http.Status)(implicitexample:BODY,implicitmf:scala.reflect.Manifest[BODY]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Wrap the enclosed service with auto-marshalling of input and output Elem instances for HTTP POST scenarios
-which return an Elem.</p><div class="fullcomment"><div class="comment cmt"><p>Wrap the enclosed service with auto-marshalling of input and output Elem instances for HTTP POST scenarios
-which return an Elem.
+      <p class="shortcomment cmt">Wrap the enclosed service with auto-marshalling of input and output case class instances for HTTP POST scenarios
+which return an object.</p><div class="fullcomment"><div class="comment cmt"><p>Wrap the enclosed service with auto-marshalling of input and output case class instances for HTTP POST scenarios
+which return an object.
 HTTP OK is returned by default in the auto-marshalled response (overridable).
 </p></div></div>
-    </li><li name="io.fintrospect.formats.Xml.Filters#AutoOptionalOut" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="AutoOptionalOut[IN](successStatus:com.twitter.finagle.http.Status):com.twitter.finagle.Filter[IN,com.twitter.finagle.http.Response,IN,Option[scala.xml.Elem]]"></a>
-      <a id="AutoOptionalOut[IN](Status):Filter[IN,Response,IN,Option[Elem]]"></a>
+    </li><li name="io.fintrospect.formats.MsgPack.Filters#AutoInOutFilter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AutoInOutFilter[BODY&lt;:AnyRef,OUT&lt;:AnyRef](successStatus:com.twitter.finagle.http.Status)(implicitexample:BODY,implicitmf:scala.reflect.Manifest[BODY]):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,BODY,OUT]"></a>
+      <a id="AutoInOutFilter[BODY&lt;:AnyRef,OUT&lt;:AnyRef](Status)(BODY,Manifest[BODY]):Filter[Request,Response,BODY,OUT]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">AutoOptionalOut</span><span class="tparams">[<span name="IN">IN</span>]</span><span class="params">(<span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Ok</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="io.fintrospect.formats.Xml.Filters.AutoOptionalOut.IN">IN</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="io.fintrospect.formats.Xml.Filters.AutoOptionalOut.IN">IN</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.xml.Elem">Elem</span>]]</span>
+        <span class="name">AutoInOutFilter</span><span class="tparams">[<span name="BODY">BODY &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>, <span name="OUT">OUT &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Ok</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="example">example: <span class="extype" name="io.fintrospect.formats.MsgPack.Filters.AutoInOutFilter.BODY">BODY</span> = <span class="symbol">null</span></span>, <span name="mf">mf: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="io.fintrospect.formats.MsgPack.Filters.AutoInOutFilter.BODY">BODY</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="io.fintrospect.formats.MsgPack.Filters.AutoInOutFilter.BODY">BODY</span>, <span class="extype" name="io.fintrospect.formats.MsgPack.Filters.AutoInOutFilter.OUT">OUT</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@AutoOptionalOut[IN](successStatus:com.twitter.finagle.http.Status):com.twitter.finagle.Filter[IN,com.twitter.finagle.http.Response,IN,Option[scala.xml.Elem]]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@AutoInOutFilter[BODY&lt;:AnyRef,OUT&lt;:AnyRef](successStatus:com.twitter.finagle.http.Status)(implicitexample:BODY,implicitmf:scala.reflect.Manifest[BODY]):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,BODY,OUT]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Filter to provide auto-marshalling of Elem instances for HTTP scenarios where an object may not be returned
+      <p class="shortcomment cmt">Filter to provide auto-marshalling of case class instances for HTTP POST scenarios
+HTTP OK is returned by default in the auto-marshalled response (overridable).</p>
+    </li><li name="io.fintrospect.formats.MsgPack.Filters#AutoOptionalOut" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AutoOptionalOut[IN,OUT&lt;:AnyRef](successStatus:com.twitter.finagle.http.Status):com.twitter.finagle.Filter[IN,com.twitter.finagle.http.Response,IN,Option[OUT]]"></a>
+      <a id="AutoOptionalOut[IN,OUT&lt;:AnyRef](Status):Filter[IN,Response,IN,Option[OUT]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">AutoOptionalOut</span><span class="tparams">[<span name="IN">IN</span>, <span name="OUT">OUT &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Ok</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="io.fintrospect.formats.MsgPack.Filters.AutoOptionalOut.IN">IN</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="io.fintrospect.formats.MsgPack.Filters.AutoOptionalOut.IN">IN</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="io.fintrospect.formats.MsgPack.Filters.AutoOptionalOut.OUT">OUT</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@AutoOptionalOut[IN,OUT&lt;:AnyRef](successStatus:com.twitter.finagle.http.Status):com.twitter.finagle.Filter[IN,com.twitter.finagle.http.Response,IN,Option[OUT]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Filter to provide auto-marshalling of case class instances for HTTP scenarios where an object may not be returned
 HTTP OK is returned by default in the auto-marshalled response (overridable), otherwise a 404 is returned
 </p>
-    </li><li name="io.fintrospect.formats.Xml.Filters#AutoOut" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="AutoOut[IN](successStatus:com.twitter.finagle.http.Status):com.twitter.finagle.Filter[IN,com.twitter.finagle.http.Response,IN,scala.xml.Elem]"></a>
-      <a id="AutoOut[IN](Status):Filter[IN,Response,IN,Elem]"></a>
+    </li><li name="io.fintrospect.formats.MsgPack.Filters#AutoOut" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AutoOut[IN,OUT&lt;:AnyRef](successStatus:com.twitter.finagle.http.Status):com.twitter.finagle.Filter[IN,com.twitter.finagle.http.Response,IN,OUT]"></a>
+      <a id="AutoOut[IN,OUT&lt;:AnyRef](Status):Filter[IN,Response,IN,OUT]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">AutoOut</span><span class="tparams">[<span name="IN">IN</span>]</span><span class="params">(<span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Ok</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="io.fintrospect.formats.Xml.Filters.AutoOut.IN">IN</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="io.fintrospect.formats.Xml.Filters.AutoOut.IN">IN</span>, <span class="extype" name="scala.xml.Elem">Elem</span>]</span>
+        <span class="name">AutoOut</span><span class="tparams">[<span name="IN">IN</span>, <span name="OUT">OUT &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Ok</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="io.fintrospect.formats.MsgPack.Filters.AutoOut.IN">IN</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="io.fintrospect.formats.MsgPack.Filters.AutoOut.IN">IN</span>, <span class="extype" name="io.fintrospect.formats.MsgPack.Filters.AutoOut.OUT">OUT</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@AutoOut[IN](successStatus:com.twitter.finagle.http.Status):com.twitter.finagle.Filter[IN,com.twitter.finagle.http.Response,IN,scala.xml.Elem]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@AutoOut[IN,OUT&lt;:AnyRef](successStatus:com.twitter.finagle.http.Status):com.twitter.finagle.Filter[IN,com.twitter.finagle.http.Response,IN,OUT]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Filter to provide auto-marshalling of output Elem instances for HTTP scenarios where an object is returned.</p><div class="fullcomment"><div class="comment cmt"><p>Filter to provide auto-marshalling of output Elem instances for HTTP scenarios where an object is returned.
+      <p class="shortcomment cmt">Filter to provide auto-marshalling of output case class instances for HTTP scenarios where an object is returned.</p><div class="fullcomment"><div class="comment cmt"><p>Filter to provide auto-marshalling of output case class instances for HTTP scenarios where an object is returned.
 HTTP OK is returned by default in the auto-marshalled response (overridable).
 </p></div></div>
     </li><li name="io.fintrospect.formats.AutoFilters#_AutoInOptionalOut" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -290,10 +308,10 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">_AutoInOptionalOut</span><span class="tparams">[<span name="BODY">BODY</span>, <span name="OUT">OUT</span>]</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="io.fintrospect.formats.AutoFilters._AutoInOptionalOut.BODY">BODY</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="io.fintrospect.formats.AutoFilters._AutoInOptionalOut.OUT">OUT</span>]]</span>, <span name="body">body: <a href="../parameters/Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<span class="extype" name="io.fintrospect.formats.AutoFilters._AutoInOptionalOut.BODY">BODY</span>] with <a href="../parameters/Mandatory.html" class="extype" name="io.fintrospect.parameters.Mandatory">Mandatory</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters._AutoInOptionalOut.BODY">BODY</span>]</span>, <span name="toResponse">toResponse: <a href="#ToResponse[OUT]=OUT=&gt;io.fintrospect.formats.ResponseBuilder[_]" class="extmbr" name="io.fintrospect.formats.Xml.Filters.ToResponse">ToResponse</a>[<span class="extype" name="io.fintrospect.formats.AutoFilters._AutoInOptionalOut.OUT">OUT</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+        <span class="name">_AutoInOptionalOut</span><span class="tparams">[<span name="BODY">BODY</span>, <span name="OUT">OUT</span>]</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="io.fintrospect.formats.AutoFilters._AutoInOptionalOut.BODY">BODY</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="io.fintrospect.formats.AutoFilters._AutoInOptionalOut.OUT">OUT</span>]]</span>, <span name="body">body: <a href="../parameters/Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<span class="extype" name="io.fintrospect.formats.AutoFilters._AutoInOptionalOut.BODY">BODY</span>] with <a href="../parameters/Mandatory.html" class="extype" name="io.fintrospect.parameters.Mandatory">Mandatory</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters._AutoInOptionalOut.BODY">BODY</span>]</span>, <span name="toResponse">toResponse: <a href="#ToResponse[OUT]=OUT=&gt;io.fintrospect.formats.ResponseBuilder[_]" class="extmbr" name="io.fintrospect.formats.MsgPack.Filters.ToResponse">ToResponse</a>[<span class="extype" name="io.fintrospect.formats.AutoFilters._AutoInOptionalOut.OUT">OUT</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@_AutoInOptionalOut[BODY,OUT](svc:com.twitter.finagle.Service[BODY,Option[OUT]],body:io.fintrospect.parameters.Body[BODY]withio.fintrospect.parameters.Mandatory[com.twitter.finagle.http.Request,BODY],toResponse:AutoFilters.this.ToResponse[OUT]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@_AutoInOptionalOut[BODY,OUT](svc:com.twitter.finagle.Service[BODY,Option[OUT]],body:io.fintrospect.parameters.Body[BODY]withio.fintrospect.parameters.Mandatory[com.twitter.finagle.http.Request,BODY],toResponse:AutoFilters.this.ToResponse[OUT]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -307,10 +325,10 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">_AutoOptionalOut</span><span class="tparams">[<span name="IN">IN</span>, <span name="OUT">OUT</span>]</span><span class="params">(<span name="success">success: <a href="#ToResponse[OUT]=OUT=&gt;io.fintrospect.formats.ResponseBuilder[_]" class="extmbr" name="io.fintrospect.formats.Xml.Filters.ToResponse">ToResponse</a>[<span class="extype" name="io.fintrospect.formats.AutoFilters._AutoOptionalOut.OUT">OUT</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="io.fintrospect.formats.AutoFilters._AutoOptionalOut.IN">IN</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters._AutoOptionalOut.IN">IN</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="io.fintrospect.formats.AutoFilters._AutoOptionalOut.OUT">OUT</span>]]</span>
+        <span class="name">_AutoOptionalOut</span><span class="tparams">[<span name="IN">IN</span>, <span name="OUT">OUT</span>]</span><span class="params">(<span name="success">success: <a href="#ToResponse[OUT]=OUT=&gt;io.fintrospect.formats.ResponseBuilder[_]" class="extmbr" name="io.fintrospect.formats.MsgPack.Filters.ToResponse">ToResponse</a>[<span class="extype" name="io.fintrospect.formats.AutoFilters._AutoOptionalOut.OUT">OUT</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="io.fintrospect.formats.AutoFilters._AutoOptionalOut.IN">IN</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters._AutoOptionalOut.IN">IN</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="io.fintrospect.formats.AutoFilters._AutoOptionalOut.OUT">OUT</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@_AutoOptionalOut[IN,OUT](success:AutoFilters.this.ToResponse[OUT]):com.twitter.finagle.Filter[IN,com.twitter.finagle.http.Response,IN,Option[OUT]]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@_AutoOptionalOut[IN,OUT](success:AutoFilters.this.ToResponse[OUT]):com.twitter.finagle.Filter[IN,com.twitter.finagle.http.Response,IN,Option[OUT]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -324,10 +342,10 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">_AutoOut</span><span class="tparams">[<span name="IN">IN</span>, <span name="OUT">OUT</span>]</span><span class="params">(<span name="fn">fn: <a href="#ToResponse[OUT]=OUT=&gt;io.fintrospect.formats.ResponseBuilder[_]" class="extmbr" name="io.fintrospect.formats.Xml.Filters.ToResponse">ToResponse</a>[<span class="extype" name="io.fintrospect.formats.AutoFilters._AutoOut.OUT">OUT</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="io.fintrospect.formats.AutoFilters._AutoOut.IN">IN</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters._AutoOut.IN">IN</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters._AutoOut.OUT">OUT</span>]</span>
+        <span class="name">_AutoOut</span><span class="tparams">[<span name="IN">IN</span>, <span name="OUT">OUT</span>]</span><span class="params">(<span name="fn">fn: <a href="#ToResponse[OUT]=OUT=&gt;io.fintrospect.formats.ResponseBuilder[_]" class="extmbr" name="io.fintrospect.formats.MsgPack.Filters.ToResponse">ToResponse</a>[<span class="extype" name="io.fintrospect.formats.AutoFilters._AutoOut.OUT">OUT</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="io.fintrospect.formats.AutoFilters._AutoOut.IN">IN</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters._AutoOut.IN">IN</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters._AutoOut.OUT">OUT</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@_AutoOut[IN,OUT](fn:AutoFilters.this.ToResponse[OUT]):com.twitter.finagle.Filter[IN,com.twitter.finagle.http.Response,IN,OUT]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@_AutoOut[IN,OUT](fn:AutoFilters.this.ToResponse[OUT]):com.twitter.finagle.Filter[IN,com.twitter.finagle.http.Response,IN,OUT]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -344,7 +362,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -361,7 +379,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@clone():Object" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@clone():Object" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -384,7 +402,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -401,7 +419,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -418,7 +436,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@finalize():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@finalize():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -441,7 +459,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@getClass():Class[_]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@getClass():Class[_]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -458,7 +476,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@hashCode():Int" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@hashCode():Int" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -475,7 +493,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -492,7 +510,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -509,7 +527,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@notify():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@notify():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -526,24 +544,24 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@notifyAll():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@notifyAll():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="io.fintrospect.formats.AutoFilters#responseBuilder" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[T]"></a>
-      <a id="responseBuilder:AbstractResponseBuilder[Elem]"></a>
+      <a id="responseBuilder:AbstractResponseBuilder[MsgPackMsg]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">responseBuilder</span><span class="result">: <a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</span>
+        <span class="name">responseBuilder</span><span class="result">: <a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a>[<a href="MsgPackMsg.html" class="extype" name="io.fintrospect.formats.MsgPackMsg">MsgPackMsg</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -560,7 +578,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -577,7 +595,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@toString():String" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@toString():String" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -594,7 +612,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@wait():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@wait():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -617,7 +635,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -640,7 +658,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Xml$$Filters$@wait(x$1:Long):Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Filters$@wait(x$1:Long):Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -661,7 +679,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
 
         <div id="inheritedMembers">
         <div class="parent" name="io.fintrospect.formats.AutoFilters">
-              <h3>Inherited from <a href="AutoFilters.html" class="extype" name="io.fintrospect.formats.AutoFilters">AutoFilters</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</h3>
+              <h3>Inherited from <a href="AutoFilters.html" class="extype" name="io.fintrospect.formats.AutoFilters">AutoFilters</a>[<a href="MsgPackMsg.html" class="extype" name="io.fintrospect.formats.MsgPackMsg">MsgPackMsg</a>]</h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
