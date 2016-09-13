@@ -28,7 +28,7 @@
         </head>
         <body class="type">
       <div id="definition">
-        <img alt="Class" src="../../../lib/class_big.png" />
+        <img alt="Trait" src="../../../lib/trait_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="io">io</a>.<a href="../package.html" class="extype" name="io.fintrospect">fintrospect</a>.<a href="package.html" class="extype" name="io.fintrospect.formats">formats</a></p>
         <h1>AutoFilters</h1><h3><span class="morelinks"><div>Related Doc:
             <a href="package.html" class="extype" name="io.fintrospect.formats">package formats</a>
@@ -42,7 +42,7 @@
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">class</span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
         <span class="name">AutoFilters</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
@@ -54,7 +54,7 @@
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="Xml$$Filters$.html" class="extype" name="io.fintrospect.formats.Xml.Filters">Filters</a>, <a href="json/Play$$Filters$.html" class="extype" name="io.fintrospect.formats.json.Play.Filters">Filters</a>, <a href="json/Circe$$Filters$.html" class="extype" name="io.fintrospect.formats.json.Circe.Filters">Filters</a>, <a href="json/Argonaut$$Filters$.html" class="extype" name="io.fintrospect.formats.json.Argonaut.Filters">Filters</a>, <a href="MsgPack$$Filters$.html" class="extype" name="io.fintrospect.formats.MsgPack.Filters">Filters</a>, <a href="json/Json4s$$Json4sFilters.html" class="extype" name="io.fintrospect.formats.json.Json4s.Json4sFilters">Json4sFilters</a></div>
+            <div class="subClasses hiddenContent"><a href="MsgPack$$Filters$.html" class="extype" name="io.fintrospect.formats.MsgPack.Filters">Filters</a>, <a href="json/Argonaut$$Filters$.html" class="extype" name="io.fintrospect.formats.json.Argonaut.Filters">Filters</a>, <a href="json/Play$$Filters$.html" class="extype" name="io.fintrospect.formats.json.Play.Filters">Filters</a>, <a href="json/Circe$$Filters$.html" class="extype" name="io.fintrospect.formats.json.Circe.Filters">Filters</a>, <a href="Xml$$Filters$.html" class="extype" name="io.fintrospect.formats.Xml.Filters">Filters</a>, <a href="json/Json4s$$Json4sFilters.html" class="extype" name="io.fintrospect.formats.json.Json4s.Json4sFilters">Json4sFilters</a></div>
           </div></div>
         
 
@@ -89,27 +89,7 @@
 
       <div id="template">
         <div id="allMembers">
-        <div id="constructors" class="members">
-              <h3>Instance Constructors</h3>
-              <ol><li name="io.fintrospect.formats.AutoFilters#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[T]):io.fintrospect.formats.AutoFilters[T]"></a>
-      <a id="&lt;init&gt;:AutoFilters[T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">new</span>
-      </span>
-      <span class="symbol">
-        <span class="name">AutoFilters</span><span class="params">(<span name="responseBuilder">responseBuilder: <a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a>[<span class="extype" name="io.fintrospect.formats.AutoFilters.T">T</span>]</span>)</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.AutoFilters@&lt;init&gt;(responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[T]):io.fintrospect.formats.AutoFilters[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li></ol>
-            </div>
+        
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
@@ -150,10 +130,30 @@
     </li></ol>
             </div>
 
-        
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="io.fintrospect.formats.AutoFilters#responseBuilder" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[T]"></a>
+      <a id="responseBuilder:AbstractResponseBuilder[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">responseBuilder</span><span class="result">: <a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a>[<span class="extype" name="io.fintrospect.formats.AutoFilters.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.AutoFilters@responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li></ol>
+            </div>
 
         <div id="values" class="values members">
-              <h3>Value Members</h3>
+              <h3>Concrete Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
@@ -206,18 +206,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="io.fintrospect.formats.AutoFilters#AutoIn" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="AutoIn[IN,OUT](body:io.fintrospect.parameters.Body[IN]withio.fintrospect.parameters.Mandatory[com.twitter.finagle.http.Request,IN]):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,OUT,IN,OUT]"></a>
-      <a id="AutoIn[IN,OUT](Body[IN]withMandatory[Request,IN]):Filter[Request,OUT,IN,OUT]"></a>
+      <a id="AutoIn[IN](body:io.fintrospect.parameters.Body[IN]withio.fintrospect.parameters.Mandatory[com.twitter.finagle.http.Request,IN]):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,IN,com.twitter.finagle.http.Response]"></a>
+      <a id="AutoIn[IN](Body[IN]withMandatory[Request,IN]):Filter[Request,Response,IN,Response]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">AutoIn</span><span class="tparams">[<span name="IN">IN</span>, <span name="OUT">OUT</span>]</span><span class="params">(<span name="body">body: <a href="../parameters/Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.IN">IN</span>] with <a href="../parameters/Mandatory.html" class="extype" name="io.fintrospect.parameters.Mandatory">Mandatory</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.IN">IN</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.OUT">OUT</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.IN">IN</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.OUT">OUT</span>]</span>
+        <span class="name">AutoIn</span><span class="tparams">[<span name="IN">IN</span>]</span><span class="params">(<span name="body">body: <a href="../parameters/Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.IN">IN</span>] with <a href="../parameters/Mandatory.html" class="extype" name="io.fintrospect.parameters.Mandatory">Mandatory</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.IN">IN</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.IN">IN</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.AutoFilters@AutoIn[IN,OUT](body:io.fintrospect.parameters.Body[IN]withio.fintrospect.parameters.Mandatory[com.twitter.finagle.http.Request,IN]):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,OUT,IN,OUT]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.AutoFilters@AutoIn[IN](body:io.fintrospect.parameters.Body[IN]withio.fintrospect.parameters.Mandatory[com.twitter.finagle.http.Request,IN]):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,IN,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -472,23 +472,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="io.fintrospect.formats.AutoFilters#responseBuilder" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[T]"></a>
-      <a id="responseBuilder:AbstractResponseBuilder[T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">responseBuilder</span><span class="result">: <a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a>[<span class="extype" name="io.fintrospect.formats.AutoFilters.T">T</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.AutoFilters@responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>

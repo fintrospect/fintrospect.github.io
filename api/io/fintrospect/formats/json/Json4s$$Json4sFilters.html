@@ -205,18 +205,18 @@ instead of HTTP responses
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="io.fintrospect.formats.AutoFilters#AutoIn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="AutoIn[IN,OUT](body:io.fintrospect.parameters.Body[IN]withio.fintrospect.parameters.Mandatory[com.twitter.finagle.http.Request,IN]):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,OUT,IN,OUT]"></a>
-      <a id="AutoIn[IN,OUT](Body[IN]withMandatory[Request,IN]):Filter[Request,OUT,IN,OUT]"></a>
+      <a id="AutoIn[IN](body:io.fintrospect.parameters.Body[IN]withio.fintrospect.parameters.Mandatory[com.twitter.finagle.http.Request,IN]):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,IN,com.twitter.finagle.http.Response]"></a>
+      <a id="AutoIn[IN](Body[IN]withMandatory[Request,IN]):Filter[Request,Response,IN,Response]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">AutoIn</span><span class="tparams">[<span name="IN">IN</span>, <span name="OUT">OUT</span>]</span><span class="params">(<span name="body">body: <a href="../../parameters/Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.IN">IN</span>] with <a href="../../parameters/Mandatory.html" class="extype" name="io.fintrospect.parameters.Mandatory">Mandatory</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.IN">IN</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.OUT">OUT</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.IN">IN</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.OUT">OUT</span>]</span>
+        <span class="name">AutoIn</span><span class="tparams">[<span name="IN">IN</span>]</span><span class="params">(<span name="body">body: <a href="../../parameters/Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.IN">IN</span>] with <a href="../../parameters/Mandatory.html" class="extype" name="io.fintrospect.parameters.Mandatory">Mandatory</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.IN">IN</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="io.fintrospect.formats.AutoFilters.AutoIn.IN">IN</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#io.fintrospect.formats.json.Json4s$$Json4sFilters@AutoIn[IN,OUT](body:io.fintrospect.parameters.Body[IN]withio.fintrospect.parameters.Mandatory[com.twitter.finagle.http.Request,IN]):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,OUT,IN,OUT]" title="Permalink" target="_top">
+      <a href="../../../../index.html#io.fintrospect.formats.json.Json4s$$Json4sFilters@AutoIn[IN](body:io.fintrospect.parameters.Body[IN]withio.fintrospect.parameters.Mandatory[com.twitter.finagle.http.Request,IN]):com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,IN,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -518,6 +518,23 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="io.fintrospect.formats.json.Json4s.Json4sFilters#jsonLibrary" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jsonLibrary:io.fintrospect.formats.json.JsonLibrary[org.json4s.JValue,org.json4s.JValue]"></a>
+      <a id="jsonLibrary:JsonLibrary[JValue,JValue]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jsonLibrary</span><span class="result">: <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.json.JsonLibrary">JsonLibrary</a>[<span class="extype" name="org.json4s.JValue">JValue</span>, <span class="extype" name="org.json4s.JValue">JValue</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.fintrospect.formats.json.Json4s$$Json4sFilters@jsonLibrary:io.fintrospect.formats.json.JsonLibrary[org.json4s.JValue,org.json4s.JValue]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -569,23 +586,23 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="io.fintrospect.formats.AutoFilters#responseBuilder" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[T]"></a>
-      <a id="responseBuilder:AbstractResponseBuilder[JValue]"></a>
+    </li><li name="io.fintrospect.formats.json.Json4s.Json4sFilters#responseBuilder" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="responseBuilder:Json4sFilters.this.jsonLibrary.ResponseBuilder.type"></a>
+      <a id="responseBuilder:JsonLibrary.ResponseBuilder.type"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">responseBuilder</span><span class="result">: <a href="../AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a>[<span class="extype" name="org.json4s.JValue">JValue</span>]</span>
+        <span class="name">responseBuilder</span><span class="result">: <a href="JsonLibrary$ResponseBuilder$.html" class="extype" name="io.fintrospect.formats.json.JsonLibrary.ResponseBuilder">JsonLibrary.ResponseBuilder</a>.type</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#io.fintrospect.formats.json.Json4s$$Json4sFilters@responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[T]" title="Permalink" target="_top">
+      <a href="../../../../index.html#io.fintrospect.formats.json.Json4s$$Json4sFilters@responseBuilder:Json4sFilters.this.jsonLibrary.ResponseBuilder.type" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../AutoFilters.html" class="extype" name="io.fintrospect.formats.AutoFilters">AutoFilters</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.formats.json.Json4s.Json4sFilters">Json4sFilters</a> → <a href="../AutoFilters.html" class="extype" name="io.fintrospect.formats.AutoFilters">AutoFilters</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
