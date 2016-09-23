@@ -101,6 +101,78 @@
       </a>
     </span>
       
+    </li><li name="io.fintrospect.formats.Json4sFilters" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Json4sFilters[T]extendsAutoFilters[org.json4s.JValue]"></a>
+      <a id="Json4sFilters[T]:Json4sFilters[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Json4sFilters.html"><span class="name">Json4sFilters</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="AutoFilters.html" class="extype" name="io.fintrospect.formats.AutoFilters">AutoFilters</a>[<span class="extype" name="org.json4s.JValue">JValue</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.package@Json4sFilters[T]extendsAutoFilters[org.json4s.JValue]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Auto-marshalling filters which can be used to create Services which take and return domain objects
+instead of HTTP responses
+</p>
+    </li><li name="io.fintrospect.formats.Json4sFormat" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Json4sFormat[T]extendsJsonFormat[org.json4s.JValue,org.json4s.JValue]"></a>
+      <a id="Json4sFormat[T]:Json4sFormat[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Json4sFormat.html"><span class="name">Json4sFormat</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="JsonFormat.html" class="extype" name="io.fintrospect.formats.JsonFormat">JsonFormat</a>[<span class="extype" name="org.json4s.JValue">JValue</span>, <span class="extype" name="org.json4s.JValue">JValue</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.package@Json4sFormat[T]extendsJsonFormat[org.json4s.JValue,org.json4s.JValue]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.formats.JsonFormat" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="JsonFormat[ROOT_NODETYPE,NODETYPE]extendsAnyRef"></a>
+      <a id="JsonFormat[ROOT_NODETYPE,NODETYPE]:JsonFormat[ROOT_NODETYPE,NODETYPE]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonFormat.html"><span class="name">JsonFormat</span></a><span class="tparams">[<span name="ROOT_NODETYPE">ROOT_NODETYPE</span>, <span name="NODETYPE">NODETYPE</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.package@JsonFormat[ROOT_NODETYPE,NODETYPE]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Capability to create and parse JSON message formats in a generic way.</p><div class="fullcomment"><div class="comment cmt"><p>Capability to create and parse JSON message formats in a generic way. Used to serialise and deserialise
+request parameters and bodies.
+</p></div></div>
+    </li><li name="io.fintrospect.formats.JsonLibrary" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="JsonLibrary[R,N]extendsAnyRef"></a>
+      <a id="JsonLibrary[R,N]:JsonLibrary[R,N]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonLibrary.html"><span class="name">JsonLibrary</span></a><span class="tparams">[<span name="R">R</span>, <span name="N">N</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.package@JsonLibrary[R,N]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines a supported JSON library format (e.g.</p><div class="fullcomment"><div class="comment cmt"><p>Defines a supported JSON library format (e.g. Argo or Json4s).</p></div><dl class="paramcmts block"><dt class="tparam">R</dt><dd class="cmt"><p>- Root node type</p></dd><dt class="tparam">N</dt><dd class="cmt"><p>- Node type</p></dd></dl></div>
     </li><li name="io.fintrospect.formats.MsgPackMsg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MsgPackMsgextendsAnyRef"></a>
       <a id="MsgPackMsg:MsgPackMsg"></a>
@@ -142,7 +214,79 @@
 
         <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li name="io.fintrospect.formats.Html" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="io.fintrospect.formats.Argo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Argo"></a>
+      <a id="Argo:Argo"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Argo$.html"><span class="name">Argo</span></a><span class="result"> extends <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="argo.jdom.JsonRootNode">JsonRootNode</span>, <span class="extype" name="argo.jdom.JsonNode">JsonNode</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.package@Argo" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Argo JSON support (application/json content type)
+</p>
+    </li><li name="io.fintrospect.formats.Argonaut" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Argonaut"></a>
+      <a id="Argonaut:Argonaut"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Argonaut$.html"><span class="name">Argonaut</span></a><span class="result"> extends <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="argonaut.Json">Json</span>, <span class="extype" name="argonaut.Json">Json</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.package@Argonaut" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Argonaut JSON support (application/json content type)
+</p>
+    </li><li name="io.fintrospect.formats.Circe" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Circe"></a>
+      <a id="Circe:Circe"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Circe$.html"><span class="name">Circe</span></a><span class="result"> extends <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="io.circe.Json">Json</span>, <span class="extype" name="io.circe.Json">Json</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.package@Circe" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Circe JSON support (application/json content type)
+</p>
+    </li><li name="io.fintrospect.formats.Gson" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Gson"></a>
+      <a id="Gson:Gson"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Gson$.html"><span class="name">Gson</span></a><span class="result"> extends <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="com.google.gson.JsonElement">JsonElement</span>, <span class="extype" name="com.google.gson.JsonElement">JsonElement</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.package@Gson" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">GSON JSON support (application/json content type)
+</p>
+    </li><li name="io.fintrospect.formats.Html" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Html"></a>
       <a id="Html:Html"></a>
       <h4 class="signature">
@@ -160,6 +304,95 @@
     </span>
       <p class="shortcomment cmt">Native (string-based) HTML support (text/html content type)
 </p>
+    </li><li name="io.fintrospect.formats.Json4s" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Json4s"></a>
+      <a id="Json4s:Json4s"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Json4s$.html"><span class="name">Json4s</span></a><span class="result"> extends <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="org.json4s.JValue">JValue</span>, <span class="extype" name="org.json4s.JValue">JValue</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.package@Json4s" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Native Json4S support (application/json content type) - uses BigDecimal for decimal
+</p>
+    </li><li name="io.fintrospect.formats.Json4sDoubleMode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Json4sDoubleMode"></a>
+      <a id="Json4sDoubleMode:Json4sDoubleMode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Json4sDoubleMode$.html"><span class="name">Json4sDoubleMode</span></a><span class="result"> extends <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="org.json4s.JValue">JValue</span>, <span class="extype" name="org.json4s.JValue">JValue</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.package@Json4sDoubleMode" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Native Json4S support (application/json content type) - uses Doubles for decimal
+</p>
+    </li><li name="io.fintrospect.formats.Json4sJackson" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Json4sJackson"></a>
+      <a id="Json4sJackson:Json4sJackson"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Json4sJackson$.html"><span class="name">Json4sJackson</span></a><span class="result"> extends <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="org.json4s.JValue">JValue</span>, <span class="extype" name="org.json4s.JValue">JValue</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.package@Json4sJackson" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Jackson Json4S support (application/json content type) - uses BigDecimal for decimal
+</p>
+    </li><li name="io.fintrospect.formats.Json4sJacksonDoubleMode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Json4sJacksonDoubleMode"></a>
+      <a id="Json4sJacksonDoubleMode:Json4sJacksonDoubleMode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Json4sJacksonDoubleMode$.html"><span class="name">Json4sJacksonDoubleMode</span></a><span class="result"> extends <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="org.json4s.JValue">JValue</span>, <span class="extype" name="org.json4s.JValue">JValue</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.package@Json4sJacksonDoubleMode" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Jackson Json4S support (application/json content type) - uses Doubles for decimal
+</p>
+    </li><li name="io.fintrospect.formats.JsonFormat" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JsonFormat"></a>
+      <a id="JsonFormat:JsonFormat"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonFormat$.html"><span class="name">JsonFormat</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.package@JsonFormat" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.fintrospect.formats.MsgPack" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MsgPack"></a>
       <a id="MsgPack:MsgPack"></a>
@@ -213,6 +446,24 @@
     </span>
       <p class="shortcomment cmt">Native (string-based) Text support (text/plain content type)
 </p>
+    </li><li name="io.fintrospect.formats.Play" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Play"></a>
+      <a id="Play:Play"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Play$.html"><span class="name">Play</span></a><span class="result"> extends <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="play.api.libs.json.JsValue">JsValue</span>, <span class="extype" name="play.api.libs.json.JsValue">JsValue</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.package@Play" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Play JSON support (application/json content type)
+</p>
     </li><li name="io.fintrospect.formats.ResponseBuilder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ResponseBuilder"></a>
       <a id="ResponseBuilder:ResponseBuilder"></a>
@@ -230,6 +481,24 @@
       </a>
     </span>
       <p class="shortcomment cmt">Generic ResponseBuilder support
+</p>
+    </li><li name="io.fintrospect.formats.Spray" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Spray"></a>
+      <a id="Spray:Spray"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Spray$.html"><span class="name">Spray</span></a><span class="result"> extends <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="spray.json.JsValue">JsValue</span>, <span class="extype" name="spray.json.JsValue">JsValue</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.package@Spray" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Spray JSON support (application/json content type)
 </p>
     </li><li name="io.fintrospect.formats.XHtml" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="XHtml"></a>
@@ -267,23 +536,6 @@
     </span>
       <p class="shortcomment cmt">Native (Elem-based) Xml support (application/xml content type)
 </p>
-    </li><li name="io.fintrospect.formats.json" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="json"></a>
-      <a id="json:json"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">package</span>
-      </span>
-      <span class="symbol">
-        <a href="json/package.html"><span class="name">json</span></a>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.package@json" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li></ol>
             </div>
 
