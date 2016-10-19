@@ -49,7 +49,7 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Service which allows strict content type negotiation (for multiple types) to be supported on a single route. Note that due to Content-Type
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Service which allows strict content type negotiation (for multiple mappings) to be supported on a single route. Note that due to Content-Type
 negotiation being quite complicated, this service does NOT support full functionality, such as q values or levels.</p><p>The implementation is:
 Check the Accept header and tries to get an exact match on any &quot;&lt;level1&gt;/&lt;level2&gt;&quot; value that it finds. If no match
 can be found, return an HTTP 406 (Not Acceptable) status. Wildcards or missing Accept headers will choose the first
@@ -151,18 +151,137 @@ supplied service in the list.
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="io.fintrospect.util.StrictContentTypeNegotiation#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(services:(io.fintrospect.ContentType,com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response])*):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
-      <a id="apply((ContentType,Service[Request,Response])*):Service[Request,Response]"></a>
+      <a id="apply[A,B,C,D,E,F,G](mappings:(io.fintrospect.ContentType,(A,B,C,D,E,F,G)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response])*):(A,B,C,D,E,F,G)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="apply[A,B,C,D,E,F,G]((ContentType,(A,B,C,D,E,F,G)⇒Service[Request,Response])*):(A,B,C,D,E,F,G)⇒Service[Request,Response]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier"></span>
+        <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="services">services: (<a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a>, <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>])*</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+        <span class="name">apply</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>, <span name="D">D</span>, <span name="E">E</span>, <span name="F">F</span>, <span name="G">G</span>]</span><span class="params">(<span name="mappings">mappings: (<a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a>, (<span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.A">A</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.B">B</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.C">C</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.D">D</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.E">E</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.F">F</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.G">G</span>) ⇒ <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>])*</span>)</span><span class="result">: (<span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.A">A</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.B">B</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.C">C</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.D">D</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.E">E</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.F">F</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.G">G</span>) ⇒ <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.util.StrictContentTypeNegotiation$@apply(services:(io.fintrospect.ContentType,com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response])*):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.util.StrictContentTypeNegotiation$@apply[A,B,C,D,E,F,G](mappings:(io.fintrospect.ContentType,(A,B,C,D,E,F,G)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response])*):(A,B,C,D,E,F,G)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.util.StrictContentTypeNegotiation#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="apply[A,B,C,D,E,F](mappings:(io.fintrospect.ContentType,(A,B,C,D,E,F)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response])*):(A,B,C,D,E,F)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="apply[A,B,C,D,E,F]((ContentType,(A,B,C,D,E,F)⇒Service[Request,Response])*):(A,B,C,D,E,F)⇒Service[Request,Response]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>, <span name="D">D</span>, <span name="E">E</span>, <span name="F">F</span>]</span><span class="params">(<span name="mappings">mappings: (<a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a>, (<span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.A">A</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.B">B</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.C">C</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.D">D</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.E">E</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.F">F</span>) ⇒ <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>])*</span>)</span><span class="result">: (<span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.A">A</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.B">B</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.C">C</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.D">D</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.E">E</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.F">F</span>) ⇒ <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.StrictContentTypeNegotiation$@apply[A,B,C,D,E,F](mappings:(io.fintrospect.ContentType,(A,B,C,D,E,F)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response])*):(A,B,C,D,E,F)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.util.StrictContentTypeNegotiation#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="apply[A,B,C,D,E](mappings:(io.fintrospect.ContentType,(A,B,C,D,E)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response])*):(A,B,C,D,E)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="apply[A,B,C,D,E]((ContentType,(A,B,C,D,E)⇒Service[Request,Response])*):(A,B,C,D,E)⇒Service[Request,Response]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>, <span name="D">D</span>, <span name="E">E</span>]</span><span class="params">(<span name="mappings">mappings: (<a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a>, (<span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.A">A</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.B">B</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.C">C</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.D">D</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.E">E</span>) ⇒ <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>])*</span>)</span><span class="result">: (<span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.A">A</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.B">B</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.C">C</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.D">D</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.E">E</span>) ⇒ <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.StrictContentTypeNegotiation$@apply[A,B,C,D,E](mappings:(io.fintrospect.ContentType,(A,B,C,D,E)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response])*):(A,B,C,D,E)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.util.StrictContentTypeNegotiation#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="apply[A,B,C,D](mappings:(io.fintrospect.ContentType,(A,B,C,D)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response])*):(A,B,C,D)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="apply[A,B,C,D]((ContentType,(A,B,C,D)⇒Service[Request,Response])*):(A,B,C,D)⇒Service[Request,Response]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>, <span name="D">D</span>]</span><span class="params">(<span name="mappings">mappings: (<a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a>, (<span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.A">A</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.B">B</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.C">C</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.D">D</span>) ⇒ <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>])*</span>)</span><span class="result">: (<span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.A">A</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.B">B</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.C">C</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.D">D</span>) ⇒ <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.StrictContentTypeNegotiation$@apply[A,B,C,D](mappings:(io.fintrospect.ContentType,(A,B,C,D)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response])*):(A,B,C,D)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.util.StrictContentTypeNegotiation#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="apply[A,B,C](mappings:(io.fintrospect.ContentType,(A,B,C)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response])*):(A,B,C)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="apply[A,B,C]((ContentType,(A,B,C)⇒Service[Request,Response])*):(A,B,C)⇒Service[Request,Response]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>]</span><span class="params">(<span name="mappings">mappings: (<a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a>, (<span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.A">A</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.B">B</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.C">C</span>) ⇒ <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>])*</span>)</span><span class="result">: (<span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.A">A</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.B">B</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.C">C</span>) ⇒ <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.StrictContentTypeNegotiation$@apply[A,B,C](mappings:(io.fintrospect.ContentType,(A,B,C)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response])*):(A,B,C)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.util.StrictContentTypeNegotiation#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="apply[A,B](mappings:(io.fintrospect.ContentType,(A,B)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response])*):(A,B)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="apply[A,B]((ContentType,(A,B)⇒Service[Request,Response])*):(A,B)⇒Service[Request,Response]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="mappings">mappings: (<a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a>, (<span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.A">A</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.B">B</span>) ⇒ <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>])*</span>)</span><span class="result">: (<span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.A">A</span>, <span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.B">B</span>) ⇒ <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.StrictContentTypeNegotiation$@apply[A,B](mappings:(io.fintrospect.ContentType,(A,B)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response])*):(A,B)=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.util.StrictContentTypeNegotiation#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="apply[A](mappings:(io.fintrospect.ContentType,A=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response])*):A=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="apply[A]((ContentType,(A)⇒Service[Request,Response])*):(A)⇒Service[Request,Response]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="mappings">mappings: (<a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a>, (<span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.A">A</span>) ⇒ <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>])*</span>)</span><span class="result">: (<span class="extype" name="io.fintrospect.util.StrictContentTypeNegotiation.apply.A">A</span>) ⇒ <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.StrictContentTypeNegotiation$@apply[A](mappings:(io.fintrospect.ContentType,A=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response])*):A=&gt;com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.util.StrictContentTypeNegotiation#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="apply(mappings:(io.fintrospect.ContentType,com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response])*):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="apply((ContentType,Service[Request,Response])*):Service[Request,Response]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="params">(<span name="mappings">mappings: (<a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a>, <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>])*</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.util.StrictContentTypeNegotiation$@apply(mappings:(io.fintrospect.ContentType,com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response])*):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

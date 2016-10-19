@@ -458,7 +458,7 @@ when the request completes) don't bind this service to a publicly available endp
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Service which allows strict content type negotiation (for multiple types) to be supported on a single route.</p><div class="fullcomment"><div class="comment cmt"><p>Service which allows strict content type negotiation (for multiple types) to be supported on a single route. Note that due to Content-Type
+      <p class="shortcomment cmt">Service which allows strict content type negotiation (for multiple mappings) to be supported on a single route.</p><div class="fullcomment"><div class="comment cmt"><p>Service which allows strict content type negotiation (for multiple mappings) to be supported on a single route. Note that due to Content-Type
 negotiation being quite complicated, this service does NOT support full functionality, such as q values or levels.</p><p>The implementation is:
 Check the Accept header and tries to get an exact match on any &quot;&lt;level1&gt;/&lt;level2&gt;&quot; value that it finds. If no match
 can be found, return an HTTP 406 (Not Acceptable) status. Wildcards or missing Accept headers will choose the first

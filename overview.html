@@ -19,7 +19,11 @@ Generates <a href="http://json-schema.org/">JSON Schema</a> for example object f
 <li>JSON: <a href="http://argo.sourceforge.net/">Argo</a>, <a href="http://argonaut.io/">Argonaut</a>, 
 <a href="https://github.com/travisbrown/circe">Circe</a>, <a href="https://github.com/google/gson">GSON</a>, 
 <a href="http://json4s.org/">Json4S</a>, <a href="https://github.com/playframework">Play JSON</a>, 
-<a href="https://github.com/spray/spray-json">Spray JSON</a></li>
+<a href="https://github.com/spray/spray-json">Spray JSON</a><ul>
+<li>Auto-marshaling of case classes instances to/from JSON (for <code>Argonaut</code>/<code>Circe</code>/<code>Json4S</code>/<code>Play</code>).</li>
+<li>Implement simple <code>PATCH</code>/<code>PUT</code> endpoints of case class instances (<code>Circe</code> only).</li>
+</ul>
+</li>
 <li>Native implementations of XML, Plain Text, HTML, XHTML</li>
 <li><a href="http://msgpack.org">MsgPack</a> binary format</li>
 </ul>
