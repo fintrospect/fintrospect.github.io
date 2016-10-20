@@ -222,7 +222,7 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="io.fintrospect.formats.Circe.JsonFormat#body" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="body[R](description:Option[String],example:R)(implicitencodec:io.circe.Encoder[R],implicitdecodec:io.circe.Decoder[R]):io.fintrospect.parameters.UniBody[R]"></a>
+      <a id="body[R](description:Option[String],example:R)(implicite:io.circe.Encoder[R],implicitd:io.circe.Decoder[R]):io.fintrospect.parameters.UniBody[R]"></a>
       <a id="body[R](Option[String],R)(Encoder[R],Decoder[R]):UniBody[R]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -230,17 +230,17 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">body</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="example">example: <span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.body.R">R</span> = <span class="symbol">null</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="encodec">encodec: <span class="extype" name="io.circe.Encoder">Encoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.body.R">R</span>]</span>, <span name="decodec">decodec: <span class="extype" name="io.circe.Decoder">Decoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.body.R">R</span>]</span>)</span><span class="result">: <a href="../parameters/UniBody.html" class="extype" name="io.fintrospect.parameters.UniBody">UniBody</a>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.body.R">R</span>]</span>
+        <span class="name">body</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="example">example: <span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.body.R">R</span> = <span class="symbol">null</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="e">e: <span class="extype" name="io.circe.Encoder">Encoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.body.R">R</span>]</span>, <span name="d">d: <span class="extype" name="io.circe.Decoder">Decoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.body.R">R</span>]</span>)</span><span class="result">: <a href="../parameters/UniBody.html" class="extype" name="io.fintrospect.parameters.UniBody">UniBody</a>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.body.R">R</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Circe$$JsonFormat$@body[R](description:Option[String],example:R)(implicitencodec:io.circe.Encoder[R],implicitdecodec:io.circe.Decoder[R]):io.fintrospect.parameters.UniBody[R]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Circe$$JsonFormat$@body[R](description:Option[String],example:R)(implicite:io.circe.Encoder[R],implicitd:io.circe.Decoder[R]):io.fintrospect.parameters.UniBody[R]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Convenience method for creating Body that just use straight JSON encoding/decoding logic
+      <p class="shortcomment cmt">Create a Body that just use straight JSON encoding/decoding logic to bind to/from HTTP messages
 </p>
     </li><li name="io.fintrospect.formats.Circe.JsonFormat#bodySpec" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="bodySpec[R](description:Option[String])(implicitencodec:io.circe.Encoder[R],implicitdecodec:io.circe.Decoder[R]):io.fintrospect.parameters.BodySpec[R]"></a>
+      <a id="bodySpec[R](description:Option[String])(implicite:io.circe.Encoder[R],implicitd:io.circe.Decoder[R]):io.fintrospect.parameters.BodySpec[R]"></a>
       <a id="bodySpec[R](Option[String])(Encoder[R],Decoder[R]):BodySpec[R]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -248,10 +248,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">bodySpec</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="encodec">encodec: <span class="extype" name="io.circe.Encoder">Encoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.bodySpec.R">R</span>]</span>, <span name="decodec">decodec: <span class="extype" name="io.circe.Decoder">Decoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.bodySpec.R">R</span>]</span>)</span><span class="result">: <a href="../parameters/BodySpec.html" class="extype" name="io.fintrospect.parameters.BodySpec">BodySpec</a>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.bodySpec.R">R</span>]</span>
+        <span class="name">bodySpec</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="e">e: <span class="extype" name="io.circe.Encoder">Encoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.bodySpec.R">R</span>]</span>, <span name="d">d: <span class="extype" name="io.circe.Decoder">Decoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.bodySpec.R">R</span>]</span>)</span><span class="result">: <a href="../parameters/BodySpec.html" class="extype" name="io.fintrospect.parameters.BodySpec">BodySpec</a>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.bodySpec.R">R</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Circe$$JsonFormat$@bodySpec[R](description:Option[String])(implicitencodec:io.circe.Encoder[R],implicitdecodec:io.circe.Decoder[R]):io.fintrospect.parameters.BodySpec[R]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Circe$$JsonFormat$@bodySpec[R](description:Option[String])(implicite:io.circe.Encoder[R],implicitd:io.circe.Decoder[R]):io.fintrospect.parameters.BodySpec[R]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -664,7 +664,7 @@
 </p><div class="fullcomment"><div class="comment cmt"><p>Create a JSON object from the passed Symbol -&gt; Node pairs
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonFormat.html" class="extype" name="io.fintrospect.formats.JsonFormat">JsonFormat</a></dd></dl></div>
     </li><li name="io.fintrospect.formats.Circe.JsonFormat#parameterSpec" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="parameterSpec[R](name:String,description:Option[String])(implicitencodec:io.circe.Encoder[R],implicitdecodec:io.circe.Decoder[R]):io.fintrospect.parameters.ParameterSpec[R]"></a>
+      <a id="parameterSpec[R](name:String,description:Option[String])(implicite:io.circe.Encoder[R],implicitd:io.circe.Decoder[R]):io.fintrospect.parameters.ParameterSpec[R]"></a>
       <a id="parameterSpec[R](String,Option[String])(Encoder[R],Decoder[R]):ParameterSpec[R]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -672,10 +672,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">parameterSpec</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="encodec">encodec: <span class="extype" name="io.circe.Encoder">Encoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.parameterSpec.R">R</span>]</span>, <span name="decodec">decodec: <span class="extype" name="io.circe.Decoder">Decoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.parameterSpec.R">R</span>]</span>)</span><span class="result">: <a href="../parameters/ParameterSpec.html" class="extype" name="io.fintrospect.parameters.ParameterSpec">ParameterSpec</a>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.parameterSpec.R">R</span>]</span>
+        <span class="name">parameterSpec</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="e">e: <span class="extype" name="io.circe.Encoder">Encoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.parameterSpec.R">R</span>]</span>, <span name="d">d: <span class="extype" name="io.circe.Decoder">Decoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.parameterSpec.R">R</span>]</span>)</span><span class="result">: <a href="../parameters/ParameterSpec.html" class="extype" name="io.fintrospect.parameters.ParameterSpec">ParameterSpec</a>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.parameterSpec.R">R</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Circe$$JsonFormat$@parameterSpec[R](name:String,description:Option[String])(implicitencodec:io.circe.Encoder[R],implicitdecodec:io.circe.Decoder[R]):io.fintrospect.parameters.ParameterSpec[R]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Circe$$JsonFormat$@parameterSpec[R](name:String,description:Option[String])(implicite:io.circe.Encoder[R],implicitd:io.circe.Decoder[R]):io.fintrospect.parameters.ParameterSpec[R]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -701,6 +701,26 @@
 if the parsing fails, which is dealt with by the surrounding deserialisation mechanism, so you
 don't need to worry about having to muddy your own code with the exception handling.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.formats.Circe.JsonFormat">JsonFormat</a> → <a href="JsonFormat.html" class="extype" name="io.fintrospect.formats.JsonFormat">JsonFormat</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.Circe.JsonFormat#patchBody" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="patchBody[R](description:Option[String],example:R)(implicite:io.circe.Encoder[R],implicitd:io.circe.Decoder[R=&gt;R]):io.fintrospect.parameters.Body[R=&gt;R]"></a>
+      <a id="patchBody[R](Option[String],R)(Encoder[R],Decoder[(R)⇒R]):Body[(R)⇒R]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">patchBody</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="example">example: <span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.patchBody.R">R</span> = <span class="symbol">null</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="e">e: <span class="extype" name="io.circe.Encoder">Encoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.patchBody.R">R</span>]</span>, <span name="d">d: <span class="extype" name="io.circe.Decoder">Decoder</span>[(<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.patchBody.R">R</span>) ⇒ <span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.patchBody.R">R</span>]</span>)</span><span class="result">: <a href="../parameters/Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[(<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.patchBody.R">R</span>) ⇒ <span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.patchBody.R">R</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Circe$$JsonFormat$@patchBody[R](description:Option[String],example:R)(implicite:io.circe.Encoder[R],implicitd:io.circe.Decoder[R=&gt;R]):io.fintrospect.parameters.Body[R=&gt;R]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A Body that provides a function that will modify a given case class with the fields from a incoming JSON object.</p><div class="fullcomment"><div class="comment cmt"><p>A Body that provides a function that will modify a given case class with the fields from a incoming JSON object.
+Useful for PATCH/PUT requests, where only fields to be modified are sent to the server. Note that this Body only
+supports inbound messages.
+</p></div></div>
     </li><li name="io.fintrospect.formats.Circe.JsonFormat#patcher" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="patcher[T](in:io.circe.Json)(implicitd:io.circe.Decoder[T=&gt;T]):T=&gt;T"></a>
       <a id="patcher[T](Json)(Decoder[(T)⇒T]):(T)⇒T"></a>
@@ -717,7 +737,7 @@ don't need to worry about having to muddy your own code with the exception handl
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Create a function that will patch a given case class with the fields from a incoming JSON object.</p><div class="fullcomment"><div class="comment cmt"><p>Create a function that will patch a given case class with the fields from a incoming JSON object.
+      <p class="shortcomment cmt">Function that will modify a given case class with the fields from a incoming JSON object.</p><div class="fullcomment"><div class="comment cmt"><p>Function that will modify a given case class with the fields from a incoming JSON object.
 Useful for PATCH/PUT requests, where only modified fields are sent to the server.
 </p></div></div>
     </li><li name="io.fintrospect.formats.Circe.JsonFormat#pretty" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -740,7 +760,7 @@ Useful for PATCH/PUT requests, where only modified fields are sent to the server
 </p><div class="fullcomment"><div class="comment cmt"><p>Pretty printed JSON
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.formats.Circe.JsonFormat">JsonFormat</a> → <a href="JsonFormat.html" class="extype" name="io.fintrospect.formats.JsonFormat">JsonFormat</a></dd></dl></div>
     </li><li name="io.fintrospect.formats.Circe.JsonFormat#responseSpec" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="responseSpec[R](statusAndDescription:(com.twitter.finagle.http.Status,String),example:R)(implicitencodec:io.circe.Encoder[R],implicitdecodec:io.circe.Decoder[R]):io.fintrospect.ResponseSpec"></a>
+      <a id="responseSpec[R](statusAndDescription:(com.twitter.finagle.http.Status,String),example:R)(implicite:io.circe.Encoder[R],implicitd:io.circe.Decoder[R]):io.fintrospect.ResponseSpec"></a>
       <a id="responseSpec[R]((Status,String),R)(Encoder[R],Decoder[R]):ResponseSpec"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -748,10 +768,10 @@ Useful for PATCH/PUT requests, where only modified fields are sent to the server
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">responseSpec</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="statusAndDescription">statusAndDescription: (<span class="extype" name="com.twitter.finagle.http.Status">Status</span>, <span class="extype" name="scala.Predef.String">String</span>)</span>, <span name="example">example: <span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.responseSpec.R">R</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="encodec">encodec: <span class="extype" name="io.circe.Encoder">Encoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.responseSpec.R">R</span>]</span>, <span name="decodec">decodec: <span class="extype" name="io.circe.Decoder">Decoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.responseSpec.R">R</span>]</span>)</span><span class="result">: <a href="../ResponseSpec.html" class="extype" name="io.fintrospect.ResponseSpec">ResponseSpec</a></span>
+        <span class="name">responseSpec</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="statusAndDescription">statusAndDescription: (<span class="extype" name="com.twitter.finagle.http.Status">Status</span>, <span class="extype" name="scala.Predef.String">String</span>)</span>, <span name="example">example: <span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.responseSpec.R">R</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="e">e: <span class="extype" name="io.circe.Encoder">Encoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.responseSpec.R">R</span>]</span>, <span name="d">d: <span class="extype" name="io.circe.Decoder">Decoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.JsonFormat.responseSpec.R">R</span>]</span>)</span><span class="result">: <a href="../ResponseSpec.html" class="extype" name="io.fintrospect.ResponseSpec">ResponseSpec</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Circe$$JsonFormat$@responseSpec[R](statusAndDescription:(com.twitter.finagle.http.Status,String),example:R)(implicitencodec:io.circe.Encoder[R],implicitdecodec:io.circe.Decoder[R]):io.fintrospect.ResponseSpec" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Circe$$JsonFormat$@responseSpec[R](statusAndDescription:(com.twitter.finagle.http.Status,String),example:R)(implicite:io.circe.Encoder[R],implicitd:io.circe.Decoder[R]):io.fintrospect.ResponseSpec" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
