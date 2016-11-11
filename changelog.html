@@ -11,6 +11,10 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <li>Add strict <code>Accept</code> header checking for <code>RouteSpec</code>s based on <code>producing()</code> settings. Option for non-strictness.</li>
 <li>Add integrated self-hosted Swagger UI/ReDoc UI module</li>
 </ul>
+<h2>13.11.0</h2><ul>
+<li>All response Builders can now take a <code>AsyncStream[T]</code>, so you can stream responses in a typesafe way. See <code>streaming</code> example.</li>
+<li>Upgrade to various dependency versions, including <code>circe</code>, <code>Json4s</code> &amp; <code>scala-xml</code>.</li>
+</ul>
 <h2>13.10.1</h2><ul>
 <li>Replaced <code>Circe.JsonFormat.patchBodySpec()</code> with <code>patchBody()</code> to ease use of Patch endpoint creations.</li>
 </ul>

@@ -25,19 +25,19 @@ handling content types like JSON or XML in a set of popular OSS libraries. These
 <tr>
     <td><a href="http://argonaut.io/">Argonaut</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-argonaut&quot; % &quot;13.10.1&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-argonaut&quot; % &quot;13.11.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Argonaut">Argonaut</a></td>
 </tr>
 <tr>
     <td><a href="https://github.com/travisbrown/circe">Circe</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-circe&quot; % &quot;13.10.1&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-circe&quot; % &quot;13.11.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Circe">Circe</a></td>
 </tr>
 <tr>
     <td><a href="https://github.com/google/gson">GSON</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-gson&quot; % &quot;13.10.1&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-gson&quot; % &quot;13.11.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Gson">Gson</a></td>
 </tr>
 <tr>
@@ -49,7 +49,7 @@ handling content types like JSON or XML in a set of popular OSS libraries. These
 <tr>
     <td><a href="http://json4s.org/">Json4S Native</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-json4s&quot; % &quot;13.10.1&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-json4s&quot; % &quot;13.11.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Json4s">Json4s</a>
     <br>
     <a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Json4sDoubleMode">Json4sDoubleMode</a></td>
@@ -57,7 +57,7 @@ handling content types like JSON or XML in a set of popular OSS libraries. These
 <tr>
     <td><a href="http://json4s.org/">Json4S Jackson</a> </td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-json4s&quot; % &quot;13.10.1&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-json4s&quot; % &quot;13.11.0&quot;</td>
     <td>
     <a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Json4sJackson">Json4sJackson</a>
     <br>
@@ -66,7 +66,7 @@ handling content types like JSON or XML in a set of popular OSS libraries. These
 <tr>
     <td><a href="http://msgpack.org">MsgPack</a></td>
     <td>application/msgpack</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-msgpack&quot; % &quot;13.10.1&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-msgpack&quot; % &quot;13.11.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.MsgPack">MsgPack</a></td>
 </tr>
 <tr>
@@ -78,13 +78,13 @@ handling content types like JSON or XML in a set of popular OSS libraries. These
 <tr>
     <td><a href="https://www.playframework.com">Play</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-play&quot; % &quot;13.10.1&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-play&quot; % &quot;13.11.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Play">Play</a></td>
 </tr>
 <tr>
     <td><a href="https://github.com/spray/spray-json">Spray</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-spray&quot; % &quot;13.10.1&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-spray&quot; % &quot;13.11.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Spray">Spray</a></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ handling content types like JSON or XML in a set of popular OSS libraries. These
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Xml">Xml</a></td>
 </tr>
 </table>
-<p>The simplest (least concise) way to invoke an auto-marshalling (ie. type-safe) ResponseBuilder is along the lines of:</p>
+<p>The simplest (least concise) way to invoke an auto-marshalling (ie. typesafe) ResponseBuilder is along the lines of:</p>
 <pre><code>val responseNoImplicits: Future[Response] = ResponseBuilder.toFuture(
 Xml.ResponseBuilder.HttpResponse(Status.Ok).withContent(&lt;xml&gt;lashings and lashings of wonderful&lt;/xml&gt;)
 )
@@ -108,7 +108,8 @@ Xml.ResponseBuilder.HttpResponse(Status.Ok).withContent(&lt;xml&gt;lashings and 
 a <code>Future[Response]</code>, you can reduce this to the rather more concise:</p>
 <pre><code>import io.fintrospect.formats.Xml.ResponseBuilder.implicits._
 val responseViaImplicits: Future[Response] = Status.Ok(&lt;xml&gt;lashings and lashings of wonderful&lt;/xml&gt;)
-</code></pre><h2>taking advantage of auto-marshalling</h2><h3>controlled mode</h3><p>Some of the JSON libraries (<code>Circe</code>, <code>Argonaut</code>, <code>Json4S</code>, <code>Play</code>) supported by Fintrospect support auto-marshalling of Scala Case 
+</code></pre><p>These ResponseBuilders also support <code>AsyncStream[T]</code>, so you can build services which can stream responses in a typesafe way.</p>
+<h2>taking advantage of auto-marshalling</h2><h3>controlled mode</h3><p>Some of the JSON libraries (<code>Circe</code>, <code>Argonaut</code>, <code>Json4S</code>, <code>Play</code>) supported by Fintrospect support auto-marshalling of Scala Case 
 class instances directly to JSON without any custom conversion code needing to be written. This is supported by <code>encode()</code> and <code>decode()</code> 
 methods present on the relevant Fintrospect <code>JsonFormat</code> format instance (e.g. <code>io.fintrospect.formats.Circe.JsonFormat</code>). Generally, 
  these are very simple to use:</p>
