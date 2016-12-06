@@ -107,8 +107,8 @@
       <a id="Body[T]:Body[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">class</span>
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
         <a href="Body.html"><span class="name">Body</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.Iterable">Iterable</span>[<a href="BodyParameter.html" class="extype" name="io.fintrospect.parameters.BodyParameter">BodyParameter</a>] with <a href="Mandatory.html" class="extype" name="io.fintrospect.parameters.Mandatory">Mandatory</a>[<span class="extype" name="com.twitter.finagle.http.Message">Message</span>, <span class="extype" name="io.fintrospect.parameters.Body.T">T</span>] with <a href="Rebindable.html" class="extype" name="io.fintrospect.parameters.Rebindable">Rebindable</a>[<span class="extype" name="com.twitter.finagle.http.Message">Message</span>, <span class="extype" name="io.fintrospect.parameters.Body.T">T</span>, <a href="RequestBinding.html" class="extype" name="io.fintrospect.parameters.RequestBinding">RequestBinding</a>]</span>
@@ -157,7 +157,7 @@
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the parameter</p></dd><dt class="param">description</dt><dd class="cmt"><p>Description to be used in the documentation</p></dd><dt class="param">contentType</dt><dd class="cmt"><p>The HTTP content type header value</p></dd><dt class="param">deserialize</dt><dd class="cmt"><p>function to take the input string from the request and attempt to construct a deserialized instance. Exceptions are
                    automatically caught and translated into the appropriate result, so just concentrate on the Happy-path case</p></dd><dt class="param">serialize</dt><dd class="cmt"><p>function to take the input type and serialize it to a string to be represented in the request</p></dd></dl></div>
     </li><li name="io.fintrospect.parameters.Form" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="FormextendsIterable[(String,Set[String])]withProductwithSerializable"></a>
+      <a id="FormextendsProductwithSerializable"></a>
       <a id="Form:Form"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -165,49 +165,49 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Form.html"><span class="name">Form</span></a><span class="params">(<span name="fields">fields: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="errors">errors: <span class="extype" name="scala.Seq">Seq</span>[<a href="../util/ExtractionError.html" class="extype" name="io.fintrospect.util.ExtractionError">ExtractionError</a>] = <span class="symbol">Nil</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Iterable">Iterable</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>])] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="Form.html"><span class="name">Form</span></a><span class="params">(<span name="fields">fields: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]] = <span class="symbol">Map.empty</span></span>, <span name="files">files: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.Set">Set</span>[<a href="MultiPartFile.html" class="extype" name="io.fintrospect.parameters.MultiPartFile">MultiPartFile</a>]] = <span class="symbol">Map.empty</span></span>, <span name="errors">errors: <span class="extype" name="scala.Seq">Seq</span>[<a href="../util/ExtractionError.html" class="extype" name="io.fintrospect.util.ExtractionError">ExtractionError</a>] = <span class="symbol">Nil</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@FormextendsIterable[(String,Set[String])]withProductwithSerializable" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@FormextendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">The body entity of a encoded HTML form.</p><div class="fullcomment"><div class="comment cmt"><p>The body entity of a encoded HTML form. Basically a wrapper for Form construction and field extraction.
 </p></div></div>
-    </li><li name="io.fintrospect.parameters.FormBody" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="FormBodyextendsBody[io.fintrospect.parameters.Form]"></a>
-      <a id="FormBody:FormBody"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="FormBody.html"><span class="name">FormBody</span></a><span class="result"> extends <a href="Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@FormBodyextendsBody[io.fintrospect.parameters.Form]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="io.fintrospect.parameters.FormCodec" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="FormCodec[T]extendsAnyRef"></a>
-      <a id="FormCodec[T]:FormCodec[T]"></a>
+      <a id="FormCodecextendsAnyRef"></a>
+      <a id="FormCodec:FormCodec"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="FormCodec.html"><span class="name">FormCodec</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="FormCodec.html"><span class="name">FormCodec</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@FormCodec[T]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@FormCodecextendsAnyRef" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Represents different strategies for decoding and encoding HTML forms.</p>
+    </li><li name="io.fintrospect.parameters.FormElementBinding" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FormElementBindingextendsio.fintrospect.parameters.Form=&gt;io.fintrospect.parameters.Form"></a>
+      <a id="FormElementBinding:FormElementBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="FormElementBinding.html"><span class="name">FormElementBinding</span></a><span class="result"> extends (<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>) ⇒ <a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@FormElementBindingextendsio.fintrospect.parameters.Form=&gt;io.fintrospect.parameters.Form" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.fintrospect.parameters.FormField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="FormField[T]extendsBodyParameter"></a>
       <a id="FormField[T]:FormField[T]"></a>
@@ -226,7 +226,7 @@
     </span>
       
     </li><li name="io.fintrospect.parameters.FormFieldBinding" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="FormFieldBindingextendsRequestBinding"></a>
+      <a id="FormFieldBindingextendsRequestBindingwithFormElementBinding"></a>
       <a id="FormFieldBinding:FormFieldBinding"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -234,14 +234,66 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="FormFieldBinding.html"><span class="name">FormFieldBinding</span></a><span class="result"> extends <a href="RequestBinding.html" class="extype" name="io.fintrospect.parameters.RequestBinding">RequestBinding</a></span>
+        <a href="FormFieldBinding.html"><span class="name">FormFieldBinding</span></a><span class="result"> extends <a href="RequestBinding.html" class="extype" name="io.fintrospect.parameters.RequestBinding">RequestBinding</a> with <a href="FormElementBinding.html" class="extype" name="io.fintrospect.parameters.FormElementBinding">FormElementBinding</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@FormFieldBindingextendsRequestBinding" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@FormFieldBindingextendsRequestBindingwithFormElementBinding" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
+    </li><li name="io.fintrospect.parameters.FormFieldExtractor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FormFieldExtractorextendsAnyRef"></a>
+      <a id="FormFieldExtractor:FormFieldExtractor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="FormFieldExtractor.html"><span class="name">FormFieldExtractor</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@FormFieldExtractorextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.parameters.FormFileBinding" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FormFileBindingextendsRequestBindingwithFormElementBinding"></a>
+      <a id="FormFileBinding:FormFileBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FormFileBinding.html"><span class="name">FormFileBinding</span></a><span class="result"> extends <a href="RequestBinding.html" class="extype" name="io.fintrospect.parameters.RequestBinding">RequestBinding</a> with <a href="FormElementBinding.html" class="extype" name="io.fintrospect.parameters.FormElementBinding">FormElementBinding</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@FormFileBindingextendsRequestBindingwithFormElementBinding" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.parameters.FormValidator" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FormValidatorextendsAnyRef"></a>
+      <a id="FormValidator:FormValidator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="FormValidator.html"><span class="name">FormValidator</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@FormValidatorextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A strategy for validating the fields in a form
+</p>
     </li><li name="io.fintrospect.parameters.HeaderParameter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="HeaderParameter[T]extendsParameterwithRebindable[com.twitter.finagle.http.Message,T,io.fintrospect.parameters.RequestBinding]"></a>
       <a id="HeaderParameter[T]:HeaderParameter[T]"></a>
@@ -259,6 +311,24 @@
       </a>
     </span>
       
+    </li><li name="io.fintrospect.parameters.InMemoryMultiPartFile" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InMemoryMultiPartFileextendsMultiPartFilewithProductwithSerializable"></a>
+      <a id="InMemoryMultiPartFile:InMemoryMultiPartFile"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="InMemoryMultiPartFile.html"><span class="name">InMemoryMultiPartFile</span></a><span class="params">(<span name="content">content: <span class="extype" name="com.twitter.io.Buf">Buf</span></span>, <span name="contentType">contentType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="filename">filename: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="MultiPartFile.html" class="extype" name="io.fintrospect.parameters.MultiPartFile">MultiPartFile</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@InMemoryMultiPartFileextendsMultiPartFilewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This is a multipart form file element that is under the max memory limit, and thus has been kept
+</p>
     </li><li name="io.fintrospect.parameters.Mandatory" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Mandatory[-From,T]extendsRetrieval[From,T]withExtractor[From,T]"></a>
       <a id="Mandatory[-From,T]:Mandatory[From,T]"></a>
@@ -289,6 +359,23 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.parameters.package@MandatoryParameter[From,T,Bnd&lt;:io.fintrospect.parameters.Binding]extendsMandatory[From,T]withExtractableParameter[From,T]withRebindable[From,T,Bnd]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.parameters.MultiFile" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MultiFileextendsParameterwithBindable[Seq[io.fintrospect.parameters.MultiPartFile],io.fintrospect.parameters.FormFileBinding]withFormField[Seq[io.fintrospect.parameters.MultiPartFile]]"></a>
+      <a id="MultiFile:MultiFile"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MultiFile.html"><span class="name">MultiFile</span></a><span class="result"> extends <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a> with <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<span class="extype" name="scala.Seq">Seq</span>[<a href="MultiPartFile.html" class="extype" name="io.fintrospect.parameters.MultiPartFile">MultiPartFile</a>], <a href="FormFileBinding.html" class="extype" name="io.fintrospect.parameters.FormFileBinding">FormFileBinding</a>] with <a href="FormField.html" class="extype" name="io.fintrospect.parameters.FormField">FormField</a>[<span class="extype" name="scala.Seq">Seq</span>[<a href="MultiPartFile.html" class="extype" name="io.fintrospect.parameters.MultiPartFile">MultiPartFile</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@MultiFileextendsParameterwithBindable[Seq[io.fintrospect.parameters.MultiPartFile],io.fintrospect.parameters.FormFileBinding]withFormField[Seq[io.fintrospect.parameters.MultiPartFile]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -362,6 +449,40 @@
     </span>
       <p class="shortcomment cmt">Support for parameters which can have more than one value (e.g query parameters or forms)
 </p>
+    </li><li name="io.fintrospect.parameters.MultiPartFile" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MultiPartFileextendsAnyRef"></a>
+      <a id="MultiPartFile:MultiPartFile"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="MultiPartFile.html"><span class="name">MultiPartFile</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@MultiPartFileextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.parameters.MultiPartFormBody" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MultiPartFormBodyextendsBody[io.fintrospect.parameters.Form]"></a>
+      <a id="MultiPartFormBody:MultiPartFormBody"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MultiPartFormBody.html"><span class="name">MultiPartFormBody</span></a><span class="result"> extends <a href="Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@MultiPartFormBodyextendsBody[io.fintrospect.parameters.Form]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.fintrospect.parameters.MultiQueryParameter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="MultiQueryParameter[T]extendsMultiParameter[T,com.twitter.finagle.http.Request,io.fintrospect.parameters.QueryBinding]withQueryParameter[Seq[T]]"></a>
       <a id="MultiQueryParameter[T]:MultiQueryParameter[T]"></a>
@@ -379,6 +500,24 @@
       </a>
     </span>
       
+    </li><li name="io.fintrospect.parameters.OnDiskMultiPartFile" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OnDiskMultiPartFileextendsMultiPartFilewithProductwithSerializable"></a>
+      <a id="OnDiskMultiPartFile:OnDiskMultiPartFile"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="OnDiskMultiPartFile.html"><span class="name">OnDiskMultiPartFile</span></a><span class="params">(<span name="content">content: <span class="extype" name="java.io.File">File</span></span>, <span name="contentType">contentType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="filename">filename: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="MultiPartFile.html" class="extype" name="io.fintrospect.parameters.MultiPartFile">MultiPartFile</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@OnDiskMultiPartFileextendsMultiPartFilewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This is a multipart form file element that is over the max memory limit, and thus has been stored on disk temporarily
+</p>
     </li><li name="io.fintrospect.parameters.Optional" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Optional[-From,T]extendsRetrieval[From,Option[T]]withExtractor[From,T]"></a>
       <a id="Optional[-From,T]:Optional[From,T]"></a>
@@ -451,18 +590,18 @@
 represent the various places in which values are encoded (eg. header/form/query/path)
 </p></div></div>
     </li><li name="io.fintrospect.parameters.ParameterExtractAndBind" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="ParameterExtractAndBind[From,B&lt;:io.fintrospect.parameters.Binding]extendsAnyRef"></a>
-      <a id="ParameterExtractAndBind[From,B&lt;:Binding]:ParameterExtractAndBind[From,B]"></a>
+      <a id="ParameterExtractAndBind[From,Rep,B&lt;:io.fintrospect.parameters.Binding]extendsAnyRef"></a>
+      <a id="ParameterExtractAndBind[From,Rep,B&lt;:Binding]:ParameterExtractAndBind[From,Rep,B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ParameterExtractAndBind.html"><span class="name">ParameterExtractAndBind</span></a><span class="tparams">[<span name="From">From</span>, <span name="B">B &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="ParameterExtractAndBind.html"><span class="name">ParameterExtractAndBind</span></a><span class="tparams">[<span name="From">From</span>, <span name="Rep">Rep</span>, <span name="B">B &lt;: <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@ParameterExtractAndBind[From,B&lt;:io.fintrospect.parameters.Binding]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@ParameterExtractAndBind[From,Rep,B&lt;:io.fintrospect.parameters.Binding]extendsAnyRef" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -660,6 +799,23 @@ requests together.
     </span>
       <p class="shortcomment cmt">Represents the ability to retrieve a value from an enclosing object (request/form etc..)
 </p>
+    </li><li name="io.fintrospect.parameters.SingleFile" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SingleFileextendsParameterwithBindable[io.fintrospect.parameters.MultiPartFile,io.fintrospect.parameters.FormFileBinding]withFormField[io.fintrospect.parameters.MultiPartFile]"></a>
+      <a id="SingleFile:SingleFile"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SingleFile.html"><span class="name">SingleFile</span></a><span class="result"> extends <a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a> with <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a>[<a href="MultiPartFile.html" class="extype" name="io.fintrospect.parameters.MultiPartFile">MultiPartFile</a>, <a href="FormFileBinding.html" class="extype" name="io.fintrospect.parameters.FormFileBinding">FormFileBinding</a>] with <a href="FormField.html" class="extype" name="io.fintrospect.parameters.FormField">FormField</a>[<a href="MultiPartFile.html" class="extype" name="io.fintrospect.parameters.MultiPartFile">MultiPartFile</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@SingleFileextendsParameterwithBindable[io.fintrospect.parameters.MultiPartFile,io.fintrospect.parameters.FormFileBinding]withFormField[io.fintrospect.parameters.MultiPartFile]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.fintrospect.parameters.SingleParameter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="SingleParameter[T,From,B&lt;:io.fintrospect.parameters.Binding]extendsParameterwithBindable[T,B]"></a>
       <a id="SingleParameter[T,From,B&lt;:Binding]:SingleParameter[T,From,B]"></a>
@@ -678,7 +834,7 @@ requests together.
     </span>
       
     </li><li name="io.fintrospect.parameters.StrictFormCodec" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="StrictFormCodecextendsFormCodec[io.fintrospect.parameters.Form]"></a>
+      <a id="StrictFormCodecextendsFormCodec"></a>
       <a id="StrictFormCodec:StrictFormCodec"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -686,10 +842,10 @@ requests together.
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="StrictFormCodec.html"><span class="name">StrictFormCodec</span></a><span class="result"> extends <a href="FormCodec.html" class="extype" name="io.fintrospect.parameters.FormCodec">FormCodec</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>]</span>
+        <a href="StrictFormCodec.html"><span class="name">StrictFormCodec</span></a><span class="result"> extends <a href="FormCodec.html" class="extype" name="io.fintrospect.parameters.FormCodec">FormCodec</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@StrictFormCodecextendsFormCodec[io.fintrospect.parameters.Form]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@StrictFormCodecextendsFormCodec" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -730,9 +886,27 @@ will auto-reject requests with a BadRequest.
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Represents a single entity which makes up the entirety of an HTTP message body.</p><div class="fullcomment"><div class="comment cmt"><p>Represents a single entity which makes up the entirety of an HTTP message body.</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the request when it has been deserialized from the request</p></dd></dl></div>
+      <p class="shortcomment cmt">Represents a single entity which makes up the entirety of an HTTP message body.</p><div class="fullcomment"><div class="comment cmt"><p>Represents a single entity which makes up the entirety of an HTTP message body.
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the request when it has been deserialized from the request</p></dd></dl></div>
+    </li><li name="io.fintrospect.parameters.UrlEncodedFormBody" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UrlEncodedFormBodyextendsBody[io.fintrospect.parameters.Form]"></a>
+      <a id="UrlEncodedFormBody:UrlEncodedFormBody"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="UrlEncodedFormBody.html"><span class="name">UrlEncodedFormBody</span></a><span class="result"> extends <a href="Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@UrlEncodedFormBodyextendsBody[io.fintrospect.parameters.Form]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.fintrospect.parameters.WebFormCodec" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="WebFormCodecextendsFormCodec[io.fintrospect.parameters.Form]"></a>
+      <a id="WebFormCodecextendsFormCodec"></a>
       <a id="WebFormCodec:WebFormCodec"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -740,10 +914,30 @@ will auto-reject requests with a BadRequest.
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="WebFormCodec.html"><span class="name">WebFormCodec</span></a><span class="result"> extends <a href="FormCodec.html" class="extype" name="io.fintrospect.parameters.FormCodec">FormCodec</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>]</span>
+        <a href="WebFormCodec.html"><span class="name">WebFormCodec</span></a><span class="result"> extends <a href="FormCodec.html" class="extype" name="io.fintrospect.parameters.FormCodec">FormCodec</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@WebFormCodecextendsFormCodec[io.fintrospect.parameters.Form]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@WebFormCodecextendsFormCodec" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Web-forms are a less harsh version of forms, which report both a collection of received fields and a set of invalid fields.</p><div class="fullcomment"><div class="comment cmt"><p>Web-forms are a less harsh version of forms, which report both a collection of received fields and a set of invalid fields.
+This form-type is to be used for web forms (where feedback is desirable and the user can be redirected back to the form page).
+As such, extracting an invalid webform from a request will not fail unless the body encoding itself is invalid.
+</p></div></div>
+    </li><li name="io.fintrospect.parameters.WebFormValidator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="WebFormValidatorextendsFormValidator"></a>
+      <a id="WebFormValidator:WebFormValidator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="WebFormValidator.html"><span class="name">WebFormValidator</span></a><span class="result"> extends <a href="FormValidator.html" class="extype" name="io.fintrospect.parameters.FormValidator">FormValidator</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@WebFormValidatorextendsFormValidator" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -826,6 +1020,23 @@ As such, extracting an invalid webform from a request will not fail unless the b
       </a>
     </span>
       
+    </li><li name="io.fintrospect.parameters.FileParamType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FileParamType"></a>
+      <a id="FileParamType:FileParamType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="FileParamType$.html"><span class="name">FileParamType</span></a><span class="result"> extends <a href="ParamType.html" class="extype" name="io.fintrospect.parameters.ParamType">ParamType</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@FileParamType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.fintrospect.parameters.Form" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Form"></a>
       <a id="Form:Form"></a>
@@ -887,7 +1098,7 @@ As such, extracting an invalid webform from a request will not fail unless the b
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="HeaderExtractAndRebind$.html"><span class="name">HeaderExtractAndRebind</span></a><span class="result"> extends <a href="ParameterExtractAndBind.html" class="extype" name="io.fintrospect.parameters.ParameterExtractAndBind">ParameterExtractAndBind</a>[<span class="extype" name="com.twitter.finagle.http.Message">Message</span>, <a href="RequestBinding.html" class="extype" name="io.fintrospect.parameters.RequestBinding">RequestBinding</a>]</span>
+        <a href="HeaderExtractAndRebind$.html"><span class="name">HeaderExtractAndRebind</span></a><span class="result"> extends <a href="ParameterExtractAndBind.html" class="extype" name="io.fintrospect.parameters.ParameterExtractAndBind">ParameterExtractAndBind</a>[<span class="extype" name="com.twitter.finagle.http.Message">Message</span>, <span class="extype" name="scala.Predef.String">String</span>, <a href="RequestBinding.html" class="extype" name="io.fintrospect.parameters.RequestBinding">RequestBinding</a>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.parameters.package@HeaderExtractAndRebind" title="Permalink" target="_top">
@@ -908,6 +1119,23 @@ As such, extracting an invalid webform from a request will not fail unless the b
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.parameters.package@IntegerParamType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.parameters.MultiPartFile" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MultiPartFile"></a>
+      <a id="MultiPartFile:MultiPartFile"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MultiPartFile$.html"><span class="name">MultiPartFile</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@MultiPartFile" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1026,7 +1254,7 @@ As such, extracting an invalid webform from a request will not fail unless the b
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="QueryExtractAndRebind$.html"><span class="name">QueryExtractAndRebind</span></a><span class="result"> extends <a href="ParameterExtractAndBind.html" class="extype" name="io.fintrospect.parameters.ParameterExtractAndBind">ParameterExtractAndBind</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <a href="QueryBinding.html" class="extype" name="io.fintrospect.parameters.QueryBinding">QueryBinding</a>]</span>
+        <a href="QueryExtractAndRebind$.html"><span class="name">QueryExtractAndRebind</span></a><span class="result"> extends <a href="ParameterExtractAndBind.html" class="extype" name="io.fintrospect.parameters.ParameterExtractAndBind">ParameterExtractAndBind</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="scala.Predef.String">String</span>, <a href="QueryBinding.html" class="extype" name="io.fintrospect.parameters.QueryBinding">QueryBinding</a>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.parameters.package@QueryExtractAndRebind" title="Permalink" target="_top">
@@ -1034,6 +1262,43 @@ As such, extracting an invalid webform from a request will not fail unless the b
       </a>
     </span>
       
+    </li><li name="io.fintrospect.parameters.StrictFormFieldExtractor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StrictFormFieldExtractor"></a>
+      <a id="StrictFormFieldExtractor:StrictFormFieldExtractor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="StrictFormFieldExtractor$.html"><span class="name">StrictFormFieldExtractor</span></a><span class="result"> extends <a href="FormFieldExtractor.html" class="extype" name="io.fintrospect.parameters.FormFieldExtractor">FormFieldExtractor</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@StrictFormFieldExtractor" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.parameters.StrictFormValidator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="StrictFormValidator"></a>
+      <a id="StrictFormValidator:StrictFormValidator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="StrictFormValidator$.html"><span class="name">StrictFormValidator</span></a><span class="result"> extends <a href="FormValidator.html" class="extype" name="io.fintrospect.parameters.FormValidator">FormValidator</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@StrictFormValidator" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Strict Forms fail when failing even a single field fails.</p><div class="fullcomment"><div class="comment cmt"><p>Strict Forms fail when failing even a single field fails.
+This form is used for non-web forms (where the posted form is merely an url-encoded set of form parameters) and
+will auto-reject requests with a BadRequest.
+</p></div></div>
     </li><li name="io.fintrospect.parameters.StringParamType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="StringParamType"></a>
       <a id="StringParamType:StringParamType"></a>
@@ -1064,6 +1329,23 @@ As such, extracting an invalid webform from a request will not fail unless the b
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.parameters.package@StringValidation" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.parameters.WebFormFieldExtractor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WebFormFieldExtractor"></a>
+      <a id="WebFormFieldExtractor:WebFormFieldExtractor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="WebFormFieldExtractor$.html"><span class="name">WebFormFieldExtractor</span></a><span class="result"> extends <a href="FormFieldExtractor.html" class="extype" name="io.fintrospect.parameters.FormFieldExtractor">FormFieldExtractor</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@WebFormFieldExtractor" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

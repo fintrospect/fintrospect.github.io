@@ -28,11 +28,11 @@
         </head>
         <body class="value">
       <div id="definition">
-        <a href="Body.html" title="See companion class"><img alt="Object/Class" src="../../../lib/object_to_class_big.png" /></a>
+        <a href="Body.html" title="See companion trait"><img alt="Object/Trait" src="../../../lib/object_to_trait_big.png" /></a>
         <p id="owner"><a href="../../package.html" class="extype" name="io">io</a>.<a href="../package.html" class="extype" name="io.fintrospect">fintrospect</a>.<a href="package.html" class="extype" name="io.fintrospect.parameters">parameters</a></p>
-        <h1><a href="Body.html" title="See companion class">Body</a></h1><h3><span class="morelinks"><div>
+        <h1><a href="Body.html" title="See companion trait">Body</a></h1><h3><span class="morelinks"><div>
             Related Docs:
-            <a href="Body.html" title="See companion class">class Body</a>
+            <a href="Body.html" title="See companion trait">trait Body</a>
             | <a href="package.html" class="extype" name="io.fintrospect.parameters">package parameters</a>
           </div></span></h3><span class="permalink">
       <a href="../../../index.html#io.fintrospect.parameters.Body$" title="Permalink" target="_top">
@@ -183,6 +183,24 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="io.fintrospect.parameters.Body#binary" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="binary(description:Option[String],contentType:io.fintrospect.ContentType):io.fintrospect.parameters.UniBody[com.twitter.io.Buf]"></a>
+      <a id="binary(Option[String],ContentType):UniBody[Buf]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">binary</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="contentType">contentType: <a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a></span>)</span><span class="result">: <a href="UniBody.html" class="extype" name="io.fintrospect.parameters.UniBody">UniBody</a>[<span class="extype" name="com.twitter.io.Buf">Buf</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.Body$@binary(description:Option[String],contentType:io.fintrospect.ContentType):io.fintrospect.parameters.UniBody[com.twitter.io.Buf]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Binary HTTP body, with custom ContentType
+</p>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -264,18 +282,18 @@
               
         </dd></dl></div>
     </li><li name="io.fintrospect.parameters.Body#form" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="form(fields:io.fintrospect.parameters.FormField[_]withio.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_]*):io.fintrospect.parameters.FormBody"></a>
-      <a id="form(FormField[_]withExtractor[Form,_]*):FormBody"></a>
+      <a id="form(fields:io.fintrospect.parameters.FormField[_]withio.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_]*):io.fintrospect.parameters.UrlEncodedFormBody"></a>
+      <a id="form(FormField[_]withExtractor[Form,_]*):UrlEncodedFormBody"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">form</span><span class="params">(<span name="fields">fields: <a href="FormField.html" class="extype" name="io.fintrospect.parameters.FormField">FormField</a>[_] with <a href="../util/Extractor.html" class="extype" name="io.fintrospect.util.Extractor">Extractor</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>, _]*</span>)</span><span class="result">: <a href="FormBody.html" class="extype" name="io.fintrospect.parameters.FormBody">FormBody</a></span>
+        <span class="name">form</span><span class="params">(<span name="fields">fields: <a href="FormField.html" class="extype" name="io.fintrospect.parameters.FormField">FormField</a>[_] with <a href="../util/Extractor.html" class="extype" name="io.fintrospect.util.Extractor">Extractor</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>, _]*</span>)</span><span class="result">: <a href="UrlEncodedFormBody.html" class="extype" name="io.fintrospect.parameters.UrlEncodedFormBody">UrlEncodedFormBody</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.Body$@form(fields:io.fintrospect.parameters.FormField[_]withio.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_]*):io.fintrospect.parameters.FormBody" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.Body$@form(fields:io.fintrospect.parameters.FormField[_]withio.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_]*):io.fintrospect.parameters.UrlEncodedFormBody" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -351,6 +369,46 @@ This method simply takes a set of form fields.
       </a>
     </span>
       <p class="shortcomment cmt">JSON format HTTP message body.</p><div class="fullcomment"><div class="comment cmt"><p>JSON format HTTP message body. Defaults to Argo JSON format, but this can be overridden by passing an alternative JsonFormat
+</p></div></div>
+    </li><li name="io.fintrospect.parameters.Body#multiPartForm" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="multiPartForm(fields:io.fintrospect.parameters.FormField[_]withio.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_]*):io.fintrospect.parameters.MultiPartFormBody"></a>
+      <a id="multiPartForm(FormField[_]withExtractor[Form,_]*):MultiPartFormBody"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">multiPartForm</span><span class="params">(<span name="fields">fields: <a href="FormField.html" class="extype" name="io.fintrospect.parameters.FormField">FormField</a>[_] with <a href="../util/Extractor.html" class="extype" name="io.fintrospect.util.Extractor">Extractor</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>, _]*</span>)</span><span class="result">: <a href="MultiPartFormBody.html" class="extype" name="io.fintrospect.parameters.MultiPartFormBody">MultiPartFormBody</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.Body$@multiPartForm(fields:io.fintrospect.parameters.FormField[_]withio.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_]*):io.fintrospect.parameters.MultiPartFormBody" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">MultiPart encoded form HTTP message body which will fail to deserialize if a single field is missing/invalid.</p><div class="fullcomment"><div class="comment cmt"><p>MultiPart encoded form HTTP message body which will fail to deserialize if a single field is missing/invalid. Use this
+for server-server communications when you want the server to reject with a BadRequest.
+This method simply takes a set of form fields.
+</p></div></div>
+    </li><li name="io.fintrospect.parameters.Body#multiPartWebForm" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="multiPartWebForm(fields:(io.fintrospect.parameters.FormField[_]withio.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_],String)*):io.fintrospect.parameters.MultiPartFormBody"></a>
+      <a id="multiPartWebForm((FormField[_]withExtractor[Form,_],String)*):MultiPartFormBody"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">multiPartWebForm</span><span class="params">(<span name="fields">fields: (<a href="FormField.html" class="extype" name="io.fintrospect.parameters.FormField">FormField</a>[_] with <a href="../util/Extractor.html" class="extype" name="io.fintrospect.util.Extractor">Extractor</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>, _], <span class="extype" name="scala.Predef.String">String</span>)*</span>)</span><span class="result">: <a href="MultiPartFormBody.html" class="extype" name="io.fintrospect.parameters.MultiPartFormBody">MultiPartFormBody</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.Body$@multiPartWebForm(fields:(io.fintrospect.parameters.FormField[_]withio.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_],String)*):io.fintrospect.parameters.MultiPartFormBody" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">MultiPart encoded form HTTP message body which deserializes even if fields are missing/invalid.</p><div class="fullcomment"><div class="comment cmt"><p>MultiPart encoded form HTTP message body which deserializes even if fields are missing/invalid. Use this
+for browser-server communications where you want to give feedback to the user.
+This method takes a set of form fields, combined with their relevant error messages in case of validation failure.
 </p></div></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -507,18 +565,18 @@ This method simply takes a set of form fields.
               
         </dd></dl></div>
     </li><li name="io.fintrospect.parameters.Body#webForm" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="webForm(fields:(io.fintrospect.parameters.FormField[_]withio.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_],String)*):io.fintrospect.parameters.FormBody"></a>
-      <a id="webForm((FormField[_]withExtractor[Form,_],String)*):FormBody"></a>
+      <a id="webForm(fields:(io.fintrospect.parameters.FormField[_]withio.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_],String)*):io.fintrospect.parameters.UrlEncodedFormBody"></a>
+      <a id="webForm((FormField[_]withExtractor[Form,_],String)*):UrlEncodedFormBody"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">webForm</span><span class="params">(<span name="fields">fields: (<a href="FormField.html" class="extype" name="io.fintrospect.parameters.FormField">FormField</a>[_] with <a href="../util/Extractor.html" class="extype" name="io.fintrospect.util.Extractor">Extractor</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>, _], <span class="extype" name="scala.Predef.String">String</span>)*</span>)</span><span class="result">: <a href="FormBody.html" class="extype" name="io.fintrospect.parameters.FormBody">FormBody</a></span>
+        <span class="name">webForm</span><span class="params">(<span name="fields">fields: (<a href="FormField.html" class="extype" name="io.fintrospect.parameters.FormField">FormField</a>[_] with <a href="../util/Extractor.html" class="extype" name="io.fintrospect.util.Extractor">Extractor</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>, _], <span class="extype" name="scala.Predef.String">String</span>)*</span>)</span><span class="result">: <a href="UrlEncodedFormBody.html" class="extype" name="io.fintrospect.parameters.UrlEncodedFormBody">UrlEncodedFormBody</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.Body$@webForm(fields:(io.fintrospect.parameters.FormField[_]withio.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_],String)*):io.fintrospect.parameters.FormBody" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.Body$@webForm(fields:(io.fintrospect.parameters.FormField[_]withio.fintrospect.util.Extractor[io.fintrospect.parameters.Form,_],String)*):io.fintrospect.parameters.UrlEncodedFormBody" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
