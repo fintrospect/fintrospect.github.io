@@ -11,6 +11,10 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <li>Add strict <code>Accept</code> header checking for <code>RouteSpec</code>s based on <code>producing()</code> settings. Option for non-strictness.</li>
 <li>Add integrated self-hosted Swagger UI/ReDoc UI module</li>
 </ul>
+<h2>13.15.0</h2><ul>
+<li>Remodelled all parameters so they are modelled as a Seq instead of a Set. Fixes that you can&#39;t send multiple parameters with the same value.</li>
+<li>Bugfix Issue #27. Empty multipart file fields not being detected as missing during extraction.</li>
+</ul>
 <h2>13.14.0</h2><ul>
 <li>Added <code>Body.binary</code>, for transmission of binary HTTP messages</li>
 <li>Added support for MultiPart forms (both strict and with error-reporting).</li>

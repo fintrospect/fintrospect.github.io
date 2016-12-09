@@ -45,7 +45,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">InMemoryMultiPartFile</span><span class="params">(<span name="content">content: <span class="extype" name="com.twitter.io.Buf">Buf</span></span>, <span name="contentType">contentType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="filename">filename: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="MultiPartFile.html" class="extype" name="io.fintrospect.parameters.MultiPartFile">MultiPartFile</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">InMemoryMultiPartFile</span><span class="params">(<span name="filename">filename: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="content">content: <span class="extype" name="com.twitter.io.Buf">Buf</span></span>, <span name="contentType">contentType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="MultiPartFile.html" class="extype" name="io.fintrospect.parameters.MultiPartFile">MultiPartFile</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -90,7 +90,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="io.fintrospect.parameters.InMemoryMultiPartFile#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(content:com.twitter.io.Buf,contentType:Option[String],filename:Option[String]):io.fintrospect.parameters.InMemoryMultiPartFile"></a>
+      <a id="&lt;init&gt;(filename:String,content:com.twitter.io.Buf,contentType:Option[String]):io.fintrospect.parameters.InMemoryMultiPartFile"></a>
       <a id="&lt;init&gt;:InMemoryMultiPartFile"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -98,10 +98,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">InMemoryMultiPartFile</span><span class="params">(<span name="content">content: <span class="extype" name="com.twitter.io.Buf">Buf</span></span>, <span name="contentType">contentType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="filename">filename: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span>
+        <span class="name">InMemoryMultiPartFile</span><span class="params">(<span name="filename">filename: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="content">content: <span class="extype" name="com.twitter.io.Buf">Buf</span></span>, <span name="contentType">contentType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.InMemoryMultiPartFile@&lt;init&gt;(content:com.twitter.io.Buf,contentType:Option[String],filename:Option[String]):io.fintrospect.parameters.InMemoryMultiPartFile" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.InMemoryMultiPartFile@&lt;init&gt;(filename:String,content:com.twitter.io.Buf,contentType:Option[String]):io.fintrospect.parameters.InMemoryMultiPartFile" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -258,18 +258,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="io.fintrospect.parameters.InMemoryMultiPartFile#filename" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="filename:Option[String]"></a>
-      <a id="filename:Option[String]"></a>
+      <a id="filename:String"></a>
+      <a id="filename:String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">filename</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">filename</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.InMemoryMultiPartFile@filename:Option[String]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.InMemoryMultiPartFile@filename:String" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -314,6 +314,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="io.fintrospect.parameters.InMemoryMultiPartFile#isEmpty" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isEmpty():Boolean"></a>
+      <a id="isEmpty():Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isEmpty</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.InMemoryMultiPartFile@isEmpty():Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.parameters.InMemoryMultiPartFile">InMemoryMultiPartFile</a> → <a href="MultiPartFile.html" class="extype" name="io.fintrospect.parameters.MultiPartFile">MultiPartFile</a></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>

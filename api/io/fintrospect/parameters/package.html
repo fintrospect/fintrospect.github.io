@@ -165,7 +165,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Form.html"><span class="name">Form</span></a><span class="params">(<span name="fields">fields: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]] = <span class="symbol">Map.empty</span></span>, <span name="files">files: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.Set">Set</span>[<a href="MultiPartFile.html" class="extype" name="io.fintrospect.parameters.MultiPartFile">MultiPartFile</a>]] = <span class="symbol">Map.empty</span></span>, <span name="errors">errors: <span class="extype" name="scala.Seq">Seq</span>[<a href="../util/ExtractionError.html" class="extype" name="io.fintrospect.util.ExtractionError">ExtractionError</a>] = <span class="symbol">Nil</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="Form.html"><span class="name">Form</span></a><span class="params">(<span name="fields">fields: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]] = <span class="symbol">Map.empty</span></span>, <span name="files">files: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Seq">Seq</span>[<a href="MultiPartFile.html" class="extype" name="io.fintrospect.parameters.MultiPartFile">MultiPartFile</a>]] = <span class="symbol">Map.empty</span></span>, <span name="errors">errors: <span class="extype" name="scala.Seq">Seq</span>[<a href="../util/ExtractionError.html" class="extype" name="io.fintrospect.util.ExtractionError">ExtractionError</a>] = <span class="symbol">Nil</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.parameters.package@FormextendsProductwithSerializable" title="Permalink" target="_top">
@@ -320,7 +320,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="InMemoryMultiPartFile.html"><span class="name">InMemoryMultiPartFile</span></a><span class="params">(<span name="content">content: <span class="extype" name="com.twitter.io.Buf">Buf</span></span>, <span name="contentType">contentType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="filename">filename: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="MultiPartFile.html" class="extype" name="io.fintrospect.parameters.MultiPartFile">MultiPartFile</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="InMemoryMultiPartFile.html"><span class="name">InMemoryMultiPartFile</span></a><span class="params">(<span name="filename">filename: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="content">content: <span class="extype" name="com.twitter.io.Buf">Buf</span></span>, <span name="contentType">contentType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="MultiPartFile.html" class="extype" name="io.fintrospect.parameters.MultiPartFile">MultiPartFile</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.parameters.package@InMemoryMultiPartFileextendsMultiPartFilewithProductwithSerializable" title="Permalink" target="_top">
@@ -328,6 +328,24 @@
       </a>
     </span>
       <p class="shortcomment cmt">This is a multipart form file element that is under the max memory limit, and thus has been kept
+</p>
+    </li><li name="io.fintrospect.parameters.LengthValidations" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LengthValidations[T&lt;:AnyRef{defisEmpty():Boolean}]extendsAnyRef"></a>
+      <a id="LengthValidations[T&lt;:AnyRef{defisEmpty():Boolean}]:LengthValidations[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="LengthValidations.html"><span class="name">LengthValidations</span></a><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span> { def isEmpty(): Boolean }</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@LengthValidations[T&lt;:AnyRef{defisEmpty():Boolean}]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Reusable validation functions for parameter and body types
 </p>
     </li><li name="io.fintrospect.parameters.Mandatory" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Mandatory[-From,T]extendsRetrieval[From,T]withExtractor[From,T]"></a>
@@ -509,7 +527,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="OnDiskMultiPartFile.html"><span class="name">OnDiskMultiPartFile</span></a><span class="params">(<span name="content">content: <span class="extype" name="java.io.File">File</span></span>, <span name="contentType">contentType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="filename">filename: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="MultiPartFile.html" class="extype" name="io.fintrospect.parameters.MultiPartFile">MultiPartFile</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="OnDiskMultiPartFile.html"><span class="name">OnDiskMultiPartFile</span></a><span class="params">(<span name="filename">filename: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="content">content: <span class="extype" name="java.io.File">File</span></span>, <span name="contentType">contentType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="MultiPartFile.html" class="extype" name="io.fintrospect.parameters.MultiPartFile">MultiPartFile</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.parameters.package@OnDiskMultiPartFileextendsMultiPartFilewithProductwithSerializable" title="Permalink" target="_top">
@@ -853,23 +871,6 @@ requests together.
 This form is used for non-web forms (where the posted form is merely an url-encoded set of form parameters) and
 will auto-reject requests with a BadRequest.
 </p></div></div>
-    </li><li name="io.fintrospect.parameters.StringValidation" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="StringValidationextendsString=&gt;String"></a>
-      <a id="StringValidation:StringValidation"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">sealed </span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="StringValidation.html"><span class="name">StringValidation</span></a><span class="result"> extends (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@StringValidationextendsString=&gt;String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="io.fintrospect.parameters.UniBody" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="UniBody[T]extendsBody[T]"></a>
       <a id="UniBody[T]:UniBody[T]"></a>
@@ -1033,6 +1034,23 @@ As such, extracting an invalid webform from a request will not fail unless the b
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.parameters.package@FileParamType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.fintrospect.parameters.FileValidations" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FileValidations"></a>
+      <a id="FileValidations:FileValidations"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="FileValidations$.html"><span class="name">FileValidations</span></a><span class="result"> extends <a href="LengthValidations.html" class="extype" name="io.fintrospect.parameters.LengthValidations">LengthValidations</a>[<a href="MultiPartFile.html" class="extype" name="io.fintrospect.parameters.MultiPartFile">MultiPartFile</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@FileValidations" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1316,19 +1334,19 @@ will auto-reject requests with a BadRequest.
       </a>
     </span>
       
-    </li><li name="io.fintrospect.parameters.StringValidation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="StringValidation"></a>
-      <a id="StringValidation:StringValidation"></a>
+    </li><li name="io.fintrospect.parameters.StringValidations" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StringValidations"></a>
+      <a id="StringValidations:StringValidations"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="StringValidation$.html"><span class="name">StringValidation</span></a>
+        <a href="StringValidations$.html"><span class="name">StringValidations</span></a><span class="result"> extends <a href="LengthValidations.html" class="extype" name="io.fintrospect.parameters.LengthValidations">LengthValidations</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@StringValidation" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@StringValidations" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
