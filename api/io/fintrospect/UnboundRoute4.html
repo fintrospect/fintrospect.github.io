@@ -90,7 +90,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="io.fintrospect.UnboundRoute4#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(routeSpec:io.fintrospect.RouteSpec,method:com.twitter.finagle.http.Method,pathFn:io.fintrospect.ModuleSpec.ModifyPath,pp1:io.fintrospect.parameters.PathParameter[A],pp2:io.fintrospect.parameters.PathParameter[B],pp3:io.fintrospect.parameters.PathParameter[C],pp4:io.fintrospect.parameters.PathParameter[D]):io.fintrospect.UnboundRoute4[A,B,C,D]"></a>
+      <a id="&lt;init&gt;(routeSpec:io.fintrospect.RouteSpec,method:com.twitter.finagle.http.Method,pathFn:io.fintrospect.RouteModule.ModifyPath,pp1:io.fintrospect.parameters.PathParameter[A],pp2:io.fintrospect.parameters.PathParameter[B],pp3:io.fintrospect.parameters.PathParameter[C],pp4:io.fintrospect.parameters.PathParameter[D]):io.fintrospect.UnboundRoute4[A,B,C,D]"></a>
       <a id="&lt;init&gt;:UnboundRoute4[A,B,C,D]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -98,10 +98,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">UnboundRoute4</span><span class="params">(<span name="routeSpec">routeSpec: <a href="RouteSpec.html" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a></span>, <span name="method">method: <span class="extype" name="com.twitter.finagle.http.Method">Method</span></span>, <span name="pathFn">pathFn: <a href="ModuleSpec$.html#ModifyPath=com.twitter.finagle.http.path.Path=&gt;com.twitter.finagle.http.path.Path" class="extmbr" name="io.fintrospect.ModuleSpec.ModifyPath">ModuleSpec.ModifyPath</a></span>, <span name="pp1">pp1: <a href="parameters/PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[<span class="extype" name="io.fintrospect.UnboundRoute4.A">A</span>]</span>, <span name="pp2">pp2: <a href="parameters/PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[<span class="extype" name="io.fintrospect.UnboundRoute4.B">B</span>]</span>, <span name="pp3">pp3: <a href="parameters/PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[<span class="extype" name="io.fintrospect.UnboundRoute4.C">C</span>]</span>, <span name="pp4">pp4: <a href="parameters/PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[<span class="extype" name="io.fintrospect.UnboundRoute4.D">D</span>]</span>)</span>
+        <span class="name">UnboundRoute4</span><span class="params">(<span name="routeSpec">routeSpec: <a href="RouteSpec.html" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a></span>, <span name="method">method: <span class="extype" name="com.twitter.finagle.http.Method">Method</span></span>, <span name="pathFn">pathFn: <a href="RouteModule$.html#ModifyPath=com.twitter.finagle.http.path.Path=&gt;com.twitter.finagle.http.path.Path" class="extmbr" name="io.fintrospect.RouteModule.ModifyPath">RouteModule.ModifyPath</a></span>, <span name="pp1">pp1: <a href="parameters/PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[<span class="extype" name="io.fintrospect.UnboundRoute4.A">A</span>]</span>, <span name="pp2">pp2: <a href="parameters/PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[<span class="extype" name="io.fintrospect.UnboundRoute4.B">B</span>]</span>, <span name="pp3">pp3: <a href="parameters/PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[<span class="extype" name="io.fintrospect.UnboundRoute4.C">C</span>]</span>, <span name="pp4">pp4: <a href="parameters/PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[<span class="extype" name="io.fintrospect.UnboundRoute4.D">D</span>]</span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#io.fintrospect.UnboundRoute4@&lt;init&gt;(routeSpec:io.fintrospect.RouteSpec,method:com.twitter.finagle.http.Method,pathFn:io.fintrospect.ModuleSpec.ModifyPath,pp1:io.fintrospect.parameters.PathParameter[A],pp2:io.fintrospect.parameters.PathParameter[B],pp3:io.fintrospect.parameters.PathParameter[C],pp4:io.fintrospect.parameters.PathParameter[D]):io.fintrospect.UnboundRoute4[A,B,C,D]" title="Permalink" target="_top">
+      <a href="../../index.html#io.fintrospect.UnboundRoute4@&lt;init&gt;(routeSpec:io.fintrospect.RouteSpec,method:com.twitter.finagle.http.Method,pathFn:io.fintrospect.RouteModule.ModifyPath,pp1:io.fintrospect.parameters.PathParameter[A],pp2:io.fintrospect.parameters.PathParameter[B],pp3:io.fintrospect.parameters.PathParameter[C],pp4:io.fintrospect.parameters.PathParameter[D]):io.fintrospect.UnboundRoute4[A,B,C,D]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -488,18 +488,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="io.fintrospect.UnboundRoute4#pathFn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="pathFn:io.fintrospect.ModuleSpec.ModifyPath"></a>
-      <a id="pathFn:ModuleSpec.ModifyPath"></a>
+      <a id="pathFn:io.fintrospect.RouteModule.ModifyPath"></a>
+      <a id="pathFn:RouteModule.ModifyPath"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">pathFn</span><span class="result">: <a href="ModuleSpec$.html#ModifyPath=com.twitter.finagle.http.path.Path=&gt;com.twitter.finagle.http.path.Path" class="extmbr" name="io.fintrospect.ModuleSpec.ModifyPath">ModuleSpec.ModifyPath</a></span>
+        <span class="name">pathFn</span><span class="result">: <a href="RouteModule$.html#ModifyPath=com.twitter.finagle.http.path.Path=&gt;com.twitter.finagle.http.path.Path" class="extmbr" name="io.fintrospect.RouteModule.ModifyPath">RouteModule.ModifyPath</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#io.fintrospect.UnboundRoute4@pathFn:io.fintrospect.ModuleSpec.ModifyPath" title="Permalink" target="_top">
+      <a href="../../index.html#io.fintrospect.UnboundRoute4@pathFn:io.fintrospect.RouteModule.ModifyPath" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

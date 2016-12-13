@@ -11,6 +11,12 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <li>Add strict <code>Accept</code> header checking for <code>RouteSpec</code>s based on <code>producing()</code> settings. Option for non-strictness.</li>
 <li>Add integrated self-hosted Swagger UI/ReDoc UI module</li>
 </ul>
+<h2>13.16.0</h2><ul>
+<li>AKA: The slight API-tidy release!</li>
+<li>Deprecation: Renamed <code>ModuleSpec</code> to be <code>RouteModule</code>. Readded <code>ModuleSpec</code> constructors with identical (but deprecated) methods, so no break will occur. Please update your apps.</li>
+<li>Breaking: Simplified signature of <code>Module.combine()</code> to return a new <code>Module</code> instead of a <code>ServiceBinding</code>. This means that combined lib user can just call <code>toService()</code> on the combined module
+instead of calling <code>Module.toService(serviceBinding)</code>, so combined Modules are just Modules themselves.</li>
+</ul>
 <h2>13.15.0</h2><ul>
 <li>Remodelled all parameters so they are modelled as a Seq instead of a Set. Fixes that you can&#39;t send multiple parameters with the same value.</li>
 <li>Bugfix Issue #27. Empty multipart file fields not being detected as missing during extraction.</li>

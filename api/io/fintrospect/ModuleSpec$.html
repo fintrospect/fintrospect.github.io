@@ -28,12 +28,10 @@
         </head>
         <body class="value">
       <div id="definition">
-        <a href="ModuleSpec.html" title="See companion class"><img alt="Object/Class" src="../../lib/object_to_class_big.png" /></a>
+        <img alt="Object" src="../../lib/object_big.png" />
         <p id="owner"><a href="../package.html" class="extype" name="io">io</a>.<a href="package.html" class="extype" name="io.fintrospect">fintrospect</a></p>
-        <h1><a href="ModuleSpec.html" title="See companion class">ModuleSpec</a></h1><h3><span class="morelinks"><div>
-            Related Docs:
-            <a href="ModuleSpec.html" title="See companion class">class ModuleSpec</a>
-            | <a href="package.html" class="extype" name="io.fintrospect">package fintrospect</a>
+        <h1>ModuleSpec</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="io.fintrospect">package fintrospect</a>
           </div></span></h3><span class="permalink">
       <a href="../../index.html#io.fintrospect.ModuleSpec$" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
@@ -47,11 +45,16 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">ModuleSpec</span>
+        <span class="name deprecated" title="Deprecated: (Since version 13.16.0) Renamed: use RouteModule instead">ModuleSpec</span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Renamed to RouteModule.
+Self-describing module builder (uses the immutable builder pattern).
+</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 13.16.0)</i> Renamed: use RouteModule instead</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -90,27 +93,7 @@
         <div id="allMembers">
         
 
-        <div id="types" class="types members">
-              <h3>Type Members</h3>
-              <ol><li name="io.fintrospect.ModuleSpec.ModifyPath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="ModifyPath=com.twitter.finagle.http.path.Path=&gt;com.twitter.finagle.http.path.Path"></a>
-      <a id="ModifyPath:ModifyPath"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">ModifyPath</span><span class="result"> = (<span class="extype" name="com.twitter.finagle.http.path.Path">Path</span>) ⇒ <span class="extype" name="com.twitter.finagle.http.path.Path">Path</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#io.fintrospect.ModuleSpec$@ModifyPath=com.twitter.finagle.http.path.Path=&gt;com.twitter.finagle.http.path.Path" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li></ol>
-            </div>
+        
 
         
 
@@ -167,58 +150,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="io.fintrospect.ModuleSpec#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply[RQ,RS](basePath:com.twitter.finagle.http.path.Path,moduleRenderer:io.fintrospect.renderers.ModuleRenderer,moduleFilter:com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,RQ,RS]):io.fintrospect.ModuleSpec[RQ,RS]"></a>
-      <a id="apply[RQ,RS](Path,ModuleRenderer,Filter[Request,Response,RQ,RS]):ModuleSpec[RQ,RS]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">apply</span><span class="tparams">[<span name="RQ">RQ</span>, <span name="RS">RS</span>]</span><span class="params">(<span name="basePath">basePath: <span class="extype" name="com.twitter.finagle.http.path.Path">Path</span></span>, <span name="moduleRenderer">moduleRenderer: <a href="renderers/ModuleRenderer.html" class="extype" name="io.fintrospect.renderers.ModuleRenderer">ModuleRenderer</a></span>, <span name="moduleFilter">moduleFilter: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="io.fintrospect.ModuleSpec.apply.RQ">RQ</span>, <span class="extype" name="io.fintrospect.ModuleSpec.apply.RS">RS</span>]</span>)</span><span class="result">: <a href="ModuleSpec.html" class="extype" name="io.fintrospect.ModuleSpec">ModuleSpec</a>[<span class="extype" name="io.fintrospect.ModuleSpec.apply.RQ">RQ</span>, <span class="extype" name="io.fintrospect.ModuleSpec.apply.RS">RS</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#io.fintrospect.ModuleSpec$@apply[RQ,RS](basePath:com.twitter.finagle.http.path.Path,moduleRenderer:io.fintrospect.renderers.ModuleRenderer,moduleFilter:com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,RQ,RS]):io.fintrospect.ModuleSpec[RQ,RS]" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Create a module using the given base-path, renderer and module filter (to be applied to all matching requests to
-this module APART from the documentation route).</p>
-    </li><li name="io.fintrospect.ModuleSpec#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(basePath:com.twitter.finagle.http.path.Path,moduleRenderer:io.fintrospect.renderers.ModuleRenderer):io.fintrospect.ModuleSpec[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
-      <a id="apply(Path,ModuleRenderer):ModuleSpec[Request,Response]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="basePath">basePath: <span class="extype" name="com.twitter.finagle.http.path.Path">Path</span></span>, <span name="moduleRenderer">moduleRenderer: <a href="renderers/ModuleRenderer.html" class="extype" name="io.fintrospect.renderers.ModuleRenderer">ModuleRenderer</a></span>)</span><span class="result">: <a href="ModuleSpec.html" class="extype" name="io.fintrospect.ModuleSpec">ModuleSpec</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#io.fintrospect.ModuleSpec$@apply(basePath:com.twitter.finagle.http.path.Path,moduleRenderer:io.fintrospect.renderers.ModuleRenderer):io.fintrospect.ModuleSpec[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Create a module using the given base-path, renderer.</p>
-    </li><li name="io.fintrospect.ModuleSpec#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(basePath:com.twitter.finagle.http.path.Path):io.fintrospect.ModuleSpec[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
-      <a id="apply(Path):ModuleSpec[Request,Response]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="basePath">basePath: <span class="extype" name="com.twitter.finagle.http.path.Path">Path</span></span>)</span><span class="result">: <a href="ModuleSpec.html" class="extype" name="io.fintrospect.ModuleSpec">ModuleSpec</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../index.html#io.fintrospect.ModuleSpec$@apply(basePath:com.twitter.finagle.http.path.Path):io.fintrospect.ModuleSpec[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
-        <img src="../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Create a module using the given base-path without any Module API Rendering.</p>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -526,7 +457,70 @@ this module APART from the documentation route).</p>
 
         
 
-        
+        <div id="values" class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="io.fintrospect.ModuleSpec#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply[RQ,RS](basePath:com.twitter.finagle.http.path.Path,moduleRenderer:io.fintrospect.renderers.ModuleRenderer,moduleFilter:com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,RQ,RS]):io.fintrospect.RouteModule[RQ,RS]"></a>
+      <a id="apply[RQ,RS](Path,ModuleRenderer,Filter[Request,Response,RQ,RS]):RouteModule[RQ,RS]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version 13.16.0) Renamed: use RouteModule instead">apply</span><span class="tparams">[<span name="RQ">RQ</span>, <span name="RS">RS</span>]</span><span class="params">(<span name="basePath">basePath: <span class="extype" name="com.twitter.finagle.http.path.Path">Path</span></span>, <span name="moduleRenderer">moduleRenderer: <a href="renderers/ModuleRenderer.html" class="extype" name="io.fintrospect.renderers.ModuleRenderer">ModuleRenderer</a></span>, <span name="moduleFilter">moduleFilter: <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="io.fintrospect.ModuleSpec.apply.RQ">RQ</span>, <span class="extype" name="io.fintrospect.ModuleSpec.apply.RS">RS</span>]</span>)</span><span class="result">: <a href="RouteModule.html" class="extype" name="io.fintrospect.RouteModule">RouteModule</a>[<span class="extype" name="io.fintrospect.ModuleSpec.apply.RQ">RQ</span>, <span class="extype" name="io.fintrospect.ModuleSpec.apply.RS">RS</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#io.fintrospect.ModuleSpec$@apply[RQ,RS](basePath:com.twitter.finagle.http.path.Path,moduleRenderer:io.fintrospect.renderers.ModuleRenderer,moduleFilter:com.twitter.finagle.Filter[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response,RQ,RS]):io.fintrospect.RouteModule[RQ,RS]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 13.16.0)</i> Renamed: use RouteModule instead</p></dd></dl></div>
+    </li><li name="io.fintrospect.ModuleSpec#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply(basePath:com.twitter.finagle.http.path.Path,moduleRenderer:io.fintrospect.renderers.ModuleRenderer):io.fintrospect.RouteModule[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="apply(Path,ModuleRenderer):RouteModule[Request,Response]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version 13.16.0) Renamed: use RouteModule instead">apply</span><span class="params">(<span name="basePath">basePath: <span class="extype" name="com.twitter.finagle.http.path.Path">Path</span></span>, <span name="moduleRenderer">moduleRenderer: <a href="renderers/ModuleRenderer.html" class="extype" name="io.fintrospect.renderers.ModuleRenderer">ModuleRenderer</a></span>)</span><span class="result">: <a href="RouteModule.html" class="extype" name="io.fintrospect.RouteModule">RouteModule</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#io.fintrospect.ModuleSpec$@apply(basePath:com.twitter.finagle.http.path.Path,moduleRenderer:io.fintrospect.renderers.ModuleRenderer):io.fintrospect.RouteModule[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 13.16.0)</i> Renamed: use RouteModule instead</p></dd></dl></div>
+    </li><li name="io.fintrospect.ModuleSpec#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply(basePath:com.twitter.finagle.http.path.Path):io.fintrospect.RouteModule[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="apply(Path):RouteModule[Request,Response]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version 13.16.0) Renamed: use RouteModule instead">apply</span><span class="params">(<span name="basePath">basePath: <span class="extype" name="com.twitter.finagle.http.path.Path">Path</span></span>)</span><span class="result">: <a href="RouteModule.html" class="extype" name="io.fintrospect.RouteModule">RouteModule</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#io.fintrospect.ModuleSpec$@apply(basePath:com.twitter.finagle.http.path.Path):io.fintrospect.RouteModule[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 13.16.0)</i> Renamed: use RouteModule instead</p></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">
