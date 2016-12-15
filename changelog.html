@@ -11,6 +11,11 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <li>Add strict <code>Accept</code> header checking for <code>RouteSpec</code>s based on <code>producing()</code> settings. Option for non-strictness.</li>
 <li>Add integrated self-hosted Swagger UI/ReDoc UI module</li>
 </ul>
+<h2>13.17.0</h2><ul>
+<li>Added module <code>fintrospect-jackson</code> to support Jackson JSON library. See <code>Jackson</code> to get the Format util and ResponseBuilder for this format.</li>
+<li>Performance tweaks so we cache the extracted request parameters. This means that we can drop the <code>RouteValidation</code> options
+as they were introduced specifically to give the user an option as to when to extract.</li>
+</ul>
 <h2>13.16.0</h2><ul>
 <li>AKA: The slight API-tidy release!</li>
 <li>Deprecation: Renamed <code>ModuleSpec</code> to be <code>RouteModule</code>. Readded <code>ModuleSpec</code> constructors with identical (but deprecated) methods, so no break will occur. Please update your apps.</li>
