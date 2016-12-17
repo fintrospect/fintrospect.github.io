@@ -163,41 +163,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="io.fintrospect.formats.MsgPack.Format#body" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="body[R&lt;:AnyRef](description:Option[String],example:R)(implicitmf:scala.reflect.Manifest[R]):io.fintrospect.parameters.UniBody[R]"></a>
-      <a id="body[R&lt;:AnyRef](Option[String],R)(Manifest[R]):UniBody[R]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">body</span><span class="tparams">[<span name="R">R &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="example">example: <span class="extype" name="io.fintrospect.formats.MsgPack.Format.body.R">R</span> = <span class="symbol">null</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="mf">mf: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="io.fintrospect.formats.MsgPack.Format.body.R">R</span>]</span>)</span><span class="result">: <a href="../parameters/UniBody.html" class="extype" name="io.fintrospect.parameters.UniBody">UniBody</a>[<span class="extype" name="io.fintrospect.formats.MsgPack.Format.body.R">R</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Format$@body[R&lt;:AnyRef](description:Option[String],example:R)(implicitmf:scala.reflect.Manifest[R]):io.fintrospect.parameters.UniBody[R]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Convenience method for creating Body that just uses straight MsgPack encoding/decoding logic
-</p>
-    </li><li name="io.fintrospect.formats.MsgPack.Format#bodySpec" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="bodySpec[T&lt;:AnyRef](description:Option[String])(implicitmf:scala.reflect.Manifest[T]):io.fintrospect.parameters.BodySpec[T]"></a>
-      <a id="bodySpec[T&lt;:AnyRef](Option[String])(Manifest[T]):BodySpec[T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">bodySpec</span><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="mf">mf: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="io.fintrospect.formats.MsgPack.Format.bodySpec.T">T</span>]</span>)</span><span class="result">: <a href="../parameters/BodySpec.html" class="extype" name="io.fintrospect.parameters.BodySpec">BodySpec</a>[<span class="extype" name="io.fintrospect.formats.MsgPack.Format.bodySpec.T">T</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Format$@bodySpec[T&lt;:AnyRef](description:Option[String])(implicitmf:scala.reflect.Manifest[T]):io.fintrospect.parameters.BodySpec[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -222,35 +187,35 @@
               
         </dd></dl></div>
     </li><li name="io.fintrospect.formats.MsgPack.Format#decode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="decode[T&lt;:AnyRef](buf:com.twitter.io.Buf)(implicitmf:scala.reflect.Manifest[T]):T"></a>
-      <a id="decode[T&lt;:AnyRef](Buf)(Manifest[T]):T"></a>
+      <a id="decode[T](buf:com.twitter.io.Buf)(implicitmf:Manifest[T]):T"></a>
+      <a id="decode[T](Buf)(Manifest[T]):T"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decode</span><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="buf">buf: <span class="extype" name="com.twitter.io.Buf">Buf</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="mf">mf: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="io.fintrospect.formats.MsgPack.Format.decode.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="io.fintrospect.formats.MsgPack.Format.decode.T">T</span></span>
+        <span class="name">decode</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="buf">buf: <span class="extype" name="com.twitter.io.Buf">Buf</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="mf">mf: <span class="extype" name="scala.Predef.Manifest">Manifest</span>[<span class="extype" name="io.fintrospect.formats.MsgPack.Format.decode.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="io.fintrospect.formats.MsgPack.Format.decode.T">T</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Format$@decode[T&lt;:AnyRef](buf:com.twitter.io.Buf)(implicitmf:scala.reflect.Manifest[T]):T" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Format$@decode[T](buf:com.twitter.io.Buf)(implicitmf:Manifest[T]):T" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="io.fintrospect.formats.MsgPack.Format#encode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="encode[T&lt;:AnyRef](in:T):com.twitter.io.Buf"></a>
-      <a id="encode[T&lt;:AnyRef](T):Buf"></a>
+      <a id="encode[T](in:T):com.twitter.io.Buf"></a>
+      <a id="encode[T](T):Buf"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">encode</span><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="in">in: <span class="extype" name="io.fintrospect.formats.MsgPack.Format.encode.T">T</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.io.Buf">Buf</span></span>
+        <span class="name">encode</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="in">in: <span class="extype" name="io.fintrospect.formats.MsgPack.Format.encode.T">T</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.io.Buf">Buf</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Format$@encode[T&lt;:AnyRef](in:T):com.twitter.io.Buf" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.MsgPack$$Format$@encode[T](in:T):com.twitter.io.Buf" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

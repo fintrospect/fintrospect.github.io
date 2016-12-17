@@ -90,7 +90,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="io.fintrospect.parameters.UniBody#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(spec:io.fintrospect.parameters.BodySpec[T],theParamType:io.fintrospect.parameters.ParamType,theExample:Option[T]):io.fintrospect.parameters.UniBody[T]"></a>
+      <a id="&lt;init&gt;(spec:io.fintrospect.parameters.BodySpec[T],theExample:Option[T]):io.fintrospect.parameters.UniBody[T]"></a>
       <a id="&lt;init&gt;:UniBody[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -98,14 +98,14 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">UniBody</span><span class="params">(<span name="spec">spec: <a href="BodySpec.html" class="extype" name="io.fintrospect.parameters.BodySpec">BodySpec</a>[<span class="extype" name="io.fintrospect.parameters.UniBody.T">T</span>]</span>, <span name="theParamType">theParamType: <a href="ParamType.html" class="extype" name="io.fintrospect.parameters.ParamType">ParamType</a></span>, <span name="theExample">theExample: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="io.fintrospect.parameters.UniBody.T">T</span>]</span>)</span>
+        <span class="name">UniBody</span><span class="params">(<span name="spec">spec: <a href="BodySpec.html" class="extype" name="io.fintrospect.parameters.BodySpec">BodySpec</a>[<span class="extype" name="io.fintrospect.parameters.UniBody.T">T</span>]</span>, <span name="theExample">theExample: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="io.fintrospect.parameters.UniBody.T">T</span>]</span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.UniBody@&lt;init&gt;(spec:io.fintrospect.parameters.BodySpec[T],theParamType:io.fintrospect.parameters.ParamType,theExample:Option[T]):io.fintrospect.parameters.UniBody[T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.UniBody@&lt;init&gt;(spec:io.fintrospect.parameters.BodySpec[T],theExample:Option[T]):io.fintrospect.parameters.UniBody[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">spec</dt><dd class="cmt"><p>the specification of this body type</p></dd><dt class="param">theParamType</dt><dd class="cmt"><p>the documented type of this body. Usually this is StringParamType, apart from for JSON, which is ObjectParamType</p></dd><dt class="param">theExample</dt><dd class="cmt"><p>an example object of this body</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">spec</dt><dd class="cmt"><p>the specification of this body type</p></dd><dt class="param">theExample</dt><dd class="cmt"><p>an example object of this body</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -253,7 +253,9 @@
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Bind the value to this parameter</p><div class="fullcomment"><div class="comment cmt"><p>Bind the value to this parameter</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the binding</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.parameters.UniBody">UniBody</a> → <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a></dd></dl></div>
+      <p class="shortcomment cmt">Bind the value to this parameter
+</p><div class="fullcomment"><div class="comment cmt"><p>Bind the value to this parameter
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the binding</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.parameters.UniBody">UniBody</a> → <a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a></dd></dl></div>
     </li><li name="scala.collection.TraversableOnce#/:" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="/:[B](z:B)(op:(B,A)=&gt;B):B"></a>
       <a id="/:[B](B)((B,BodyParameter)⇒B):B"></a>
@@ -1482,7 +1484,8 @@ User-friendly synonym for &lt;--(), which is why the method is final.
     </span>
       <p class="shortcomment cmt">Bind the value to this parameter
 User-friendly synonym for --&gt;(), which is why the method is final.</p><div class="fullcomment"><div class="comment cmt"><p>Bind the value to this parameter
-User-friendly synonym for --&gt;(), which is why the method is final.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the binding</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a></dd></dl></div>
+User-friendly synonym for --&gt;(), which is why the method is final.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the binding</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Bindable.html" class="extype" name="io.fintrospect.parameters.Bindable">Bindable</a></dd></dl></div>
     </li><li name="scala.collection.Parallelizable#par" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="par:ParRepr"></a>
       <a id="par:ParIterable[BodyParameter]"></a>

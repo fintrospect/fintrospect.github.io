@@ -45,14 +45,14 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">Json4s</span><span class="result"> extends <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="org.json4s.JValue">JValue</span>, <span class="extype" name="org.json4s.JValue">JValue</span>]</span>
+        <span class="name">Json4s</span><span class="result"> extends <a href="Json4sLibrary.html" class="extype" name="io.fintrospect.formats.Json4sLibrary">Json4sLibrary</a>[<span class="extype" name="org.json4s.native.Document">Document</span>]</span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Native Json4S support (application/json content type) - uses BigDecimal for decimal
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="org.json4s.JValue">JValue</span>, <span class="extype" name="org.json4s.JValue">JValue</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="Json4sLibrary.html" class="extype" name="io.fintrospect.formats.Json4sLibrary">Json4sLibrary</a>[<span class="extype" name="org.json4s.native.Document">Document</span>], <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="org.json4s.JValue">JValue</span>, <span class="extype" name="org.json4s.JValue">JValue</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -70,7 +70,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="io.fintrospect.formats.Json4s"><span>Json4s</span></li><li class="in" name="io.fintrospect.formats.JsonLibrary"><span>JsonLibrary</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="io.fintrospect.formats.Json4s"><span>Json4s</span></li><li class="in" name="io.fintrospect.formats.Json4sLibrary"><span>Json4sLibrary</span></li><li class="in" name="io.fintrospect.formats.JsonLibrary"><span>JsonLibrary</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -181,7 +181,7 @@
     </span>
       <p class="shortcomment cmt">Use this to parse and create JSON objects in a generic way
 </p><div class="fullcomment"><div class="comment cmt"><p>Use this to parse and create JSON objects in a generic way
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.formats.Json4s">Json4s</a> → <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a></dd></dl></div>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.formats.Json4s">Json4s</a> → <a href="Json4sLibrary.html" class="extype" name="io.fintrospect.formats.Json4sLibrary">Json4sLibrary</a> → <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a></dd></dl></div>
     </li><li name="io.fintrospect.formats.JsonLibrary.ResponseBuilder" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ResponseBuilder"></a>
       <a id="ResponseBuilder:ResponseBuilder"></a>
@@ -218,6 +218,25 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="io.fintrospect.formats.Json4sLibrary#bodySpec" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="bodySpec[R](description:Option[String],formats:org.json4s.Formats)(implicitmf:Manifest[R]):io.fintrospect.parameters.BodySpec[R]"></a>
+      <a id="bodySpec[R](Option[String],Formats)(Manifest[R]):BodySpec[R]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bodySpec</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="formats">formats: <span class="extype" name="org.json4s.Formats">Formats</span> = <span class="symbol"><span class="name"><a href="Json4sLibrary.html#JsonFormat:io.fintrospect.formats.Json4sFormat[T]">serialization.formats(NoTypeHints)</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="mf">mf: <span class="extype" name="scala.Predef.Manifest">Manifest</span>[<span class="extype" name="io.fintrospect.formats.Json4sLibrary.bodySpec.R">R</span>]</span>)</span><span class="result">: <a href="../parameters/BodySpec.html" class="extype" name="io.fintrospect.parameters.BodySpec">BodySpec</a>[<span class="extype" name="io.fintrospect.formats.Json4sLibrary.bodySpec.R">R</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Json4s$@bodySpec[R](description:Option[String],formats:org.json4s.Formats)(implicitmf:Manifest[R]):io.fintrospect.parameters.BodySpec[R]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convenience method for creating BodySpecs that just use straight JSON encoding/decoding logic
+</p><div class="fullcomment"><div class="comment cmt"><p>Convenience method for creating BodySpecs that just use straight JSON encoding/decoding logic
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Json4sLibrary.html" class="extype" name="io.fintrospect.formats.Json4sLibrary">Json4sLibrary</a></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -400,6 +419,44 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="io.fintrospect.formats.Json4sLibrary#parameterSpec" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="parameterSpec[R](name:String,description:Option[String],formats:org.json4s.Formats)(implicitmf:Manifest[R]):io.fintrospect.parameters.ParameterSpec[R]"></a>
+      <a id="parameterSpec[R](String,Option[String],Formats)(Manifest[R]):ParameterSpec[R]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parameterSpec</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="formats">formats: <span class="extype" name="org.json4s.Formats">Formats</span> = <span class="symbol"><span class="name"><a href="Json4sLibrary.html#JsonFormat:io.fintrospect.formats.Json4sFormat[T]">serialization.formats(NoTypeHints)</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="mf">mf: <span class="extype" name="scala.Predef.Manifest">Manifest</span>[<span class="extype" name="io.fintrospect.formats.Json4sLibrary.parameterSpec.R">R</span>]</span>)</span><span class="result">: <a href="../parameters/ParameterSpec.html" class="extype" name="io.fintrospect.parameters.ParameterSpec">ParameterSpec</a>[<span class="extype" name="io.fintrospect.formats.Json4sLibrary.parameterSpec.R">R</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Json4s$@parameterSpec[R](name:String,description:Option[String],formats:org.json4s.Formats)(implicitmf:Manifest[R]):io.fintrospect.parameters.ParameterSpec[R]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convenience method for creating ParameterSpecs that just use straight JSON encoding/decoding logic
+</p><div class="fullcomment"><div class="comment cmt"><p>Convenience method for creating ParameterSpecs that just use straight JSON encoding/decoding logic
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Json4sLibrary.html" class="extype" name="io.fintrospect.formats.Json4sLibrary">Json4sLibrary</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.Json4sLibrary#responseSpec" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="responseSpec[R](statusAndDescription:(com.twitter.finagle.http.Status,String),example:R,formats:org.json4s.Formats)(implicitmf:Manifest[R]):io.fintrospect.ResponseSpec"></a>
+      <a id="responseSpec[R]((Status,String),R,Formats)(Manifest[R]):ResponseSpec"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">responseSpec</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="statusAndDescription">statusAndDescription: (<span class="extype" name="com.twitter.finagle.http.Status">Status</span>, <span class="extype" name="scala.Predef.String">String</span>)</span>, <span name="example">example: <span class="extype" name="io.fintrospect.formats.Json4sLibrary.responseSpec.R">R</span></span>, <span name="formats">formats: <span class="extype" name="org.json4s.Formats">Formats</span> = <span class="symbol"><span class="name"><a href="Json4sLibrary.html#JsonFormat:io.fintrospect.formats.Json4sFormat[T]">serialization.formats(NoTypeHints)</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="mf">mf: <span class="extype" name="scala.Predef.Manifest">Manifest</span>[<span class="extype" name="io.fintrospect.formats.Json4sLibrary.responseSpec.R">R</span>]</span>)</span><span class="result">: <a href="../ResponseSpec.html" class="extype" name="io.fintrospect.ResponseSpec">ResponseSpec</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Json4s$@responseSpec[R](statusAndDescription:(com.twitter.finagle.http.Status,String),example:R,formats:org.json4s.Formats)(implicitmf:Manifest[R]):io.fintrospect.ResponseSpec" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convenience method for creating ResponseSpecs that just use straight JSON encoding/decoding logic for examples
+</p><div class="fullcomment"><div class="comment cmt"><p>Convenience method for creating ResponseSpecs that just use straight JSON encoding/decoding logic for examples
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Json4sLibrary.html" class="extype" name="io.fintrospect.formats.Json4sLibrary">Json4sLibrary</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -512,7 +569,9 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="io.fintrospect.formats.JsonLibrary">
+        <div class="parent" name="io.fintrospect.formats.Json4sLibrary">
+              <h3>Inherited from <a href="Json4sLibrary.html" class="extype" name="io.fintrospect.formats.Json4sLibrary">Json4sLibrary</a>[<span class="extype" name="org.json4s.native.Document">Document</span>]</h3>
+            </div><div class="parent" name="io.fintrospect.formats.JsonLibrary">
               <h3>Inherited from <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="org.json4s.JValue">JValue</span>, <span class="extype" name="org.json4s.JValue">JValue</span>]</h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>

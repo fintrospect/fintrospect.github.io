@@ -53,7 +53,7 @@ object Birthday {
 // 
 val birthdayAsAQueryParam = Query.required(ParameterSpec[Birthday](&quot;DOB&quot;, None, StringParamType, Birthday.from, _.toString))
 
-/* Or, more simply, we can use map() on an existing ParameterSpec - this will handle the */
+/* Or, more simply, we can use map() on an existing ParameterSpec - this will handle the validation */
 
 val birthdayAsAQueryParam = Query.required(ParameterSpec.localDate(&quot;DOB&quot;).map(Birthday(_), (b:Birthday) =&gt; b.value))
 
@@ -64,12 +64,12 @@ use (else it will default to the bundled Argo JSON library) - and if this is don
 a single line of code change.</p>
 <pre><code>val jsonFormat = Argonaut.JsonFormat
 val exampleObject = jsonFormat.obj(&quot;fieldName&quot; -&gt; json.string(&quot;hello&quot;))
-val json = Body.json(Option(&quot;my lovely JSON object&quot;), exampleObject, jsonFormat)
+val json = Body.json(Option(&quot;my lovely JSON object&quot;), exampleObject, Argonaut)
 val body: Json = json &lt;-- request
 </code></pre><p>Notice that in the above we specified an example of the JSON message. This is not mandatory, but allows the generation of 
 <a href="http://json-schema.org/">JSON Schema</a> to be included in the auto-generated API documentation.</p>
 <p>Additionally, in the case of some JSON libraries that provide auto marshalling and demarshalling to case class instances, you can remove the JSON step altogether:</p>
 <pre><code>case class Email(address: String)
-val email = Body(jsonFormat.bodySpec[Email](Option(&quot;an email address&quot;)), Email(&quot;jim@example.com&quot;), ObjectParamType)
+val email = Body(Argonaut.bodySpec[Email](Option(&quot;an email address&quot;)), Email(&quot;jim@example.com&quot;))
 val retrieved: Email = email &lt;-- request
 </code></pre><p><a class="next" href="http://fintrospect.io/defining-routes"><button type="button" class="btn btn-sm btn-default">next: defining routes</button></a></p></article></div></div></div></main><footer><span class="left">project maintained by <a href="https://github.com/daviddenton">daviddenton</a></span><span class="right"> site powered by <a href="https://github.com/jvandemo/hb-bootstrap">hb-bootstrap</a> for <a href="http://harpjs.com">Harp</a> by <a href="http://www.jvandemo.com">Jurgen Van de Moere</a></span><script>$(function () { $('[data-toggle="tooltip"]').tooltip() })</script></footer></body></html>

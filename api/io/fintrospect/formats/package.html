@@ -137,19 +137,36 @@ instead of HTTP responses
       </a>
     </span>
       
+    </li><li name="io.fintrospect.formats.Json4sLibrary" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Json4sLibrary[T]extendsJsonLibrary[org.json4s.JValue,org.json4s.JValue]"></a>
+      <a id="Json4sLibrary[T]:Json4sLibrary[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Json4sLibrary.html"><span class="name">Json4sLibrary</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="org.json4s.JValue">JValue</span>, <span class="extype" name="org.json4s.JValue">JValue</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.package@Json4sLibrary[T]extendsJsonLibrary[org.json4s.JValue,org.json4s.JValue]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.fintrospect.formats.JsonFormat" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="JsonFormat[ROOT_NODETYPE,NODETYPE]extendsAnyRef"></a>
-      <a id="JsonFormat[ROOT_NODETYPE,NODETYPE]:JsonFormat[ROOT_NODETYPE,NODETYPE]"></a>
+      <a id="JsonFormat[ROOT_NODETYPE&lt;:NODETYPE,NODETYPE]extendsAnyRef"></a>
+      <a id="JsonFormat[ROOT_NODETYPE&lt;:NODETYPE,NODETYPE]:JsonFormat[ROOT_NODETYPE,NODETYPE]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="JsonFormat.html"><span class="name">JsonFormat</span></a><span class="tparams">[<span name="ROOT_NODETYPE">ROOT_NODETYPE</span>, <span name="NODETYPE">NODETYPE</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="JsonFormat.html"><span class="name">JsonFormat</span></a><span class="tparams">[<span name="ROOT_NODETYPE">ROOT_NODETYPE &lt;: <span class="extype" name="io.fintrospect.formats.JsonFormat.NODETYPE">NODETYPE</span></span>, <span name="NODETYPE">NODETYPE</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.package@JsonFormat[ROOT_NODETYPE,NODETYPE]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.package@JsonFormat[ROOT_NODETYPE&lt;:NODETYPE,NODETYPE]extendsAnyRef" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -157,22 +174,23 @@ instead of HTTP responses
 request parameters and bodies.
 </p></div></div>
     </li><li name="io.fintrospect.formats.JsonLibrary" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="JsonLibrary[R,N]extendsAnyRef"></a>
-      <a id="JsonLibrary[R,N]:JsonLibrary[R,N]"></a>
+      <a id="JsonLibrary[R&lt;:N,N]extendsAnyRef"></a>
+      <a id="JsonLibrary[R&lt;:N,N]:JsonLibrary[R,N]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="JsonLibrary.html"><span class="name">JsonLibrary</span></a><span class="tparams">[<span name="R">R</span>, <span name="N">N</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="JsonLibrary.html"><span class="name">JsonLibrary</span></a><span class="tparams">[<span name="R">R &lt;: <span class="extype" name="io.fintrospect.formats.JsonLibrary.N">N</span></span>, <span name="N">N</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.package@JsonLibrary[R,N]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.package@JsonLibrary[R&lt;:N,N]extendsAnyRef" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Defines a supported JSON library format (e.g.</p><div class="fullcomment"><div class="comment cmt"><p>Defines a supported JSON library format (e.g. Argo or Json4s).</p></div><dl class="paramcmts block"><dt class="tparam">R</dt><dd class="cmt"><p>- Root node type</p></dd><dt class="tparam">N</dt><dd class="cmt"><p>- Node type</p></dd></dl></div>
+      <p class="shortcomment cmt">Defines a supported JSON library format (e.g.</p><div class="fullcomment"><div class="comment cmt"><p>Defines a supported JSON library format (e.g. Argo or Json4s).
+</p></div><dl class="paramcmts block"><dt class="tparam">R</dt><dd class="cmt"><p>- Root node type</p></dd><dt class="tparam">N</dt><dd class="cmt"><p>- Node type</p></dd></dl></div>
     </li><li name="io.fintrospect.formats.MsgPackMsg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MsgPackMsgextendsAnyRef"></a>
       <a id="MsgPackMsg:MsgPackMsg"></a>
@@ -206,7 +224,8 @@ request parameters and bodies.
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Builds Http Responses using a particular custom format object.</p><div class="fullcomment"><div class="comment cmt"><p>Builds Http Responses using a particular custom format object. Plugs into the rest of the library.</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>The custom format object type</p></dd></dl></div>
+      <p class="shortcomment cmt">Builds Http Responses using a particular custom format object.</p><div class="fullcomment"><div class="comment cmt"><p>Builds Http Responses using a particular custom format object. Plugs into the rest of the library.
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>The custom format object type</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -331,7 +350,7 @@ request parameters and bodies.
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="Json4s$.html"><span class="name">Json4s</span></a><span class="result"> extends <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="org.json4s.JValue">JValue</span>, <span class="extype" name="org.json4s.JValue">JValue</span>]</span>
+        <a href="Json4s$.html"><span class="name">Json4s</span></a><span class="result"> extends <a href="Json4sLibrary.html" class="extype" name="io.fintrospect.formats.Json4sLibrary">Json4sLibrary</a>[<span class="extype" name="org.json4s.native.Document">Document</span>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.formats.package@Json4s" title="Permalink" target="_top">
@@ -349,7 +368,7 @@ request parameters and bodies.
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="Json4sDoubleMode$.html"><span class="name">Json4sDoubleMode</span></a><span class="result"> extends <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="org.json4s.JValue">JValue</span>, <span class="extype" name="org.json4s.JValue">JValue</span>]</span>
+        <a href="Json4sDoubleMode$.html"><span class="name">Json4sDoubleMode</span></a><span class="result"> extends <a href="Json4sLibrary.html" class="extype" name="io.fintrospect.formats.Json4sLibrary">Json4sLibrary</a>[<span class="extype" name="org.json4s.native.Document">Document</span>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.formats.package@Json4sDoubleMode" title="Permalink" target="_top">
@@ -367,7 +386,7 @@ request parameters and bodies.
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="Json4sJackson$.html"><span class="name">Json4sJackson</span></a><span class="result"> extends <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="org.json4s.JValue">JValue</span>, <span class="extype" name="org.json4s.JValue">JValue</span>]</span>
+        <a href="Json4sJackson$.html"><span class="name">Json4sJackson</span></a><span class="result"> extends <a href="Json4sLibrary.html" class="extype" name="io.fintrospect.formats.Json4sLibrary">Json4sLibrary</a>[<span class="extype" name="org.json4s.JValue">JValue</span>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.formats.package@Json4sJackson" title="Permalink" target="_top">
@@ -385,7 +404,7 @@ request parameters and bodies.
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="Json4sJacksonDoubleMode$.html"><span class="name">Json4sJacksonDoubleMode</span></a><span class="result"> extends <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="org.json4s.JValue">JValue</span>, <span class="extype" name="org.json4s.JValue">JValue</span>]</span>
+        <a href="Json4sJacksonDoubleMode$.html"><span class="name">Json4sJacksonDoubleMode</span></a><span class="result"> extends <a href="Json4sLibrary.html" class="extype" name="io.fintrospect.formats.Json4sLibrary">Json4sLibrary</a>[<span class="extype" name="org.json4s.JValue">JValue</span>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.formats.package@Json4sJacksonDoubleMode" title="Permalink" target="_top">

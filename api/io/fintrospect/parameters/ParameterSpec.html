@@ -51,7 +51,8 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Spec required to marshall and demarshall a parameter of a custom type</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the parameter</p></dd><dt class="param">description</dt><dd class="cmt"><p>optional description of the parameter (for use in description endpoints)</p></dd><dt class="param">paramType</dt><dd class="cmt"><p>The parameter type to be used in the documentation. For custom types, this is usually ObjectParamType (for JSON) or StringParamType</p></dd><dt class="param">deserialize</dt><dd class="cmt"><p>function to take the input string from the request and attempt to construct a deserialized instance of T. Exceptions are
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Spec required to marshal and unmarshal a parameter of a custom type
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the deserialised parameter</p></dd><dt class="param">description</dt><dd class="cmt"><p>optional description of the parameter (for use in description endpoints)</p></dd><dt class="param">paramType</dt><dd class="cmt"><p>The parameter type to be used in the documentation. For custom types, this is usually ObjectParamType (for JSON) or StringParamType</p></dd><dt class="param">deserialize</dt><dd class="cmt"><p>function to take the input string from the request and attempt to construct a deserialized instance of T. Exceptions are
                    automatically caught and translated into the appropriate result, so just concentrate on the Happy-path case</p></dd><dt class="param">serialize</dt><dd class="cmt"><p>function to take the input type and serialize it to a string to be represented in the request</p></dd><dt>returns</dt><dd class="cmt"><p>a parameter for retrieving a value of type [T] from the request</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
@@ -334,9 +335,9 @@
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Traditional map operation.</p><div class="fullcomment"><div class="comment cmt"><p>Traditional map operation. Duh.
+      <p class="shortcomment cmt">Uni-directional map functions for this ParameterSpec type.</p><div class="fullcomment"><div class="comment cmt"><p>Uni-directional map functions for this ParameterSpec type. Use this to implement custom Parameter types
 </p></div></div>
-    </li><li name="io.fintrospect.parameters.ParameterSpec#map" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="io.fintrospect.parameters.ParameterSpec#map" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="map[O](in:T=&gt;O,out:O=&gt;T):io.fintrospect.parameters.ParameterSpec[O]"></a>
       <a id="map[O]((T)⇒O,(O)⇒T):ParameterSpec[O]"></a>
       <h4 class="signature">
@@ -352,8 +353,8 @@
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Combined map and reverse-map operation
-</p>
+      <p class="shortcomment cmt">Bi-directional map functions for this ParameterSpec type.</p><div class="fullcomment"><div class="comment cmt"><p>Bi-directional map functions for this ParameterSpec type. Use this to implement custom Parameter types
+</p></div></div>
     </li><li name="io.fintrospect.parameters.ParameterSpec#name" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="name:String"></a>
       <a id="name:String"></a>

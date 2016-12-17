@@ -47,12 +47,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">BodySpec</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="contentType">contentType: <a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a></span>, <span name="deserialize">deserialize: (<span class="extype" name="com.twitter.io.Buf">Buf</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span></span>, <span name="serialize">serialize: (<span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span>) ⇒ <span class="extype" name="com.twitter.io.Buf">Buf</span> = <span class="symbol">(s: T) =&gt; Buf.Utf8(s.toString)</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">BodySpec</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="contentType">contentType: <a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a></span>, <span name="paramType">paramType: <a href="ParamType.html" class="extype" name="io.fintrospect.parameters.ParamType">ParamType</a></span>, <span name="deserialize">deserialize: (<span class="extype" name="com.twitter.io.Buf">Buf</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span></span>, <span name="serialize">serialize: (<span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span>) ⇒ <span class="extype" name="com.twitter.io.Buf">Buf</span> = <span class="symbol">(s: T) =&gt; Buf.Utf8(s.toString)</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Spec required to marshall a body of a custom type
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the parameter</p></dd><dt class="param">description</dt><dd class="cmt"><p>Description to be used in the documentation</p></dd><dt class="param">contentType</dt><dd class="cmt"><p>The HTTP content type header value</p></dd><dt class="param">deserialize</dt><dd class="cmt"><p>function to take the input string from the request and attempt to construct a deserialized instance. Exceptions are
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the deserialised body</p></dd><dt class="param">description</dt><dd class="cmt"><p>Description to be used in the documentation</p></dd><dt class="param">contentType</dt><dd class="cmt"><p>The HTTP content type header value</p></dd><dt class="param">paramType</dt><dd class="cmt"><p>How the body is represented when documenting APIs.</p></dd><dt class="param">deserialize</dt><dd class="cmt"><p>function to take the input string from the request and attempt to construct a deserialized instance. Exceptions are
                    automatically caught and translated into the appropriate result, so just concentrate on the Happy-path case</p></dd><dt class="param">serialize</dt><dd class="cmt"><p>function to take the input type and serialize it to a string to be represented in the request</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
@@ -93,7 +93,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="io.fintrospect.parameters.BodySpec#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(description:Option[String],contentType:io.fintrospect.ContentType,deserialize:com.twitter.io.Buf=&gt;T,serialize:T=&gt;com.twitter.io.Buf):io.fintrospect.parameters.BodySpec[T]"></a>
+      <a id="&lt;init&gt;(description:Option[String],contentType:io.fintrospect.ContentType,paramType:io.fintrospect.parameters.ParamType,deserialize:com.twitter.io.Buf=&gt;T,serialize:T=&gt;com.twitter.io.Buf):io.fintrospect.parameters.BodySpec[T]"></a>
       <a id="&lt;init&gt;:BodySpec[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -101,14 +101,14 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">BodySpec</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="contentType">contentType: <a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a></span>, <span name="deserialize">deserialize: (<span class="extype" name="com.twitter.io.Buf">Buf</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span></span>, <span name="serialize">serialize: (<span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span>) ⇒ <span class="extype" name="com.twitter.io.Buf">Buf</span> = <span class="symbol">(s: T) =&gt; Buf.Utf8(s.toString)</span></span>)</span>
+        <span class="name">BodySpec</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="contentType">contentType: <a href="../ContentType.html" class="extype" name="io.fintrospect.ContentType">ContentType</a></span>, <span name="paramType">paramType: <a href="ParamType.html" class="extype" name="io.fintrospect.parameters.ParamType">ParamType</a></span>, <span name="deserialize">deserialize: (<span class="extype" name="com.twitter.io.Buf">Buf</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span></span>, <span name="serialize">serialize: (<span class="extype" name="io.fintrospect.parameters.BodySpec.T">T</span>) ⇒ <span class="extype" name="com.twitter.io.Buf">Buf</span> = <span class="symbol">(s: T) =&gt; Buf.Utf8(s.toString)</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.BodySpec@&lt;init&gt;(description:Option[String],contentType:io.fintrospect.ContentType,deserialize:com.twitter.io.Buf=&gt;T,serialize:T=&gt;com.twitter.io.Buf):io.fintrospect.parameters.BodySpec[T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.BodySpec@&lt;init&gt;(description:Option[String],contentType:io.fintrospect.ContentType,paramType:io.fintrospect.parameters.ParamType,deserialize:com.twitter.io.Buf=&gt;T,serialize:T=&gt;com.twitter.io.Buf):io.fintrospect.parameters.BodySpec[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">description</dt><dd class="cmt"><p>Description to be used in the documentation</p></dd><dt class="param">contentType</dt><dd class="cmt"><p>The HTTP content type header value</p></dd><dt class="param">deserialize</dt><dd class="cmt"><p>function to take the input string from the request and attempt to construct a deserialized instance. Exceptions are
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">description</dt><dd class="cmt"><p>Description to be used in the documentation</p></dd><dt class="param">contentType</dt><dd class="cmt"><p>The HTTP content type header value</p></dd><dt class="param">paramType</dt><dd class="cmt"><p>How the body is represented when documenting APIs.</p></dd><dt class="param">deserialize</dt><dd class="cmt"><p>function to take the input string from the request and attempt to construct a deserialized instance. Exceptions are
                    automatically caught and translated into the appropriate result, so just concentrate on the Happy-path case</p></dd><dt class="param">serialize</dt><dd class="cmt"><p>function to take the input type and serialize it to a string to be represented in the request</p></dd></dl></div>
     </li></ol>
             </div>
@@ -352,9 +352,9 @@
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Traditional map operation.</p><div class="fullcomment"><div class="comment cmt"><p>Traditional map operation. Duh.
+      <p class="shortcomment cmt">Uni-directional map functions for this BodySpec type.</p><div class="fullcomment"><div class="comment cmt"><p>Uni-directional map functions for this BodySpec type. Use this to implement custom Body types
 </p></div></div>
-    </li><li name="io.fintrospect.parameters.BodySpec#map" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="io.fintrospect.parameters.BodySpec#map" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="map[O](in:T=&gt;O,out:O=&gt;T):io.fintrospect.parameters.BodySpec[O]"></a>
       <a id="map[O]((T)⇒O,(O)⇒T):BodySpec[O]"></a>
       <h4 class="signature">
@@ -370,8 +370,8 @@
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Combined map and reverse-map operation
-</p>
+      <p class="shortcomment cmt">Bi-directional map functions for this ParameterSpec type.</p><div class="fullcomment"><div class="comment cmt"><p>Bi-directional map functions for this ParameterSpec type. Use this to implement custom Parameter types
+</p></div></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -423,6 +423,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="io.fintrospect.parameters.BodySpec#paramType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="paramType:io.fintrospect.parameters.ParamType"></a>
+      <a id="paramType:ParamType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">paramType</span><span class="result">: <a href="ParamType.html" class="extype" name="io.fintrospect.parameters.ParamType">ParamType</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.BodySpec@paramType:io.fintrospect.parameters.ParamType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">How the body is represented when documenting APIs.</p>
     </li><li name="io.fintrospect.parameters.BodySpec#serialize" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="serialize:T=&gt;com.twitter.io.Buf"></a>
       <a id="serialize:(T)⇒Buf"></a>

@@ -220,6 +220,24 @@ instead of HTTP responses
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="io.fintrospect.formats.Circe#bodySpec" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="bodySpec[R](description:Option[String])(implicite:io.circe.Encoder[R],implicitd:io.circe.Decoder[R]):io.fintrospect.parameters.BodySpec[R]"></a>
+      <a id="bodySpec[R](Option[String])(Encoder[R],Decoder[R]):BodySpec[R]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bodySpec</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="e">e: <span class="extype" name="io.circe.Encoder">Encoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.bodySpec.R">R</span>]</span>, <span name="d">d: <span class="extype" name="io.circe.Decoder">Decoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.bodySpec.R">R</span>]</span>)</span><span class="result">: <a href="../parameters/BodySpec.html" class="extype" name="io.fintrospect.parameters.BodySpec">BodySpec</a>[<span class="extype" name="io.fintrospect.formats.Circe.bodySpec.R">R</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Circe$@bodySpec[R](description:Option[String])(implicite:io.circe.Encoder[R],implicitd:io.circe.Decoder[R]):io.fintrospect.parameters.BodySpec[R]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convenience method for creating BodySpecs that just use straight JSON encoding/decoding logic
+</p>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -402,6 +420,81 @@ instead of HTTP responses
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="io.fintrospect.formats.Circe#parameterSpec" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="parameterSpec[R](name:String,description:Option[String])(implicite:io.circe.Encoder[R],implicitd:io.circe.Decoder[R]):io.fintrospect.parameters.ParameterSpec[R]"></a>
+      <a id="parameterSpec[R](String,Option[String])(Encoder[R],Decoder[R]):ParameterSpec[R]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parameterSpec</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="e">e: <span class="extype" name="io.circe.Encoder">Encoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.parameterSpec.R">R</span>]</span>, <span name="d">d: <span class="extype" name="io.circe.Decoder">Decoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.parameterSpec.R">R</span>]</span>)</span><span class="result">: <a href="../parameters/ParameterSpec.html" class="extype" name="io.fintrospect.parameters.ParameterSpec">ParameterSpec</a>[<span class="extype" name="io.fintrospect.formats.Circe.parameterSpec.R">R</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Circe$@parameterSpec[R](name:String,description:Option[String])(implicite:io.circe.Encoder[R],implicitd:io.circe.Decoder[R]):io.fintrospect.parameters.ParameterSpec[R]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convenience method for creating ParameterSpecs that just use straight JSON encoding/decoding logic
+</p>
+    </li><li name="io.fintrospect.formats.Circe#patchBody" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="patchBody[R](description:Option[String],example:R)(implicite:io.circe.Encoder[R],implicitd:io.circe.Decoder[R=&gt;R]):io.fintrospect.parameters.Body[R=&gt;R]"></a>
+      <a id="patchBody[R](Option[String],R)(Encoder[R],Decoder[(R)⇒R]):Body[(R)⇒R]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">patchBody</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="example">example: <span class="extype" name="io.fintrospect.formats.Circe.patchBody.R">R</span> = <span class="symbol">null</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="e">e: <span class="extype" name="io.circe.Encoder">Encoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.patchBody.R">R</span>]</span>, <span name="d">d: <span class="extype" name="io.circe.Decoder">Decoder</span>[(<span class="extype" name="io.fintrospect.formats.Circe.patchBody.R">R</span>) ⇒ <span class="extype" name="io.fintrospect.formats.Circe.patchBody.R">R</span>]</span>)</span><span class="result">: <a href="../parameters/Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[(<span class="extype" name="io.fintrospect.formats.Circe.patchBody.R">R</span>) ⇒ <span class="extype" name="io.fintrospect.formats.Circe.patchBody.R">R</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Circe$@patchBody[R](description:Option[String],example:R)(implicite:io.circe.Encoder[R],implicitd:io.circe.Decoder[R=&gt;R]):io.fintrospect.parameters.Body[R=&gt;R]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A Body that provides a function that will modify a given case class with the fields from a incoming JSON object.</p><div class="fullcomment"><div class="comment cmt"><p>A Body that provides a function that will modify a given case class with the fields from a incoming JSON object.
+Useful for PATCH/PUT requests, where only fields to be modified are sent to the server. Note that this Body only
+supports inbound messages.
+</p></div></div>
+    </li><li name="io.fintrospect.formats.Circe#patcher" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="patcher[T](in:io.circe.Json)(implicitd:io.circe.Decoder[T=&gt;T]):T=&gt;T"></a>
+      <a id="patcher[T](Json)(Decoder[(T)⇒T]):(T)⇒T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">patcher</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="in">in: <span class="extype" name="io.circe.Json">Json</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="d">d: <span class="extype" name="io.circe.Decoder">Decoder</span>[(<span class="extype" name="io.fintrospect.formats.Circe.patcher.T">T</span>) ⇒ <span class="extype" name="io.fintrospect.formats.Circe.patcher.T">T</span>]</span>)</span><span class="result">: (<span class="extype" name="io.fintrospect.formats.Circe.patcher.T">T</span>) ⇒ <span class="extype" name="io.fintrospect.formats.Circe.patcher.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Circe$@patcher[T](in:io.circe.Json)(implicitd:io.circe.Decoder[T=&gt;T]):T=&gt;T" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Function that will modify a given case class with the fields from a incoming JSON object.</p><div class="fullcomment"><div class="comment cmt"><p>Function that will modify a given case class with the fields from a incoming JSON object.
+Useful for PATCH/PUT requests, where only modified fields are sent to the server.
+</p></div></div>
+    </li><li name="io.fintrospect.formats.Circe#responseSpec" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="responseSpec[R](statusAndDescription:(com.twitter.finagle.http.Status,String),example:R)(implicite:io.circe.Encoder[R],implicitd:io.circe.Decoder[R]):io.fintrospect.ResponseSpec"></a>
+      <a id="responseSpec[R]((Status,String),R)(Encoder[R],Decoder[R]):ResponseSpec"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">responseSpec</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="statusAndDescription">statusAndDescription: (<span class="extype" name="com.twitter.finagle.http.Status">Status</span>, <span class="extype" name="scala.Predef.String">String</span>)</span>, <span name="example">example: <span class="extype" name="io.fintrospect.formats.Circe.responseSpec.R">R</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="e">e: <span class="extype" name="io.circe.Encoder">Encoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.responseSpec.R">R</span>]</span>, <span name="d">d: <span class="extype" name="io.circe.Decoder">Decoder</span>[<span class="extype" name="io.fintrospect.formats.Circe.responseSpec.R">R</span>]</span>)</span><span class="result">: <a href="../ResponseSpec.html" class="extype" name="io.fintrospect.ResponseSpec">ResponseSpec</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Circe$@responseSpec[R](statusAndDescription:(com.twitter.finagle.http.Status,String),example:R)(implicite:io.circe.Encoder[R],implicitd:io.circe.Decoder[R]):io.fintrospect.ResponseSpec" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convenience method for creating ResponseSpecs that just use straight JSON encoding/decoding logic for examples
+</p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>

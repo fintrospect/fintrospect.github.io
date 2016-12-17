@@ -167,25 +167,6 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="io.fintrospect.formats.Play.JsonFormat#array" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="array(elements:play.api.libs.json.JsValue*):play.api.libs.json.JsArray"></a>
-      <a id="array(JsValue*):JsArray"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">array</span><span class="params">(<span name="elements">elements: <span class="extype" name="play.api.libs.json.JsValue">JsValue</span>*</span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.JsArray">JsArray</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Play$$JsonFormat$@array(elements:play.api.libs.json.JsValue*):play.api.libs.json.JsArray" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Create a JSON array from the passed elements
-</p><div class="fullcomment"><div class="comment cmt"><p>Create a JSON array from the passed elements
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.formats.Play.JsonFormat">JsonFormat</a> → <a href="JsonFormat.html" class="extype" name="io.fintrospect.formats.JsonFormat">JsonFormat</a></dd></dl></div>
-    </li><li name="io.fintrospect.formats.Play.JsonFormat#array" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="array(elements:Iterable[play.api.libs.json.JsValue]):play.api.libs.json.JsArray"></a>
       <a id="array(Iterable[JsValue]):JsArray"></a>
       <h4 class="signature">
@@ -204,6 +185,25 @@
       <p class="shortcomment cmt">Create a JSON array from the passed elements
 </p><div class="fullcomment"><div class="comment cmt"><p>Create a JSON array from the passed elements
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.formats.Play.JsonFormat">JsonFormat</a> → <a href="JsonFormat.html" class="extype" name="io.fintrospect.formats.JsonFormat">JsonFormat</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.JsonFormat#array" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="array(elements:NODETYPE*):ROOT_NODETYPE"></a>
+      <a id="array(JsValue*):JsValue"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">array</span><span class="params">(<span name="elements">elements: <span class="extype" name="play.api.libs.json.JsValue">JsValue</span>*</span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.JsValue">JsValue</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Play$$JsonFormat$@array(elements:NODETYPE*):ROOT_NODETYPE" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Create a JSON array from the passed elements
+</p><div class="fullcomment"><div class="comment cmt"><p>Create a JSON array from the passed elements
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonFormat.html" class="extype" name="io.fintrospect.formats.JsonFormat">JsonFormat</a></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -221,42 +221,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="io.fintrospect.formats.Play.JsonFormat#body" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="body[R](description:Option[String],example:R)(implicitreads:play.api.libs.json.Reads[R],implicitwrites:play.api.libs.json.Writes[R]):io.fintrospect.parameters.UniBody[R]"></a>
-      <a id="body[R](Option[String],R)(Reads[R],Writes[R]):UniBody[R]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">body</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="example">example: <span class="extype" name="io.fintrospect.formats.Play.JsonFormat.body.R">R</span> = <span class="symbol">null</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="reads">reads: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="io.fintrospect.formats.Play.JsonFormat.body.R">R</span>]</span>, <span name="writes">writes: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="io.fintrospect.formats.Play.JsonFormat.body.R">R</span>]</span>)</span><span class="result">: <a href="../parameters/UniBody.html" class="extype" name="io.fintrospect.parameters.UniBody">UniBody</a>[<span class="extype" name="io.fintrospect.formats.Play.JsonFormat.body.R">R</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Play$$JsonFormat$@body[R](description:Option[String],example:R)(implicitreads:play.api.libs.json.Reads[R],implicitwrites:play.api.libs.json.Writes[R]):io.fintrospect.parameters.UniBody[R]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Convenience method for creating Body that just use straight JSON encoding/decoding logic
-</p>
-    </li><li name="io.fintrospect.formats.Play.JsonFormat#bodySpec" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="bodySpec[R](description:Option[String])(implicitreads:play.api.libs.json.Reads[R],implicitwrites:play.api.libs.json.Writes[R]):io.fintrospect.parameters.BodySpec[R]"></a>
-      <a id="bodySpec[R](Option[String])(Reads[R],Writes[R]):BodySpec[R]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">bodySpec</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="reads">reads: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="io.fintrospect.formats.Play.JsonFormat.bodySpec.R">R</span>]</span>, <span name="writes">writes: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="io.fintrospect.formats.Play.JsonFormat.bodySpec.R">R</span>]</span>)</span><span class="result">: <a href="../parameters/BodySpec.html" class="extype" name="io.fintrospect.parameters.BodySpec">BodySpec</a>[<span class="extype" name="io.fintrospect.formats.Play.JsonFormat.bodySpec.R">R</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Play$$JsonFormat$@bodySpec[R](description:Option[String])(implicitreads:play.api.libs.json.Reads[R],implicitwrites:play.api.libs.json.Writes[R]):io.fintrospect.parameters.BodySpec[R]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Convenience method for creating BodySpecs that just use straight JSON encoding/decoding logic
-</p>
     </li><li name="io.fintrospect.formats.Play.JsonFormat#boolean" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="boolean(value:Boolean):play.api.libs.json.JsBoolean"></a>
       <a id="boolean(Boolean):JsBoolean"></a>
@@ -607,25 +571,6 @@
 </p><div class="fullcomment"><div class="comment cmt"><p>Create a JSON number node
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.formats.Play.JsonFormat">JsonFormat</a> → <a href="JsonFormat.html" class="extype" name="io.fintrospect.formats.JsonFormat">JsonFormat</a></dd></dl></div>
     </li><li name="io.fintrospect.formats.Play.JsonFormat#obj" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="obj(fields:io.fintrospect.formats.Play.JsonFormat.Field*):play.api.libs.json.JsValue"></a>
-      <a id="obj(Field*):JsValue"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">obj</span><span class="params">(<span name="fields">fields: <a href="#Field=(String,NODETYPE)" class="extmbr" name="io.fintrospect.formats.Play.JsonFormat.Field">Field</a>*</span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.JsValue">JsValue</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Play$$JsonFormat$@obj(fields:io.fintrospect.formats.Play.JsonFormat.Field*):play.api.libs.json.JsValue" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Create a JSON object from the passed String -&gt; Node pairs
-</p><div class="fullcomment"><div class="comment cmt"><p>Create a JSON object from the passed String -&gt; Node pairs
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.formats.Play.JsonFormat">JsonFormat</a> → <a href="JsonFormat.html" class="extype" name="io.fintrospect.formats.JsonFormat">JsonFormat</a></dd></dl></div>
-    </li><li name="io.fintrospect.formats.Play.JsonFormat#obj" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="obj(fields:Iterable[io.fintrospect.formats.Play.JsonFormat.Field]):play.api.libs.json.JsValue"></a>
       <a id="obj(Iterable[Field]):JsValue"></a>
       <h4 class="signature">
@@ -644,6 +589,25 @@
       <p class="shortcomment cmt">Create a JSON object from the passed String -&gt; Node pairs
 </p><div class="fullcomment"><div class="comment cmt"><p>Create a JSON object from the passed String -&gt; Node pairs
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.formats.Play.JsonFormat">JsonFormat</a> → <a href="JsonFormat.html" class="extype" name="io.fintrospect.formats.JsonFormat">JsonFormat</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.JsonFormat#obj" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="obj(fields:JsonFormat.this.Field*):ROOT_NODETYPE"></a>
+      <a id="obj(Field*):JsValue"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">obj</span><span class="params">(<span name="fields">fields: <a href="#Field=(String,NODETYPE)" class="extmbr" name="io.fintrospect.formats.Play.JsonFormat.Field">Field</a>*</span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.JsValue">JsValue</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Play$$JsonFormat$@obj(fields:JsonFormat.this.Field*):ROOT_NODETYPE" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Create a JSON object from the passed String -&gt; Node pairs
+</p><div class="fullcomment"><div class="comment cmt"><p>Create a JSON object from the passed String -&gt; Node pairs
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonFormat.html" class="extype" name="io.fintrospect.formats.JsonFormat">JsonFormat</a></dd></dl></div>
     </li><li name="io.fintrospect.formats.JsonFormat#objSym" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="objSym(fields:(Symbol,NODETYPE)*):ROOT_NODETYPE"></a>
       <a id="objSym((Symbol,JsValue)*):JsValue"></a>
@@ -663,24 +627,6 @@
       <p class="shortcomment cmt">Create a JSON object from the passed Symbol -&gt; Node pairs
 </p><div class="fullcomment"><div class="comment cmt"><p>Create a JSON object from the passed Symbol -&gt; Node pairs
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonFormat.html" class="extype" name="io.fintrospect.formats.JsonFormat">JsonFormat</a></dd></dl></div>
-    </li><li name="io.fintrospect.formats.Play.JsonFormat#parameterSpec" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="parameterSpec[R](name:String,description:Option[String])(implicitreads:play.api.libs.json.Reads[R],implicitwrites:play.api.libs.json.Writes[R]):io.fintrospect.parameters.ParameterSpec[R]"></a>
-      <a id="parameterSpec[R](String,Option[String])(Reads[R],Writes[R]):ParameterSpec[R]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">parameterSpec</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="reads">reads: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="io.fintrospect.formats.Play.JsonFormat.parameterSpec.R">R</span>]</span>, <span name="writes">writes: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="io.fintrospect.formats.Play.JsonFormat.parameterSpec.R">R</span>]</span>)</span><span class="result">: <a href="../parameters/ParameterSpec.html" class="extype" name="io.fintrospect.parameters.ParameterSpec">ParameterSpec</a>[<span class="extype" name="io.fintrospect.formats.Play.JsonFormat.parameterSpec.R">R</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Play$$JsonFormat$@parameterSpec[R](name:String,description:Option[String])(implicitreads:play.api.libs.json.Reads[R],implicitwrites:play.api.libs.json.Writes[R]):io.fintrospect.parameters.ParameterSpec[R]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Convenience method for creating ParameterSpecs that just use straight JSON encoding/decoding logic
-</p>
     </li><li name="io.fintrospect.formats.Play.JsonFormat#parse" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="parse(in:String):play.api.libs.json.JsValue"></a>
       <a id="parse(String):JsValue"></a>
@@ -720,24 +666,6 @@ don't need to worry about having to muddy your own code with the exception handl
       <p class="shortcomment cmt">Pretty printed JSON
 </p><div class="fullcomment"><div class="comment cmt"><p>Pretty printed JSON
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.formats.Play.JsonFormat">JsonFormat</a> → <a href="JsonFormat.html" class="extype" name="io.fintrospect.formats.JsonFormat">JsonFormat</a></dd></dl></div>
-    </li><li name="io.fintrospect.formats.Play.JsonFormat#responseSpec" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="responseSpec[R](statusAndDescription:(com.twitter.finagle.http.Status,String),example:R)(implicitreads:play.api.libs.json.Reads[R],implicitwrites:play.api.libs.json.Writes[R]):io.fintrospect.ResponseSpec"></a>
-      <a id="responseSpec[R]((Status,String),R)(Reads[R],Writes[R]):ResponseSpec"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">responseSpec</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="statusAndDescription">statusAndDescription: (<span class="extype" name="com.twitter.finagle.http.Status">Status</span>, <span class="extype" name="scala.Predef.String">String</span>)</span>, <span name="example">example: <span class="extype" name="io.fintrospect.formats.Play.JsonFormat.responseSpec.R">R</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="reads">reads: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="io.fintrospect.formats.Play.JsonFormat.responseSpec.R">R</span>]</span>, <span name="writes">writes: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="io.fintrospect.formats.Play.JsonFormat.responseSpec.R">R</span>]</span>)</span><span class="result">: <a href="../ResponseSpec.html" class="extype" name="io.fintrospect.ResponseSpec">ResponseSpec</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Play$$JsonFormat$@responseSpec[R](statusAndDescription:(com.twitter.finagle.http.Status,String),example:R)(implicitreads:play.api.libs.json.Reads[R],implicitwrites:play.api.libs.json.Writes[R]):io.fintrospect.ResponseSpec" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Convenience method for creating ResponseSpecs that just use straight JSON encoding/decoding logic for examples
-</p>
     </li><li name="io.fintrospect.formats.Play.JsonFormat#string" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="string(value:String):play.api.libs.json.JsString"></a>
       <a id="string(String):JsString"></a>
