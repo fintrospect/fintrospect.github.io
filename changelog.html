@@ -15,9 +15,11 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <li>Upgrade to various dependency versions, including <code>finagle-http 6.41.0</code>.</li>
 <li>Breaking: remodel/repackage of <code>ResponseBuilder</code> instantiation for custom formats. This only affects API users if using implicit conversion of <code>Status</code> objects to <code>ResponseBuilder</code>. This conversion has
 been replaced with explicit methods on <code>ResponseBuilder</code> objects for each status code, along with a <code>ResponseBuilderMagnet</code> to convert the various input content types (such as String, JSON, Buf, etc) - see below:
-Simple to fix, but different enough to warrant a new version number: </li>
+Simple to fix, but different enough to warrant a new version number: <ol>
 <li>Replace <code>Status.Ok(&quot;content&quot;).withHeader(etc)</code> type calls with <code>ResponseBuilder.Ok(&quot;content&quot;).withHeader(etc)</code> </li>
 <li>Replace <code>&lt;format&gt;.ResponseBuilder.implicits._</code> import with <code>&lt;format&gt;.ResponseBuilder._</code>. This import also brings in the various conversions for the <code>ResponseBuilderMagnet</code>.</li>
+</ol>
+</li>
 <li>(Small) Breaking: rework of Auto conversion for format objects. <code>&lt;format&gt;.Filters.AutoXXX</code> has become <code>&lt;format&gt;.Auto.XXX</code>.</li>
 </ul>
 <h2>13.18.0</h2><ul>
