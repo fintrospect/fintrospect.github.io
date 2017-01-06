@@ -25,19 +25,19 @@ handling content types like JSON or XML in a set of popular OSS libraries. These
 <tr>
     <td><a href="http://argonaut.io/">Argonaut</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-argonaut&quot; % &quot;13.18.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-argonaut&quot; % &quot;14.0.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Argonaut">Argonaut</a></td>
 </tr>
 <tr>
     <td><a href="https://github.com/travisbrown/circe">Circe</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-circe&quot; % &quot;13.18.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-circe&quot; % &quot;14.0.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Circe">Circe</a></td>
 </tr>
 <tr>
     <td><a href="https://github.com/google/gson">GSON</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-gson&quot; % &quot;13.18.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-gson&quot; % &quot;14.0.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Gson">Gson</a></td>
 </tr>
 <tr>
@@ -49,14 +49,14 @@ handling content types like JSON or XML in a set of popular OSS libraries. These
 <tr>
     <td><a href="https://github.com/FasterXML/jackson">Jackson</a> </td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-jackson&quot; % &quot;13.18.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-jackson&quot; % &quot;14.0.0&quot;</td>
     <td>
     <a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Jackson">Jackson</a>
 </td></tr>
 <tr>
     <td><a href="http://json4s.org/">Json4S Native</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-json4s&quot; % &quot;13.18.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-json4s&quot; % &quot;14.0.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Json4s">Json4s</a>
     <br>
     <a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Json4sDoubleMode">Json4sDoubleMode</a></td>
@@ -64,7 +64,7 @@ handling content types like JSON or XML in a set of popular OSS libraries. These
 <tr>
     <td><a href="http://json4s.org/">Json4S Jackson</a> </td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-json4s&quot; % &quot;13.18.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-json4s&quot; % &quot;14.0.0&quot;</td>
     <td>
     <a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Json4sJackson">Json4sJackson</a>
     <br>
@@ -73,7 +73,7 @@ handling content types like JSON or XML in a set of popular OSS libraries. These
 <tr>
     <td><a href="http://msgpack.org">MsgPack</a></td>
     <td>application/msgpack</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-msgpack&quot; % &quot;13.18.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-msgpack&quot; % &quot;14.0.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.MsgPack">MsgPack</a></td>
 </tr>
 <tr>
@@ -85,13 +85,13 @@ handling content types like JSON or XML in a set of popular OSS libraries. These
 <tr>
     <td><a href="https://www.playframework.com">Play</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-play&quot; % &quot;13.18.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-play&quot; % &quot;14.0.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Play">Play</a></td>
 </tr>
 <tr>
     <td><a href="https://github.com/spray/spray-json">Spray</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-spray&quot; % &quot;13.18.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-spray&quot; % &quot;14.0.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Spray">Spray</a></td>
 </tr>
 <tr>
@@ -108,13 +108,11 @@ handling content types like JSON or XML in a set of popular OSS libraries. These
 </tr>
 </table>
 <p>The simplest (least concise) way to invoke an auto-marshalling (ie. typesafe) ResponseBuilder is along the lines of:</p>
-<pre><code>val responseNoImplicits: Future[Response] = ResponseBuilder.toFuture(
-Xml.ResponseBuilder.HttpResponse(Status.Ok).withContent(&lt;xml&gt;lashings and lashings of wonderful&lt;/xml&gt;)
-)
-</code></pre><p>... although with tiny bit of implicit magic to convert the <code>Status</code> object to a <code>ResponseBuilder</code> and then convert the <code>ResponseBuilder</code> to 
+<pre><code>Xml.ResponseBuilder.HttpResponse(Status.Ok).withContent(&lt;xml&gt;lashings and lashings of wonderful&lt;/xml&gt;).toFuture
+</code></pre><p>... although with tiny bit of implicit magic, we can use custom status methods on the builders and then convert the <code>ResponseBuilder</code> to 
 a <code>Future[Response]</code>, you can reduce this to the rather more concise:</p>
-<pre><code>import io.fintrospect.formats.Xml.ResponseBuilder.implicits._
-val responseViaImplicits: Future[Response] = Status.Ok(&lt;xml&gt;lashings and lashings of wonderful&lt;/xml&gt;)
+<pre><code>import io.fintrospect.formats.Xml.ResponseBuilder._
+val responseViaImplicits: Future[Response] = Ok(&lt;xml&gt;lashings and lashings of wonderful&lt;/xml&gt;)
 </code></pre><p>These ResponseBuilders also support <code>AsyncStream[T]</code>, so you can build services which can stream responses in a typesafe way.</p>
 <h2>taking advantage of auto-marshalling</h2><h3>controlled mode</h3><p>Some of the JSON libraries (<code>Circe</code>, <code>Argonaut</code>, <code>Json4S</code>, <code>Play</code>) supported by Fintrospect support auto-marshalling of Scala Case 
 class instances directly to JSON without any custom conversion code needing to be written. This is supported by <code>encode()</code> and <code>decode()</code> 
@@ -123,7 +121,7 @@ methods present on the relevant Fintrospect <code>JsonFormat</code> format insta
 <pre><code>case class EmailAddress(address: String)
 
 import io.circe.generic.auto._
-import io.fintrospect.formats.Circe.ResponseBuilder.implicits._
+import io.fintrospect.formats.Circe.ResponseBuilder._
 
 Status.Ok(Circe.JsonFormat.encode(EmailAddress(&quot;dev@fintrospect.io&quot;)
 </code></pre><p>The auto-marshalling functionality of these JSON libraries requires implicit parameters in order to make it work. This requirement is 
@@ -133,11 +131,13 @@ encoder/decoder instances, you can get away with just importing the relevant <co
 the <code>Circe.Filters.AutoInOut</code> filter converts the <code>Service[Request, Response]</code> to a <code>Service[EmailAddress, ReversedEmailAddress]</code>, auto-converting 
 the case class objects in and out of the request/response. The returned status code in the <code>Response</code> is 200, but this is overridable:</p>
 <pre><code>import io.circe.generic.auto._
+import io.fintrospect.formats.Circe
+import io.fintrospect.formats.Circe.Auto._
 
 case class ReversedEmailAddress(sserdda: String)
 
 val domainSvc = Service.mk[EmailAddress, ReversedEmailAddress] { 
     email =&gt; Future.value(ReversedEmailAddress(email.address.reverse)) 
 }
-val httpSvc: Service[Request, Response] = Circe.Filters.AutoInOut(domainSvc)
+val httpSvc: Service[Request, Response] = Circe.Auto.InOut(domainSvc)
 </code></pre><p><a class="next" href="http://fintrospect.io/cross-field-validation"><button type="button" class="btn btn-sm btn-default">next: cross field validation</button></a></p></article></div></div></div></main><footer><span class="left">project maintained by <a href="https://github.com/daviddenton">daviddenton</a></span><span class="right"> site powered by <a href="https://github.com/jvandemo/hb-bootstrap">hb-bootstrap</a> for <a href="http://harpjs.com">Harp</a> by <a href="http://www.jvandemo.com">Jurgen Van de Moere</a></span><script>$(function () { $('[data-toggle="tooltip"]').tooltip() })</script></footer></body></html>

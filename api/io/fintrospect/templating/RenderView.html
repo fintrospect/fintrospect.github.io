@@ -45,7 +45,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">RenderView</span><span class="result"> extends <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <a href="View.html" class="extype" name="io.fintrospect.templating.View">View</a>]</span>
+        <span class="name">RenderView</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <a href="View.html" class="extype" name="io.fintrospect.templating.View">View</a>]</span>
       </span>
       </h4>
       
@@ -91,18 +91,18 @@ to be applied to all routes in that module.
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="io.fintrospect.templating.RenderView#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[_],renderer:io.fintrospect.templating.TemplateRenderer):io.fintrospect.templating.RenderView"></a>
-      <a id="&lt;init&gt;:RenderView"></a>
+      <a id="&lt;init&gt;(responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[T],renderer:io.fintrospect.templating.TemplateRenderer):io.fintrospect.templating.RenderView[T]"></a>
+      <a id="&lt;init&gt;:RenderView[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">RenderView</span><span class="params">(<span name="responseBuilder">responseBuilder: <a href="../formats/AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a>[_]</span>, <span name="renderer">renderer: <a href="TemplateRenderer.html" class="extype" name="io.fintrospect.templating.TemplateRenderer">TemplateRenderer</a></span>)</span>
+        <span class="name">RenderView</span><span class="params">(<span name="responseBuilder">responseBuilder: <a href="../formats/AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a>[<span class="extype" name="io.fintrospect.templating.RenderView.T">T</span>]</span>, <span name="renderer">renderer: <a href="TemplateRenderer.html" class="extype" name="io.fintrospect.templating.TemplateRenderer">TemplateRenderer</a></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.templating.RenderView@&lt;init&gt;(responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[_],renderer:io.fintrospect.templating.TemplateRenderer):io.fintrospect.templating.RenderView" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.templating.RenderView@&lt;init&gt;(responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[T],renderer:io.fintrospect.templating.TemplateRenderer):io.fintrospect.templating.RenderView[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -197,23 +197,6 @@ to be applied to all routes in that module.
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.templating.RenderView@andThen(factory:com.twitter.finagle.ServiceFactory[ReqOut,RepIn]):com.twitter.finagle.ServiceFactory[ReqIn,RepOut]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Filter</dd></dl></div>
-    </li><li name="com.twitter.finagle.Filter#andThen" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="andThen(f:ReqOut=&gt;com.twitter.util.Future[RepIn]):ReqIn=&gt;com.twitter.util.Future[RepOut]"></a>
-      <a id="andThen((Request)⇒Future[View]):(Request)⇒Future[Response]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">andThen</span><span class="params">(<span name="f">f: (<span class="extype" name="com.twitter.finagle.http.Request">Request</span>) ⇒ <span class="extype" name="com.twitter.util.Future">Future</span>[<a href="View.html" class="extype" name="io.fintrospect.templating.View">View</a>]</span>)</span><span class="result">: (<span class="extype" name="com.twitter.finagle.http.Request">Request</span>) ⇒ <span class="extype" name="com.twitter.util.Future">Future</span>[<span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.templating.RenderView@andThen(f:ReqOut=&gt;com.twitter.util.Future[RepIn]):ReqIn=&gt;com.twitter.util.Future[RepOut]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

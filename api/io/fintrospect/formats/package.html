@@ -84,72 +84,53 @@
     </span>
       <p class="shortcomment cmt">Convenience methods for building Http Responses
 </p>
-    </li><li name="io.fintrospect.formats.AutoFilters" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="AutoFilters[T]extendsAnyRef"></a>
-      <a id="AutoFilters[T]:AutoFilters[T]"></a>
+    </li><li name="io.fintrospect.formats.Auto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Auto[R]extendsAnyRef"></a>
+      <a id="Auto[R]:Auto[R]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="AutoFilters.html"><span class="name">AutoFilters</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Auto.html"><span class="name">Auto</span></a><span class="tparams">[<span name="R">R</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.package@AutoFilters[T]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.package@Auto[R]extendsAnyRef" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
-    </li><li name="io.fintrospect.formats.Json4sFilters" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Json4sFilters[T]extendsAutoFilters[org.json4s.JValue]"></a>
-      <a id="Json4sFilters[T]:Json4sFilters[T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="Json4sFilters.html"><span class="name">Json4sFilters</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="AutoFilters.html" class="extype" name="io.fintrospect.formats.AutoFilters">AutoFilters</a>[<span class="extype" name="org.json4s.JValue">JValue</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.package@Json4sFilters[T]extendsAutoFilters[org.json4s.JValue]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Auto-marshalling filters which can be used to create Services which take and return domain objects
-instead of HTTP responses
-</p>
     </li><li name="io.fintrospect.formats.Json4sFormat" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Json4sFormat[T]extendsJsonFormat[org.json4s.JValue,org.json4s.JValue]"></a>
-      <a id="Json4sFormat[T]:Json4sFormat[T]"></a>
+      <a id="Json4sFormat[+T]extendsJsonFormat[org.json4s.JValue,org.json4s.JValue]"></a>
+      <a id="Json4sFormat[+T]:Json4sFormat[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="Json4sFormat.html"><span class="name">Json4sFormat</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="JsonFormat.html" class="extype" name="io.fintrospect.formats.JsonFormat">JsonFormat</a>[<span class="extype" name="org.json4s.JValue">JValue</span>, <span class="extype" name="org.json4s.JValue">JValue</span>]</span>
+        <a href="Json4sFormat.html"><span class="name">Json4sFormat</span></a><span class="tparams">[<span name="T">+T</span>]</span><span class="result"> extends <a href="JsonFormat.html" class="extype" name="io.fintrospect.formats.JsonFormat">JsonFormat</a>[<span class="extype" name="org.json4s.JValue">JValue</span>, <span class="extype" name="org.json4s.JValue">JValue</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.package@Json4sFormat[T]extendsJsonFormat[org.json4s.JValue,org.json4s.JValue]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.package@Json4sFormat[+T]extendsJsonFormat[org.json4s.JValue,org.json4s.JValue]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="io.fintrospect.formats.Json4sLibrary" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="Json4sLibrary[T]extendsJsonLibrary[org.json4s.JValue,org.json4s.JValue]"></a>
-      <a id="Json4sLibrary[T]:Json4sLibrary[T]"></a>
+      <a id="Json4sLibrary[D]extendsJsonLibrary[org.json4s.JValue,org.json4s.JValue]"></a>
+      <a id="Json4sLibrary[D]:Json4sLibrary[D]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="Json4sLibrary.html"><span class="name">Json4sLibrary</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="org.json4s.JValue">JValue</span>, <span class="extype" name="org.json4s.JValue">JValue</span>]</span>
+        <a href="Json4sLibrary.html"><span class="name">Json4sLibrary</span></a><span class="tparams">[<span name="D">D</span>]</span><span class="result"> extends <a href="JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="org.json4s.JValue">JValue</span>, <span class="extype" name="org.json4s.JValue">JValue</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.package@Json4sLibrary[T]extendsJsonLibrary[org.json4s.JValue,org.json4s.JValue]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.package@Json4sLibrary[D]extendsJsonLibrary[org.json4s.JValue,org.json4s.JValue]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -209,7 +190,7 @@ request parameters and bodies.
     </span>
       
     </li><li name="io.fintrospect.formats.ResponseBuilder" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="ResponseBuilder[T]extendsBuilder[com.twitter.finagle.http.Response]"></a>
+      <a id="ResponseBuilder[T]extendsAnyRef"></a>
       <a id="ResponseBuilder[T]:ResponseBuilder[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -217,15 +198,35 @@ request parameters and bodies.
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="ResponseBuilder.html"><span class="name">ResponseBuilder</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../util/Builder.html" class="extype" name="io.fintrospect.util.Builder">Builder</a>[<span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+        <a href="ResponseBuilder.html"><span class="name">ResponseBuilder</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.package@ResponseBuilder[T]extendsBuilder[com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.package@ResponseBuilder[T]extendsAnyRef" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Builds Http Responses using a particular custom format object.</p><div class="fullcomment"><div class="comment cmt"><p>Builds Http Responses using a particular custom format object. Plugs into the rest of the library.
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>The custom format object type</p></dd></dl></div>
+    </li><li name="io.fintrospect.formats.ResponseBuilderMagnet" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ResponseBuilderMagnet[T]extendsio.fintrospect.formats.ResponseBuilder[T]=&gt;io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="ResponseBuilderMagnet[T]:ResponseBuilderMagnet[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ResponseBuilderMagnet.html"><span class="name">ResponseBuilderMagnet</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends (<a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<span class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet.T">T</span>]) ⇒ <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<span class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.package@ResponseBuilderMagnet[T]extendsio.fintrospect.formats.ResponseBuilder[T]=&gt;io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Magnet to convert content types (such as String, Buf, custom JSON types etc) to a common type that
+ResponseBuilders can accept.</p><div class="fullcomment"><div class="comment cmt"><p>Magnet to convert content types (such as String, Buf, custom JSON types etc) to a common type that
+ResponseBuilders can accept.</p><p>See companion object methods for various conversions available.
+</p></div></div>
     </li></ol>
             </div>
 
@@ -519,6 +520,23 @@ request parameters and bodies.
     </span>
       <p class="shortcomment cmt">Generic ResponseBuilder support
 </p>
+    </li><li name="io.fintrospect.formats.ResponseBuilderMagnet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ResponseBuilderMagnet"></a>
+      <a id="ResponseBuilderMagnet:ResponseBuilderMagnet"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ResponseBuilderMagnet$.html"><span class="name">ResponseBuilderMagnet</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.package@ResponseBuilderMagnet" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.fintrospect.formats.Spray" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Spray"></a>
       <a id="Spray:Spray"></a>

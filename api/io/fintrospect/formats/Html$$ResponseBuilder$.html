@@ -88,29 +88,7 @@
         <div id="allMembers">
         
 
-        <div id="types" class="types members">
-              <h3>Type Members</h3>
-              <ol><li name="io.fintrospect.formats.AbstractResponseBuilder.ResponseBuilderConfig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="ResponseBuilderConfigextendsAnyRef"></a>
-      <a id="ResponseBuilderConfig:ResponseBuilderConfig"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="AbstractResponseBuilder$ResponseBuilderConfig.html"><span class="name">ResponseBuilderConfig</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.AbstractResponseBuilder@ResponseBuilderConfigextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Intermediate object used when constructing a ResponseBuilder from a Status object (via implicit conversion)
-</p><div class="fullcomment"><div class="comment cmt"><p>Intermediate object used when constructing a ResponseBuilder from a Status object (via implicit conversion)
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
-    </li></ol>
-            </div>
+        
 
         
 
@@ -167,121 +145,240 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#Error" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Error(status:com.twitter.finagle.http.Status,error:Throwable):com.twitter.finagle.http.Response"></a>
-      <a id="Error(Status,Throwable):Response"></a>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#Accepted" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Accepted(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="Accepted(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">Error</span><span class="params">(<span name="status">status: <span class="extype" name="com.twitter.finagle.http.Status">Status</span></span>, <span name="error">error: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.http.Response">Response</span></span>
+        <span class="name">Accepted</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@Error(status:com.twitter.finagle.http.Status,error:Throwable):com.twitter.finagle.http.Response" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@Accepted(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
-    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#Error" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Error(status:com.twitter.finagle.http.Status,message:String):io.fintrospect.formats.ResponseBuilder[T]"></a>
-      <a id="Error(Status,String):ResponseBuilder[$]"></a>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#BadGateway" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BadGateway(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="BadGateway(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">Error</span><span class="params">(<span name="status">status: <span class="extype" name="com.twitter.finagle.http.Status">Status</span></span>, <span name="message">message: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+        <span class="name">BadGateway</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@Error(status:com.twitter.finagle.http.Status,message:String):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@BadGateway(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
-    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#Error" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Error(status:com.twitter.finagle.http.Status,t:T):io.fintrospect.formats.ResponseBuilder[T]"></a>
-      <a id="Error(Status,$):ResponseBuilder[$]"></a>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#BadRequest" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BadRequest(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="BadRequest(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">Error</span><span class="params">(<span name="status">status: <span class="extype" name="com.twitter.finagle.http.Status">Status</span></span>, <span name="t">t: <a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a></span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+        <span class="name">BadRequest</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@Error(status:com.twitter.finagle.http.Status,t:T):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@BadRequest(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
-    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#Error" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Error(status:com.twitter.finagle.http.Status,buf:com.twitter.io.Buf):io.fintrospect.formats.ResponseBuilder[T]"></a>
-      <a id="Error(Status,Buf):ResponseBuilder[$]"></a>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#ClientClosedRequest" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ClientClosedRequest(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="ClientClosedRequest(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">Error</span><span class="params">(<span name="status">status: <span class="extype" name="com.twitter.finagle.http.Status">Status</span></span>, <span name="buf">buf: <span class="extype" name="com.twitter.io.Buf">Buf</span></span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+        <span class="name">ClientClosedRequest</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@Error(status:com.twitter.finagle.http.Status,buf:com.twitter.io.Buf):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@ClientClosedRequest(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
-    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#Error" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Error(status:com.twitter.finagle.http.Status,channelBuffer:org.jboss.netty.buffer.ChannelBuffer):io.fintrospect.formats.ResponseBuilder[T]"></a>
-      <a id="Error(Status,ChannelBuffer):ResponseBuilder[$]"></a>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#Conflict" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Conflict(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="Conflict(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">Error</span><span class="params">(<span name="status">status: <span class="extype" name="com.twitter.finagle.http.Status">Status</span></span>, <span name="channelBuffer">channelBuffer: <span class="extype" name="org.jboss.netty.buffer.ChannelBuffer">ChannelBuffer</span></span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+        <span class="name">Conflict</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@Error(status:com.twitter.finagle.http.Status,channelBuffer:org.jboss.netty.buffer.ChannelBuffer):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@Conflict(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
-    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#Error" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Error(status:com.twitter.finagle.http.Status):io.fintrospect.formats.ResponseBuilder[T]"></a>
-      <a id="Error(Status):ResponseBuilder[$]"></a>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#Continue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Continue(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="Continue(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">Error</span><span class="params">(<span name="status">status: <span class="extype" name="com.twitter.finagle.http.Status">Status</span></span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+        <span class="name">Continue</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@Error(status:com.twitter.finagle.http.Status):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@Continue(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
-    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#Error" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Error(status:com.twitter.finagle.http.Status,reader:com.twitter.io.Reader):io.fintrospect.formats.ResponseBuilder[T]"></a>
-      <a id="Error(Status,Reader):ResponseBuilder[$]"></a>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#Created" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Created(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="Created(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">Error</span><span class="params">(<span name="status">status: <span class="extype" name="com.twitter.finagle.http.Status">Status</span></span>, <span name="reader">reader: <span class="extype" name="com.twitter.io.Reader">Reader</span></span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+        <span class="name">Created</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@Error(status:com.twitter.finagle.http.Status,reader:com.twitter.io.Reader):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@Created(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#EnhanceYourCalm" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="EnhanceYourCalm(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="EnhanceYourCalm(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">EnhanceYourCalm</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@EnhanceYourCalm(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#ExpectationFailed" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ExpectationFailed(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="ExpectationFailed(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ExpectationFailed</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@ExpectationFailed(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#FailedDependency" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="FailedDependency(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="FailedDependency(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">FailedDependency</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@FailedDependency(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#Forbidden" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Forbidden(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="Forbidden(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Forbidden</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@Forbidden(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#Found" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Found(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="Found(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Found</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@Found(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#GatewayTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="GatewayTimeout(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="GatewayTimeout(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">GatewayTimeout</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@GatewayTimeout(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#Gone" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Gone(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="Gone(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Gone</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@Gone(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -320,104 +417,733 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
-    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#OK" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="OK(content:String):io.fintrospect.formats.ResponseBuilder[T]"></a>
-      <a id="OK(String):ResponseBuilder[$]"></a>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#HttpVersionNotSupported" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="HttpVersionNotSupported(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="HttpVersionNotSupported(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">OK</span><span class="params">(<span name="content">content: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+        <span class="name">HttpVersionNotSupported</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@OK(content:String):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@HttpVersionNotSupported(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
-    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#OK" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="OK(content:T):io.fintrospect.formats.ResponseBuilder[T]"></a>
-      <a id="OK($):ResponseBuilder[$]"></a>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#InsufficientStorage" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="InsufficientStorage(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="InsufficientStorage(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">OK</span><span class="params">(<span name="content">content: <a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a></span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+        <span class="name">InsufficientStorage</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@OK(content:T):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@InsufficientStorage(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
-    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#OK" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="OK(buf:com.twitter.io.Buf):io.fintrospect.formats.ResponseBuilder[T]"></a>
-      <a id="OK(Buf):ResponseBuilder[$]"></a>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#InternalServerError" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="InternalServerError(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="InternalServerError(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">OK</span><span class="params">(<span name="buf">buf: <span class="extype" name="com.twitter.io.Buf">Buf</span></span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+        <span class="name">InternalServerError</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@OK(buf:com.twitter.io.Buf):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@InternalServerError(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
-    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#OK" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="OK(reader:com.twitter.io.Reader):io.fintrospect.formats.ResponseBuilder[T]"></a>
-      <a id="OK(Reader):ResponseBuilder[$]"></a>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#LengthRequired" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LengthRequired(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="LengthRequired(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">OK</span><span class="params">(<span name="reader">reader: <span class="extype" name="com.twitter.io.Reader">Reader</span></span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+        <span class="name">LengthRequired</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@OK(reader:com.twitter.io.Reader):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@LengthRequired(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
-    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#OK" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="OK(channelBuffer:org.jboss.netty.buffer.ChannelBuffer):io.fintrospect.formats.ResponseBuilder[T]"></a>
-      <a id="OK(ChannelBuffer):ResponseBuilder[$]"></a>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#Locked" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Locked(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="Locked(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">OK</span><span class="params">(<span name="channelBuffer">channelBuffer: <span class="extype" name="org.jboss.netty.buffer.ChannelBuffer">ChannelBuffer</span></span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+        <span class="name">Locked</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@OK(channelBuffer:org.jboss.netty.buffer.ChannelBuffer):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@Locked(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
-    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#OK" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="OK:com.twitter.finagle.http.Response"></a>
-      <a id="OK:Response"></a>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#MethodNotAllowed" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MethodNotAllowed(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="MethodNotAllowed(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">OK</span><span class="result">: <span class="extype" name="com.twitter.finagle.http.Response">Response</span></span>
+        <span class="name">MethodNotAllowed</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@OK:com.twitter.finagle.http.Response" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@MethodNotAllowed(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#MovedPermanently" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MovedPermanently(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="MovedPermanently(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MovedPermanently</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@MovedPermanently(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#MultiStatus" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MultiStatus(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="MultiStatus(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MultiStatus</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@MultiStatus(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#MultipleChoices" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MultipleChoices(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="MultipleChoices(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MultipleChoices</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@MultipleChoices(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#NetworkAuthenticationRequired" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NetworkAuthenticationRequired(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="NetworkAuthenticationRequired(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">NetworkAuthenticationRequired</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@NetworkAuthenticationRequired(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#NoContent" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NoContent(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="NoContent(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">NoContent</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@NoContent(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#NonAuthoritativeInformation" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NonAuthoritativeInformation(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="NonAuthoritativeInformation(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">NonAuthoritativeInformation</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@NonAuthoritativeInformation(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#NotAcceptable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NotAcceptable(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="NotAcceptable(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">NotAcceptable</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@NotAcceptable(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#NotExtended" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NotExtended(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="NotExtended(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">NotExtended</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@NotExtended(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#NotFound" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NotFound(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="NotFound(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">NotFound</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@NotFound(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#NotImplemented" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NotImplemented(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="NotImplemented(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">NotImplemented</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@NotImplemented(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#NotModified" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NotModified(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="NotModified(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">NotModified</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@NotModified(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#Ok" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Ok(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="Ok(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Ok</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@Ok(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#PartialContent" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PartialContent(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="PartialContent(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PartialContent</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@PartialContent(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#PaymentRequired" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PaymentRequired(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="PaymentRequired(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PaymentRequired</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@PaymentRequired(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#PreconditionFailed" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PreconditionFailed(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="PreconditionFailed(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PreconditionFailed</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@PreconditionFailed(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#PreconditionRequired" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PreconditionRequired(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="PreconditionRequired(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PreconditionRequired</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@PreconditionRequired(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#Processing" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Processing(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="Processing(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Processing</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@Processing(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#ProxyAuthenticationRequired" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ProxyAuthenticationRequired(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="ProxyAuthenticationRequired(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ProxyAuthenticationRequired</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@ProxyAuthenticationRequired(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#RequestEntityTooLarge" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RequestEntityTooLarge(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="RequestEntityTooLarge(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RequestEntityTooLarge</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@RequestEntityTooLarge(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#RequestHeaderFieldsTooLarge" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RequestHeaderFieldsTooLarge(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="RequestHeaderFieldsTooLarge(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RequestHeaderFieldsTooLarge</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@RequestHeaderFieldsTooLarge(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#RequestTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RequestTimeout(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="RequestTimeout(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RequestTimeout</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@RequestTimeout(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#RequestURITooLong" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RequestURITooLong(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="RequestURITooLong(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RequestURITooLong</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@RequestURITooLong(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#RequestedRangeNotSatisfiable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RequestedRangeNotSatisfiable(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="RequestedRangeNotSatisfiable(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RequestedRangeNotSatisfiable</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@RequestedRangeNotSatisfiable(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#ResetContent" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ResetContent(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="ResetContent(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ResetContent</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@ResetContent(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#SeeOther" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SeeOther(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="SeeOther(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SeeOther</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@SeeOther(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#ServiceUnavailable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ServiceUnavailable(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="ServiceUnavailable(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ServiceUnavailable</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@ServiceUnavailable(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#SwitchingProtocols" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SwitchingProtocols(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="SwitchingProtocols(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SwitchingProtocols</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@SwitchingProtocols(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#TemporaryRedirect" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TemporaryRedirect(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="TemporaryRedirect(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TemporaryRedirect</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@TemporaryRedirect(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#TooManyRequests" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TooManyRequests(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="TooManyRequests(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TooManyRequests</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@TooManyRequests(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#Unauthorized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Unauthorized(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="Unauthorized(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Unauthorized</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@Unauthorized(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#UnavailableForLegalReasons" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="UnavailableForLegalReasons(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="UnavailableForLegalReasons(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">UnavailableForLegalReasons</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@UnavailableForLegalReasons(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#UnorderedCollection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="UnorderedCollection(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="UnorderedCollection(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">UnorderedCollection</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@UnorderedCollection(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#UnprocessableEntity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="UnprocessableEntity(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="UnprocessableEntity(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">UnprocessableEntity</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@UnprocessableEntity(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#UnsupportedMediaType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="UnsupportedMediaType(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="UnsupportedMediaType(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">UnsupportedMediaType</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@UnsupportedMediaType(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#UpgradeRequired" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="UpgradeRequired(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="UpgradeRequired(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">UpgradeRequired</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@UpgradeRequired(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#UseProxy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="UseProxy(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="UseProxy(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">UseProxy</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@UseProxy(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats.AbstractResponseBuilder#VariantAlsoNegotiates" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="VariantAlsoNegotiates(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]"></a>
+      <a id="VariantAlsoNegotiates(ResponseBuilderMagnet[$]):ResponseBuilder[$]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">VariantAlsoNegotiates</span><span class="params">(<span name="responseMagnet">responseMagnet: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<a href="Html$$$.html" class="extype" name="io.fintrospect.formats.Html.$">$</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.Html$$ResponseBuilder$@VariantAlsoNegotiates(responseMagnet:io.fintrospect.formats.ResponseBuilderMagnet[T]):io.fintrospect.formats.ResponseBuilder[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -553,23 +1279,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="io.fintrospect.formats.AbstractResponseBuilder.implicits" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="implicits"></a>
-      <a id="implicits:implicits"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="AbstractResponseBuilder$implicits$.html"><span class="name">implicits</span></a>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.AbstractResponseBuilder@implicits" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>

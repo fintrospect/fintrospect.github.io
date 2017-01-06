@@ -5,15 +5,24 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-69281315-3', 'auto');
 ga('send', 'pageview');</script></head><body><header><nav role="navigation" class="navbar navbar-default navbar-fixed-top"><div class="container-fluid"><div class="navbar-header"><button data-toggle="collapse" data-target="#navbar-top-collapse-1" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="http://fintrospect.io" class="navbar-brand">fintrospect</a></div><div id="navbar-top-collapse-1" class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right"><li><a href="https://bintray.com/fintrospect/maven/fintrospect-core/_latestVersion"><img src="https://api.bintray.com/packages/fintrospect/maven/fintrospect-core/images/download.svg"/></a></li><li><a href="https://travis-ci.org/daviddenton/fintrospect"><img src="https://travis-ci.org/daviddenton/fintrospect.svg?branch=master"/></a></li><li><a href="https://coveralls.io/github/daviddenton/fintrospect?branch=master"><img src="https://coveralls.io/repos/daviddenton/fintrospect/badge.svg?branch=master"/></a></li><li><a href="https://gitter.im/daviddenton/fintrospect"><img src="https://badges.gitter.im/daviddenton/fintrospect.svg"/></a></li><li><a href="https://twitter.com/fintrospectdev"><img src="images/twitter.png" class="twitter"/></a></li><li><a href="http://github.com/daviddenton/fintrospect"><img src="images/GitHub-Mark-32px.png"/></a></li></ul></div></div></nav></header><main><div class="container"><div class="row"><div class="col-sm-3"><div class="logo"><img src="images/eye.png" class="logo"/></div><ul class="nav nav-pills nav-stacked nav-docs"><li><h1>guide</h1></li><li><a href="http://fintrospect.io">overview</a></li><li><a href="http://fintrospect.io/installation">installation</a></li><li><a href="http://fintrospect.io/request-parameters-and-bodies">request parameters & bodies</a></li><li><a href="http://fintrospect.io/defining-routes">defining routes</a></li><li><a href="http://fintrospect.io/server-routes">server routes</a></li><li><a href="http://fintrospect.io/client-routes">client routes</a></li><li><a href="http://fintrospect.io/building-http-responses">building http responses</a></li><li><a href="http://fintrospect.io/cross-field-validation">cross-field validation</a></li><li><a href="http://fintrospect.io/templating-and-static-content">templating & static content</a></li><li><a href="http://fintrospect.io/testing">testing</a></li><li><a href="http://fintrospect.io/examples">examples</a></li><li><h1>misc</h1></li><li><a href="http://fintrospect.io/api">api docs</a></li><li class="active"><a href="http://fintrospect.io/changelog">changelog & migration</a></li><li><a href="http://fintrospect.io/contributing">contributing</a></li></ul></div><div class="col-sm-9"><article class="article-docs"><h1>changelog & migration guide<h1 class="githubonly">Roadmap/Release Notes/Migration Guide</h1>
 
-<p>The main API is stable, but expect some amount of breaking changes around major releases as new features are added. All breaking changes are documented with a migration step where possible.</p>
+<p>The main API is very stable, but expect some amount of breaking changes around major releases as new features are added. All breaking changes are documented with a migration step where possible.</p>
 <h2>Backlog</h2><ul>
 <li>Add strict <code>Content-Type</code> header checking for <code>RouteSpec</code>s based on <code>consuming()</code> and <code>withBody()</code> settings. Option for non-strictness.</li>
 <li>Add strict <code>Accept</code> header checking for <code>RouteSpec</code>s based on <code>producing()</code> settings. Option for non-strictness.</li>
 <li>Add integrated self-hosted Swagger UI/ReDoc UI module</li>
 </ul>
+<h2>14.0.0</h2><ul>
+<li>Upgrade to various dependency versions, including <code>finagle-http 6.41.0</code>.</li>
+<li>Breaking: remodel/repackage of <code>ResponseBuilder</code> instantiation for custom formats. This only affects API users if using implicit conversion of <code>Status</code> objects to <code>ResponseBuilder</code>. This conversion has
+been replaced with explicit methods on <code>ResponseBuilder</code> objects for each status code, along with a <code>ResponseBuilderMagnet</code> to convert the various input content types (such as String, JSON, Buf, etc) - see below:
+Simple to fix, but different enough to warrant a new version number: </li>
+<li>Replace <code>Status.Ok(&quot;content&quot;).withHeader(etc)</code> type calls with <code>ResponseBuilder.Ok(&quot;content&quot;).withHeader(etc)</code> </li>
+<li>Replace <code>&lt;format&gt;.ResponseBuilder.implicits._</code> import with <code>&lt;format&gt;.ResponseBuilder._</code>. This import also brings in the various conversions for the <code>ResponseBuilderMagnet</code>.</li>
+<li>(Small) Breaking: rework of Auto conversion for format objects. <code>&lt;format&gt;.Filters.AutoXXX</code> has become <code>&lt;format&gt;.Auto.XXX</code>.</li>
+</ul>
 <h2>13.18.0</h2><ul>
-<li>Breaking: Tidying up of <code>Body</code> API for clarity. Bodies should only be instantiated using a method from <code>Body</code>, be it <code>Body.&lt;format&gt;()</code> or  <code>Body(&lt;format&gt;.bodySpec())</code> for custom types.</li>
-<li>Breaking: Moved methods from JsonFormat objects onto main format object - e.g. <code>Circe.JsonFormat.bodySpec</code> -&gt; <code>Circe.bodySpec</code> </li>
+<li>(Small) Breaking: Tidying up of <code>Body</code> API for clarity. Bodies should only be instantiated using a method from <code>Body</code>, be it <code>Body.&lt;format&gt;()</code> or  <code>Body(&lt;format&gt;.bodySpec())</code> for custom types.</li>
+<li>(Small) Breaking: Moved methods from <code>JsonFormat</code> objects onto main format object - e.g. <code>Circe.JsonFormat.bodySpec</code> -&gt; <code>Circe.bodySpec</code> </li>
 </ul>
 <h2>13.17.0</h2><ul>
 <li>Added module <code>fintrospect-jackson</code> to support Jackson JSON library. See <code>Jackson</code> to get the Format util and ResponseBuilder for this format.</li>
@@ -23,7 +32,7 @@ as they were introduced specifically to give the user an option as to when to ex
 <h2>13.16.0</h2><ul>
 <li>AKA: The slight API-tidy release!</li>
 <li>Deprecation: Renamed <code>ModuleSpec</code> to be <code>RouteModule</code>. Readded <code>ModuleSpec</code> constructors with identical (but deprecated) methods, so no break will occur. Please update your apps.</li>
-<li>Breaking: Simplified signature of <code>Module.combine()</code> to return a new <code>Module</code> instead of a <code>ServiceBinding</code>. This means that combined lib user can just call <code>toService()</code> on the combined module
+<li>(Small) Breaking: Simplified signature of <code>Module.combine()</code> to return a new <code>Module</code> instead of a <code>ServiceBinding</code>. This means that combined lib user can just call <code>toService()</code> on the combined module
 instead of calling <code>Module.toService(serviceBinding)</code>, so combined Modules are just Modules themselves.</li>
 </ul>
 <h2>13.15.0</h2><ul>
