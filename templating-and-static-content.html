@@ -9,7 +9,7 @@ the filter. You can do this for entire modules by making the <code>RouteModule</
 templating <code>Filter</code> as a Module-level filter:</p>
 <pre><code>case class ViewMessage(value: String) extends View
 
-val showMessage = Service.mk[Request, View] { _ =&gt; Future.value(ViewMessage(&quot;some value to be displayed&quot;)) }
+val showMessage = Service.mk[Request, View] { _ =&gt; Future(ViewMessage(&quot;some value to be displayed&quot;)) }
 
 val renderer = if(devMode) MustacheTemplates.HotReload(&quot;src/main/resources&quot;) else MustacheTemplates.CachingClasspath(&quot;.&quot;)
 
@@ -17,6 +17,9 @@ val webModule = RouteModule(Root / &quot;web&quot;,
     new SiteMapModuleRenderer(new URL(&quot;http://root.com&quot;)),
     new RenderView(Html.ResponseBuilder, renderer))
     .withRoute(RouteSpec().at(Get) / &quot;message&quot; bindTo showMessage)
+</code></pre><h2>redirects</h2><p>After Form posts, it might be desirable to return an HTTP redirect instead of a View in the case of success. 
+For this purpose, use an instance of the <code>View.Redirect</code> class. The location and the status code (default 303) are configurable:</p>
+<pre><code>val redirect = Service.mk[Request, View] { _ =&gt; Future(View.Redirect(&quot;http://my.server/myRoute&quot;)) }
 </code></pre><p>Available implementations of the <code>TemplateRenderer</code> are (see the relevant implementation of <code>Templates</code>):</p>
 <ul>
 <li>cached from the classpath</li>
@@ -35,13 +38,13 @@ as required:</p>
 <tr>
   <td><a href="http://handlebarsjs.com">Handlebars</a></td>
   <td>.hbs</td>
-  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-handlebars&quot; % &quot;14.1.0&quot;</td>
+  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-handlebars&quot; % &quot;14.2.0&quot;</td>
   <td><a data-toggle="tooltip" href="#" title="io.fintrospect.templating.HandlebarsTemplates">HandlebarsTemplates</a></td>
 </tr>
 <tr>
   <td><a href="http://mustache.github.io/">Mustache</a></td>
   <td>.mustache</td>
-  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-mustache&quot; % &quot;14.1.0&quot;</td>
+  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-mustache&quot; % &quot;14.2.0&quot;</td>
   <td><a data-toggle="tooltip" href="#" title="io.fintrospect.templating.MustacheTemplates">MustacheTemplates</a></td>
 </tr>
 </table>

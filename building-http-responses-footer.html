@@ -33,7 +33,7 @@ import io.fintrospect.formats.Circe.Auto._
 case class ReversedEmailAddress(sserdda: String)
 
 val domainSvc = Service.mk[EmailAddress, ReversedEmailAddress] { 
-    email =&gt; Future.value(ReversedEmailAddress(email.address.reverse)) 
+    email =&gt; Future(ReversedEmailAddress(email.address.reverse)) 
 }
 val httpSvc: Service[Request, Response] = Circe.Auto.InOut(domainSvc)
 </code></pre><p><a class="next" href="http://fintrospect.io/cross-field-validation"><button type="button" class="btn btn-sm btn-default">next: cross field validation</button></a></p></article></div></div></div></main><footer><span class="left">project maintained by <a href="https://github.com/daviddenton">daviddenton</a></span><span class="right"> site powered by <a href="https://github.com/jvandemo/hb-bootstrap">hb-bootstrap</a> for <a href="http://harpjs.com">Harp</a> by <a href="http://www.jvandemo.com">Jurgen Van de Moere</a></span><script>$(function () { $('[data-toggle="tooltip"]').tooltip() })</script></footer></body></html>

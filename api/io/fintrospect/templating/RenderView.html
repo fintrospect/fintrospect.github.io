@@ -50,7 +50,8 @@
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Used to render View objects to views based on template files. This template Filter can be added as a module filter
-to be applied to all routes in that module.
+to be applied to all routes in that module. If passed a View.Redirect instance (as is common after a PUT, POST) a redirect is
+generated instead.
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="com.twitter.finagle.Filter">Filter</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>, <span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <a href="View.html" class="extype" name="io.fintrospect.templating.View">View</a>], (<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <a href="View.html" class="extype" name="io.fintrospect.templating.View">View</a>]) ⇒ <span class="extype" name="com.twitter.util.Future">Future</span>[<span class="extype" name="com.twitter.finagle.http.Response">Response</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
