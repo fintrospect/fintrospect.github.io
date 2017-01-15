@@ -339,18 +339,18 @@
               
         </dd></dl></div>
     </li><li name="io.fintrospect.parameters.Path#fixed" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="fixed(name:String):io.fintrospect.parameters.PathParameter[String]"></a>
-      <a id="fixed(String):PathParameter[String]"></a>
+      <a id="fixed(name:String):io.fintrospect.parameters.PathParameter[String]withio.fintrospect.parameters.PathBindable[String]{def--&gt;(unused:String):scala.collection.immutable.Nil.type;defiterator:Iterator[Nothing]}"></a>
+      <a id="fixed(String):PathParameter[String]withPathBindable[String]{.../*2definitionsintyperefinement*/}"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">fixed</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">fixed</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[<span class="extype" name="scala.Predef.String">String</span>] with <a href="PathBindable.html" class="extype" name="io.fintrospect.parameters.PathBindable">PathBindable</a>[<span class="extype" name="scala.Predef.String">String</span>] { ... /* 2 definitions in type refinement */ }</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.Path$@fixed(name:String):io.fintrospect.parameters.PathParameter[String]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.Path$@fixed(name:String):io.fintrospect.parameters.PathParameter[String]withio.fintrospect.parameters.PathBindable[String]{def--&gt;(unused:String):scala.collection.immutable.Nil.type;defiterator:Iterator[Nothing]}" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -563,7 +563,7 @@ between 2 other path parameters. eg. /myRoute/{id}/aFixedPart/{subId}
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">string</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="description">description: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">null</span></span>, <span name="validation">validation: <a href="StringValidations$.html#Rule=T=&gt;T" class="extmbr" name="io.fintrospect.parameters.StringValidations.Rule">StringValidations.Rule</a> = <span class="symbol"><span class="name"><a href="StringValidations$.html">StringValidations.EmptyIsValid</a></span></span></span>)</span><span class="result">: <a href="PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[<span class="extype" name="scala.Predef.String">String</span>] with <a href="PathBindable.html" class="extype" name="io.fintrospect.parameters.PathBindable">PathBindable</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">string</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="description">description: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">null</span></span>, <span name="validation">validation: <a href="StringValidations$.html#Rule=T=&gt;T" class="extmbr" name="io.fintrospect.parameters.StringValidations.Rule">StringValidations.Rule</a> = <span class="symbol"><span class="name"><a href="StringValidations$.html">StringValidations.EmptyIsInvalid</a></span></span></span>)</span><span class="result">: <a href="PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[<span class="extype" name="scala.Predef.String">String</span>] with <a href="PathBindable.html" class="extype" name="io.fintrospect.parameters.PathBindable">PathBindable</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#io.fintrospect.parameters.Path$@string(name:String,description:String,validation:io.fintrospect.parameters.StringValidations.Rule):P[String]withR[String]" title="Permalink" target="_top">

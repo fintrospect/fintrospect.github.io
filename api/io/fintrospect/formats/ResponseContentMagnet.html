@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>ResponseBuilderMagnet - io.fintrospect.formats.ResponseBuilderMagnet</title>
-          <meta name="description" content="ResponseBuilderMagnet - io.fintrospect.formats.ResponseBuilderMagnet" />
-          <meta name="keywords" content="ResponseBuilderMagnet io.fintrospect.formats.ResponseBuilderMagnet" />
+          <title>ResponseContentMagnet - io.fintrospect.formats.ResponseContentMagnet</title>
+          <meta name="description" content="ResponseContentMagnet - io.fintrospect.formats.ResponseContentMagnet" />
+          <meta name="keywords" content="ResponseContentMagnet io.fintrospect.formats.ResponseContentMagnet" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -16,7 +16,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
-            var hash = 'io.fintrospect.formats.ResponseBuilderMagnet$';
+            var hash = 'io.fintrospect.formats.ResponseContentMagnet';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -26,16 +26,16 @@
    	  </script>
     
         </head>
-        <body class="value">
+        <body class="type">
       <div id="definition">
-        <a href="ResponseBuilderMagnet.html" title="See companion trait"><img alt="Object/Trait" src="../../../lib/object_to_trait_big.png" /></a>
+        <a href="ResponseContentMagnet$.html" title="See companion object"><img alt="Trait/Object" src="../../../lib/trait_to_object_big.png" /></a>
         <p id="owner"><a href="../../package.html" class="extype" name="io">io</a>.<a href="../package.html" class="extype" name="io.fintrospect">fintrospect</a>.<a href="package.html" class="extype" name="io.fintrospect.formats">formats</a></p>
-        <h1><a href="ResponseBuilderMagnet.html" title="See companion trait">ResponseBuilderMagnet</a></h1><h3><span class="morelinks"><div>
+        <h1><a href="ResponseContentMagnet$.html" title="See companion object">ResponseContentMagnet</a></h1><h3><span class="morelinks"><div>
             Related Docs:
-            <a href="ResponseBuilderMagnet.html" title="See companion trait">trait ResponseBuilderMagnet</a>
+            <a href="ResponseContentMagnet$.html" title="See companion object">object ResponseContentMagnet</a>
             | <a href="package.html" class="extype" name="io.fintrospect.formats">package formats</a>
           </div></span></h3><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -44,16 +44,18 @@
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">object</span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">ResponseBuilderMagnet</span>
+        <span class="name">ResponseContentMagnet</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends (<a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<span class="extype" name="io.fintrospect.formats.ResponseContentMagnet.T">T</span>]) ⇒ <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<span class="extype" name="io.fintrospect.formats.ResponseContentMagnet.T">T</span>]</span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Magnet to convert content types (such as String, Buf, custom JSON types etc) to a common type that
+ResponseBuilders can accept.</p><p>See companion object methods for various conversions available.
+</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent">(<a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<span class="extype" name="io.fintrospect.formats.ResponseContentMagnet.T">T</span>]) ⇒ <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<span class="extype" name="io.fintrospect.formats.ResponseContentMagnet.T">T</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -71,7 +73,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="io.fintrospect.formats.ResponseBuilderMagnet"><span>ResponseBuilderMagnet</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="io.fintrospect.formats.ResponseContentMagnet"><span>ResponseContentMagnet</span></li><li class="in" name="scala.Function1"><span>Function1</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -92,10 +94,30 @@
 
         
 
-        
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="scala.Function1#apply" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="apply(v1:T1):R"></a>
+      <a id="apply(ResponseBuilder[T]):ResponseBuilder[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="params">(<span name="v1">v1: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<span class="extype" name="io.fintrospect.formats.ResponseContentMagnet.T">T</span>]</span>)</span><span class="result">: <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<span class="extype" name="io.fintrospect.formats.ResponseContentMagnet.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@apply(v1:T1):R" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Function1</dd></dl></div>
+    </li></ol>
+            </div>
 
         <div id="values" class="values members">
-              <h3>Value Members</h3>
+              <h3>Concrete Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
@@ -108,7 +130,7 @@
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@!=(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -125,7 +147,7 @@
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@##():Int" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@##():Int" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -142,11 +164,31 @@
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@==(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@==(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Function1#andThen" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="andThen[A](g:R=&gt;A):T1=&gt;A"></a>
+      <a id="andThen[A]((ResponseBuilder[T])⇒A):(ResponseBuilder[T])⇒A"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">andThen</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="g">g: (<a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<span class="extype" name="io.fintrospect.formats.ResponseContentMagnet.T">T</span>]) ⇒ <span class="extype" name="scala.Function1.andThen.A">A</span></span>)</span><span class="result">: (<a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<span class="extype" name="io.fintrospect.formats.ResponseContentMagnet.T">T</span>]) ⇒ <span class="extype" name="scala.Function1.andThen.A">A</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@andThen[A](g:R=&gt;A):T1=&gt;A" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Function1</dd><dt>Annotations</dt><dd>
+                <span class="name">@unspecialized</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -159,47 +201,11 @@
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@asInstanceOf[T0]:T0" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="io.fintrospect.formats.ResponseBuilderMagnet#bufToMagnet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="bufToMagnet[T](s:com.twitter.io.Buf):io.fintrospect.formats.ResponseBuilderMagnet[T]"></a>
-      <a id="bufToMagnet[T](Buf):ResponseBuilderMagnet[T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">bufToMagnet</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="s">s: <span class="extype" name="com.twitter.io.Buf">Buf</span></span>)</span><span class="result">: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<span class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet.bufToMagnet.T">T</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@bufToMagnet[T](s:com.twitter.io.Buf):io.fintrospect.formats.ResponseBuilderMagnet[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Convert Buf to a ResponseBuilderMagnet for building responses
-</p>
-    </li><li name="io.fintrospect.formats.ResponseBuilderMagnet#channelBufferToMagnet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="channelBufferToMagnet[T](channelBuffer:org.jboss.netty.buffer.ChannelBuffer):io.fintrospect.formats.ResponseBuilderMagnet[T]"></a>
-      <a id="channelBufferToMagnet[T](ChannelBuffer):ResponseBuilderMagnet[T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">channelBufferToMagnet</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="channelBuffer">channelBuffer: <span class="extype" name="org.jboss.netty.buffer.ChannelBuffer">ChannelBuffer</span></span>)</span><span class="result">: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<span class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet.channelBufferToMagnet.T">T</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@channelBufferToMagnet[T](channelBuffer:org.jboss.netty.buffer.ChannelBuffer):io.fintrospect.formats.ResponseBuilderMagnet[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Convert ChannelBuffer to a ResponseBuilderMagnet for building responses
-</p>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -212,7 +218,7 @@
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@clone():Object" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@clone():Object" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -223,24 +229,26 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="io.fintrospect.formats.ResponseBuilderMagnet#customFormatToMagnet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="customFormatToMagnet[T](t:T):io.fintrospect.formats.ResponseBuilderMagnet[T]"></a>
-      <a id="customFormatToMagnet[T](T):ResponseBuilderMagnet[T]"></a>
+    </li><li name="scala.Function1#compose" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compose[A](g:A=&gt;T1):A=&gt;R"></a>
+      <a id="compose[A]((A)⇒ResponseBuilder[T]):(A)⇒ResponseBuilder[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">implicit </span>
+        <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">customFormatToMagnet</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="t">t: <span class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet.customFormatToMagnet.T">T</span></span>)</span><span class="result">: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<span class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet.customFormatToMagnet.T">T</span>]</span>
+        <span class="name">compose</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="g">g: (<span class="extype" name="scala.Function1.compose.A">A</span>) ⇒ <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<span class="extype" name="io.fintrospect.formats.ResponseContentMagnet.T">T</span>]</span>)</span><span class="result">: (<span class="extype" name="scala.Function1.compose.A">A</span>) ⇒ <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<span class="extype" name="io.fintrospect.formats.ResponseContentMagnet.T">T</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@customFormatToMagnet[T](t:T):io.fintrospect.formats.ResponseBuilderMagnet[T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@compose[A](g:A=&gt;T1):A=&gt;R" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Convert a custom format type (eg.</p><div class="fullcomment"><div class="comment cmt"><p>Convert a custom format type (eg. JsonObject) to a ResponseBuilderMagnet for building responses
-</p></div></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Function1</dd><dt>Annotations</dt><dd>
+                <span class="name">@unspecialized</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -253,7 +261,7 @@
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -270,29 +278,11 @@
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@equals(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="io.fintrospect.formats.ResponseBuilderMagnet#exceptionToMagnet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="exceptionToMagnet[T](error:Throwable):io.fintrospect.formats.ResponseBuilderMagnet[T]"></a>
-      <a id="exceptionToMagnet[T](Throwable):ResponseBuilderMagnet[T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">exceptionToMagnet</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="error">error: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<span class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet.exceptionToMagnet.T">T</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@exceptionToMagnet[T](error:Throwable):io.fintrospect.formats.ResponseBuilderMagnet[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Convert an Exception to a ResponseBuilderMagnet for building responses
-</p>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -305,7 +295,7 @@
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@finalize():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@finalize():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -328,7 +318,7 @@
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@getClass():Class[_]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@getClass():Class[_]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -345,7 +335,7 @@
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@hashCode():Int" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@hashCode():Int" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -362,7 +352,7 @@
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -379,7 +369,7 @@
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -396,7 +386,7 @@
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@notify():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@notify():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -413,83 +403,11 @@
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@notifyAll():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@notifyAll():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="io.fintrospect.formats.ResponseBuilderMagnet#outputStreamToMagnet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="outputStreamToMagnet[T](f:java.io.OutputStream=&gt;Unit):io.fintrospect.formats.ResponseBuilderMagnet[T]"></a>
-      <a id="outputStreamToMagnet[T]((OutputStream)⇒Unit):ResponseBuilderMagnet[T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">outputStreamToMagnet</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="java.io.OutputStream">OutputStream</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<span class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet.outputStreamToMagnet.T">T</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@outputStreamToMagnet[T](f:java.io.OutputStream=&gt;Unit):io.fintrospect.formats.ResponseBuilderMagnet[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Convert OutputStream writing function to a ResponseBuilderMagnet for building responses
-</p>
-    </li><li name="io.fintrospect.formats.ResponseBuilderMagnet#readerToMagnet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="readerToMagnet[T](reader:com.twitter.io.Reader):io.fintrospect.formats.ResponseBuilderMagnet[T]"></a>
-      <a id="readerToMagnet[T](Reader):ResponseBuilderMagnet[T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">readerToMagnet</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="reader">reader: <span class="extype" name="com.twitter.io.Reader">Reader</span></span>)</span><span class="result">: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<span class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet.readerToMagnet.T">T</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@readerToMagnet[T](reader:com.twitter.io.Reader):io.fintrospect.formats.ResponseBuilderMagnet[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Convert Reader to a ResponseBuilderMagnet for building responses
-</p>
-    </li><li name="io.fintrospect.formats.ResponseBuilderMagnet#streamToMagnet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="streamToMagnet[T](stream:com.twitter.concurrent.AsyncStream[T]):io.fintrospect.formats.ResponseBuilderMagnet[T]"></a>
-      <a id="streamToMagnet[T](AsyncStream[T]):ResponseBuilderMagnet[T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">streamToMagnet</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="stream">stream: <span class="extype" name="com.twitter.concurrent.AsyncStream">AsyncStream</span>[<span class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet.streamToMagnet.T">T</span>]</span>)</span><span class="result">: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<span class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet.streamToMagnet.T">T</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@streamToMagnet[T](stream:com.twitter.concurrent.AsyncStream[T]):io.fintrospect.formats.ResponseBuilderMagnet[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Convert AsyncStream to a ResponseBuilderMagnet for building responses
-</p>
-    </li><li name="io.fintrospect.formats.ResponseBuilderMagnet#stringToMagnet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="stringToMagnet[T](s:String):io.fintrospect.formats.ResponseBuilderMagnet[T]"></a>
-      <a id="stringToMagnet[T](String):ResponseBuilderMagnet[T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">stringToMagnet</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="ResponseBuilderMagnet.html" class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet">ResponseBuilderMagnet</a>[<span class="extype" name="io.fintrospect.formats.ResponseBuilderMagnet.stringToMagnet.T">T</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@stringToMagnet[T](s:String):io.fintrospect.formats.ResponseBuilderMagnet[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Convert String to a ResponseBuilderMagnet for building responses
-</p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -502,12 +420,12 @@
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="scala.Function1#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
@@ -519,11 +437,11 @@
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@toString():String" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@toString():String" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Function1 → AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -536,7 +454,7 @@
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@wait():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@wait():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -559,7 +477,7 @@
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -582,7 +500,7 @@
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.ResponseBuilderMagnet$@wait(x$1:Long):Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.ResponseContentMagnet@wait(x$1:Long):Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -602,7 +520,9 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.Function1">
+              <h3>Inherited from (<a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<span class="extype" name="io.fintrospect.formats.ResponseContentMagnet.T">T</span>]) ⇒ <a href="ResponseBuilder.html" class="extype" name="io.fintrospect.formats.ResponseBuilder">ResponseBuilder</a>[<span class="extype" name="io.fintrospect.formats.ResponseContentMagnet.T">T</span>]</h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
