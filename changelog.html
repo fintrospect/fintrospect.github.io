@@ -11,6 +11,18 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <li>Add strict <code>Accept</code> header checking for <code>RouteSpec</code>s based on <code>producing()</code> settings. Option for non-strictness.</li>
 <li>Add integrated self-hosted Swagger UI/ReDoc UI module</li>
 </ul>
+<h2>14.6.0</h2><ul>
+<li>(Small) Breaking: Reworking of custom <code>ParameterSpec</code> and <code>BodySpec</code>. The &quot;name&quot; and &quot;description&quot; fields have been moved out of the spec and onto the Body/Query/Header/FormField instance. 
+This means that you can reuse the same custom type for multiple parameters using the same instance of the <code>Spec</code> (ie. you don&#39;t have to parameterize the creation of the spec). Example fix:
+<code>Query.required(ParameterSpec.string(&quot;name&quot;, &quot;description&quot;))</code> --&gt; <code>Query.required(ParameterSpec.string, &quot;name&quot;, &quot;description&quot;)</code></li>
+<li>Upgrade to various dependency versions, including <code>circe-0.7.0</code>.</li>
+</ul>
+<h2>14.5.0</h2><ul>
+<li>Release for Scala 2.12.0 and 2.11.0 (don&#39;t ask - bintray/maven problems</li>
+</ul>
+<h2>14.4.0</h2><ul>
+<li>Release for Scala 2.12.0</li>
+</ul>
 <h2>14.3.0</h2><ul>
 <li>Behaviour: Changed default string <code>ParameterSpec</code> and <code>Body</code> validation so that empty strings are NOT valid. This should only affect untyped string fields in forms or queries, as custom deserialising logic would otherwise catch. 
 This should be the default behaviour, as forms always send empty text values anyway, and it doesn&#39;t make sense to marshall empty values into another type. Behaviour is overridable on a case-by-case basis by passing 

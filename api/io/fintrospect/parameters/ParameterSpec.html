@@ -47,12 +47,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">ParameterSpec</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="paramType">paramType: <a href="ParamType.html" class="extype" name="io.fintrospect.parameters.ParamType">ParamType</a></span>, <span name="deserialize">deserialize: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span></span>, <span name="serialize">serialize: (<span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">(s: T) =&gt; s.toString</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">ParameterSpec</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="paramType">paramType: <a href="ParamType.html" class="extype" name="io.fintrospect.parameters.ParamType">ParamType</a></span>, <span name="deserialize">deserialize: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span></span>, <span name="serialize">serialize: (<span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">(s: T) =&gt; s.toString</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Spec required to marshal and unmarshal a parameter of a custom type
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the deserialised parameter</p></dd><dt class="param">description</dt><dd class="cmt"><p>optional description of the parameter (for use in description endpoints)</p></dd><dt class="param">paramType</dt><dd class="cmt"><p>The parameter type to be used in the documentation. For custom types, this is usually ObjectParamType (for JSON) or StringParamType</p></dd><dt class="param">deserialize</dt><dd class="cmt"><p>function to take the input string from the request and attempt to construct a deserialized instance of T. Exceptions are
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the deserialised parameter</p></dd><dt class="param">paramType</dt><dd class="cmt"><p>The parameter type to be used in the documentation. For custom types, this is usually ObjectParamType (for JSON) or StringParamType</p></dd><dt class="param">deserialize</dt><dd class="cmt"><p>function to take the input string from the request and attempt to construct a deserialized instance of T. Exceptions are
                    automatically caught and translated into the appropriate result, so just concentrate on the Happy-path case</p></dd><dt class="param">serialize</dt><dd class="cmt"><p>function to take the input type and serialize it to a string to be represented in the request</p></dd><dt>returns</dt><dd class="cmt"><p>a parameter for retrieving a value of type [T] from the request</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
@@ -93,7 +93,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="io.fintrospect.parameters.ParameterSpec#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(name:String,description:Option[String],paramType:io.fintrospect.parameters.ParamType,deserialize:String=&gt;T,serialize:T=&gt;String):io.fintrospect.parameters.ParameterSpec[T]"></a>
+      <a id="&lt;init&gt;(paramType:io.fintrospect.parameters.ParamType,deserialize:String=&gt;T,serialize:T=&gt;String):io.fintrospect.parameters.ParameterSpec[T]"></a>
       <a id="&lt;init&gt;:ParameterSpec[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -101,14 +101,14 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">ParameterSpec</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="description">description: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="paramType">paramType: <a href="ParamType.html" class="extype" name="io.fintrospect.parameters.ParamType">ParamType</a></span>, <span name="deserialize">deserialize: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span></span>, <span name="serialize">serialize: (<span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">(s: T) =&gt; s.toString</span></span>)</span>
+        <span class="name">ParameterSpec</span><span class="params">(<span name="paramType">paramType: <a href="ParamType.html" class="extype" name="io.fintrospect.parameters.ParamType">ParamType</a></span>, <span name="deserialize">deserialize: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span></span>, <span name="serialize">serialize: (<span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">(s: T) =&gt; s.toString</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.ParameterSpec@&lt;init&gt;(name:String,description:Option[String],paramType:io.fintrospect.parameters.ParamType,deserialize:String=&gt;T,serialize:T=&gt;String):io.fintrospect.parameters.ParameterSpec[T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.ParameterSpec@&lt;init&gt;(paramType:io.fintrospect.parameters.ParamType,deserialize:String=&gt;T,serialize:T=&gt;String):io.fintrospect.parameters.ParameterSpec[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">description</dt><dd class="cmt"><p>optional description of the parameter (for use in description endpoints)</p></dd><dt class="param">paramType</dt><dd class="cmt"><p>The parameter type to be used in the documentation. For custom types, this is usually ObjectParamType (for JSON) or StringParamType</p></dd><dt class="param">deserialize</dt><dd class="cmt"><p>function to take the input string from the request and attempt to construct a deserialized instance of T. Exceptions are
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">paramType</dt><dd class="cmt"><p>The parameter type to be used in the documentation. For custom types, this is usually ObjectParamType (for JSON) or StringParamType</p></dd><dt class="param">deserialize</dt><dd class="cmt"><p>function to take the input string from the request and attempt to construct a deserialized instance of T. Exceptions are
                    automatically caught and translated into the appropriate result, so just concentrate on the Happy-path case</p></dd><dt class="param">serialize</dt><dd class="cmt"><p>function to take the input type and serialize it to a string to be represented in the request</p></dd></dl></div>
     </li></ol>
             </div>
@@ -210,23 +210,6 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="io.fintrospect.parameters.ParameterSpec#description" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="description:Option[String]"></a>
-      <a id="description:Option[String]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">description</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.ParameterSpec@description:Option[String]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">optional description of the parameter (for use in description endpoints)</p>
     </li><li name="io.fintrospect.parameters.ParameterSpec#deserialize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="deserialize:String=&gt;T"></a>
       <a id="deserialize:(String)⇒T"></a>
@@ -355,23 +338,6 @@
     </span>
       <p class="shortcomment cmt">Bi-directional map functions for this ParameterSpec type.</p><div class="fullcomment"><div class="comment cmt"><p>Bi-directional map functions for this ParameterSpec type. Use this to implement custom Parameter types
 </p></div></div>
-    </li><li name="io.fintrospect.parameters.ParameterSpec#name" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="name:String"></a>
-      <a id="name:String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.ParameterSpec@name:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>

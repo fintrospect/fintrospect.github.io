@@ -7,7 +7,7 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <p>To activate some optional features, additional dependencies may be required - these are shown in the subsequent sections depending on the use-case.</p>
 <h3>core</h3><p>Add the following lines to <code>build.sbt</code> - the lib is hosted in Maven Central and JCenter:</p>
 <pre><code class="language-scala">resolvers += &quot;JCenter&quot; at &quot;https://jcenter.bintray.com&quot;
-libraryDependencies += &quot;io.fintrospect&quot; %% &quot;fintrospect-core&quot; % &quot;14.3.0&quot;
+libraryDependencies += &quot;io.fintrospect&quot; %% &quot;fintrospect-core&quot; % &quot;14.6.0&quot;
 </code></pre>
 <h3>message formats</h3><p>For consuming&nbsp;<a href="request-parameters-and-bodies">request parameters</a><span>&nbsp; in a type-safe way or using the relevant&nbsp;</span><a href="building-http-responses">HTTP response builders</a><span>&nbsp;add the following:</span></p><table class="code table table-bordered">
 <tr>
@@ -25,19 +25,19 @@ libraryDependencies += &quot;io.fintrospect&quot; %% &quot;fintrospect-core&quot
 <tr>
     <td><a href="http://argonaut.io/">Argonaut</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-argonaut&quot; % &quot;14.3.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-argonaut&quot; % &quot;14.6.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Argonaut">Argonaut</a></td>
 </tr>
 <tr>
     <td><a href="https://github.com/travisbrown/circe">Circe</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-circe&quot; % &quot;14.3.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-circe&quot; % &quot;14.6.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Circe">Circe</a></td>
 </tr>
 <tr>
     <td><a href="https://github.com/google/gson">GSON</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-gson&quot; % &quot;14.3.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-gson&quot; % &quot;14.6.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Gson">Gson</a></td>
 </tr>
 <tr>
@@ -49,14 +49,14 @@ libraryDependencies += &quot;io.fintrospect&quot; %% &quot;fintrospect-core&quot
 <tr>
     <td><a href="https://github.com/FasterXML/jackson">Jackson</a> </td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-jackson&quot; % &quot;14.3.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-jackson&quot; % &quot;14.6.0&quot;</td>
     <td>
     <a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Jackson">Jackson</a>
 </td></tr>
 <tr>
     <td><a href="http://json4s.org/">Json4S Native</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-json4s&quot; % &quot;14.3.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-json4s&quot; % &quot;14.6.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Json4s">Json4s</a>
     <br>
     <a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Json4sDoubleMode">Json4sDoubleMode</a></td>
@@ -64,7 +64,7 @@ libraryDependencies += &quot;io.fintrospect&quot; %% &quot;fintrospect-core&quot
 <tr>
     <td><a href="http://json4s.org/">Json4S Jackson</a> </td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-json4s&quot; % &quot;14.3.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-json4s&quot; % &quot;14.6.0&quot;</td>
     <td>
     <a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Json4sJackson">Json4sJackson</a>
     <br>
@@ -73,7 +73,7 @@ libraryDependencies += &quot;io.fintrospect&quot; %% &quot;fintrospect-core&quot
 <tr>
     <td><a href="http://msgpack.org">MsgPack</a></td>
     <td>application/msgpack</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-msgpack&quot; % &quot;14.3.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-msgpack&quot; % &quot;14.6.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.MsgPack">MsgPack</a></td>
 </tr>
 <tr>
@@ -85,13 +85,13 @@ libraryDependencies += &quot;io.fintrospect&quot; %% &quot;fintrospect-core&quot
 <tr>
     <td><a href="https://www.playframework.com">Play</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-play&quot; % &quot;14.3.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-play&quot; % &quot;14.6.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Play">Play</a></td>
 </tr>
 <tr>
     <td><a href="https://github.com/spray/spray-json">Spray</a></td>
     <td>application/json</td>
-    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-spray&quot; % &quot;14.3.0&quot;</td>
+    <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-spray&quot; % &quot;14.6.0&quot;</td>
     <td><a data-toggle="tooltip" href="#" title="io.fintrospect.formats.Spray">Spray</a></td>
 </tr>
 <tr>
@@ -117,13 +117,13 @@ libraryDependencies += &quot;io.fintrospect&quot; %% &quot;fintrospect-core&quot
 <tr>
   <td><a href="http://handlebarsjs.com">Handlebars</a></td>
   <td>.hbs</td>
-  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-handlebars&quot; % &quot;14.3.0&quot;</td>
+  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-handlebars&quot; % &quot;14.6.0&quot;</td>
   <td><a data-toggle="tooltip" href="#" title="io.fintrospect.templating.HandlebarsTemplates">HandlebarsTemplates</a></td>
 </tr>
 <tr>
   <td><a href="http://mustache.github.io/">Mustache</a></td>
   <td>.mustache</td>
-  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-mustache&quot; % &quot;14.3.0&quot;</td>
+  <td>&quot;io.fintrospect&quot; %% &quot;fintrospect-mustache&quot; % &quot;14.6.0&quot;</td>
   <td><a data-toggle="tooltip" href="#" title="io.fintrospect.templating.MustacheTemplates">MustacheTemplates</a></td>
 </tr>
 </table>

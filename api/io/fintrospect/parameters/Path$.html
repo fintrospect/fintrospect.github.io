@@ -147,37 +147,37 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="io.fintrospect.parameters.Path#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="apply[T](spec:io.fintrospect.parameters.ParameterSpec[T]):io.fintrospect.parameters.PathParameter[T]withio.fintrospect.parameters.PathBindable[T]{def--&gt;(value:T):Seq[io.fintrospect.parameters.PathBinding];defiterator:Iterator[io.fintrospect.parameters.PathParameter[T]withio.fintrospect.parameters.PathBindable[T]{def--&gt;(value:T):Seq[io.fintrospect.parameters.PathBinding]}]}"></a>
-      <a id="apply[T](ParameterSpec[T]):PathParameter[T]withPathBindable[T]{.../*2definitionsintyperefinement*/}"></a>
+      <a id="apply[T](spec:io.fintrospect.parameters.ParameterSpec[T],name:String,description:String):io.fintrospect.parameters.PathParameter[T]withio.fintrospect.parameters.PathBindable[T]{def--&gt;(value:T):Seq[io.fintrospect.parameters.PathBinding];defiterator:Iterator[io.fintrospect.parameters.PathParameter[T]withio.fintrospect.parameters.PathBindable[T]{def--&gt;(value:T):Seq[io.fintrospect.parameters.PathBinding]}]}"></a>
+      <a id="apply[T](ParameterSpec[T],String,String):PathParameter[T]withPathBindable[T]{.../*2definitionsintyperefinement*/}"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="spec">spec: <a href="ParameterSpec.html" class="extype" name="io.fintrospect.parameters.ParameterSpec">ParameterSpec</a>[<span class="extype" name="io.fintrospect.parameters.Path.apply.T">T</span>]</span>)</span><span class="result">: <a href="PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[<span class="extype" name="io.fintrospect.parameters.Path.apply.T">T</span>] with <a href="PathBindable.html" class="extype" name="io.fintrospect.parameters.PathBindable">PathBindable</a>[<span class="extype" name="io.fintrospect.parameters.Path.apply.T">T</span>] { ... /* 2 definitions in type refinement */ }</span>
+        <span class="name">apply</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="spec">spec: <a href="ParameterSpec.html" class="extype" name="io.fintrospect.parameters.ParameterSpec">ParameterSpec</a>[<span class="extype" name="io.fintrospect.parameters.Path.apply.T">T</span>]</span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="description">description: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">null</span></span>)</span><span class="result">: <a href="PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[<span class="extype" name="io.fintrospect.parameters.Path.apply.T">T</span>] with <a href="PathBindable.html" class="extype" name="io.fintrospect.parameters.PathBindable">PathBindable</a>[<span class="extype" name="io.fintrospect.parameters.Path.apply.T">T</span>] { ... /* 2 definitions in type refinement */ }</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.Path$@apply[T](spec:io.fintrospect.parameters.ParameterSpec[T]):io.fintrospect.parameters.PathParameter[T]withio.fintrospect.parameters.PathBindable[T]{def--&gt;(value:T):Seq[io.fintrospect.parameters.PathBinding];defiterator:Iterator[io.fintrospect.parameters.PathParameter[T]withio.fintrospect.parameters.PathBindable[T]{def--&gt;(value:T):Seq[io.fintrospect.parameters.PathBinding]}]}" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.Path$@apply[T](spec:io.fintrospect.parameters.ParameterSpec[T],name:String,description:String):io.fintrospect.parameters.PathParameter[T]withio.fintrospect.parameters.PathBindable[T]{def--&gt;(value:T):Seq[io.fintrospect.parameters.PathBinding];defiterator:Iterator[io.fintrospect.parameters.PathParameter[T]withio.fintrospect.parameters.PathBindable[T]{def--&gt;(value:T):Seq[io.fintrospect.parameters.PathBinding]}]}" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Create a path parameter using the passed specification
 </p><div class="fullcomment"><div class="comment cmt"><p>Create a path parameter using the passed specification
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the parameter</p></dd><dt class="param">spec</dt><dd class="cmt"><p>the parameter spec</p></dd><dt>returns</dt><dd class="cmt"><p>a parameter for retrieving a value of type [T] from the request</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.parameters.Path">Path</a> → <a href="Parameters.html" class="extype" name="io.fintrospect.parameters.Parameters">Parameters</a></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the parameter</p></dd><dt class="param">spec</dt><dd class="cmt"><p>the parameter spec</p></dd><dt class="param">name</dt><dd class="cmt"><p>the parameter name</p></dd><dt class="param">description</dt><dd class="cmt"><p>the parameter description</p></dd><dt>returns</dt><dd class="cmt"><p>a parameter for retrieving a value of type [T] from the request</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.parameters.Path">Path</a> → <a href="Parameters.html" class="extype" name="io.fintrospect.parameters.Parameters">Parameters</a></dd></dl></div>
     </li><li name="io.fintrospect.parameters.Parameters#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="apply[T](parameterSpecSupplier:io.fintrospect.parameters.ParameterSpecSupplier[T]):P[T]withR[T]"></a>
-      <a id="apply[T](ParameterSpecSupplier[T]):PathParameter[T]withPathBindable[T]"></a>
+      <a id="apply[T](parameterSpecSupplier:io.fintrospect.parameters.ParameterSpecSupplier[T],name:String,description:String):P[T]withR[T]"></a>
+      <a id="apply[T](ParameterSpecSupplier[T],String,String):PathParameter[T]withPathBindable[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="parameterSpecSupplier">parameterSpecSupplier: <a href="ParameterSpecSupplier.html" class="extype" name="io.fintrospect.parameters.ParameterSpecSupplier">ParameterSpecSupplier</a>[<span class="extype" name="io.fintrospect.parameters.Parameters.apply.T">T</span>]</span>)</span><span class="result">: <a href="PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[<span class="extype" name="io.fintrospect.parameters.Parameters.apply.T">T</span>] with <a href="PathBindable.html" class="extype" name="io.fintrospect.parameters.PathBindable">PathBindable</a>[<span class="extype" name="io.fintrospect.parameters.Parameters.apply.T">T</span>]</span>
+        <span class="name">apply</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="parameterSpecSupplier">parameterSpecSupplier: <a href="ParameterSpecSupplier.html" class="extype" name="io.fintrospect.parameters.ParameterSpecSupplier">ParameterSpecSupplier</a>[<span class="extype" name="io.fintrospect.parameters.Parameters.apply.T">T</span>]</span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="description">description: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[<span class="extype" name="io.fintrospect.parameters.Parameters.apply.T">T</span>] with <a href="PathBindable.html" class="extype" name="io.fintrospect.parameters.PathBindable">PathBindable</a>[<span class="extype" name="io.fintrospect.parameters.Parameters.apply.T">T</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.Path$@apply[T](parameterSpecSupplier:io.fintrospect.parameters.ParameterSpecSupplier[T]):P[T]withR[T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.Path$@apply[T](parameterSpecSupplier:io.fintrospect.parameters.ParameterSpecSupplier[T],name:String,description:String):P[T]withR[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
