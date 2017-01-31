@@ -109,23 +109,6 @@ instead of HTTP responses
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Auto.html" class="extype" name="io.fintrospect.formats.Auto">Auto</a></dd></dl></div>
-    </li><li name="io.fintrospect.formats.Auto.Transform" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Transform[IN,OUT]=IN=&gt;OUT"></a>
-      <a id="Transform[IN,OUT]:Transform[IN,OUT]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Transform</span><span class="tparams">[<span name="IN">IN</span>, <span name="OUT">OUT</span>]</span><span class="result"> = (<span class="extype" name="io.fintrospect.formats.Auto.Transform.IN">IN</span>) ⇒ <span class="extype" name="io.fintrospect.formats.Auto.Transform.OUT">OUT</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Play$$Auto$@Transform[IN,OUT]=IN=&gt;OUT" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Auto.html" class="extype" name="io.fintrospect.formats.Auto">Auto</a></dd></dl></div>
     </li></ol>
             </div>
 
@@ -185,18 +168,18 @@ instead of HTTP responses
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="io.fintrospect.formats.Auto#In" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="In[IN](svc:com.twitter.finagle.Service[IN,com.twitter.finagle.http.Response])(implicitbody:io.fintrospect.parameters.UniBody[IN]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
-      <a id="In[IN](Service[IN,Response])(UniBody[IN]):Service[Request,Response]"></a>
+      <a id="In[IN](svc:com.twitter.finagle.Service[IN,com.twitter.finagle.http.Response])(implicitbody:io.fintrospect.parameters.Body[IN]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="In[IN](Service[IN,Response])(Body[IN]):Service[Request,Response]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">In</span><span class="tparams">[<span name="IN">IN</span>]</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="io.fintrospect.formats.Auto.In.IN">IN</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="body">body: <a href="../parameters/UniBody.html" class="extype" name="io.fintrospect.parameters.UniBody">UniBody</a>[<span class="extype" name="io.fintrospect.formats.Auto.In.IN">IN</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+        <span class="name">In</span><span class="tparams">[<span name="IN">IN</span>]</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="io.fintrospect.formats.Auto.In.IN">IN</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="body">body: <a href="../parameters/Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<span class="extype" name="io.fintrospect.formats.Auto.In.IN">IN</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Play$$Auto$@In[IN](svc:com.twitter.finagle.Service[IN,com.twitter.finagle.http.Response])(implicitbody:io.fintrospect.parameters.UniBody[IN]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Play$$Auto$@In[IN](svc:com.twitter.finagle.Service[IN,com.twitter.finagle.http.Response])(implicitbody:io.fintrospect.parameters.Body[IN]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -204,18 +187,18 @@ instead of HTTP responses
 HTTP OK is returned by default in the auto-marshalled response (overridable).
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Auto.html" class="extype" name="io.fintrospect.formats.Auto">Auto</a></dd></dl></div>
     </li><li name="io.fintrospect.formats.Auto#InOptionalOut" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="InOptionalOut[IN,OUT](svc:com.twitter.finagle.Service[IN,Option[OUT]],successStatus:com.twitter.finagle.http.Status)(implicitbody:io.fintrospect.parameters.UniBody[IN],implicittransform:Auto.this.Transform[OUT,R]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
-      <a id="InOptionalOut[IN,OUT](Service[IN,Option[OUT]],Status)(UniBody[IN],Transform[OUT,JsValue]):Service[Request,Response]"></a>
+      <a id="InOptionalOut[IN,OUT](svc:com.twitter.finagle.Service[IN,Option[OUT]],successStatus:com.twitter.finagle.http.Status)(implicitbody:io.fintrospect.parameters.Body[IN],implicittransform:OUT=&gt;R):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="InOptionalOut[IN,OUT](Service[IN,Option[OUT]],Status)(Body[IN],(OUT)⇒JsValue):Service[Request,Response]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">InOptionalOut</span><span class="tparams">[<span name="IN">IN</span>, <span name="OUT">OUT</span>]</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="io.fintrospect.formats.Auto.InOptionalOut.IN">IN</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="io.fintrospect.formats.Auto.InOptionalOut.OUT">OUT</span>]]</span>, <span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Status.Ok</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="body">body: <a href="../parameters/UniBody.html" class="extype" name="io.fintrospect.parameters.UniBody">UniBody</a>[<span class="extype" name="io.fintrospect.formats.Auto.InOptionalOut.IN">IN</span>]</span>, <span name="transform">transform: <a href="#Transform[IN,OUT]=IN=&gt;OUT" class="extmbr" name="io.fintrospect.formats.Play.Auto.Transform">Transform</a>[<span class="extype" name="io.fintrospect.formats.Auto.InOptionalOut.OUT">OUT</span>, <span class="extype" name="play.api.libs.json.JsValue">JsValue</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+        <span class="name">InOptionalOut</span><span class="tparams">[<span name="IN">IN</span>, <span name="OUT">OUT</span>]</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="io.fintrospect.formats.Auto.InOptionalOut.IN">IN</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="io.fintrospect.formats.Auto.InOptionalOut.OUT">OUT</span>]]</span>, <span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Status.Ok</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="body">body: <a href="../parameters/Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<span class="extype" name="io.fintrospect.formats.Auto.InOptionalOut.IN">IN</span>]</span>, <span name="transform">transform: (<span class="extype" name="io.fintrospect.formats.Auto.InOptionalOut.OUT">OUT</span>) ⇒ <span class="extype" name="play.api.libs.json.JsValue">JsValue</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Play$$Auto$@InOptionalOut[IN,OUT](svc:com.twitter.finagle.Service[IN,Option[OUT]],successStatus:com.twitter.finagle.http.Status)(implicitbody:io.fintrospect.parameters.UniBody[IN],implicittransform:Auto.this.Transform[OUT,R]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Play$$Auto$@InOptionalOut[IN,OUT](svc:com.twitter.finagle.Service[IN,Option[OUT]],successStatus:com.twitter.finagle.http.Status)(implicitbody:io.fintrospect.parameters.Body[IN],implicittransform:OUT=&gt;R):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -225,18 +208,18 @@ HTTP OK is returned by default in the auto-marshalled response (overridable), ot
 HTTP OK is returned by default in the auto-marshalled response (overridable), otherwise a 404 is returned
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Auto.html" class="extype" name="io.fintrospect.formats.Auto">Auto</a></dd></dl></div>
     </li><li name="io.fintrospect.formats.Auto#InOut" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="InOut[IN,OUT](svc:com.twitter.finagle.Service[IN,OUT],successStatus:com.twitter.finagle.http.Status)(implicitbody:io.fintrospect.parameters.UniBody[IN],implicittransform:Auto.this.Transform[OUT,R]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
-      <a id="InOut[IN,OUT](Service[IN,OUT],Status)(UniBody[IN],Transform[OUT,JsValue]):Service[Request,Response]"></a>
+      <a id="InOut[IN,OUT](svc:com.twitter.finagle.Service[IN,OUT],successStatus:com.twitter.finagle.http.Status)(implicitbody:io.fintrospect.parameters.Body[IN],implicittransform:OUT=&gt;R):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="InOut[IN,OUT](Service[IN,OUT],Status)(Body[IN],(OUT)⇒JsValue):Service[Request,Response]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">InOut</span><span class="tparams">[<span name="IN">IN</span>, <span name="OUT">OUT</span>]</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="io.fintrospect.formats.Auto.InOut.IN">IN</span>, <span class="extype" name="io.fintrospect.formats.Auto.InOut.OUT">OUT</span>]</span>, <span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Status.Ok</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="body">body: <a href="../parameters/UniBody.html" class="extype" name="io.fintrospect.parameters.UniBody">UniBody</a>[<span class="extype" name="io.fintrospect.formats.Auto.InOut.IN">IN</span>]</span>, <span name="transform">transform: <a href="#Transform[IN,OUT]=IN=&gt;OUT" class="extmbr" name="io.fintrospect.formats.Play.Auto.Transform">Transform</a>[<span class="extype" name="io.fintrospect.formats.Auto.InOut.OUT">OUT</span>, <span class="extype" name="play.api.libs.json.JsValue">JsValue</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+        <span class="name">InOut</span><span class="tparams">[<span name="IN">IN</span>, <span name="OUT">OUT</span>]</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="io.fintrospect.formats.Auto.InOut.IN">IN</span>, <span class="extype" name="io.fintrospect.formats.Auto.InOut.OUT">OUT</span>]</span>, <span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Status.Ok</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="body">body: <a href="../parameters/Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<span class="extype" name="io.fintrospect.formats.Auto.InOut.IN">IN</span>]</span>, <span name="transform">transform: (<span class="extype" name="io.fintrospect.formats.Auto.InOut.OUT">OUT</span>) ⇒ <span class="extype" name="play.api.libs.json.JsValue">JsValue</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Play$$Auto$@InOut[IN,OUT](svc:com.twitter.finagle.Service[IN,OUT],successStatus:com.twitter.finagle.http.Status)(implicitbody:io.fintrospect.parameters.UniBody[IN],implicittransform:Auto.this.Transform[OUT,R]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Play$$Auto$@InOut[IN,OUT](svc:com.twitter.finagle.Service[IN,OUT],successStatus:com.twitter.finagle.http.Status)(implicitbody:io.fintrospect.parameters.Body[IN],implicittransform:OUT=&gt;R):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -246,18 +229,18 @@ HTTP OK is returned by default in the auto-marshalled response (overridable), ot
 HTTP OK is returned by default in the auto-marshalled response (overridable), otherwise a 404 is returned
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Auto.html" class="extype" name="io.fintrospect.formats.Auto">Auto</a></dd></dl></div>
     </li><li name="io.fintrospect.formats.Auto#OptionalOut" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="OptionalOut[IN,OUT](svc:com.twitter.finagle.Service[IN,Option[OUT]],successStatus:com.twitter.finagle.http.Status)(implicittransform:Auto.this.Transform[OUT,R]):com.twitter.finagle.Service[IN,com.twitter.finagle.http.Response]"></a>
-      <a id="OptionalOut[IN,OUT](Service[IN,Option[OUT]],Status)(Transform[OUT,JsValue]):Service[IN,Response]"></a>
+      <a id="OptionalOut[IN,OUT](svc:com.twitter.finagle.Service[IN,Option[OUT]],successStatus:com.twitter.finagle.http.Status)(implicittransform:OUT=&gt;R):com.twitter.finagle.Service[IN,com.twitter.finagle.http.Response]"></a>
+      <a id="OptionalOut[IN,OUT](Service[IN,Option[OUT]],Status)((OUT)⇒JsValue):Service[IN,Response]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">OptionalOut</span><span class="tparams">[<span name="IN">IN</span>, <span name="OUT">OUT</span>]</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="io.fintrospect.formats.Auto.OptionalOut.IN">IN</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="io.fintrospect.formats.Auto.OptionalOut.OUT">OUT</span>]]</span>, <span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Status.Ok</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="transform">transform: <a href="#Transform[IN,OUT]=IN=&gt;OUT" class="extmbr" name="io.fintrospect.formats.Play.Auto.Transform">Transform</a>[<span class="extype" name="io.fintrospect.formats.Auto.OptionalOut.OUT">OUT</span>, <span class="extype" name="play.api.libs.json.JsValue">JsValue</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="io.fintrospect.formats.Auto.OptionalOut.IN">IN</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+        <span class="name">OptionalOut</span><span class="tparams">[<span name="IN">IN</span>, <span name="OUT">OUT</span>]</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="io.fintrospect.formats.Auto.OptionalOut.IN">IN</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="io.fintrospect.formats.Auto.OptionalOut.OUT">OUT</span>]]</span>, <span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Status.Ok</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="transform">transform: (<span class="extype" name="io.fintrospect.formats.Auto.OptionalOut.OUT">OUT</span>) ⇒ <span class="extype" name="play.api.libs.json.JsValue">JsValue</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="io.fintrospect.formats.Auto.OptionalOut.IN">IN</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Play$$Auto$@OptionalOut[IN,OUT](svc:com.twitter.finagle.Service[IN,Option[OUT]],successStatus:com.twitter.finagle.http.Status)(implicittransform:Auto.this.Transform[OUT,R]):com.twitter.finagle.Service[IN,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Play$$Auto$@OptionalOut[IN,OUT](svc:com.twitter.finagle.Service[IN,Option[OUT]],successStatus:com.twitter.finagle.http.Status)(implicittransform:OUT=&gt;R):com.twitter.finagle.Service[IN,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -267,18 +250,18 @@ HTTP OK is returned by default in the auto-marshalled response (overridable), ot
 HTTP OK is returned by default in the auto-marshalled response (overridable), otherwise a 404 is returned
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Auto.html" class="extype" name="io.fintrospect.formats.Auto">Auto</a></dd></dl></div>
     </li><li name="io.fintrospect.formats.Auto#Out" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Out[OUT](svc:com.twitter.finagle.Service[com.twitter.finagle.http.Request,OUT],successStatus:com.twitter.finagle.http.Status)(implicittransform:Auto.this.Transform[OUT,R]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
-      <a id="Out[OUT](Service[Request,OUT],Status)(Transform[OUT,JsValue]):Service[Request,Response]"></a>
+      <a id="Out[OUT](svc:com.twitter.finagle.Service[com.twitter.finagle.http.Request,OUT],successStatus:com.twitter.finagle.http.Status)(implicittransform:OUT=&gt;R):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
+      <a id="Out[OUT](Service[Request,OUT],Status)((OUT)⇒JsValue):Service[Request,Response]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">Out</span><span class="tparams">[<span name="OUT">OUT</span>]</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.formats.Auto.Out.OUT">OUT</span>]</span>, <span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Status.Ok</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="transform">transform: <a href="#Transform[IN,OUT]=IN=&gt;OUT" class="extmbr" name="io.fintrospect.formats.Play.Auto.Transform">Transform</a>[<span class="extype" name="io.fintrospect.formats.Auto.Out.OUT">OUT</span>, <span class="extype" name="play.api.libs.json.JsValue">JsValue</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+        <span class="name">Out</span><span class="tparams">[<span name="OUT">OUT</span>]</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.formats.Auto.Out.OUT">OUT</span>]</span>, <span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Status.Ok</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="transform">transform: (<span class="extype" name="io.fintrospect.formats.Auto.Out.OUT">OUT</span>) ⇒ <span class="extype" name="play.api.libs.json.JsValue">JsValue</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Play$$Auto$@Out[OUT](svc:com.twitter.finagle.Service[com.twitter.finagle.http.Request,OUT],successStatus:com.twitter.finagle.http.Status)(implicittransform:Auto.this.Transform[OUT,R]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Play$$Auto$@Out[OUT](svc:com.twitter.finagle.Service[com.twitter.finagle.http.Request,OUT],successStatus:com.twitter.finagle.http.Status)(implicittransform:OUT=&gt;R):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -502,35 +485,35 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="io.fintrospect.formats.Play.Auto#tToBody" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="tToBody[T](implicitr:play.api.libs.json.Reads[T],implicitw:play.api.libs.json.Writes[T]):io.fintrospect.parameters.UniBody[T]"></a>
-      <a id="tToBody[T](Reads[T],Writes[T]):UniBody[T]"></a>
+      <a id="tToBody[T](implicitr:play.api.libs.json.Reads[T],implicitw:play.api.libs.json.Writes[T]):io.fintrospect.parameters.Body[T]"></a>
+      <a id="tToBody[T](Reads[T],Writes[T]):Body[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">tToBody</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="r">r: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="io.fintrospect.formats.Play.Auto.tToBody.T">T</span>]</span>, <span name="w">w: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="io.fintrospect.formats.Play.Auto.tToBody.T">T</span>]</span>)</span><span class="result">: <a href="../parameters/UniBody.html" class="extype" name="io.fintrospect.parameters.UniBody">UniBody</a>[<span class="extype" name="io.fintrospect.formats.Play.Auto.tToBody.T">T</span>]</span>
+        <span class="name">tToBody</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="r">r: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="io.fintrospect.formats.Play.Auto.tToBody.T">T</span>]</span>, <span name="w">w: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="io.fintrospect.formats.Play.Auto.tToBody.T">T</span>]</span>)</span><span class="result">: <a href="../parameters/Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<span class="extype" name="io.fintrospect.formats.Play.Auto.tToBody.T">T</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Play$$Auto$@tToBody[T](implicitr:play.api.libs.json.Reads[T],implicitw:play.api.libs.json.Writes[T]):io.fintrospect.parameters.UniBody[T]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Play$$Auto$@tToBody[T](implicitr:play.api.libs.json.Reads[T],implicitw:play.api.libs.json.Writes[T]):io.fintrospect.parameters.Body[T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="io.fintrospect.formats.Play.Auto#tToJsValue" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="tToJsValue[T](implicitdb:play.api.libs.json.Writes[T]):io.fintrospect.formats.Play.Auto.Transform[T,play.api.libs.json.JsValue]"></a>
-      <a id="tToJsValue[T](Writes[T]):Transform[T,JsValue]"></a>
+      <a id="tToJsValue[T](implicitdb:play.api.libs.json.Writes[T]):T=&gt;play.api.libs.json.JsValue"></a>
+      <a id="tToJsValue[T](Writes[T]):(T)⇒JsValue"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">tToJsValue</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="db">db: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="io.fintrospect.formats.Play.Auto.tToJsValue.T">T</span>]</span>)</span><span class="result">: <a href="#Transform[IN,OUT]=IN=&gt;OUT" class="extmbr" name="io.fintrospect.formats.Play.Auto.Transform">Transform</a>[<span class="extype" name="io.fintrospect.formats.Play.Auto.tToJsValue.T">T</span>, <span class="extype" name="play.api.libs.json.JsValue">JsValue</span>]</span>
+        <span class="name">tToJsValue</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="db">db: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="io.fintrospect.formats.Play.Auto.tToJsValue.T">T</span>]</span>)</span><span class="result">: (<span class="extype" name="io.fintrospect.formats.Play.Auto.tToJsValue.T">T</span>) ⇒ <span class="extype" name="play.api.libs.json.JsValue">JsValue</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Play$$Auto$@tToJsValue[T](implicitdb:play.api.libs.json.Writes[T]):io.fintrospect.formats.Play.Auto.Transform[T,play.api.libs.json.JsValue]" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.formats.Play$$Auto$@tToJsValue[T](implicitdb:play.api.libs.json.Writes[T]):T=&gt;play.api.libs.json.JsValue" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

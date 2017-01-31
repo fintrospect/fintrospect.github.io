@@ -348,6 +348,24 @@
       <p class="shortcomment cmt">Extract the value from the target object.</p><div class="fullcomment"><div class="comment cmt"><p>Extract the value from the target object. Throws on failure, but that shouldn't be a problem as the pre-validation
 stage for declared parameters and bodies handles the failure before user code is entered.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Mandatory.html" class="extype" name="io.fintrospect.parameters.Mandatory">Mandatory</a> → <a href="Retrieval.html" class="extype" name="io.fintrospect.parameters.Retrieval">Retrieval</a></dd></dl></div>
+    </li><li name="io.fintrospect.parameters.Body#&lt;--?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;--?(response:com.twitter.finagle.http.Response)(implicitattemptExtract:com.twitter.finagle.http.Response=&gt;Boolean):io.fintrospect.util.Extraction[T]"></a>
+      <a id="&lt;--?(Response)((Response)⇒Boolean):Extraction[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $less$minus$minus$qmark" class="name">&lt;--?</span><span class="params">(<span name="response">response: <span class="extype" name="com.twitter.finagle.http.Response">Response</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="attemptExtract">attemptExtract: (<span class="extype" name="com.twitter.finagle.http.Response">Response</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">_.status != NotFound</span></span>)</span><span class="result">: <a href="../util/Extraction.html" class="extype" name="io.fintrospect.util.Extraction">Extraction</a>[<span class="extype" name="io.fintrospect.parameters.Body.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.Body@&lt;--?(response:com.twitter.finagle.http.Response)(implicitattemptExtract:com.twitter.finagle.http.Response=&gt;Boolean):io.fintrospect.util.Extraction[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Extract this body from the response, shortcutting 404 codes to produce a Extracted(None).</p><div class="fullcomment"><div class="comment cmt"><p>Extract this body from the response, shortcutting 404 codes to produce a Extracted(None). This predicate is overridable.
+</p></div></div>
     </li><li name="io.fintrospect.parameters.Body#&lt;-&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="&lt;-&gt;(from:com.twitter.finagle.http.Message):Iterable[io.fintrospect.parameters.RequestBinding]"></a>
       <a id="&lt;-&gt;(Message):Iterable[RequestBinding]"></a>

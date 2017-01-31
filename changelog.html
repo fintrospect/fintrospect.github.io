@@ -11,6 +11,9 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <li>Add strict <code>Accept</code> header checking for <code>RouteSpec</code>s based on <code>producing()</code> settings. Option for non-strictness.</li>
 <li>Add integrated self-hosted Swagger UI/ReDoc UI module</li>
 </ul>
+<h2>14.7.0</h2><ul>
+<li>Added custom extraction logic to <code>Body.&lt;--?</code> so that if the response code is 404, then extraction is NOT attempted, and a Extracted(None) is returned</li>
+</ul>
 <h2>14.6.0</h2><ul>
 <li>(Small) Breaking: Reworking of custom <code>ParameterSpec</code> and <code>BodySpec</code>. The &quot;name&quot; and &quot;description&quot; fields have been moved out of the spec and onto the Body/Query/Header/FormField instance. 
 This means that you can reuse the same custom type for multiple parameters using the same instance of the <code>Spec</code> (ie. you don&#39;t have to parameterize the creation of the spec). Example fix:

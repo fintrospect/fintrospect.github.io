@@ -326,6 +326,24 @@ stage for declared parameters and bodies handles the failure before user code is
     </span>
       <p class="shortcomment cmt">Attempt to manually deserialize from the message object.</p><div class="fullcomment"><div class="comment cmt"><p>Attempt to manually deserialize from the message object.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.parameters.UrlEncodedFormBody">UrlEncodedFormBody</a> → <a href="../util/Extractor.html" class="extype" name="io.fintrospect.util.Extractor">Extractor</a></dd></dl></div>
+    </li><li name="io.fintrospect.parameters.Body#&lt;--?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;--?(response:com.twitter.finagle.http.Response)(implicitattemptExtract:com.twitter.finagle.http.Response=&gt;Boolean):io.fintrospect.util.Extraction[T]"></a>
+      <a id="&lt;--?(Response)((Response)⇒Boolean):Extraction[Form]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $less$minus$minus$qmark" class="name">&lt;--?</span><span class="params">(<span name="response">response: <span class="extype" name="com.twitter.finagle.http.Response">Response</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="attemptExtract">attemptExtract: (<span class="extype" name="com.twitter.finagle.http.Response">Response</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">_.status != NotFound</span></span>)</span><span class="result">: <a href="../util/Extraction.html" class="extype" name="io.fintrospect.util.Extraction">Extraction</a>[<a href="Form.html" class="extype" name="io.fintrospect.parameters.Form">Form</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.UrlEncodedFormBody@&lt;--?(response:com.twitter.finagle.http.Response)(implicitattemptExtract:com.twitter.finagle.http.Response=&gt;Boolean):io.fintrospect.util.Extraction[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Extract this body from the response, shortcutting 404 codes to produce a Extracted(None).</p><div class="fullcomment"><div class="comment cmt"><p>Extract this body from the response, shortcutting 404 codes to produce a Extracted(None). This predicate is overridable.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a></dd></dl></div>
     </li><li name="io.fintrospect.parameters.Body#&lt;-&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="&lt;-&gt;(from:com.twitter.finagle.http.Message):Iterable[io.fintrospect.parameters.RequestBinding]"></a>
       <a id="&lt;-&gt;(Message):Iterable[RequestBinding]"></a>
