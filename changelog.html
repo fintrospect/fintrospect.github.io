@@ -11,13 +11,18 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <li>Add strict <code>Accept</code> header checking for <code>RouteSpec</code>s based on <code>producing()</code> settings. Option for non-strictness.</li>
 <li>Add integrated self-hosted Swagger UI/ReDoc UI module</li>
 </ul>
+<h2>14.8.0</h2><ul>
+<li>Add support for <code>Value[T]</code> types that can be automatically marshalled to/from the request. <code>ParameterSpec.string().as[MyStringType]</code></li>
+<li>(Small) Breaking. Removed usages and implemenation of <code>ParameterSpecSupplier</code>. Use the <code>Value[T]</code> trait instead.</li>
+<li>Change <code>RouteClient</code> to be generified on the response type. This means that we can tidy up code for extraction of response bodies. \o/</li>
+</ul>
 <h2>14.7.0</h2><ul>
 <li>Added custom extraction logic to <code>Body.&lt;--?</code> so that if the response code is 404, then extraction is NOT attempted, and a Extracted(None) is returned</li>
 </ul>
 <h2>14.6.0</h2><ul>
 <li>(Small) Breaking: Reworking of custom <code>ParameterSpec</code> and <code>BodySpec</code>. The &quot;name&quot; and &quot;description&quot; fields have been moved out of the spec and onto the Body/Query/Header/FormField instance. 
 This means that you can reuse the same custom type for multiple parameters using the same instance of the <code>Spec</code> (ie. you don&#39;t have to parameterize the creation of the spec). Example fix:
-<code>Query.required(ParameterSpec.string(&quot;name&quot;, &quot;description&quot;))</code> --&gt; <code>Query.required(ParameterSpec.string, &quot;name&quot;, &quot;description&quot;)</code></li>
+<code>Query.required(ParameterSpec.string(&quot;name&quot;, &quot;description&quot;))</code> --&gt; <code>Query.required(ParameterSpec.string(), &quot;name&quot;, &quot;description&quot;)</code></li>
 <li>Upgrade to various dependency versions, including <code>circe-0.7.0</code>.</li>
 </ul>
 <h2>14.5.0</h2><ul>

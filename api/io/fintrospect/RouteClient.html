@@ -47,7 +47,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">RouteClient</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">RouteClient</span><span class="tparams">[<span name="Rsp">Rsp</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
@@ -92,18 +92,18 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="io.fintrospect.RouteClient#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(method:com.twitter.finagle.http.Method,spec:io.fintrospect.RouteSpec,pathParams:Seq[io.fintrospect.parameters.PathParameter[_]],underlyingService:com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]):io.fintrospect.RouteClient"></a>
-      <a id="&lt;init&gt;:RouteClient"></a>
+      <a id="&lt;init&gt;(method:com.twitter.finagle.http.Method,spec:io.fintrospect.RouteSpec,pathParams:Seq[io.fintrospect.parameters.PathParameter[_]],underlyingService:com.twitter.finagle.Service[com.twitter.finagle.http.Request,Rsp]):io.fintrospect.RouteClient[Rsp]"></a>
+      <a id="&lt;init&gt;:RouteClient[Rsp]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">RouteClient</span><span class="params">(<span name="method">method: <span class="extype" name="com.twitter.finagle.http.Method">Method</span></span>, <span name="spec">spec: <a href="RouteSpec.html" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a></span>, <span name="pathParams">pathParams: <span class="extype" name="scala.Seq">Seq</span>[<a href="parameters/PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[_]]</span>, <span name="underlyingService">underlyingService: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>)</span>
+        <span class="name">RouteClient</span><span class="params">(<span name="method">method: <span class="extype" name="com.twitter.finagle.http.Method">Method</span></span>, <span name="spec">spec: <a href="RouteSpec.html" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a></span>, <span name="pathParams">pathParams: <span class="extype" name="scala.Seq">Seq</span>[<a href="parameters/PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[_]]</span>, <span name="underlyingService">underlyingService: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.RouteClient.Rsp">Rsp</span>]</span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#io.fintrospect.RouteClient@&lt;init&gt;(method:com.twitter.finagle.http.Method,spec:io.fintrospect.RouteSpec,pathParams:Seq[io.fintrospect.parameters.PathParameter[_]],underlyingService:com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]):io.fintrospect.RouteClient" title="Permalink" target="_top">
+      <a href="../../index.html#io.fintrospect.RouteClient@&lt;init&gt;(method:com.twitter.finagle.http.Method,spec:io.fintrospect.RouteSpec,pathParams:Seq[io.fintrospect.parameters.PathParameter[_]],underlyingService:com.twitter.finagle.Service[com.twitter.finagle.http.Request,Rsp]):io.fintrospect.RouteClient[Rsp]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -169,23 +169,23 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="io.fintrospect.RouteClient#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="apply(userBindings:Iterable[io.fintrospect.parameters.Binding]*):com.twitter.util.Future[com.twitter.finagle.http.Response]"></a>
-      <a id="apply(Iterable[Binding]*):Future[Response]"></a>
+      <a id="apply(userBindings:Iterable[io.fintrospect.parameters.Binding]*):com.twitter.util.Future[Rsp]"></a>
+      <a id="apply(Iterable[Binding]*):Future[Rsp]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="userBindings">userBindings: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="parameters/Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a>]*</span>)</span><span class="result">: <span class="extype" name="com.twitter.util.Future">Future</span>[<span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
+        <span class="name">apply</span><span class="params">(<span name="userBindings">userBindings: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="parameters/Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a>]*</span>)</span><span class="result">: <span class="extype" name="com.twitter.util.Future">Future</span>[<span class="extype" name="io.fintrospect.RouteClient.Rsp">Rsp</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../index.html#io.fintrospect.RouteClient@apply(userBindings:Iterable[io.fintrospect.parameters.Binding]*):com.twitter.util.Future[com.twitter.finagle.http.Response]" title="Permalink" target="_top">
+      <a href="../../index.html#io.fintrospect.RouteClient@apply(userBindings:Iterable[io.fintrospect.parameters.Binding]*):com.twitter.util.Future[Rsp]" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Make a request to this client route using the passed bindings
-</p><div class="fullcomment"><div class="comment cmt"><p>Make a request to this client route using the passed bindings
+      <p class="shortcomment cmt">Make a request to this client route using the passed bindings.</p><div class="fullcomment"><div class="comment cmt"><p>Make a request to this client route using the passed bindings. Returns Future.exception[BrokenContract]
+at runtime if not all required parameters have been passed.
 </p></div><dl class="paramcmts block"><dt class="param">userBindings</dt><dd class="cmt"><p>the bindings for this request</p></dd><dt>returns</dt><dd class="cmt"><p>the response Future</p></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
