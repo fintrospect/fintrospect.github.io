@@ -156,6 +156,26 @@
 </p><div class="fullcomment"><div class="comment cmt"><p>Spec required to marshall a body of a custom type
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the deserialised body</p></dd><dt class="param">contentType</dt><dd class="cmt"><p>The HTTP content type header value</p></dd><dt class="param">paramType</dt><dd class="cmt"><p>How the body is represented when documenting APIs.</p></dd><dt class="param">deserialize</dt><dd class="cmt"><p>function to take the input string from the request and attempt to construct a deserialized instance. Exceptions are
                    automatically caught and translated into the appropriate result, so just concentrate on the Happy-path case</p></dd><dt class="param">serialize</dt><dd class="cmt"><p>function to take the input type and serialize it to a string to be represented in the request</p></dd></dl></div>
+    </li><li name="io.fintrospect.parameters.Composite" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Composite[T]extendsMandatory[com.twitter.finagle.http.Request,T]withHasParameterswithRebindable[com.twitter.finagle.http.Request,T,io.fintrospect.parameters.Binding]"></a>
+      <a id="Composite[T]:Composite[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Composite.html"><span class="name">Composite</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="Mandatory.html" class="extype" name="io.fintrospect.parameters.Mandatory">Mandatory</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.parameters.Composite.T">T</span>] with <a href="HasParameters.html" class="extype" name="io.fintrospect.parameters.HasParameters">HasParameters</a> with <a href="Rebindable.html" class="extype" name="io.fintrospect.parameters.Rebindable">Rebindable</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.parameters.Composite.T">T</span>, <a href="Binding.html" class="extype" name="io.fintrospect.parameters.Binding">Binding</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@Composite[T]extendsMandatory[com.twitter.finagle.http.Request,T]withHasParameterswithRebindable[com.twitter.finagle.http.Request,T,io.fintrospect.parameters.Binding]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A composite allows for a single object to be extracted from many request parameters.</p><div class="fullcomment"><div class="comment cmt"><p>A composite allows for a single object to be extracted from many request parameters. Validation is
+applied to all of the parts before being passed to a user implemented service.
+Extend this to provide custom extraction for composite objects.
+</p></div></div>
     </li><li name="io.fintrospect.parameters.ExtractedRouteRequest" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ExtractedRouteRequestextendsRequestProxywithProductwithSerializable"></a>
       <a id="ExtractedRouteRequest:ExtractedRouteRequest"></a>
@@ -294,6 +314,23 @@
     </span>
       <p class="shortcomment cmt">A strategy for validating the fields in a form
 </p>
+    </li><li name="io.fintrospect.parameters.HasParameters" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="HasParametersextendsIterable[io.fintrospect.parameters.Parameter]"></a>
+      <a id="HasParameters:HasParameters"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="HasParameters.html"><span class="name">HasParameters</span></a><span class="result"> extends <span class="extype" name="scala.Iterable">Iterable</span>[<a href="Parameter.html" class="extype" name="io.fintrospect.parameters.Parameter">Parameter</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#io.fintrospect.parameters.package@HasParametersextendsIterable[io.fintrospect.parameters.Parameter]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.fintrospect.parameters.HeaderParameter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="HeaderParameter[T]extendsParameterwithRebindable[com.twitter.finagle.http.Message,T,io.fintrospect.parameters.RequestBinding]"></a>
       <a id="HeaderParameter[T]:HeaderParameter[T]"></a>
@@ -589,7 +626,7 @@
       <p class="shortcomment cmt">How a parameter is represented in the HTTP message (JSON type)
 </p>
     </li><li name="io.fintrospect.parameters.Parameter" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="ParameterextendsAnyRef"></a>
+      <a id="ParameterextendsHasParameters"></a>
       <a id="Parameter:Parameter"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -597,10 +634,10 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Parameter.html"><span class="name">Parameter</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Parameter.html"><span class="name">Parameter</span></a><span class="result"> extends <a href="HasParameters.html" class="extype" name="io.fintrospect.parameters.HasParameters">HasParameters</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.parameters.package@ParameterextendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#io.fintrospect.parameters.package@ParameterextendsHasParameters" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
