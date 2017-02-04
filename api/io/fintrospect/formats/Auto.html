@@ -1,42 +1,332 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>Auto - io.fintrospect.formats.Auto</title>
-          <meta name="description" content="Auto - io.fintrospect.formats.Auto" />
-          <meta name="keywords" content="Auto io.fintrospect.formats.Auto" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title></title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
+      <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
-      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
-      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../index.js"></script>
+      <script type="text/javascript" src="../../../lib/scheduler.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
       
       <script type="text/javascript">
-         if(top === self) {
-            var url = '../../../index.html';
-            var hash = 'io.fintrospect.formats.Auto';
-            var anchor = window.location.hash;
-            var anchor_opt = '';
-            if (anchor.length >= 1)
-              anchor_opt = '@' + anchor.substring(1);
-            window.location.href = url + '#' + hash + anchor_opt;
-         }
-   	  </script>
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../';
+      </script>
     
         </head>
-        <body class="type">
-      <div id="definition">
-        <img alt="Class" src="../../../lib/class_big.png" />
-        <p id="owner"><a href="../../package.html" class="extype" name="io">io</a>.<a href="../package.html" class="extype" name="io.fintrospect">fintrospect</a>.<a href="package.html" class="extype" name="io.fintrospect.formats">formats</a></p>
-        <h1>Auto</h1><h3><span class="morelinks"><div>Related Doc:
-            <a href="package.html" class="extype" name="io.fintrospect.formats">package formats</a>
-          </div></span></h3><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+        <body>
+      <div id="search">
+        <span id="doc-title"><span id="doc-version"></span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="index.html#_root_" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html">
+              <span class="name">root</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.io" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="io"></a><a id="io:io"></a>
+      <span class="permalink">
+      <a href="index.html#io" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html">
+              <span class="name">io</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="io.fintrospect" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fintrospect"></a><a id="fintrospect:fintrospect"></a>
+      <span class="permalink">
+      <a href="../io/index.html#fintrospect" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../index.html">
+              <span class="name">fintrospect</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="io">io</a></dd></dl></div>
+    </li><li name="io.fintrospect.formats" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="formats"></a><a id="formats:formats"></a>
+      <span class="permalink">
+      <a href="../../io/fintrospect/index.html#formats" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="index.html">
+              <span class="name">formats</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="io.fintrospect">fintrospect</a></dd></dl></div>
+    </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="AbstractResponseBuilder.html" title="Convenience methods for building Http Responses
+"></a>
+                        <a href="AbstractResponseBuilder.html" title="Convenience methods for building Http Responses
+">
+                          AbstractResponseBuilder
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Argo$.html" title="Argo JSON support (application/json content type)
+"></a>
+                        <a href="Argo$.html" title="Argo JSON support (application/json content type)
+">
+                          Argo
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Argonaut$.html" title="Argonaut JSON support (application/json content type)
+"></a>
+                        <a href="Argonaut$.html" title="Argonaut JSON support (application/json content type)
+">
+                          Argonaut
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="" title=""></a>
+                        <a href="" title="">
+                          Auto
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Circe$.html" title="Circe JSON support (application/json content type)
+"></a>
+                        <a href="Circe$.html" title="Circe JSON support (application/json content type)
+">
+                          Circe
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Gson$.html" title="GSON JSON support (application/json content type)
+"></a>
+                        <a href="Gson$.html" title="GSON JSON support (application/json content type)
+">
+                          Gson
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Html$.html" title="Native (string-based) HTML support (text/html content type)
+"></a>
+                        <a href="Html$.html" title="Native (string-based) HTML support (text/html content type)
+">
+                          Html
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Jackson$.html" title="Jackson support (application/json content type) - uses BigDecimal for decimal
+"></a>
+                        <a href="Jackson$.html" title="Jackson support (application/json content type) - uses BigDecimal for decimal
+">
+                          Jackson
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Json4s$.html" title="Native Json4S support (application/json content type) - uses BigDecimal for decimal
+"></a>
+                        <a href="Json4s$.html" title="Native Json4S support (application/json content type) - uses BigDecimal for decimal
+">
+                          Json4s
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Json4sDoubleMode$.html" title="Native Json4S support (application/json content type) - uses Doubles for decimal
+"></a>
+                        <a href="Json4sDoubleMode$.html" title="Native Json4S support (application/json content type) - uses Doubles for decimal
+">
+                          Json4sDoubleMode
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="Json4sFormat.html" title=""></a>
+                        <a href="Json4sFormat.html" title="">
+                          Json4sFormat
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Json4sJackson$.html" title="Jackson Json4S support (application/json content type) - uses BigDecimal for decimal
+"></a>
+                        <a href="Json4sJackson$.html" title="Jackson Json4S support (application/json content type) - uses BigDecimal for decimal
+">
+                          Json4sJackson
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Json4sJacksonDoubleMode$.html" title="Jackson Json4S support (application/json content type) - uses Doubles for decimal
+"></a>
+                        <a href="Json4sJacksonDoubleMode$.html" title="Jackson Json4S support (application/json content type) - uses Doubles for decimal
+">
+                          Json4sJacksonDoubleMode
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="Json4sLibrary.html" title=""></a>
+                        <a href="Json4sLibrary.html" title="">
+                          Json4sLibrary
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="JsonFormat$.html" title=""></a>
+                        <a class="trait" href="JsonFormat.html" title="Capability to create and parse JSON message formats in a generic way."></a>
+                        <a href="JsonFormat.html" title="Capability to create and parse JSON message formats in a generic way.">
+                          JsonFormat
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="JsonLibrary.html" title="Defines a supported JSON library format (e.g."></a>
+                        <a href="JsonLibrary.html" title="Defines a supported JSON library format (e.g.">
+                          JsonLibrary
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="MsgPack$.html" title="MsgPack support (application/x-msgpack content type)
+"></a>
+                        <a href="MsgPack$.html" title="MsgPack support (application/x-msgpack content type)
+">
+                          MsgPack
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="MsgPackMsg$.html" title=""></a>
+                        <a class="class" href="MsgPackMsg.html" title=""></a>
+                        <a href="MsgPackMsg.html" title="">
+                          MsgPackMsg
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="PlainText$.html" title="Native (string-based) Text support (text/plain content type)
+"></a>
+                        <a href="PlainText$.html" title="Native (string-based) Text support (text/plain content type)
+">
+                          PlainText
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Play$.html" title="Play JSON support (application/json content type)
+"></a>
+                        <a href="Play$.html" title="Play JSON support (application/json content type)
+">
+                          Play
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ResponseBuilder$.html" title="Generic ResponseBuilder support
+"></a>
+                        <a class="class" href="ResponseBuilder.html" title="Builds Http Responses using a particular custom format object."></a>
+                        <a href="ResponseBuilder.html" title="Builds Http Responses using a particular custom format object.">
+                          ResponseBuilder
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ResponseContentMagnet$.html" title=""></a>
+                        <a class="trait" href="ResponseContentMagnet.html" title="Magnet to convert content types (such as String, Buf, custom JSON types etc) to a common type that
+ResponseBuilders can accept."></a>
+                        <a href="ResponseContentMagnet.html" title="Magnet to convert content types (such as String, Buf, custom JSON types etc) to a common type that
+ResponseBuilders can accept.">
+                          ResponseContentMagnet
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Spray$.html" title="Spray JSON support (application/json content type)
+"></a>
+                        <a href="Spray$.html" title="Spray JSON support (application/json content type)
+">
+                          Spray
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="XHtml$.html" title="Native (Elem-based) XHtml support (application/xhtml+xml content type)
+"></a>
+                        <a href="XHtml$.html" title="Native (Elem-based) XHtml support (application/xhtml+xml content type)
+">
+                          XHtml
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Xml$.html" title="Native (Elem-based) Xml support (application/xml content type)
+"></a>
+                        <a href="Xml$.html" title="Native (Elem-based) Xml support (application/xml content type)
+">
+                          Xml
+                        </a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="class type">
+      <div id="definition">
+        <div class="big-circle class">c</div>
+        <p id="owner"><a href="../../index.html" class="extype" name="io">io</a>.<a href="../index.html" class="extype" name="io.fintrospect">fintrospect</a>.<a href="index.html" class="extype" name="io.fintrospect.formats">formats</a></p>
+        <h1>Auto<span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"></span></h3>
       </div>
 
       <h4 id="signature" class="signature">
@@ -48,53 +338,70 @@
         <span class="name">Auto</span><span class="tparams">[<span name="R">R</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
+
       
           <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
-          <span class="toggle">Linear Supertypes</span>
+          <span class="toggle">
+            Linear Supertypes
+          </span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
-            <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="Json4sLibrary$Auto$.html" class="extype" name="io.fintrospect.formats.Json4sLibrary.Auto">Auto</a>, <a href="Argonaut$$Auto$.html" class="extype" name="io.fintrospect.formats.Argonaut.Auto">Auto</a>, <a href="Circe$$Auto$.html" class="extype" name="io.fintrospect.formats.Circe.Auto">Auto</a>, <a href="Play$$Auto$.html" class="extype" name="io.fintrospect.formats.Play.Auto">Auto</a>, <a href="Xml$$Auto$.html" class="extype" name="io.fintrospect.formats.Xml.Auto">Auto</a>, <a href="MsgPack$$Auto$.html" class="extype" name="io.fintrospect.formats.MsgPack.Auto">Auto</a></div>
+            <span class="toggle">
+              Known Subclasses
+            </span>
+            <div class="subClasses hiddenContent"><a href="Argonaut$$Auto$.html" class="extype" name="io.fintrospect.formats.Argonaut.Auto">Auto</a>, <a href="Circe$$Auto$.html" class="extype" name="io.fintrospect.formats.Circe.Auto">Auto</a>, <a href="Json4sLibrary$Auto$.html" class="extype" name="io.fintrospect.formats.Json4sLibrary.Auto">Auto</a>, <a href="MsgPack$$Auto$.html" class="extype" name="io.fintrospect.formats.MsgPack.Auto">Auto</a>, <a href="Play$$Auto$.html" class="extype" name="io.fintrospect.formats.Play.Auto">Auto</a>, <a href="Xml$$Auto$.html" class="extype" name="io.fintrospect.formats.Xml.Auto">Auto</a></div>
           </div></div>
         
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
-        <div id="order">
-              <span class="filtertype">Ordering</span>
-              <ol>
-                
-                <li class="alpha in"><span>Alphabetic</span></li>
-                <li class="inherit out"><span>By Inheritance</span></li>
-              </ol>
-            </div>
-        <div id="ancestors">
-                <span class="filtertype">Inherited<br />
-                </span>
-                <ol id="linearization">
-                  <li class="in" name="io.fintrospect.formats.Auto"><span>Auto</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
-                </ol>
-              </div><div id="ancestors">
-            <span class="filtertype"></span>
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
             <ol>
-              <li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show All</span></li>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
             </ol>
           </div>
-        <div id="visbl">
-            <span class="filtertype">Visibility</span>
-            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
-          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="io.fintrospect.formats.Auto"><span>Auto</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
       </div>
 
       <div id="template">
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="io.fintrospect.formats.Auto#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[R]):io.fintrospect.formats.Auto[R]"></a>
-      <a id="&lt;init&gt;:Auto[R]"></a>
-      <h4 class="signature">
+              <ol><li name="io.fintrospect.formats.Auto#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[R]):io.fintrospect.formats.Auto[R]"></a><a id="&lt;init&gt;:Auto[R]"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#&lt;init&gt;(responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[R]):io.fintrospect.formats.Auto[R]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">new</span>
@@ -102,45 +409,44 @@
       <span class="symbol">
         <span class="name">Auto</span><span class="params">(<span name="responseBuilder">responseBuilder: <a href="AbstractResponseBuilder.html" class="extype" name="io.fintrospect.formats.AbstractResponseBuilder">AbstractResponseBuilder</a>[<span class="extype" name="io.fintrospect.formats.Auto.R">R</span>]</span>)</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@&lt;init&gt;(responseBuilder:io.fintrospect.formats.AbstractResponseBuilder[R]):io.fintrospect.formats.Auto[R]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       
     </li></ol>
             </div>
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="io.fintrospect.formats.Auto.SvcBody" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="SvcBody[IN]=io.fintrospect.parameters.Body[IN]withio.fintrospect.parameters.Mandatory[com.twitter.finagle.http.Request,IN]"></a>
-      <a id="SvcBody[IN]:SvcBody[IN]"></a>
-      <h4 class="signature">
+              <ol><li name="io.fintrospect.formats.Auto.SvcBody" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SvcBody[IN]=io.fintrospect.parameters.Body[IN]withio.fintrospect.parameters.Mandatory[com.twitter.finagle.http.Request,IN]"></a><a id="SvcBody[IN]:SvcBody[IN]"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#SvcBody[IN]=io.fintrospect.parameters.Body[IN]withio.fintrospect.parameters.Mandatory[com.twitter.finagle.http.Request,IN]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">SvcBody</span><span class="tparams">[<span name="IN">IN</span>]</span><span class="result"> = <a href="../parameters/Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<span class="extype" name="io.fintrospect.formats.Auto.SvcBody.IN">IN</span>] with <a href="../parameters/Mandatory.html" class="extype" name="io.fintrospect.parameters.Mandatory">Mandatory</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.formats.Auto.SvcBody.IN">IN</span>]</span>
+        <span class="name">SvcBody</span><span class="tparams">[<span name="IN">IN</span>]</span><span class="result alias"> = <a href="../parameters/Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<span class="extype" name="io.fintrospect.formats.Auto.SvcBody.IN">IN</span>] with <a href="../parameters/Mandatory.html" class="extype" name="io.fintrospect.parameters.Mandatory">Mandatory</a>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.formats.Auto.SvcBody.IN">IN</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@SvcBody[IN]=io.fintrospect.parameters.Body[IN]withio.fintrospect.parameters.Mandatory[com.twitter.finagle.http.Request,IN]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       
     </li></ol>
             </div>
 
         
 
-        <div id="values" class="values members">
+        <div class="values members">
               <h3>Value Members</h3>
-              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:Any):Boolean"></a>
-      <a id="!=(Any):Boolean"></a>
-      <h4 class="signature">
+              <ol>
+                <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -148,16 +454,15 @@
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@!=(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="##():Int"></a>
-      <a id="##():Int"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -165,16 +470,15 @@
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@##():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:Any):Boolean"></a>
-      <a id="==(Any):Boolean"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -182,16 +486,15 @@
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@==(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="io.fintrospect.formats.Auto#In" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="In[IN](svc:com.twitter.finagle.Service[IN,com.twitter.finagle.http.Response])(implicitbody:io.fintrospect.parameters.Body[IN]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a><a id="In[IN](Service[IN,Response])(Body[IN]):Service[Request,Response]"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#In[IN](svc:com.twitter.finagle.Service[IN,com.twitter.finagle.http.Response])(implicitbody:io.fintrospect.parameters.Body[IN]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="io.fintrospect.formats.Auto#In" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="In[IN](svc:com.twitter.finagle.Service[IN,com.twitter.finagle.http.Response])(implicitbody:io.fintrospect.parameters.Body[IN]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
-      <a id="In[IN](Service[IN,Response])(Body[IN]):Service[Request,Response]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
@@ -199,18 +502,17 @@
       <span class="symbol">
         <span class="name">In</span><span class="tparams">[<span name="IN">IN</span>]</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="io.fintrospect.formats.Auto.In.IN">IN</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="body">body: <a href="../parameters/Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<span class="extype" name="io.fintrospect.formats.Auto.In.IN">IN</span>]</span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@In[IN](svc:com.twitter.finagle.Service[IN,com.twitter.finagle.http.Response])(implicitbody:io.fintrospect.parameters.Body[IN]):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Service wrapper to provide auto-marshalling of input case class instances for scenarios where an object is the service input.</p><div class="fullcomment"><div class="comment cmt"><p>Service wrapper to provide auto-marshalling of input case class instances for scenarios where an object is the service input.
 HTTP OK is returned by default in the auto-marshalled response (overridable).
 </p></div></div>
-    </li><li name="io.fintrospect.formats.Auto#InOptionalOut" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="InOptionalOut[IN,OUT](svc:com.twitter.finagle.Service[IN,Option[OUT]],successStatus:com.twitter.finagle.http.Status)(implicitbody:io.fintrospect.parameters.Body[IN],implicittransform:OUT=&gt;R):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
-      <a id="InOptionalOut[IN,OUT](Service[IN,Option[OUT]],Status)(Body[IN],(OUT)⇒R):Service[Request,Response]"></a>
-      <h4 class="signature">
+    </li><li name="io.fintrospect.formats.Auto#InOptionalOut" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InOptionalOut[IN,OUT](svc:com.twitter.finagle.Service[IN,Option[OUT]],successStatus:com.twitter.finagle.http.Status)(implicitbody:io.fintrospect.parameters.Body[IN],implicittransform:OUT=&gt;R):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a><a id="InOptionalOut[IN,OUT](Service[IN,Option[OUT]],Status)(Body[IN],(OUT)⇒R):Service[Request,Response]"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#InOptionalOut[IN,OUT](svc:com.twitter.finagle.Service[IN,Option[OUT]],successStatus:com.twitter.finagle.http.Status)(implicitbody:io.fintrospect.parameters.Body[IN],implicittransform:OUT=&gt;R):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
@@ -218,18 +520,17 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       <span class="symbol">
         <span class="name">InOptionalOut</span><span class="tparams">[<span name="IN">IN</span>, <span name="OUT">OUT</span>]</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="io.fintrospect.formats.Auto.InOptionalOut.IN">IN</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="io.fintrospect.formats.Auto.InOptionalOut.OUT">OUT</span>]]</span>, <span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Status.Ok</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="body">body: <a href="../parameters/Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<span class="extype" name="io.fintrospect.formats.Auto.InOptionalOut.IN">IN</span>]</span>, <span name="transform">transform: (<span class="extype" name="io.fintrospect.formats.Auto.InOptionalOut.OUT">OUT</span>) ⇒ <span class="extype" name="io.fintrospect.formats.Auto.R">R</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@InOptionalOut[IN,OUT](svc:com.twitter.finagle.Service[IN,Option[OUT]],successStatus:com.twitter.finagle.http.Status)(implicitbody:io.fintrospect.parameters.Body[IN],implicittransform:OUT=&gt;R):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Service wrapper to provide auto-marshalling of case class instances for scenarios where an object may not be returned from the service
 HTTP OK is returned by default in the auto-marshalled response (overridable), otherwise a 404 is returned
 </p>
-    </li><li name="io.fintrospect.formats.Auto#InOut" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="InOut[IN,OUT](svc:com.twitter.finagle.Service[IN,OUT],successStatus:com.twitter.finagle.http.Status)(implicitbody:io.fintrospect.parameters.Body[IN],implicittransform:OUT=&gt;R):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
-      <a id="InOut[IN,OUT](Service[IN,OUT],Status)(Body[IN],(OUT)⇒R):Service[Request,Response]"></a>
-      <h4 class="signature">
+    </li><li name="io.fintrospect.formats.Auto#InOut" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InOut[IN,OUT](svc:com.twitter.finagle.Service[IN,OUT],successStatus:com.twitter.finagle.http.Status)(implicitbody:io.fintrospect.parameters.Body[IN],implicittransform:OUT=&gt;R):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a><a id="InOut[IN,OUT](Service[IN,OUT],Status)(Body[IN],(OUT)⇒R):Service[Request,Response]"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#InOut[IN,OUT](svc:com.twitter.finagle.Service[IN,OUT],successStatus:com.twitter.finagle.http.Status)(implicitbody:io.fintrospect.parameters.Body[IN],implicittransform:OUT=&gt;R):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
@@ -237,18 +538,17 @@ HTTP OK is returned by default in the auto-marshalled response (overridable), ot
       <span class="symbol">
         <span class="name">InOut</span><span class="tparams">[<span name="IN">IN</span>, <span name="OUT">OUT</span>]</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="io.fintrospect.formats.Auto.InOut.IN">IN</span>, <span class="extype" name="io.fintrospect.formats.Auto.InOut.OUT">OUT</span>]</span>, <span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Status.Ok</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="body">body: <a href="../parameters/Body.html" class="extype" name="io.fintrospect.parameters.Body">Body</a>[<span class="extype" name="io.fintrospect.formats.Auto.InOut.IN">IN</span>]</span>, <span name="transform">transform: (<span class="extype" name="io.fintrospect.formats.Auto.InOut.OUT">OUT</span>) ⇒ <span class="extype" name="io.fintrospect.formats.Auto.R">R</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@InOut[IN,OUT](svc:com.twitter.finagle.Service[IN,OUT],successStatus:com.twitter.finagle.http.Status)(implicitbody:io.fintrospect.parameters.Body[IN],implicittransform:OUT=&gt;R):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Service wrapper to provide auto-marshalling of case class instances for input and output to the service
 HTTP OK is returned by default in the auto-marshalled response (overridable), otherwise a 404 is returned
 </p>
-    </li><li name="io.fintrospect.formats.Auto#OptionalOut" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="OptionalOut[IN,OUT](svc:com.twitter.finagle.Service[IN,Option[OUT]],successStatus:com.twitter.finagle.http.Status)(implicittransform:OUT=&gt;R):com.twitter.finagle.Service[IN,com.twitter.finagle.http.Response]"></a>
-      <a id="OptionalOut[IN,OUT](Service[IN,Option[OUT]],Status)((OUT)⇒R):Service[IN,Response]"></a>
-      <h4 class="signature">
+    </li><li name="io.fintrospect.formats.Auto#OptionalOut" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionalOut[IN,OUT](svc:com.twitter.finagle.Service[IN,Option[OUT]],successStatus:com.twitter.finagle.http.Status)(implicittransform:OUT=&gt;R):com.twitter.finagle.Service[IN,com.twitter.finagle.http.Response]"></a><a id="OptionalOut[IN,OUT](Service[IN,Option[OUT]],Status)((OUT)⇒R):Service[IN,Response]"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#OptionalOut[IN,OUT](svc:com.twitter.finagle.Service[IN,Option[OUT]],successStatus:com.twitter.finagle.http.Status)(implicittransform:OUT=&gt;R):com.twitter.finagle.Service[IN,com.twitter.finagle.http.Response]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
@@ -256,18 +556,17 @@ HTTP OK is returned by default in the auto-marshalled response (overridable), ot
       <span class="symbol">
         <span class="name">OptionalOut</span><span class="tparams">[<span name="IN">IN</span>, <span name="OUT">OUT</span>]</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="io.fintrospect.formats.Auto.OptionalOut.IN">IN</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="io.fintrospect.formats.Auto.OptionalOut.OUT">OUT</span>]]</span>, <span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Status.Ok</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="transform">transform: (<span class="extype" name="io.fintrospect.formats.Auto.OptionalOut.OUT">OUT</span>) ⇒ <span class="extype" name="io.fintrospect.formats.Auto.R">R</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="io.fintrospect.formats.Auto.OptionalOut.IN">IN</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@OptionalOut[IN,OUT](svc:com.twitter.finagle.Service[IN,Option[OUT]],successStatus:com.twitter.finagle.http.Status)(implicittransform:OUT=&gt;R):com.twitter.finagle.Service[IN,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Service wrapper to provide auto-marshalling of output case class instances for scenarios where an object may not be returned from the service
 HTTP OK is returned by default in the auto-marshalled response (overridable), otherwise a 404 is returned
 </p>
-    </li><li name="io.fintrospect.formats.Auto#Out" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Out[OUT](svc:com.twitter.finagle.Service[com.twitter.finagle.http.Request,OUT],successStatus:com.twitter.finagle.http.Status)(implicittransform:OUT=&gt;R):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a>
-      <a id="Out[OUT](Service[Request,OUT],Status)((OUT)⇒R):Service[Request,Response]"></a>
-      <h4 class="signature">
+    </li><li name="io.fintrospect.formats.Auto#Out" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Out[OUT](svc:com.twitter.finagle.Service[com.twitter.finagle.http.Request,OUT],successStatus:com.twitter.finagle.http.Status)(implicittransform:OUT=&gt;R):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]"></a><a id="Out[OUT](Service[Request,OUT],Status)((OUT)⇒R):Service[Request,Response]"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#Out[OUT](svc:com.twitter.finagle.Service[com.twitter.finagle.http.Request,OUT],successStatus:com.twitter.finagle.http.Status)(implicittransform:OUT=&gt;R):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
@@ -275,18 +574,17 @@ HTTP OK is returned by default in the auto-marshalled response (overridable), ot
       <span class="symbol">
         <span class="name">Out</span><span class="tparams">[<span name="OUT">OUT</span>]</span><span class="params">(<span name="svc">svc: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="io.fintrospect.formats.Auto.Out.OUT">OUT</span>]</span>, <span name="successStatus">successStatus: <span class="extype" name="com.twitter.finagle.http.Status">Status</span> = <span class="symbol">Status.Ok</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="transform">transform: (<span class="extype" name="io.fintrospect.formats.Auto.Out.OUT">OUT</span>) ⇒ <span class="extype" name="io.fintrospect.formats.Auto.R">R</span></span>)</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@Out[OUT](svc:com.twitter.finagle.Service[com.twitter.finagle.http.Request,OUT],successStatus:com.twitter.finagle.http.Status)(implicittransform:OUT=&gt;R):com.twitter.finagle.Service[com.twitter.finagle.http.Request,com.twitter.finagle.http.Response]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Service wrapper to provide auto-marshalling of output case class instances for scenarios where an object is service output.</p><div class="fullcomment"><div class="comment cmt"><p>Service wrapper to provide auto-marshalling of output case class instances for scenarios where an object is service output.
 HTTP OK is returned by default in the auto-marshalled response (overridable).
 </p></div></div>
-    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
-      <a id="asInstanceOf[T0]:T0"></a>
-      <h4 class="signature">
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -294,16 +592,15 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@asInstanceOf[T0]:T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="clone():Object"></a>
-      <a id="clone():AnyRef"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
@@ -311,11 +608,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       <span class="symbol">
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@clone():Object" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -323,10 +616,13 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="eq(x$1:AnyRef):Boolean"></a>
-      <a id="eq(AnyRef):Boolean"></a>
-      <h4 class="signature">
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -334,16 +630,15 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       <span class="symbol">
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#equals(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a>
-      <a id="equals(Any):Boolean"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
@@ -351,16 +646,15 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="finalize():Unit"></a>
-      <a id="finalize():Unit"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
@@ -368,11 +662,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@finalize():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -380,10 +670,13 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
-      <a id="getClass():Class[_]"></a>
-      <h4 class="signature">
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -391,16 +684,15 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@getClass():Class[_]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#hashCode():Int" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
-      <a id="hashCode():Int"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
@@ -408,16 +700,15 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@hashCode():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="isInstanceOf[T0]:Boolean"></a>
-      <a id="isInstanceOf[T0]:Boolean"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -425,16 +716,15 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="ne(x$1:AnyRef):Boolean"></a>
-      <a id="ne(AnyRef):Boolean"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -442,16 +732,15 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       <span class="symbol">
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="notify():Unit"></a>
-      <a id="notify():Unit"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -459,16 +748,15 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@notify():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="notifyAll():Unit"></a>
-      <a id="notifyAll():Unit"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -476,16 +764,15 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@notifyAll():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
-      <a id="synchronized[T0](⇒T0):T0"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -493,16 +780,15 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#toString():String" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <a id="toString():String"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
@@ -510,16 +796,15 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@toString():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait():Unit"></a>
-      <a id="wait():Unit"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -527,11 +812,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@wait():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -539,10 +820,13 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
-      <a id="wait(Long,Int):Unit"></a>
-      <h4 class="signature">
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -550,11 +834,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -562,10 +842,13 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait(x$1:Long):Unit"></a>
-      <a id="wait(Long):Unit"></a>
-      <h4 class="signature">
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/formats/Auto.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -573,11 +856,7 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#io.fintrospect.formats.Auto@wait(x$1:Long):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -585,7 +864,8 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
     </span>)</span>
               
         </dd></dl></div>
-    </li></ol>
+    </li>
+              </ol>
             </div>
 
         
@@ -614,7 +894,9 @@ HTTP OK is returned by default in the auto-marshalled response (overridable).
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-
-
+    </body>
+          </div>
+        </div>
+      </div>
     </body>
       </html>
