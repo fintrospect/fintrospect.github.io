@@ -1412,13 +1412,12 @@ represent the various places in which values are encoded (eg. header/form/query/
         <a title="Spec required to marshal and unmarshal a parameter of a custom type
 " href="ParameterSpec.html">
               <span class="name">ParameterSpec</span>
-            </a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="paramType">paramType: <a href="ParamType.html" class="extype" name="io.fintrospect.parameters.ParamType">ParamType</a></span>, <span name="deserialize">deserialize: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span></span>, <span name="serialize">serialize: (<span class="extype" name="io.fintrospect.parameters.ParameterSpec.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">(s: T) =&gt; s.toString</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+            </a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       
       <p class="shortcomment cmt">Spec required to marshal and unmarshal a parameter of a custom type
 </p><div class="fullcomment"><div class="comment cmt"><p>Spec required to marshal and unmarshal a parameter of a custom type
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the deserialised parameter</p></dd><dt class="param">paramType</dt><dd class="cmt"><p>The parameter type to be used in the documentation. For custom types, this is usually ObjectParamType (for JSON) or StringParamType</p></dd><dt class="param">deserialize</dt><dd class="cmt"><p>function to take the input string from the request and attempt to construct a deserialized instance of T. Exceptions are
-                   automatically caught and translated into the appropriate result, so just concentrate on the Happy-path case</p></dd><dt class="param">serialize</dt><dd class="cmt"><p>function to take the input type and serialize it to a string to be represented in the request</p></dd><dt>returns</dt><dd class="cmt"><p>a parameter for retrieving a value of type [T] from the request</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the deserialised parameter</p></dd><dt>returns</dt><dd class="cmt"><p>a parameter for retrieving a value of type [T] from the request</p></dd></dl></div>
     </li><li name="io.fintrospect.parameters.Parameters" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Parameters[P[_],R[_]]extendsAnyRef"></a><a id="Parameters[P[_],R[_]]:Parameters[P,R]"></a>
       <span class="permalink">

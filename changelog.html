@@ -11,6 +11,12 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <li>Add strict <code>Accept</code> header checking for <code>RouteSpec</code>s based on <code>producing()</code> settings. Option for non-strictness.</li>
 <li>Add integrated self-hosted Swagger UI/ReDoc UI module</li>
 </ul>
+<h2>14.13.0</h2><ul>
+<li>Performance tweak - only decode bodies once when using the <code>Auto</code> filters.</li>
+<li>Improved error messages in case of broken contract scenarios.</li>
+<li>API Improvement: hidden <code>ParameterSpec.apply()</code>. Should be using <code>ParameterSpec.&lt;type&gt;()</code> methods and then using <code>map()</code> instead. This hides the <code>ParamType</code> from the API user.</li>
+<li>API Deprecations: moving to <code>Path.of()</code> and <code>Body.of()</code> instead of <code>Path()</code> and <code>Body()</code> in the case of custom path/body types. This aids API discoverability</li>
+</ul>
 <h2>14.12.2</h2><ul>
 <li>Bugfix: #38 - Adding missing type signature on <code>Path</code> to remove reflective calls flag warning.</li>
 </ul>

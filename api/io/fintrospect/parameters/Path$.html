@@ -707,24 +707,6 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="io.fintrospect.parameters.Path#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="apply[T](spec:io.fintrospect.parameters.ParameterSpec[T],name:String,description:String):io.fintrospect.parameters.PathParameter[T]withio.fintrospect.parameters.PathBindable[T]"></a><a id="apply[T](ParameterSpec[T],String,String):PathParameter[T]withPathBindable[T]"></a>
-      <span class="permalink">
-      <a href="../../../io/fintrospect/parameters/Path$.html#apply[T](spec:io.fintrospect.parameters.ParameterSpec[T],name:String,description:String):io.fintrospect.parameters.PathParameter[T]withio.fintrospect.parameters.PathBindable[T]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">apply</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="spec">spec: <a href="ParameterSpec.html" class="extype" name="io.fintrospect.parameters.ParameterSpec">ParameterSpec</a>[<span class="extype" name="io.fintrospect.parameters.Path.apply.T">T</span>]</span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="description">description: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">null</span></span>)</span><span class="result">: <a href="PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[<span class="extype" name="io.fintrospect.parameters.Path.apply.T">T</span>] with <a href="PathBindable.html" class="extype" name="io.fintrospect.parameters.PathBindable">PathBindable</a>[<span class="extype" name="io.fintrospect.parameters.Path.apply.T">T</span>]</span>
-      </span>
-      
-      <p class="shortcomment cmt">Create a path parameter using the passed specification
-</p><div class="fullcomment"><div class="comment cmt"><p>Create a path parameter using the passed specification
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the parameter</p></dd><dt class="param">spec</dt><dd class="cmt"><p>the parameter spec</p></dd><dt class="param">name</dt><dd class="cmt"><p>the parameter name</p></dd><dt class="param">description</dt><dd class="cmt"><p>the parameter description</p></dd><dt>returns</dt><dd class="cmt"><p>a parameter for retrieving a value of type [T] from the request</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.parameters.Path">Path</a> → <a href="Parameters.html" class="extype" name="io.fintrospect.parameters.Parameters">Parameters</a></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
@@ -1075,6 +1057,24 @@ between 2 other path parameters. eg. /myRoute/{id}/aFixedPart/{subId}
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="io.fintrospect.parameters.Path#of" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="of[T](spec:io.fintrospect.parameters.ParameterSpec[T],name:String,description:String):io.fintrospect.parameters.PathParameter[T]withio.fintrospect.parameters.PathBindable[T]"></a><a id="of[T](ParameterSpec[T],String,String):PathParameter[T]withPathBindable[T]"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/parameters/Path$.html#of[T](spec:io.fintrospect.parameters.ParameterSpec[T],name:String,description:String):io.fintrospect.parameters.PathParameter[T]withio.fintrospect.parameters.PathBindable[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">of</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="spec">spec: <a href="ParameterSpec.html" class="extype" name="io.fintrospect.parameters.ParameterSpec">ParameterSpec</a>[<span class="extype" name="io.fintrospect.parameters.Path.of.T">T</span>]</span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="description">description: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">null</span></span>)</span><span class="result">: <a href="PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[<span class="extype" name="io.fintrospect.parameters.Path.of.T">T</span>] with <a href="PathBindable.html" class="extype" name="io.fintrospect.parameters.PathBindable">PathBindable</a>[<span class="extype" name="io.fintrospect.parameters.Path.of.T">T</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Create a path parameter using the passed specification
+</p><div class="fullcomment"><div class="comment cmt"><p>Create a path parameter using the passed specification
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the parameter</p></dd><dt class="param">spec</dt><dd class="cmt"><p>the parameter spec</p></dd><dt>returns</dt><dd class="cmt"><p>a parameter for retrieving a value of type [T] from the request</p></dd></dl></div>
     </li><li name="io.fintrospect.parameters.Parameters#string" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="string(name:String,description:String,validation:io.fintrospect.parameters.StringValidations.Rule):P[String]withR[String]"></a><a id="string(String,String,Rule):PathParameter[String]withPathBindable[String]"></a>
       <span class="permalink">
@@ -1251,7 +1251,30 @@ between 2 other path parameters. eg. /myRoute/{id}/aFixedPart/{subId}
 
         
 
-        
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="io.fintrospect.parameters.Path#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply[T](spec:io.fintrospect.parameters.ParameterSpec[T],name:String,description:String):io.fintrospect.parameters.PathParameter[T]withio.fintrospect.parameters.PathBindable[T]"></a><a id="apply[T](ParameterSpec[T],String,String):PathParameter[T]withPathBindable[T]"></a>
+      <span class="permalink">
+      <a href="../../../io/fintrospect/parameters/Path$.html#apply[T](spec:io.fintrospect.parameters.ParameterSpec[T],name:String,description:String):io.fintrospect.parameters.PathParameter[T]withio.fintrospect.parameters.PathBindable[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version 14.13.0) use .of() instead for API consistency">apply</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="spec">spec: <a href="ParameterSpec.html" class="extype" name="io.fintrospect.parameters.ParameterSpec">ParameterSpec</a>[<span class="extype" name="io.fintrospect.parameters.Path.apply.T">T</span>]</span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="description">description: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">null</span></span>)</span><span class="result">: <a href="PathParameter.html" class="extype" name="io.fintrospect.parameters.PathParameter">PathParameter</a>[<span class="extype" name="io.fintrospect.parameters.Path.apply.T">T</span>] with <a href="PathBindable.html" class="extype" name="io.fintrospect.parameters.PathBindable">PathBindable</a>[<span class="extype" name="io.fintrospect.parameters.Path.apply.T">T</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Create a parameter of a custom type.</p><div class="fullcomment"><div class="comment cmt"><p>Create a parameter of a custom type. This will hook into pre-request validation (in terms of optional/mandatory parameters)
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the parameter</p></dd><dt class="param">spec</dt><dd class="cmt"><p>the parameter spec</p></dd><dt class="param">name</dt><dd class="cmt"><p>the parameter name</p></dd><dt class="param">description</dt><dd class="cmt"><p>the parameter description</p></dd><dt>returns</dt><dd class="cmt"><p>a parameter for retrieving a value of type [T] from the request</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.fintrospect.parameters.Path">Path</a> → <a href="Parameters.html" class="extype" name="io.fintrospect.parameters.Parameters">Parameters</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 14.13.0)</i> use .of() instead for API consistency</p></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">
