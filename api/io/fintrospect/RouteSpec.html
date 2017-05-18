@@ -907,9 +907,9 @@ not yet been bound to a server or client Service."></a>
       
       
     </li><li name="io.fintrospect.RouteSpec#responses" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="responses:Seq[io.fintrospect.ResponseSpec]"></a><a id="responses:Seq[ResponseSpec]"></a>
+      <a id="responses:Map[com.twitter.finagle.http.Status,io.fintrospect.ResponseSpec]"></a><a id="responses:Map[Status,ResponseSpec]"></a>
       <span class="permalink">
-      <a href="../../io/fintrospect/RouteSpec.html#responses:Seq[io.fintrospect.ResponseSpec]" title="Permalink">
+      <a href="../../io/fintrospect/RouteSpec.html#responses:Map[com.twitter.finagle.http.Status,io.fintrospect.ResponseSpec]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -918,14 +918,14 @@ not yet been bound to a server or client Service."></a>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">responses</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="ResponseSpec.html" class="extype" name="io.fintrospect.ResponseSpec">ResponseSpec</a>]</span>
+        <span class="name">responses</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="com.twitter.finagle.http.Status">Status</span>, <a href="ResponseSpec.html" class="extype" name="io.fintrospect.ResponseSpec">ResponseSpec</a>]</span>
       </span>
       
       
     </li><li name="io.fintrospect.RouteSpec#returning" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="returning(code:(com.twitter.finagle.http.Status,String),example:String):io.fintrospect.RouteSpec"></a><a id="returning((Status,String),String):RouteSpec"></a>
+      <a id="returning(codeAndReason:(com.twitter.finagle.http.Status,String),example:String):io.fintrospect.RouteSpec"></a><a id="returning((Status,String),String):RouteSpec"></a>
       <span class="permalink">
-      <a href="../../io/fintrospect/RouteSpec.html#returning(code:(com.twitter.finagle.http.Status,String),example:String):io.fintrospect.RouteSpec" title="Permalink">
+      <a href="../../io/fintrospect/RouteSpec.html#returning(codeAndReason:(com.twitter.finagle.http.Status,String),example:String):io.fintrospect.RouteSpec" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -934,14 +934,14 @@ not yet been bound to a server or client Service."></a>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">returning</span><span class="params">(<span name="code">code: (<span class="extype" name="com.twitter.finagle.http.Status">Status</span>, <span class="extype" name="scala.Predef.String">String</span>)</span>, <span name="example">example: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a></span>
+        <span class="name">returning</span><span class="params">(<span name="codeAndReason">codeAndReason: (<span class="extype" name="com.twitter.finagle.http.Status">Status</span>, <span class="extype" name="scala.Predef.String">String</span>)</span>, <span name="example">example: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a></span>
       </span>
       
       <p class="shortcomment cmt">Register a possible response which could be produced by this route, with an example body (used for schema generation).</p>
     </li><li name="io.fintrospect.RouteSpec#returning" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="returning[T](code:(com.twitter.finagle.http.Status,String),example:T,jsonLib:io.fintrospect.formats.JsonLibrary[T,_]):io.fintrospect.RouteSpec"></a><a id="returning[T]((Status,String),T,JsonLibrary[T,_]):RouteSpec"></a>
+      <a id="returning[T](codeAndReason:(com.twitter.finagle.http.Status,String),example:T,jsonLib:io.fintrospect.formats.JsonLibrary[T,_]):io.fintrospect.RouteSpec"></a><a id="returning[T]((Status,String),T,JsonLibrary[T,_]):RouteSpec"></a>
       <span class="permalink">
-      <a href="../../io/fintrospect/RouteSpec.html#returning[T](code:(com.twitter.finagle.http.Status,String),example:T,jsonLib:io.fintrospect.formats.JsonLibrary[T,_]):io.fintrospect.RouteSpec" title="Permalink">
+      <a href="../../io/fintrospect/RouteSpec.html#returning[T](codeAndReason:(com.twitter.finagle.http.Status,String),example:T,jsonLib:io.fintrospect.formats.JsonLibrary[T,_]):io.fintrospect.RouteSpec" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -950,7 +950,7 @@ not yet been bound to a server or client Service."></a>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">returning</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="code">code: (<span class="extype" name="com.twitter.finagle.http.Status">Status</span>, <span class="extype" name="scala.Predef.String">String</span>)</span>, <span name="example">example: <span class="extype" name="io.fintrospect.RouteSpec.returning.T">T</span></span>, <span name="jsonLib">jsonLib: <a href="formats/JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="io.fintrospect.RouteSpec.returning.T">T</span>, _] = <span class="symbol"><span class="name"><a href="../index.html">Argo</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a></span>
+        <span class="name">returning</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="codeAndReason">codeAndReason: (<span class="extype" name="com.twitter.finagle.http.Status">Status</span>, <span class="extype" name="scala.Predef.String">String</span>)</span>, <span name="example">example: <span class="extype" name="io.fintrospect.RouteSpec.returning.T">T</span></span>, <span name="jsonLib">jsonLib: <a href="formats/JsonLibrary.html" class="extype" name="io.fintrospect.formats.JsonLibrary">JsonLibrary</a>[<span class="extype" name="io.fintrospect.RouteSpec.returning.T">T</span>, _] = <span class="symbol"><span class="name"><a href="../index.html">Argo</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a></span>
       </span>
       
       <p class="shortcomment cmt">Register a possible response which could be produced by this route, with an example JSON body (used for schema generation).</p>
@@ -972,9 +972,9 @@ not yet been bound to a server or client Service."></a>
       <p class="shortcomment cmt">Register an exact possible response which could be produced by this route.</p><div class="fullcomment"><div class="comment cmt"><p>Register an exact possible response which could be produced by this route. Will be used for schema generation if content is JSON.
 </p></div></div>
     </li><li name="io.fintrospect.RouteSpec#returning" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="returning(codes:(com.twitter.finagle.http.Status,String)*):io.fintrospect.RouteSpec"></a><a id="returning((Status,String)*):RouteSpec"></a>
+      <a id="returning(codesAndReasons:(com.twitter.finagle.http.Status,String)*):io.fintrospect.RouteSpec"></a><a id="returning((Status,String)*):RouteSpec"></a>
       <span class="permalink">
-      <a href="../../io/fintrospect/RouteSpec.html#returning(codes:(com.twitter.finagle.http.Status,String)*):io.fintrospect.RouteSpec" title="Permalink">
+      <a href="../../io/fintrospect/RouteSpec.html#returning(codesAndReasons:(com.twitter.finagle.http.Status,String)*):io.fintrospect.RouteSpec" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -983,7 +983,7 @@ not yet been bound to a server or client Service."></a>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">returning</span><span class="params">(<span name="codes">codes: (<span class="extype" name="com.twitter.finagle.http.Status">Status</span>, <span class="extype" name="scala.Predef.String">String</span>)*</span>)</span><span class="result">: <a href="" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a></span>
+        <span class="name">returning</span><span class="params">(<span name="codesAndReasons">codesAndReasons: (<span class="extype" name="com.twitter.finagle.http.Status">Status</span>, <span class="extype" name="scala.Predef.String">String</span>)*</span>)</span><span class="result">: <a href="" class="extype" name="io.fintrospect.RouteSpec">RouteSpec</a></span>
       </span>
       
       <p class="shortcomment cmt">Register one or more possible responses which could be produced by this route.</p>

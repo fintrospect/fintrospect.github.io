@@ -11,6 +11,10 @@ ga('send', 'pageview');</script></head><body><header><nav role="navigation" clas
 <li>Add strict <code>Accept</code> header checking for <code>RouteSpec</code>s based on <code>producing()</code> settings. Option for non-strictness.</li>
 <li>Add integrated self-hosted Swagger UI/ReDoc UI module</li>
 </ul>
+<h2>14.17.3</h2><ul>
+<li>Fix for #39. Routes can no longer contain duplicate response codes.</li>
+<li>Fix for #39. Swagger renderer was producing duplicate model definitions when same object was returned in multiple responses.</li>
+</ul>
 <h2>14.17.2</h2><ul>
 <li>Fix tag duplication for routes in Swagger renderer.</li>
 </ul>
