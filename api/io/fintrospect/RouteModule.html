@@ -604,6 +604,23 @@ not yet been bound to a server or client Service."></a>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="io.fintrospect.Module#andThen" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="andThen(that:io.fintrospect.Module):io.fintrospect.Module"></a><a id="andThen(Module):Module"></a>
+      <span class="permalink">
+      <a href="../../io/fintrospect/RouteModule.html#andThen(that:io.fintrospect.Module):io.fintrospect.Module" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">andThen</span><span class="params">(<span name="that">that: <a href="Module.html" class="extype" name="io.fintrospect.Module">Module</a></span>)</span><span class="result">: <a href="Module.html" class="extype" name="io.fintrospect.Module">Module</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Compose 2 modules together.</p><div class="fullcomment"><div class="comment cmt"><p>Compose 2 modules together. If this module does not match a Request, fallback to the next in the queue.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Module.html" class="extype" name="io.fintrospect.Module">Module</a></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
@@ -642,23 +659,6 @@ not yet been bound to a server or client Service."></a>
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="io.fintrospect.Module#combine" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="combine(that:io.fintrospect.Module):io.fintrospect.Module"></a><a id="combine(Module):Module"></a>
-      <span class="permalink">
-      <a href="../../io/fintrospect/RouteModule.html#combine(that:io.fintrospect.Module):io.fintrospect.Module" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">combine</span><span class="params">(<span name="that">that: <a href="Module.html" class="extype" name="io.fintrospect.Module">Module</a></span>)</span><span class="result">: <a href="Module.html" class="extype" name="io.fintrospect.Module">Module</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">Finaliser for the module builder to combine itself with another module into a Partial Function which matches incoming requests.</p><div class="fullcomment"><div class="comment cmt"><p>Finaliser for the module builder to combine itself with another module into a Partial Function which matches incoming requests.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Module.html" class="extype" name="io.fintrospect.Module">Module</a></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -875,7 +875,7 @@ not pass authentication.
         <span class="name">toService</span><span class="result">: <span class="extype" name="com.twitter.finagle.Service">Service</span>[<span class="extype" name="com.twitter.finagle.http.Request">Request</span>, <span class="extype" name="com.twitter.finagle.http.Response">Response</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">Finaliser for the module builder to convert itself to a Finagle Service.</p><div class="fullcomment"><div class="comment cmt"><p>Finaliser for the module builder to convert itself to a Finagle Service. Use this function when there is only one module.
+      <p class="shortcomment cmt">Finaliser for the module builder to convert itself to a Finagle Service.</p><div class="fullcomment"><div class="comment cmt"><p>Finaliser for the module builder to convert itself to a Finagle Service.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Module.html" class="extype" name="io.fintrospect.Module">Module</a></dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -1015,7 +1015,29 @@ not pass authentication.
 
         
 
-        
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="io.fintrospect.Module#combine" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="combine(that:io.fintrospect.Module):io.fintrospect.Module"></a><a id="combine(Module):Module"></a>
+      <span class="permalink">
+      <a href="../../io/fintrospect/RouteModule.html#combine(that:io.fintrospect.Module):io.fintrospect.Module" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version 14.19.1) use andThen() instead">combine</span><span class="params">(<span name="that">that: <a href="Module.html" class="extype" name="io.fintrospect.Module">Module</a></span>)</span><span class="result">: <a href="Module.html" class="extype" name="io.fintrospect.Module">Module</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Module.html" class="extype" name="io.fintrospect.Module">Module</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 14.19.1)</i> use andThen() instead</p></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">
